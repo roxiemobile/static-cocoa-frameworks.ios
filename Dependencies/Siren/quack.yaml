@@ -1,0 +1,31 @@
+name: Siren
+description: Notify users that a new version of your iOS app is available, and prompt them with the App Store link.
+
+modules:
+  3.1.7:
+    repository: https://github.com/ArtSabintsev/Siren.git
+    tag: 3.1.7
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

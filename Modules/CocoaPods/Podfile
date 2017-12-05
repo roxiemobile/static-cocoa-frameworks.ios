@@ -1,0 +1,45 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+use_frameworks!
+
+workspace 'DummyProject/Dummy.xcworkspace'
+
+target 'DummyFramework' do
+  project 'DummyProject/Dummy.xcodeproj'
+
+  pod 'Alamofire',                '~> 4.5'
+# pod 'Bolts',                    '~> 1.8'
+  pod 'CryptoSwift',              '~> 0.8'
+# pod 'Differentiator',           '~> 3.0'
+  pod 'Dispatch',                 '~> 2.0'
+  pod 'FBSDKCoreKit',             '~> 4.28' # Bolts
+  pod 'GoogleAnalytics',          '~> 3.17'
+  pod 'GzipSwift',                '~> 4.0'
+  pod 'INTULocationManager',      '~> 4.2'
+  pod 'KeychainAccess',           '~> 3.1'
+  pod 'MBProgressHUD',            '~> 1.1'
+  pod 'PureLayout',               '~> 3.0'
+  pod 'R.swift',                  '~> 4.0'  # R.swift.Library
+# pod 'R.swift.Library',          '~> 4.0'
+# pod 'RxCocoa',                  '~> 4.0'  # RxSwift
+  pod 'RxDataSources',            '~> 3.0'  # Differentiator, RxCocoa
+# pod 'RxSwift',                  '~> 4.0'
+  pod 'SDWebImage/Core',          '~> 4.2'
+  pod 'Siren',                    '~> 3.1'
+  pod 'SlideMenuControllerSwift', '~> 4.0'
+  pod 'SQLCipher/standard',       '~> 3.4'
+  pod 'SQLite.swift/SQLCipher',   '~> 0.11'
+  pod 'SwiftCommons',             '~> 1.1'  # SwiftCommonsAbstractions, SwiftCommonsConcurrent, SwiftCommonsData, SwiftCommonsDiagnostics, SwiftCommonsExtensions, SwiftCommonsLang, SwiftCommonsLogging, SwiftCommonsObjC
+# pod 'SwiftCommonsAbstractions', '~> 1.1'
+# pod 'SwiftCommonsConcurrent',   '~> 1.1'
+# pod 'SwiftCommonsData',         '~> 1.1'
+# pod 'SwiftCommonsDiagnostics',  '~> 1.1'
+# pod 'SwiftCommonsExtensions',   '~> 1.1'
+# pod 'SwiftCommonsLang',         '~> 1.1'
+# pod 'SwiftCommonsLogging',      '~> 1.1'
+# pod 'SwiftCommonsObjC',         '~> 1.1'
+  pod 'SwiftReorder',             '~> 3.2'
+  pod 'SwiftyJSON',               '~> 4.0'
+  pod 'YandexMobileMetrica',      '~> 2.9'
+end

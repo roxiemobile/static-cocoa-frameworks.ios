@@ -1,0 +1,31 @@
+name: SDWebImage
+description: Asynchronous image downloader with cache support with an UIImageView category.
+
+modules:
+  4.2.2:
+    repository: https://github.com/rs/SDWebImage.git
+    tag: 4.2.2
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

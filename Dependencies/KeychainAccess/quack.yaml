@@ -1,0 +1,31 @@
+name: KeychainAccess
+description: KeychainAccess is a simple Swift wrapper for Keychain that works on iOS and OS X.
+
+modules:
+  3.1.0:
+    repository: https://github.com/kishikawakatsumi/KeychainAccess.git
+    tag: v3.1.0
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

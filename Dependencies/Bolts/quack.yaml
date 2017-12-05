@@ -1,0 +1,32 @@
+name: Bolts
+description: Bolts is a collection of low-level libraries designed to make developing mobile apps easier.
+
+modules:
+  1.8.4:
+    repository: https://github.com/BoltsFramework/Bolts-ObjC.git
+    tag: 1.8.4
+    update_submodules: true
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

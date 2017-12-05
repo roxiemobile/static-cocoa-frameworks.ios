@@ -1,0 +1,31 @@
+name: Dispatch
+description: Just a tiny library to make using GCD easier and intuitive.
+
+modules:
+  2.0.4:
+    repository: https://github.com/JARMourato/Dispatch.git
+    tag: 2.0.4
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

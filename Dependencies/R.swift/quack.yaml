@@ -1,0 +1,31 @@
+name: R.swift
+description: Get strong typed, autocompleted resources like images, fonts and segues in Swift projects.
+
+modules:
+  4.0.0:
+    repository: https://github.com/mac-cain13/R.swift.git
+    tag: v4.0.0
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

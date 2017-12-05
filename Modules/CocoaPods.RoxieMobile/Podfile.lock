@@ -1,0 +1,199 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - CryptoSwift (0.8.0)
+  - Differentiator (3.0.2)
+  - Dispatch (2.0.4)
+  - FBSDKCoreKit (4.29.0):
+    - Bolts (~> 1.7)
+  - GzipSwift (4.0.4)
+  - INTULocationManager (4.2.0)
+  - KeychainAccess (3.1.0)
+  - MBProgressHUD (1.1.0)
+  - PureLayout (3.0.2)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SDWebImage/Core (4.2.2)
+  - Siren (3.1.7)
+  - SlideMenuControllerSwift (4.0.0)
+  - SQLCipher (3.4.1):
+    - SQLCipher/standard (= 3.4.1)
+  - SQLCipher/common (3.4.1)
+  - SQLCipher/standard (3.4.1):
+    - SQLCipher/common
+  - SQLite.swift/SQLCipher (0.11.4):
+    - SQLCipher (>= 3.4.0)
+  - SwiftCommonsAbstractions (1.1.0)
+  - SwiftCommonsConcurrent (1.1.0):
+    - Dispatch (~> 2.0.4)
+    - SwiftCommonsObjC (= 1.1.0)
+  - SwiftCommonsData (1.1.0):
+    - CryptoSwift (~> 0.8.0)
+    - SwiftCommonsDiagnostics (= 1.1.0)
+  - SwiftCommonsDiagnostics (1.1.0):
+    - SwiftCommonsConcurrent (= 1.1.0)
+    - SwiftCommonsExtensions (= 1.1.0)
+  - SwiftCommonsExtensions (1.1.0):
+    - SwiftCommonsAbstractions (= 1.1.0)
+    - SwiftCommonsLogging (= 1.1.0)
+  - SwiftCommonsLang (1.1.0)
+  - SwiftCommonsLogging (1.1.0):
+    - SwiftCommonsConcurrent (= 1.1.0)
+    - SwiftCommonsLang (= 1.1.0)
+  - SwiftCommonsObjC (1.1.0)
+  - SwiftReorder (3.2.0)
+  - SwiftyJSON (4.0.0)
+  - YandexMobileMetrica (2.9.4):
+    - YandexMobileMetrica/Static (= 2.9.4)
+  - YandexMobileMetrica/Static (2.9.4)
+
+DEPENDENCIES:
+  - Alamofire (from `../../Dependencies/Alamofire/Pod-4.6.0.podspec`)
+  - Bolts (from `../../Dependencies/Bolts/Pod-1.8.4.podspec`)
+  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
+  - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
+  - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
+  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.29.0.podspec`)
+  - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
+  - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.2.0.podspec`)
+  - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
+  - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
+  - PureLayout (from `../../Dependencies/PureLayout/Pod-3.0.2.podspec`)
+  - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0.podspec`)
+  - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
+  - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.0.0.podspec`)
+  - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.0.2.podspec`)
+  - RxSwift (from `../../Dependencies/RxSwift/Pod-4.0.0.podspec`)
+  - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.2.2.podspec`)
+  - Siren (from `../../Dependencies/Siren/Pod-3.1.7.podspec`)
+  - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec`)
+  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
+  - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
+  - SwiftCommonsAbstractions (from `../..//Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec`)
+  - SwiftCommonsConcurrent (from `../..//Dependencies/SwiftCommonsConcurrent/Pod-1.1.0.podspec`)
+  - SwiftCommonsData (from `../..//Dependencies/SwiftCommonsData/Pod-1.1.0.podspec`)
+  - SwiftCommonsDiagnostics (from `../..//Dependencies/SwiftCommonsDiagnostics/Pod-1.1.0.podspec`)
+  - SwiftCommonsExtensions (from `../..//Dependencies/SwiftCommonsExtensions/Pod-1.1.0.podspec`)
+  - SwiftCommonsLang (from `../..//Dependencies/SwiftCommonsLang/Pod-1.1.0.podspec`)
+  - SwiftCommonsLogging (from `../..//Dependencies/SwiftCommonsLogging/Pod-1.1.0.podspec`)
+  - SwiftCommonsObjC (from `../..//Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec`)
+  - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-3.2.0.podspec`)
+  - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
+  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :path: ../../Dependencies/Alamofire/Pod-4.6.0.podspec
+  Bolts:
+    :path: ../../Dependencies/Bolts/Pod-1.8.4.podspec
+  CryptoSwift:
+    :path: ../../Dependencies/CryptoSwift/Pod-0.8.0.podspec
+  Differentiator:
+    :path: ../../Dependencies/Differentiator/Pod-3.0.2.podspec
+  Dispatch:
+    :path: ../../Dependencies/Dispatch/Pod-2.0.4.podspec
+  FBSDKCoreKit:
+    :path: ../../Dependencies/FBSDKCoreKit/Pod-4.29.0.podspec
+  GzipSwift:
+    :path: ../../Dependencies/GzipSwift/Pod-4.0.4.podspec
+  INTULocationManager:
+    :path: ../../Dependencies/INTULocationManager/Pod-4.2.0.podspec
+  KeychainAccess:
+    :path: ../../Dependencies/KeychainAccess/Pod-3.1.0.podspec
+  MBProgressHUD:
+    :path: ../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec
+  PureLayout:
+    :path: ../../Dependencies/PureLayout/Pod-3.0.2.podspec
+  R.swift:
+    :path: ../../Dependencies/R.swift/Pod-4.0.0.podspec
+  R.swift.Library:
+    :path: ../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec
+  RxCocoa:
+    :path: ../../Dependencies/RxCocoa/Pod-4.0.0.podspec
+  RxDataSources:
+    :path: ../../Dependencies/RxDataSources/Pod-3.0.2.podspec
+  RxSwift:
+    :path: ../../Dependencies/RxSwift/Pod-4.0.0.podspec
+  SDWebImage:
+    :path: ../../Dependencies/SDWebImage/Pod-4.2.2.podspec
+  Siren:
+    :path: ../../Dependencies/Siren/Pod-3.1.7.podspec
+  SlideMenuControllerSwift:
+    :path: ../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec
+  SQLCipher:
+    :path: ../../Dependencies/SQLCipher/Pod-3.4.1.podspec
+  SQLite.swift:
+    :path: ../../Dependencies/SQLite.swift/Pod-0.11.4.podspec
+  SwiftCommonsAbstractions:
+    :path: ../..//Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec
+  SwiftCommonsConcurrent:
+    :path: ../..//Dependencies/SwiftCommonsConcurrent/Pod-1.1.0.podspec
+  SwiftCommonsData:
+    :path: ../..//Dependencies/SwiftCommonsData/Pod-1.1.0.podspec
+  SwiftCommonsDiagnostics:
+    :path: ../..//Dependencies/SwiftCommonsDiagnostics/Pod-1.1.0.podspec
+  SwiftCommonsExtensions:
+    :path: ../..//Dependencies/SwiftCommonsExtensions/Pod-1.1.0.podspec
+  SwiftCommonsLang:
+    :path: ../..//Dependencies/SwiftCommonsLang/Pod-1.1.0.podspec
+  SwiftCommonsLogging:
+    :path: ../..//Dependencies/SwiftCommonsLogging/Pod-1.1.0.podspec
+  SwiftCommonsObjC:
+    :path: ../..//Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec
+  SwiftReorder:
+    :path: ../../Dependencies/SwiftReorder/Pod-3.2.0.podspec
+  SwiftyJSON:
+    :path: ../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec
+  YandexMobileMetrica:
+    :path: ../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec
+
+SPEC CHECKSUMS:
+  Alamofire: fd83be43a3c55be25b534db690ca6e7e25e90654
+  Bolts: 7a8fa7789b43be2b32781a3a48c4e7d0f3fc5430
+  CryptoSwift: 5879b8264a06a586dc6dd110e71116e47b091f12
+  Differentiator: e89e30d0696fa126c9b9a00b513d17cd8b047183
+  Dispatch: 864608cf20f0b1e0ae234344b586cc39bd48a769
+  FBSDKCoreKit: 83e7e6501609bda5716a04b6803bfa66e849fd6b
+  GzipSwift: 5fa07fa6a047a1ff87cf01cdbbdb4676de2de04f
+  INTULocationManager: 4169f86b98643a9272543a6ed57532d9da876b36
+  KeychainAccess: ae378eb8c49e2b0e5e2468a52cf86041997dc042
+  MBProgressHUD: a4524cf67ebb77a94e94a2b404e8135f576695f5
+  PureLayout: 7420541f44893ac27770cc21df6659e74197012c
+  R.swift: 2f41d8672e43cd6cd87259dc9fa04adf5a653cba
+  R.swift.Library: 34fa18a0fce72ea0fb9b9a94beb2ad194d0336cb
+  RxCocoa: 7fcd2a91d916cd0543ae0b005a6eda26be6af1e8
+  RxDataSources: eec5cdc6a91b2ef327e9bccc467e540c23a3361f
+  RxSwift: b00c5f24939e57e7dac8cd8464d8629d08f9ed70
+  SDWebImage: fefd69260c57378af3fd25df157c439757fc9fe1
+  Siren: a3812c49aad5d83bdd816fb77be70d8b7e7c4cc6
+  SlideMenuControllerSwift: e2c64fa95395c165742b76c18fed19e136872a2c
+  SQLCipher: 7daf77daa720f11d25ee97ab8d82f283ea8c983e
+  SQLite.swift: f44e990b6628808219851c0017cabbdf2988afa3
+  SwiftCommonsAbstractions: 1e33711c5929da1caff6fead4a853e0cbc13edff
+  SwiftCommonsConcurrent: 867fdd42a07300fc9806753b3a5e2fcc70911324
+  SwiftCommonsData: 23060ac76f04082afc478a2e6be8a12f871b243e
+  SwiftCommonsDiagnostics: 86da8bfe22bdd24ff4721af3ea32cc61f620437e
+  SwiftCommonsExtensions: f7baee372d4be8f93843835326b06a197983773a
+  SwiftCommonsLang: 3cc9b63d52fda7670bc37698865a208808db962a
+  SwiftCommonsLogging: fb6ee406bebc058cda2a909028282550c9ca4be4
+  SwiftCommonsObjC: 1b4532e97810b8d9cb2bc1ecf0093ac2440adc0e
+  SwiftReorder: ead334aa0b3dead2b2e284fb1c705359d9d63909
+  SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
+  YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
+
+PODFILE CHECKSUM: 5bc21aef6b8d0a832cf6094b627c9e43e3486e6f
+
+COCOAPODS: 1.4.0.beta.2

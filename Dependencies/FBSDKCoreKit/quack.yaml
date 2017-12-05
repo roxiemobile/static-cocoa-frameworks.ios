@@ -1,0 +1,31 @@
+name: FBSDKCoreKit
+description: Official Facebook SDK for iOS to access Facebook Platform's core features.
+
+modules:
+  4.29.0:
+    repository: https://github.com/facebook/facebook-ios-sdk.git
+    tag: sdk-version-4.29.0
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]
