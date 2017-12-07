@@ -10,6 +10,8 @@ target 'DummyFramework' do
 
   pod 'Alamofire',                '~> 4.6'
 # pod 'Bolts',                    '~> 1.8'
+  pod 'ContentProviders',         '~> 1.1'  # ContentProvidersSQLite
+# pod 'ContentProvidersSQLite',   '~> 1.1'
   pod 'CryptoSwift',              '~> 0.8'
 # pod 'Differentiator',           '~> 3.0'
   pod 'Dispatch',                 '~> 2.0'

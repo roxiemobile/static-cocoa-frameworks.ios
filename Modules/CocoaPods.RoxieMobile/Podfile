@@ -10,6 +10,8 @@ target 'DummyFramework' do
 
   pod 'Alamofire',                path: '../../Dependencies/Alamofire/Pod-4.6.0.podspec'
   pod 'Bolts',                    path: '../../Dependencies/Bolts/Pod-1.8.4.podspec'
+  pod 'ContentProviders',         path: '../../Dependencies/ContentProviders/Pod-1.1.0.podspec'
+  pod 'ContentProvidersSQLite',   path: '../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec'
   pod 'CryptoSwift',              path: '../../Dependencies/CryptoSwift/Pod-0.8.0.podspec'
   pod 'Differentiator',           path: '../../Dependencies/Differentiator/Pod-3.0.2.podspec'
   pod 'Dispatch',                 path: '../../Dependencies/Dispatch/Pod-2.0.4.podspec'

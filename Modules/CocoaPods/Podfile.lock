@@ -6,6 +6,15 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - ContentProviders (1.1.0):
+    - ContentProviders/SQLite (= 1.1.0)
+  - ContentProviders/SQLite (1.1.0):
+    - ContentProvidersSQLite (= 1.1.0)
+  - ContentProvidersSQLite (1.1.0):
+    - CryptoSwift (~> 0.8.0)
+    - SQLite.swift/SQLCipher (~> 0.11.4)
+    - SwiftCommons/Concurrent (~> 1.1.0)
+    - SwiftCommons/Extensions (~> 1.1.0)
   - CryptoSwift (0.8.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
@@ -126,6 +135,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
+  - ContentProviders (~> 1.1)
   - CryptoSwift (~> 0.8)
   - Dispatch (~> 2.0)
   - FBSDKCoreKit (~> 4.29)
@@ -152,6 +162,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  ContentProviders: e1e81e908569beab8bcc75d5dc8bd32f1aa8e88b
+  ContentProvidersSQLite: fe7b287bf8379f5190b57d00cc056369fdad1b13
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
@@ -193,6 +205,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: f9e400b36370716c5f34d5a6c29c277a16a7a8f2
+PODFILE CHECKSUM: 34601e75f29ee912a037d214769444d60b0f2355
 
 COCOAPODS: 1.4.0.beta.2

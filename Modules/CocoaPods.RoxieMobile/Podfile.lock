@@ -6,6 +6,15 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - ContentProviders (1.1.0):
+    - ContentProviders/SQLite (= 1.1.0)
+  - ContentProviders/SQLite (1.1.0):
+    - ContentProvidersSQLite (= 1.1.0)
+  - ContentProvidersSQLite (1.1.0):
+    - CryptoSwift (~> 0.8.0)
+    - SQLite.swift/SQLCipher (~> 0.11.4)
+    - SwiftCommons/Concurrent (~> 1.1.0)
+    - SwiftCommons/Extensions (~> 1.1.0)
   - CryptoSwift (0.8.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
@@ -126,6 +135,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.6.0.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.8.4.podspec`)
+  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.1.0.podspec`)
+  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec`)
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
@@ -171,6 +182,10 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/Alamofire/Pod-4.6.0.podspec
   Bolts:
     :path: ../../Dependencies/Bolts/Pod-1.8.4.podspec
+  ContentProviders:
+    :path: ../../Dependencies/ContentProviders/Pod-1.1.0.podspec
+  ContentProvidersSQLite:
+    :path: ../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec
   CryptoSwift:
     :path: ../../Dependencies/CryptoSwift/Pod-0.8.0.podspec
   Differentiator:
@@ -253,6 +268,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: fd83be43a3c55be25b534db690ca6e7e25e90654
   Bolts: 7a8fa7789b43be2b32781a3a48c4e7d0f3fc5430
+  ContentProviders: f2bd8f87405fc45baff7ea35a5ad583e7ba50c7f
+  ContentProvidersSQLite: 6b023aebab1ef6d233f4ca2bd3086ee651fdc5fe
   CryptoSwift: 5879b8264a06a586dc6dd110e71116e47b091f12
   Differentiator: e89e30d0696fa126c9b9a00b513d17cd8b047183
   Dispatch: 864608cf20f0b1e0ae234344b586cc39bd48a769
@@ -293,6 +310,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: aa5ed5c9958309d6ec8b7355f30b377d4f48e5f4
+PODFILE CHECKSUM: 7b53259bec4c6e18b7a9ec0d1f40b693ee453957
 
 COCOAPODS: 1.4.0.beta.2
