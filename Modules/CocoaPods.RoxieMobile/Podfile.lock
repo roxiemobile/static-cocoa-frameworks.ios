@@ -15,6 +15,38 @@ PODS:
   - INTULocationManager (4.2.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
+  - NetworkingApi (1.1.1):
+    - NetworkingApi/Converters (= 1.1.1)
+    - NetworkingApi/Helpers (= 1.1.1)
+    - NetworkingApi/Http (= 1.1.1)
+    - NetworkingApi/ObjC (= 1.1.1)
+    - NetworkingApi/Rest (= 1.1.1)
+  - NetworkingApi/Converters (1.1.1):
+    - NetworkingApiConverters (= 1.1.1)
+  - NetworkingApi/Helpers (1.1.1):
+    - NetworkingApiHelpers (= 1.1.1)
+  - NetworkingApi/Http (1.1.1):
+    - NetworkingApiHttp (= 1.1.1)
+  - NetworkingApi/ObjC (1.1.1):
+    - NetworkingApiObjC (= 1.1.1)
+  - NetworkingApi/Rest (1.1.1):
+    - NetworkingApiRest (= 1.1.1)
+  - NetworkingApiConverters (1.1.1):
+    - NetworkingApiRest (= 1.1.1)
+    - SwiftCommons/Data (~> 1.1.0)
+  - NetworkingApiHelpers (1.1.1):
+    - Alamofire (~> 4.6.0)
+    - NetworkingApiHttp (= 1.1.1)
+  - NetworkingApiHttp (1.1.1):
+    - SwiftCommons/Diagnostics (~> 1.1.0)
+  - NetworkingApiObjC (1.1.1):
+    - Alamofire (~> 4.6.0)
+  - NetworkingApiRest (1.1.1):
+    - Alamofire (~> 4.6.0)
+    - NetworkingApiHelpers (= 1.1.1)
+    - NetworkingApiObjC (= 1.1.1)
+    - SwiftCommons/Data (~> 1.1.0)
+    - SwiftyJSON (~> 4.0.0)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -36,6 +68,31 @@ PODS:
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.4):
     - SQLCipher (>= 3.4.0)
+  - SwiftCommons (1.1.0):
+    - SwiftCommons/Abstractions (= 1.1.0)
+    - SwiftCommons/Concurrent (= 1.1.0)
+    - SwiftCommons/Data (= 1.1.0)
+    - SwiftCommons/Diagnostics (= 1.1.0)
+    - SwiftCommons/Extensions (= 1.1.0)
+    - SwiftCommons/Lang (= 1.1.0)
+    - SwiftCommons/Logging (= 1.1.0)
+    - SwiftCommons/ObjC (= 1.1.0)
+  - SwiftCommons/Abstractions (1.1.0):
+    - SwiftCommonsAbstractions (= 1.1.0)
+  - SwiftCommons/Concurrent (1.1.0):
+    - SwiftCommonsConcurrent (= 1.1.0)
+  - SwiftCommons/Data (1.1.0):
+    - SwiftCommonsData (= 1.1.0)
+  - SwiftCommons/Diagnostics (1.1.0):
+    - SwiftCommonsDiagnostics (= 1.1.0)
+  - SwiftCommons/Extensions (1.1.0):
+    - SwiftCommonsExtensions (= 1.1.0)
+  - SwiftCommons/Lang (1.1.0):
+    - SwiftCommonsLang (= 1.1.0)
+  - SwiftCommons/Logging (1.1.0):
+    - SwiftCommonsLogging (= 1.1.0)
+  - SwiftCommons/ObjC (1.1.0):
+    - SwiftCommonsObjC (= 1.1.0)
   - SwiftCommonsAbstractions (1.1.0)
   - SwiftCommonsConcurrent (1.1.0):
     - Dispatch (~> 2.0.4)
@@ -71,6 +128,12 @@ DEPENDENCIES:
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.2.0.podspec`)
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
+  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.1.1.podspec`)
+  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.1.1.podspec`)
+  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.1.1.podspec`)
+  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.1.1.podspec`)
+  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.1.1.podspec`)
+  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.1.1.podspec`)
   - PureLayout (from `../../Dependencies/PureLayout/Pod-3.0.2.podspec`)
   - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
@@ -82,14 +145,15 @@ DEPENDENCIES:
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
-  - SwiftCommonsAbstractions (from `../..//Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec`)
-  - SwiftCommonsConcurrent (from `../..//Dependencies/SwiftCommonsConcurrent/Pod-1.1.0.podspec`)
-  - SwiftCommonsData (from `../..//Dependencies/SwiftCommonsData/Pod-1.1.0.podspec`)
-  - SwiftCommonsDiagnostics (from `../..//Dependencies/SwiftCommonsDiagnostics/Pod-1.1.0.podspec`)
-  - SwiftCommonsExtensions (from `../..//Dependencies/SwiftCommonsExtensions/Pod-1.1.0.podspec`)
-  - SwiftCommonsLang (from `../..//Dependencies/SwiftCommonsLang/Pod-1.1.0.podspec`)
-  - SwiftCommonsLogging (from `../..//Dependencies/SwiftCommonsLogging/Pod-1.1.0.podspec`)
-  - SwiftCommonsObjC (from `../..//Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec`)
+  - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.1.0.podspec`)
+  - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec`)
+  - SwiftCommonsConcurrent (from `../../Dependencies/SwiftCommonsConcurrent/Pod-1.1.0.podspec`)
+  - SwiftCommonsData (from `../../Dependencies/SwiftCommonsData/Pod-1.1.0.podspec`)
+  - SwiftCommonsDiagnostics (from `../../Dependencies/SwiftCommonsDiagnostics/Pod-1.1.0.podspec`)
+  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.1.0.podspec`)
+  - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.1.0.podspec`)
+  - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.1.0.podspec`)
+  - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec`)
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-3.2.0.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
   - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec`)
@@ -115,6 +179,18 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/KeychainAccess/Pod-3.1.0.podspec
   MBProgressHUD:
     :path: ../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec
+  NetworkingApi:
+    :path: ../../Dependencies/NetworkingApi/Pod-1.1.1.podspec
+  NetworkingApiConverters:
+    :path: ../../Dependencies/NetworkingApiConverters/Pod-1.1.1.podspec
+  NetworkingApiHelpers:
+    :path: ../../Dependencies/NetworkingApiHelpers/Pod-1.1.1.podspec
+  NetworkingApiHttp:
+    :path: ../../Dependencies/NetworkingApiHttp/Pod-1.1.1.podspec
+  NetworkingApiObjC:
+    :path: ../../Dependencies/NetworkingApiObjC/Pod-1.1.1.podspec
+  NetworkingApiRest:
+    :path: ../../Dependencies/NetworkingApiRest/Pod-1.1.1.podspec
   PureLayout:
     :path: ../../Dependencies/PureLayout/Pod-3.0.2.podspec
   R.swift:
@@ -137,22 +213,24 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/SQLCipher/Pod-3.4.1.podspec
   SQLite.swift:
     :path: ../../Dependencies/SQLite.swift/Pod-0.11.4.podspec
+  SwiftCommons:
+    :path: ../../Dependencies/SwiftCommons/Pod-1.1.0.podspec
   SwiftCommonsAbstractions:
-    :path: ../..//Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec
   SwiftCommonsConcurrent:
-    :path: ../..//Dependencies/SwiftCommonsConcurrent/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsConcurrent/Pod-1.1.0.podspec
   SwiftCommonsData:
-    :path: ../..//Dependencies/SwiftCommonsData/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsData/Pod-1.1.0.podspec
   SwiftCommonsDiagnostics:
-    :path: ../..//Dependencies/SwiftCommonsDiagnostics/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsDiagnostics/Pod-1.1.0.podspec
   SwiftCommonsExtensions:
-    :path: ../..//Dependencies/SwiftCommonsExtensions/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsExtensions/Pod-1.1.0.podspec
   SwiftCommonsLang:
-    :path: ../..//Dependencies/SwiftCommonsLang/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsLang/Pod-1.1.0.podspec
   SwiftCommonsLogging:
-    :path: ../..//Dependencies/SwiftCommonsLogging/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsLogging/Pod-1.1.0.podspec
   SwiftCommonsObjC:
-    :path: ../..//Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec
+    :path: ../../Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec
   SwiftReorder:
     :path: ../../Dependencies/SwiftReorder/Pod-3.2.0.podspec
   SwiftyJSON:
@@ -171,6 +249,12 @@ SPEC CHECKSUMS:
   INTULocationManager: 4169f86b98643a9272543a6ed57532d9da876b36
   KeychainAccess: ae378eb8c49e2b0e5e2468a52cf86041997dc042
   MBProgressHUD: a4524cf67ebb77a94e94a2b404e8135f576695f5
+  NetworkingApi: adb67a8773d090e9691310b01744f8fab537bfc2
+  NetworkingApiConverters: 66069e7bffc8364754073e7c26fca84dcbcd41ef
+  NetworkingApiHelpers: 2381b7f3a344a60d336fb1c27fc5e9ec32623bcb
+  NetworkingApiHttp: cde49885a22774dec9725784931d3184a341f441
+  NetworkingApiObjC: 2061b2ebc3343d8b1210640cbf86c21147a3696c
+  NetworkingApiRest: 38df7353c907b4fc15394afabe948e06f90a5a1a
   PureLayout: 7420541f44893ac27770cc21df6659e74197012c
   R.swift: 2f41d8672e43cd6cd87259dc9fa04adf5a653cba
   R.swift.Library: 34fa18a0fce72ea0fb9b9a94beb2ad194d0336cb
@@ -182,18 +266,19 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: e2c64fa95395c165742b76c18fed19e136872a2c
   SQLCipher: 7daf77daa720f11d25ee97ab8d82f283ea8c983e
   SQLite.swift: f44e990b6628808219851c0017cabbdf2988afa3
-  SwiftCommonsAbstractions: 1e33711c5929da1caff6fead4a853e0cbc13edff
-  SwiftCommonsConcurrent: 867fdd42a07300fc9806753b3a5e2fcc70911324
-  SwiftCommonsData: 23060ac76f04082afc478a2e6be8a12f871b243e
-  SwiftCommonsDiagnostics: 86da8bfe22bdd24ff4721af3ea32cc61f620437e
-  SwiftCommonsExtensions: f7baee372d4be8f93843835326b06a197983773a
-  SwiftCommonsLang: 3cc9b63d52fda7670bc37698865a208808db962a
-  SwiftCommonsLogging: fb6ee406bebc058cda2a909028282550c9ca4be4
-  SwiftCommonsObjC: 1b4532e97810b8d9cb2bc1ecf0093ac2440adc0e
+  SwiftCommons: 5da708ea0ecb3adb0980d47bf235178cd215ce32
+  SwiftCommonsAbstractions: 2978a49516634b9074b0f94d50adc348b3a349db
+  SwiftCommonsConcurrent: 89cb48e0a20023fd4ea332961a511e68765bf813
+  SwiftCommonsData: 4e59b547dc0fe0b5b92ad4dce728fa44c7246bea
+  SwiftCommonsDiagnostics: 7406ab3a71ec724c03187a1c195c7351587d63ff
+  SwiftCommonsExtensions: 69995c8b1e7f22b4a35d98a76088026a343efdcb
+  SwiftCommonsLang: 816de8411f606910f17a2f0b25916c3a1f38fe1b
+  SwiftCommonsLogging: 851948a65afec029e2767bb8d125fa275f9d7c0f
+  SwiftCommonsObjC: f424ad408e38f8939c8e348dd09e3095119275e1
   SwiftReorder: ead334aa0b3dead2b2e284fb1c705359d9d63909
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: 5bc21aef6b8d0a832cf6094b627c9e43e3486e6f
+PODFILE CHECKSUM: a981dbae7bb5c237351bfb33e938b732fa3c3948
 
 COCOAPODS: 1.4.0.beta.2

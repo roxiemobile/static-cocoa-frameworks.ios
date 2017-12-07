@@ -95,9 +95,6 @@ Pod::Spec.new do |s|
   s.module_name = s.name
   s.name = "#{s.name}-SCF"
 
-  s.platform = :ios
-  s.ios.deployment_target = '8.0'
-
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/SwiftCommons-1.1.0-SCF.zip',
     sha256: '7155176b54aacf95d3515b01d17a8b03990158324bff6e0d59a0a06f35c37670'

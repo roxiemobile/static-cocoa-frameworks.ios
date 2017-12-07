@@ -16,6 +16,38 @@ PODS:
   - INTULocationManager (4.2.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
+  - NetworkingApi (1.1.1):
+    - NetworkingApi/Converters (= 1.1.1)
+    - NetworkingApi/Helpers (= 1.1.1)
+    - NetworkingApi/Http (= 1.1.1)
+    - NetworkingApi/ObjC (= 1.1.1)
+    - NetworkingApi/Rest (= 1.1.1)
+  - NetworkingApi/Converters (1.1.1):
+    - NetworkingApiConverters (= 1.1.1)
+  - NetworkingApi/Helpers (1.1.1):
+    - NetworkingApiHelpers (= 1.1.1)
+  - NetworkingApi/Http (1.1.1):
+    - NetworkingApiHttp (= 1.1.1)
+  - NetworkingApi/ObjC (1.1.1):
+    - NetworkingApiObjC (= 1.1.1)
+  - NetworkingApi/Rest (1.1.1):
+    - NetworkingApiRest (= 1.1.1)
+  - NetworkingApiConverters (1.1.1):
+    - NetworkingApiRest (= 1.1.1)
+    - SwiftCommons/Data (~> 1.1.0)
+  - NetworkingApiHelpers (1.1.1):
+    - Alamofire (~> 4.6.0)
+    - NetworkingApiHttp (= 1.1.1)
+  - NetworkingApiHttp (1.1.1):
+    - SwiftCommons/Diagnostics (~> 1.1.0)
+  - NetworkingApiObjC (1.1.1):
+    - Alamofire (~> 4.6.0)
+  - NetworkingApiRest (1.1.1):
+    - Alamofire (~> 4.6.0)
+    - NetworkingApiHelpers (= 1.1.1)
+    - NetworkingApiObjC (= 1.1.1)
+    - SwiftCommons/Data (~> 1.1.0)
+    - SwiftyJSON (~> 4.0.0)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -87,15 +119,16 @@ PODS:
   - YandexMobileMetrica/Static (2.9.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.5)
+  - Alamofire (~> 4.6)
   - CryptoSwift (~> 0.8)
   - Dispatch (~> 2.0)
-  - FBSDKCoreKit (~> 4.28)
+  - FBSDKCoreKit (~> 4.29)
   - GoogleAnalytics (~> 3.17)
   - GzipSwift (~> 4.0)
   - INTULocationManager (~> 4.2)
   - KeychainAccess (~> 3.1)
   - MBProgressHUD (~> 1.1)
+  - NetworkingApi (~> 1.1)
   - PureLayout (~> 3.0)
   - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -121,6 +154,12 @@ SPEC CHECKSUMS:
   INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  NetworkingApi: 760c1e551778e9d8485e61db2d6ecf9eb109b9ed
+  NetworkingApiConverters: 5e0eb7617b5b5857f18704640d2f21a0a9e536a0
+  NetworkingApiHelpers: a8df2a312d1e9dcf5cdd376ecf792ef2c69d4f51
+  NetworkingApiHttp: 38a8beb55eec278bb2bf5659956660ebcc77e51c
+  NetworkingApiObjC: d6e164d6b864f05b76795d4cad64a8847e8ca10d
+  NetworkingApiRest: 32d3097cf8d17a39aeec961998db94a55679d22e
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
@@ -145,6 +184,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: fa83c02f8eaa9e877c22d7b2f220a0d568219660
+PODFILE CHECKSUM: 0eba6181e352c2a7fe240845b06aa777077c8d7f
 
 COCOAPODS: 1.4.0.beta.2

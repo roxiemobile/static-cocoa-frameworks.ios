@@ -1,0 +1,31 @@
+name: NetworkingApiConverters
+description: A collection of useful converters for the asynchronous REST API client.
+
+modules:
+  1.1.1:
+    repository: https://github.com/roxiemobile/networking-api.ios.git
+    tag: 1.1.1
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

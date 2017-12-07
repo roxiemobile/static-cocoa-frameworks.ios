@@ -1,0 +1,31 @@
+name: SwiftCommons
+description: A collection of useful utility classes common to different iOS projects.
+
+modules:
+  1.1.0:
+    repository: https://github.com/roxiemobile/swift-commons.ios.git
+    tag: 1.1.0
+
+profiles:
+  init:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  fetch:
+    tasks: [
+      'quack:quack.yaml:clean',
+      'cmd:git init --quiet',
+      'modules',
+      'quack:quack.yaml:rm',
+    ]
+  rm:
+    tasks: [
+      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
+    ]
+  clean:
+    tasks: [
+      '-modules',
+      'quack:quack.yaml:rm',
+    ]

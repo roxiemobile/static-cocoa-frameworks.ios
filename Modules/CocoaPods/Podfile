@@ -8,17 +8,23 @@ workspace 'DummyProject/Dummy.xcworkspace'
 target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
 
-  pod 'Alamofire',                '~> 4.5'
+  pod 'Alamofire',                '~> 4.6'
 # pod 'Bolts',                    '~> 1.8'
   pod 'CryptoSwift',              '~> 0.8'
 # pod 'Differentiator',           '~> 3.0'
   pod 'Dispatch',                 '~> 2.0'
-  pod 'FBSDKCoreKit',             '~> 4.28' # Bolts
+  pod 'FBSDKCoreKit',             '~> 4.29' # Bolts
   pod 'GoogleAnalytics',          '~> 3.17'
   pod 'GzipSwift',                '~> 4.0'
   pod 'INTULocationManager',      '~> 4.2'
   pod 'KeychainAccess',           '~> 3.1'
   pod 'MBProgressHUD',            '~> 1.1'
+  pod 'NetworkingApi',            '~> 1.1'  # NetworkingApiConverters, NetworkingApiHelpers, NetworkingApiHttp, NetworkingApiObjC, NetworkingApiRest
+# pod 'NetworkingApiConverters',  '~> 1.1'
+# pod 'NetworkingApiHelpers',     '~> 1.1'
+# pod 'NetworkingApiHttp',        '~> 1.1'
+# pod 'NetworkingApiObjC',        '~> 1.1'
+# pod 'NetworkingApiRest',        '~> 1.1'
   pod 'PureLayout',               '~> 3.0'
   pod 'R.swift',                  '~> 4.0'  # R.swift.Library
 # pod 'R.swift.Library',          '~> 4.0'

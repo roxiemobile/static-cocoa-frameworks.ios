@@ -39,11 +39,7 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  s.platform = :ios
-  s.ios.deployment_target = '8.0'
-
   s.license = {}
-  s.static_framework = true
 
   cn = s.consumer(:ios)
   s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }

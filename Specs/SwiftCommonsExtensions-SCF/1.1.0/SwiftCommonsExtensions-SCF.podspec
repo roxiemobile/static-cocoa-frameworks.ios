@@ -44,9 +44,6 @@ Pod::Spec.new do |s|
   s.module_name = s.name
   s.name = "#{s.name}-SCF"
 
-  s.platform = :ios
-  s.ios.deployment_target = '8.0'
-
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/SwiftCommonsExtensions-1.1.0-SCF.zip',
