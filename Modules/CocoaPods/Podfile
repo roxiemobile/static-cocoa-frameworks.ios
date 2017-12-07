@@ -9,6 +9,7 @@ target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
 
   pod 'Alamofire',                '~> 4.6'
+  pod 'Armchair',                 '~> 0.3'
 # pod 'Bolts',                    '~> 1.8'
   pod 'ContentProviders',         '~> 1.1'  # ContentProvidersSQLite
 # pod 'ContentProvidersSQLite',   '~> 1.1'

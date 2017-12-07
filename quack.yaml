@@ -5,6 +5,7 @@ profiles:
   init:
     tasks: [
       'quack:Dependencies/Alamofire/quack.yaml:init',
+      'quack:Dependencies/Armchair/quack.yaml:init',
       'quack:Dependencies/Bolts/quack.yaml:init',
       'quack:Dependencies/ContentProviders/quack.yaml:init',
       'quack:Dependencies/ContentProvidersSQLite/quack.yaml:init',
@@ -43,6 +44,7 @@ profiles:
   clean:
     tasks: [
       'quack:Dependencies/Alamofire/quack.yaml:clean',
+      'quack:Dependencies/Armchair/quack.yaml:clean',
       'quack:Dependencies/Bolts/quack.yaml:clean',
       'quack:Dependencies/ContentProviders/quack.yaml:clean',
       'quack:Dependencies/ContentProvidersSQLite/quack.yaml:clean',

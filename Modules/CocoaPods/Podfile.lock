@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - Armchair (0.3.5)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -135,6 +136,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
+  - Armchair (~> 0.3)
   - ContentProviders (~> 1.1)
   - CryptoSwift (~> 0.8)
   - Dispatch (~> 2.0)
@@ -161,6 +163,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Armchair: 0ab9237bc373e26245c7651acf193d85fb9c033a
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   ContentProviders: e1e81e908569beab8bcc75d5dc8bd32f1aa8e88b
   ContentProvidersSQLite: fe7b287bf8379f5190b57d00cc056369fdad1b13
@@ -205,6 +208,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 8f150e2d04cf34e3af9506a75310a6229bcf05c5
 
-PODFILE CHECKSUM: 34601e75f29ee912a037d214769444d60b0f2355
+PODFILE CHECKSUM: 804e522efd97236828154bcfef40e5087f6bddda
 
 COCOAPODS: 1.4.0.beta.2
