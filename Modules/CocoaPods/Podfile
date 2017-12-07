@@ -19,6 +19,8 @@ target 'DummyFramework' do
   pod 'INTULocationManager',      '~> 4.2'
   pod 'KeychainAccess',           '~> 3.1'
   pod 'MBProgressHUD',            '~> 1.1'
+  pod 'ModernDesign',             '~> 1.1'  # ModernDesignExtensions
+# pod 'ModernDesignExtensions',   '~> 1.1'
   pod 'NetworkingApi',            '~> 1.1'  # NetworkingApiConverters, NetworkingApiHelpers, NetworkingApiHttp, NetworkingApiObjC, NetworkingApiRest
 # pod 'NetworkingApiConverters',  '~> 1.1'
 # pod 'NetworkingApiHelpers',     '~> 1.1'

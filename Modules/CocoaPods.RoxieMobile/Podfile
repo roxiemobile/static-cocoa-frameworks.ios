@@ -18,6 +18,8 @@ target 'DummyFramework' do
   pod 'INTULocationManager',      path: '../../Dependencies/INTULocationManager/Pod-4.2.0.podspec'
   pod 'KeychainAccess',           path: '../../Dependencies/KeychainAccess/Pod-3.1.0.podspec'
   pod 'MBProgressHUD',            path: '../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec'
+  pod 'ModernDesign',             path: '../../Dependencies/ModernDesign/Pod-1.1.0.podspec'
+  pod 'ModernDesignExtensions',   path: '../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec'
   pod 'NetworkingApi',            path: '../../Dependencies/NetworkingApi/Pod-1.1.1.podspec'
   pod 'NetworkingApiConverters',  path: '../../Dependencies/NetworkingApiConverters/Pod-1.1.1.podspec'
   pod 'NetworkingApiHelpers',     path: '../../Dependencies/NetworkingApiHelpers/Pod-1.1.1.podspec'
