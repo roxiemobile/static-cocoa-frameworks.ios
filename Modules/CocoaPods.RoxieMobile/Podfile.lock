@@ -31,36 +31,36 @@ PODS:
     - ModernDesignExtensions (= 1.1.0)
   - ModernDesignExtensions (1.1.0):
     - SwiftCommons/Lang (~> 1.1.0)
-  - NetworkingApi (1.1.1):
-    - NetworkingApi/Converters (= 1.1.1)
-    - NetworkingApi/Helpers (= 1.1.1)
-    - NetworkingApi/Http (= 1.1.1)
-    - NetworkingApi/ObjC (= 1.1.1)
-    - NetworkingApi/Rest (= 1.1.1)
-  - NetworkingApi/Converters (1.1.1):
-    - NetworkingApiConverters (= 1.1.1)
-  - NetworkingApi/Helpers (1.1.1):
-    - NetworkingApiHelpers (= 1.1.1)
-  - NetworkingApi/Http (1.1.1):
-    - NetworkingApiHttp (= 1.1.1)
-  - NetworkingApi/ObjC (1.1.1):
-    - NetworkingApiObjC (= 1.1.1)
-  - NetworkingApi/Rest (1.1.1):
-    - NetworkingApiRest (= 1.1.1)
-  - NetworkingApiConverters (1.1.1):
-    - NetworkingApiRest (= 1.1.1)
+  - NetworkingApi (1.1.2):
+    - NetworkingApi/Converters (= 1.1.2)
+    - NetworkingApi/Helpers (= 1.1.2)
+    - NetworkingApi/Http (= 1.1.2)
+    - NetworkingApi/ObjC (= 1.1.2)
+    - NetworkingApi/Rest (= 1.1.2)
+  - NetworkingApi/Converters (1.1.2):
+    - NetworkingApiConverters (= 1.1.2)
+  - NetworkingApi/Helpers (1.1.2):
+    - NetworkingApiHelpers (= 1.1.2)
+  - NetworkingApi/Http (1.1.2):
+    - NetworkingApiHttp (= 1.1.2)
+  - NetworkingApi/ObjC (1.1.2):
+    - NetworkingApiObjC (= 1.1.2)
+  - NetworkingApi/Rest (1.1.2):
+    - NetworkingApiRest (= 1.1.2)
+  - NetworkingApiConverters (1.1.2):
+    - NetworkingApiRest (= 1.1.2)
     - SwiftCommons/Data (~> 1.1.0)
-  - NetworkingApiHelpers (1.1.1):
+  - NetworkingApiHelpers (1.1.2):
     - Alamofire (~> 4.6.0)
-    - NetworkingApiHttp (= 1.1.1)
-  - NetworkingApiHttp (1.1.1):
+    - NetworkingApiHttp (= 1.1.2)
+  - NetworkingApiHttp (1.1.2):
     - SwiftCommons/Diagnostics (~> 1.1.0)
-  - NetworkingApiObjC (1.1.1):
+  - NetworkingApiObjC (1.1.2):
     - Alamofire (~> 4.6.0)
-  - NetworkingApiRest (1.1.1):
+  - NetworkingApiRest (1.1.2):
     - Alamofire (~> 4.6.0)
-    - NetworkingApiHelpers (= 1.1.1)
-    - NetworkingApiObjC (= 1.1.1)
+    - NetworkingApiHelpers (= 1.1.2)
+    - NetworkingApiObjC (= 1.1.2)
     - SwiftCommons/Data (~> 1.1.0)
     - SwiftyJSON (~> 4.0.0)
   - PureLayout (3.0.2)
@@ -149,12 +149,12 @@ DEPENDENCIES:
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
   - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.1.0.podspec`)
   - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec`)
-  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.1.1.podspec`)
-  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.1.1.podspec`)
-  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.1.1.podspec`)
-  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.1.1.podspec`)
-  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.1.1.podspec`)
-  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.1.1.podspec`)
+  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.1.2.podspec`)
+  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.1.2.podspec`)
+  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.1.2.podspec`)
+  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.1.2.podspec`)
+  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.1.2.podspec`)
+  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.1.2.podspec`)
   - PureLayout (from `../../Dependencies/PureLayout/Pod-3.0.2.podspec`)
   - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
@@ -211,17 +211,17 @@ EXTERNAL SOURCES:
   ModernDesignExtensions:
     :path: ../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec
   NetworkingApi:
-    :path: ../../Dependencies/NetworkingApi/Pod-1.1.1.podspec
+    :path: ../../Dependencies/NetworkingApi/Pod-1.1.2.podspec
   NetworkingApiConverters:
-    :path: ../../Dependencies/NetworkingApiConverters/Pod-1.1.1.podspec
+    :path: ../../Dependencies/NetworkingApiConverters/Pod-1.1.2.podspec
   NetworkingApiHelpers:
-    :path: ../../Dependencies/NetworkingApiHelpers/Pod-1.1.1.podspec
+    :path: ../../Dependencies/NetworkingApiHelpers/Pod-1.1.2.podspec
   NetworkingApiHttp:
-    :path: ../../Dependencies/NetworkingApiHttp/Pod-1.1.1.podspec
+    :path: ../../Dependencies/NetworkingApiHttp/Pod-1.1.2.podspec
   NetworkingApiObjC:
-    :path: ../../Dependencies/NetworkingApiObjC/Pod-1.1.1.podspec
+    :path: ../../Dependencies/NetworkingApiObjC/Pod-1.1.2.podspec
   NetworkingApiRest:
-    :path: ../../Dependencies/NetworkingApiRest/Pod-1.1.1.podspec
+    :path: ../../Dependencies/NetworkingApiRest/Pod-1.1.2.podspec
   PureLayout:
     :path: ../../Dependencies/PureLayout/Pod-3.0.2.podspec
   R.swift:
@@ -285,12 +285,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: a4524cf67ebb77a94e94a2b404e8135f576695f5
   ModernDesign: a57e286b6004618195329024c099cffafff4fc9c
   ModernDesignExtensions: 0da6998b8c4a83a16ce054f5ab1b32588f2297d6
-  NetworkingApi: adb67a8773d090e9691310b01744f8fab537bfc2
-  NetworkingApiConverters: 66069e7bffc8364754073e7c26fca84dcbcd41ef
-  NetworkingApiHelpers: 2381b7f3a344a60d336fb1c27fc5e9ec32623bcb
-  NetworkingApiHttp: cde49885a22774dec9725784931d3184a341f441
-  NetworkingApiObjC: 2061b2ebc3343d8b1210640cbf86c21147a3696c
-  NetworkingApiRest: 38df7353c907b4fc15394afabe948e06f90a5a1a
+  NetworkingApi: e55b1b24d0af2653e70dbb332b216269bb4b399f
+  NetworkingApiConverters: bfba5cadd9d12cfdcb4d61669f2a3bec2027b5e6
+  NetworkingApiHelpers: 6eb2f8ca008b53219cfc561be76f12c74b56ef87
+  NetworkingApiHttp: 983445ef38bb231bb44c73966166782d0fa5518d
+  NetworkingApiObjC: 5ad6cda864a34d023e86822e76ac7c0104fa7734
+  NetworkingApiRest: c4842b0892e29f3ca0695355029accfe811cd8a4
   PureLayout: 7420541f44893ac27770cc21df6659e74197012c
   R.swift: 2f41d8672e43cd6cd87259dc9fa04adf5a653cba
   R.swift.Library: 34fa18a0fce72ea0fb9b9a94beb2ad194d0336cb
@@ -315,6 +315,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: 13230b04aff4dfa19766afb681891548e9af0971
+PODFILE CHECKSUM: 725b31713ca4fe203e5d42c1471401b80ca4f4f0
 
 COCOAPODS: 1.4.0.beta.2

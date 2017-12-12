@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiConverters'
-  s.summary               = 'A collection of useful converters for the asynchronous REST API client.'
-  s.version               = '1.1.1'
+  s.name                  = 'NetworkingApiHttp'
+  s.summary               = 'A collection of useful type extensions and utility classes used for communication over HTTP protocol.'
+  s.version               = '1.1.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '8.0'
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Converters/'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Http/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,8 +34,7 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'NetworkingApiRest', s.version.to_s
-  s.dependency 'SwiftCommons/Data', '~> 1.1.0'
+  s.dependency 'SwiftCommons/Diagnostics', '~> 1.1.0'
 
 # MARK: - iOS Static Framework
 

@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiRest'
-  s.summary               = 'An asynchronous REST API client that makes an access to a RESTful Web Services easier.'
-  s.version               = '1.1.1'
+  s.name                  = 'NetworkingApiConverters'
+  s.summary               = 'A collection of useful converters for the asynchronous REST API client.'
+  s.version               = '1.1.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '8.0'
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Rest/'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Converters/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,11 +34,8 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.6.0'
-  s.dependency 'NetworkingApiHelpers', s.version.to_s
-  s.dependency 'NetworkingApiObjC', s.version.to_s
+  s.dependency 'NetworkingApiRest', s.version.to_s
   s.dependency 'SwiftCommons/Data', '~> 1.1.0'
-  s.dependency 'SwiftyJSON', '~> 4.0.0'
 
 # MARK: - iOS Static Framework
 

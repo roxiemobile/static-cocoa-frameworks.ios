@@ -32,36 +32,36 @@ PODS:
     - ModernDesignExtensions (= 1.1.0)
   - ModernDesignExtensions (1.1.0):
     - SwiftCommons/Lang (~> 1.1.0)
-  - NetworkingApi (1.1.1):
-    - NetworkingApi/Converters (= 1.1.1)
-    - NetworkingApi/Helpers (= 1.1.1)
-    - NetworkingApi/Http (= 1.1.1)
-    - NetworkingApi/ObjC (= 1.1.1)
-    - NetworkingApi/Rest (= 1.1.1)
-  - NetworkingApi/Converters (1.1.1):
-    - NetworkingApiConverters (= 1.1.1)
-  - NetworkingApi/Helpers (1.1.1):
-    - NetworkingApiHelpers (= 1.1.1)
-  - NetworkingApi/Http (1.1.1):
-    - NetworkingApiHttp (= 1.1.1)
-  - NetworkingApi/ObjC (1.1.1):
-    - NetworkingApiObjC (= 1.1.1)
-  - NetworkingApi/Rest (1.1.1):
-    - NetworkingApiRest (= 1.1.1)
-  - NetworkingApiConverters (1.1.1):
-    - NetworkingApiRest (= 1.1.1)
+  - NetworkingApi (1.1.2):
+    - NetworkingApi/Converters (= 1.1.2)
+    - NetworkingApi/Helpers (= 1.1.2)
+    - NetworkingApi/Http (= 1.1.2)
+    - NetworkingApi/ObjC (= 1.1.2)
+    - NetworkingApi/Rest (= 1.1.2)
+  - NetworkingApi/Converters (1.1.2):
+    - NetworkingApiConverters (= 1.1.2)
+  - NetworkingApi/Helpers (1.1.2):
+    - NetworkingApiHelpers (= 1.1.2)
+  - NetworkingApi/Http (1.1.2):
+    - NetworkingApiHttp (= 1.1.2)
+  - NetworkingApi/ObjC (1.1.2):
+    - NetworkingApiObjC (= 1.1.2)
+  - NetworkingApi/Rest (1.1.2):
+    - NetworkingApiRest (= 1.1.2)
+  - NetworkingApiConverters (1.1.2):
+    - NetworkingApiRest (= 1.1.2)
     - SwiftCommons/Data (~> 1.1.0)
-  - NetworkingApiHelpers (1.1.1):
+  - NetworkingApiHelpers (1.1.2):
     - Alamofire (~> 4.6.0)
-    - NetworkingApiHttp (= 1.1.1)
-  - NetworkingApiHttp (1.1.1):
+    - NetworkingApiHttp (= 1.1.2)
+  - NetworkingApiHttp (1.1.2):
     - SwiftCommons/Diagnostics (~> 1.1.0)
-  - NetworkingApiObjC (1.1.1):
+  - NetworkingApiObjC (1.1.2):
     - Alamofire (~> 4.6.0)
-  - NetworkingApiRest (1.1.1):
+  - NetworkingApiRest (1.1.2):
     - Alamofire (~> 4.6.0)
-    - NetworkingApiHelpers (= 1.1.1)
-    - NetworkingApiObjC (= 1.1.1)
+    - NetworkingApiHelpers (= 1.1.2)
+    - NetworkingApiObjC (= 1.1.2)
     - SwiftCommons/Data (~> 1.1.0)
     - SwiftyJSON (~> 4.0.0)
   - PureLayout (3.0.2)
@@ -178,12 +178,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   ModernDesign: b2137fa014615871f38227bdb44399ae3868ae92
   ModernDesignExtensions: 09d55fd1ed45a1381ecbd44e43f9efbe367d3dcb
-  NetworkingApi: 760c1e551778e9d8485e61db2d6ecf9eb109b9ed
-  NetworkingApiConverters: 5e0eb7617b5b5857f18704640d2f21a0a9e536a0
-  NetworkingApiHelpers: a8df2a312d1e9dcf5cdd376ecf792ef2c69d4f51
-  NetworkingApiHttp: 38a8beb55eec278bb2bf5659956660ebcc77e51c
-  NetworkingApiObjC: d6e164d6b864f05b76795d4cad64a8847e8ca10d
-  NetworkingApiRest: 32d3097cf8d17a39aeec961998db94a55679d22e
+  NetworkingApi: 8a29383a34751bd005505fef48446fe3530208fa
+  NetworkingApiConverters: d7219fdc3b83277f008afbec0aec1873181abfda
+  NetworkingApiHelpers: 6c264b1ac69d71c0f7e36d20e0a9782268da70f5
+  NetworkingApiHttp: 0f14e04064dc6a7220020b0b48482a844cf45293
+  NetworkingApiObjC: 193fca4067ba981c48adf8c07ad32020f968c95f
+  NetworkingApiRest: 0fcf239f39ac5591ea19cff04f5cc86b9ee6ee9c
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
