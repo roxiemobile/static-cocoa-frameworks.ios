@@ -37,11 +37,6 @@ Pod::Spec.new do |s|
   s.license = {}
   s.static_framework = true
 
-  s.source = {
-    git: 'https://github.com/roxiemobile-forks/Armchair.git',
-    tag: "#{s.version}-patch.1"
-  }
-
   cn = s.consumer(:ios)
   s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
   s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
