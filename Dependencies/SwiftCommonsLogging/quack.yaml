@@ -8,24 +8,12 @@ modules:
 
 profiles:
   init:
-    tasks: [
-      'quack:quack.yaml:clean',
-      'modules',
-      'quack:quack.yaml:rm',
-    ]
-  fetch:
-    tasks: [
-      'quack:quack.yaml:clean',
-      'cmd:git init --quiet',
-      'modules',
-      'quack:quack.yaml:rm',
-    ]
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
   rm:
-    tasks: [
-      'cmd:rm -rf .git/ .quack/ *FrameworkVersion.h',
-    ]
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
   clean:
-    tasks: [
-      '-modules',
-      'quack:quack.yaml:rm',
-    ]
+    tasks: ['-modules', 'quack:rm']
