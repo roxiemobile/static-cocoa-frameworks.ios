@@ -1,7 +1,6 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name         = "Siren"
-  s.version      = "3.1.7"
+  s.version      = "3.2.0"
   s.summary      = "Notify users that a new version of your iOS app is available, and prompt them with the App Store link."
 
   s.description  = <<-DESC
@@ -17,15 +16,6 @@ Notify users when a new version of your iOS app is available, and prompt them wi
   s.resources    = 'Sources/Siren.bundle'
   s.requires_arc = true
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '8.0'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
