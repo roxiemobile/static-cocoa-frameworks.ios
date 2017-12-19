@@ -135,7 +135,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.6.0.podspec`)
-  - Armchair (from `../../Dependencies/Armchair/Pod-0.3.5.podspec`)
+  - Armchair (from `../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.8.4.podspec`)
   - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.1.0.podspec`)
   - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec`)
@@ -183,7 +183,7 @@ EXTERNAL SOURCES:
   Alamofire:
     :path: ../../Dependencies/Alamofire/Pod-4.6.0.podspec
   Armchair:
-    :path: ../../Dependencies/Armchair/Pod-0.3.5.podspec
+    :path: ../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec
   Bolts:
     :path: ../../Dependencies/Bolts/Pod-1.8.4.podspec
   ContentProviders:
@@ -315,6 +315,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: 4b799754b4748916284213da8ffeeb31cb06aeb0
+PODFILE CHECKSUM: 3fe5d268335c16053b46beb7dec84379d03878b7
 
 COCOAPODS: 1.4.0.beta.2
