@@ -1,14 +1,13 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name                  = "INTULocationManager"
-  s.version               = "4.2.0"
+  s.version               = "4.3.0"
   s.homepage              = "https://github.com/intuit/LocationManager"
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
-  s.author                = { "Jason Hall" => "Jason_Hall2@intuit.com" }
-  s.source                = { :git => "https://github.com/intuit/LocationManager.git", :tag => "v4.2.0" }
+  s.author                = { "Lucien Dupont" => "lucien_dupont@intuit.com" }
+  s.source                = { :git => "https://github.com/intuit/LocationManager.git", :tag => "v4.3.0" }
   s.source_files          = 'LocationManager/INTULocationManager'
   s.platform              = :ios
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc          = true
   s.summary               = "Easily get the device's current location on iOS."
   s.description           = <<-DESC
@@ -25,15 +24,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
+
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/INTULocationManager-4.3.0-SCF.zip',
+    sha256: '99e076c6930d55c2dba7ede210ec1add2974aa199c9968175946f0e6439db551'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.pod_target_xcconfig = (cn.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'INTULocationManager.framework/*'
+    sc.source_files = 'INTULocationManager.framework/Headers/*.h'
+    sc.public_header_files = 'INTULocationManager.framework/Headers/*.h'
+    sc.vendored_frameworks = 'INTULocationManager.framework'
   end
 end
