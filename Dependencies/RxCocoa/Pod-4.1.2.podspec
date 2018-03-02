@@ -1,7 +1,6 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name             = "RxCocoa"
-  s.version          = "4.0.0"
+  s.version          = "4.1.2"
   s.summary          = "RxSwift Cocoa extensions"
   s.description      = <<-DESC
 * UI extensions
@@ -33,7 +32,8 @@ Pod::Spec.new do |s|
 # MARK: - iOS Static Framework
 
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
   s.license = {}
   s.static_framework = true
