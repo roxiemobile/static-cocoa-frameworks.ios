@@ -2,9 +2,9 @@ name: Bolts
 description: Bolts is a collection of low-level libraries designed to make developing mobile apps easier.
 
 modules:
-  1.8.4:
+  1.9.0:
     repository: https://github.com/BoltsFramework/Bolts-ObjC.git
-    tag: 1.8.4
+    tag: 1.9.0
     update_submodules: true
 
 profiles:

@@ -1,5 +1,5 @@
 NAME=Bolts
 SCHEME=$(NAME)
-VERSION=1.8.4
+VERSION=1.9.0
 
 include Makefile.in
