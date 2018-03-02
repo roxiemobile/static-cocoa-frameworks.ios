@@ -1,7 +1,6 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name             = "RxSwift"
-  s.version          = "4.0.0"
+  s.version          = "4.1.2"
   s.summary          = "RxSwift is a Swift implementation of Reactive Extensions"
   s.description      = <<-DESC
 This is a Swift port of [ReactiveX.io](https://github.com/ReactiveX)
@@ -38,13 +37,36 @@ gitDiff().grep("bug").less          // sequences of swift objects
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
+
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/RxSwift-4.1.2-SCF.zip',
+    sha256: 'a83aad2b7f52794b0a85b8fd2dae185c2504121a77e95ebac605ec0a921cbbdc'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.exclude_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'RxSwift.framework/*'
+    sc.source_files = 'RxSwift.framework/Headers/*.h'
+    sc.public_header_files = 'RxSwift.framework/Headers/*.h'
+    sc.vendored_frameworks = 'RxSwift.framework'
+  end
+
+# MARK: - Validation
+
+  # Technical Q&A QA1881 v2 - Embedding Content with Swift in Objective-C
+  # @link https://pewpewthespells.com/blog/swift_and_objc.html
+
+  s.user_target_xcconfig = {
+    'SWIFT_STDLIB_PATH' => '${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}',
+    'OTHER_LDFLAGS' => '-L${SWIFT_STDLIB_PATH}'
+  }
 end
