@@ -2,9 +2,9 @@ name: CryptoSwift
 description: Cryptography in Swift. SHA, MD5, CRC, PBKDF, Poly1305, HMAC, ChaCha20, Rabbit, Blowfish, AES.
 
 modules:
-  0.8.0:
+  0.8.3:
     repository: https://github.com/krzyzanowskim/CryptoSwift.git
-    tag: 0.8.0
+    tag: 0.8.3
 
 profiles:
   init:

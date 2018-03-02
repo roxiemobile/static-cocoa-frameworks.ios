@@ -1,6 +1,6 @@
 source 'https://github.com/roxiemobile/static-cocoa-frameworks.ios.git'
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 workspace 'DummyProject/Dummy.xcworkspace'
@@ -13,7 +13,7 @@ target 'DummyFramework' do
   pod 'Bolts',                    path: '../../Dependencies/Bolts/Pod-1.8.4.podspec'
   pod 'ContentProviders',         path: '../../Dependencies/ContentProviders/Pod-1.1.0.podspec'
   pod 'ContentProvidersSQLite',   path: '../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec'
-  pod 'CryptoSwift',              path: '../../Dependencies/CryptoSwift/Pod-0.8.0.podspec'
+  pod 'CryptoSwift',              path: '../../Dependencies/CryptoSwift/Pod-0.8.3.podspec'
   pod 'Differentiator',           path: '../../Dependencies/Differentiator/Pod-3.0.2.podspec'
   pod 'Dispatch',                 path: '../../Dependencies/Dispatch/Pod-2.0.4.podspec'
   pod 'FBSDKCoreKit',             path: '../../Dependencies/FBSDKCoreKit/Pod-4.29.0.podspec'
