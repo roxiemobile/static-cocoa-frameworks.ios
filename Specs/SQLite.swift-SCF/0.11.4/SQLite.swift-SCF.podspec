@@ -82,7 +82,8 @@ Pod::Spec.new do |s|
   s.name = "#{s.name}-SCF"
 
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/SQLite.swift+SQLCipher-0.11.4-SCF.zip',
@@ -96,6 +97,6 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'SQLite.framework'
 
     # Dependencies
-    sc.dependency 'SQLCipher-SCF', '~> 3.4.1'
+    sc.dependency 'SQLCipher-SCF', '~> 3.4.2'
   end
 end
