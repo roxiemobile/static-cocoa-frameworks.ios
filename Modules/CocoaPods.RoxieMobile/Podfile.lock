@@ -77,10 +77,10 @@ PODS:
   - SDWebImage/Core (4.3.2)
   - Siren (3.2.0)
   - SlideMenuControllerSwift (4.0.0)
-  - SQLCipher (3.4.1):
-    - SQLCipher/standard (= 3.4.1)
-  - SQLCipher/common (3.4.1)
-  - SQLCipher/standard (3.4.1):
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/standard (3.4.2):
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.4):
     - SQLCipher (>= 3.4.0)
@@ -164,7 +164,7 @@ DEPENDENCIES:
   - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.3.2.podspec`)
   - Siren (from `../../Dependencies/Siren/Pod-3.2.0.podspec`)
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec`)
-  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.1.podspec`)
+  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.2.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
   - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.1.0.podspec`)
   - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.1.0.podspec`)
@@ -241,7 +241,7 @@ EXTERNAL SOURCES:
   SlideMenuControllerSwift:
     :path: ../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec
   SQLCipher:
-    :path: ../../Dependencies/SQLCipher/Pod-3.4.1.podspec
+    :path: ../../Dependencies/SQLCipher/Pod-3.4.2.podspec
   SQLite.swift:
     :path: ../../Dependencies/SQLite.swift/Pod-0.11.4.podspec
   SwiftCommons:
@@ -300,7 +300,7 @@ SPEC CHECKSUMS:
   SDWebImage: cdabcd2b30703873f5a1f97f12832898a19340b8
   Siren: 7fd62bca7b18cd3a4eeda105dd7219fe4b363bda
   SlideMenuControllerSwift: e2c64fa95395c165742b76c18fed19e136872a2c
-  SQLCipher: 7daf77daa720f11d25ee97ab8d82f283ea8c983e
+  SQLCipher: 6cd994af8c601e2c2d4b2ef8607639233a714b11
   SQLite.swift: f44e990b6628808219851c0017cabbdf2988afa3
   SwiftCommons: 5da708ea0ecb3adb0980d47bf235178cd215ce32
   SwiftCommonsAbstractions: 2978a49516634b9074b0f94d50adc348b3a349db
@@ -315,6 +315,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: 39a79babf3ac0fc6a9460ccc40a8dc5c445c1451
+PODFILE CHECKSUM: dc0e347ae7a079d02b699162f6af8b3612c83521
 
 COCOAPODS: 1.4.0
