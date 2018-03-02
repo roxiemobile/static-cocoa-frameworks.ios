@@ -28,7 +28,8 @@ Pod::Spec.new do |spec|
 # MARK: - iOS Static Framework
 
   spec.platform = :ios
-  spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '9.0'
+  spec.swift_version = '4.0'
 
   spec.license = {}
   spec.static_framework = true

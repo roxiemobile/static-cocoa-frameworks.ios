@@ -20,7 +20,8 @@ Notify users when a new version of your iOS app is available, and prompt them wi
 # MARK: - iOS Static Framework
 
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
   s.license = {}
   s.static_framework = true
