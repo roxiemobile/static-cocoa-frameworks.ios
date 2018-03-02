@@ -52,7 +52,8 @@ data
   s.name = "#{s.name}-SCF"
 
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
@@ -69,7 +70,7 @@ data
     sc.vendored_frameworks = 'RxDataSources.framework'
 
     # Dependencies
-    sc.dependency 'Differentiator-SCF', '~> 3.0.2'
-    sc.dependency 'RxCocoa-SCF', '~> 4.0.0'
+    sc.dependency 'Differentiator-SCF', '~> 3.0'
+    sc.dependency 'RxCocoa-SCF', '~> 4.1'
   end
 end
