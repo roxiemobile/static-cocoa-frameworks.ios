@@ -2,9 +2,9 @@ name: FBSDKCoreKit
 description: Official Facebook SDK for iOS to access Facebook Platform's core features.
 
 modules:
-  4.29.0:
+  4.31.0:
     repository: https://github.com/facebook/facebook-ios-sdk.git
-    tag: sdk-version-4.29.0
+    tag: sdk-version-4.31.0
 
 profiles:
   init:

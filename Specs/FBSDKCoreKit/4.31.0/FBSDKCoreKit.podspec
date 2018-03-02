@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FBSDKCoreKit"
-  s.version      = "4.29.0"
+  s.version      = "4.31.0"
   s.summary      = "Official Facebook SDK for iOS to access Facebook Platform's core features"
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.source       = { :git => "https://github.com/facebook/facebook-ios-sdk.git",
-                     :tag => "sdk-version-4.29.0"
+                     :tag => "sdk-version-4.31.0"
                     }
 
   s.ios.weak_frameworks = 'Accounts', 'CoreLocation', 'Social', 'Security', 'QuartzCore', 'CoreGraphics', 'UIKit', 'Foundation', 'AudioToolbox'
@@ -60,18 +60,6 @@ Pod::Spec.new do |s|
 
   s.ios.dependency 'Bolts', '~> 1.7'
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '8.0'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
-  s.ios.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.requires_arc = cn.requires_arc.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end

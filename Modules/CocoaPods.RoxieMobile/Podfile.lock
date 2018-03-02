@@ -1,12 +1,12 @@
 PODS:
   - Alamofire (4.6.0)
   - Armchair (0.3.5)
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
+  - Bolts/Tasks (1.9.0)
   - ContentProviders (1.1.0):
     - ContentProviders/SQLite (= 1.1.0)
   - ContentProviders/SQLite (1.1.0):
@@ -16,10 +16,10 @@ PODS:
     - SQLite.swift/SQLCipher (~> 0.11.4)
     - SwiftCommons/Concurrent (~> 1.1.0)
     - SwiftCommons/Extensions (~> 1.1.0)
-  - CryptoSwift (0.8.0)
+  - CryptoSwift (0.8.3)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.29.0):
+  - FBSDKCoreKit (4.31.0):
     - Bolts (~> 1.7)
   - GzipSwift (4.0.4)
   - INTULocationManager (4.2.0)
@@ -136,13 +136,13 @@ PODS:
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.6.0.podspec`)
   - Armchair (from `../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec`)
-  - Bolts (from `../../Dependencies/Bolts/Pod-1.8.4.podspec`)
+  - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
   - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.1.0.podspec`)
   - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec`)
-  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.0.podspec`)
+  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.3.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
-  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.29.0.podspec`)
+  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.31.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.2.0.podspec`)
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
@@ -185,19 +185,19 @@ EXTERNAL SOURCES:
   Armchair:
     :path: ../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec
   Bolts:
-    :path: ../../Dependencies/Bolts/Pod-1.8.4.podspec
+    :path: ../../Dependencies/Bolts/Pod-1.9.0.podspec
   ContentProviders:
     :path: ../../Dependencies/ContentProviders/Pod-1.1.0.podspec
   ContentProvidersSQLite:
     :path: ../../Dependencies/ContentProvidersSQLite/Pod-1.1.0.podspec
   CryptoSwift:
-    :path: ../../Dependencies/CryptoSwift/Pod-0.8.0.podspec
+    :path: ../../Dependencies/CryptoSwift/Pod-0.8.3.podspec
   Differentiator:
     :path: ../../Dependencies/Differentiator/Pod-3.0.2.podspec
   Dispatch:
     :path: ../../Dependencies/Dispatch/Pod-2.0.4.podspec
   FBSDKCoreKit:
-    :path: ../../Dependencies/FBSDKCoreKit/Pod-4.29.0.podspec
+    :path: ../../Dependencies/FBSDKCoreKit/Pod-4.31.0.podspec
   GzipSwift:
     :path: ../../Dependencies/GzipSwift/Pod-4.0.4.podspec
   INTULocationManager:
@@ -272,13 +272,13 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: fd83be43a3c55be25b534db690ca6e7e25e90654
   Armchair: 6f920f3ec3cba08cbce87c114964673120c2e7ea
-  Bolts: 7a8fa7789b43be2b32781a3a48c4e7d0f3fc5430
+  Bolts: d974dbd1ae2ed8e597f94fb2b2d153cd41209c72
   ContentProviders: f2bd8f87405fc45baff7ea35a5ad583e7ba50c7f
   ContentProvidersSQLite: 6b023aebab1ef6d233f4ca2bd3086ee651fdc5fe
-  CryptoSwift: 5879b8264a06a586dc6dd110e71116e47b091f12
+  CryptoSwift: 8689cc2c5bd9c517a1bdcd836dc417b1e5ce96f4
   Differentiator: e89e30d0696fa126c9b9a00b513d17cd8b047183
   Dispatch: 864608cf20f0b1e0ae234344b586cc39bd48a769
-  FBSDKCoreKit: 83e7e6501609bda5716a04b6803bfa66e849fd6b
+  FBSDKCoreKit: 9827bae7f3b4078002e52fe250a8d1b09d5fb31d
   GzipSwift: 5fa07fa6a047a1ff87cf01cdbbdb4676de2de04f
   INTULocationManager: 4169f86b98643a9272543a6ed57532d9da876b36
   KeychainAccess: ae378eb8c49e2b0e5e2468a52cf86041997dc042
@@ -315,6 +315,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
   YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
 
-PODFILE CHECKSUM: 3fe5d268335c16053b46beb7dec84379d03878b7
+PODFILE CHECKSUM: 23c28c49e346bf8dc400a1144f6d183bc5b60e45
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.4.0
