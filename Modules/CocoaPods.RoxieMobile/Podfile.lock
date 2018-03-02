@@ -129,9 +129,9 @@ PODS:
   - SwiftCommonsObjC (1.1.0)
   - SwiftReorder (3.2.0)
   - SwiftyJSON (4.0.0)
-  - YandexMobileMetrica (2.9.4):
-    - YandexMobileMetrica/Static (= 2.9.4)
-  - YandexMobileMetrica/Static (2.9.4)
+  - YandexMobileMetrica (2.9.6):
+    - YandexMobileMetrica/Static (= 2.9.6)
+  - YandexMobileMetrica/Static (2.9.6)
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.6.0.podspec`)
@@ -177,7 +177,7 @@ DEPENDENCIES:
   - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.1.0.podspec`)
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-3.2.0.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
-  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec`)
+  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -267,7 +267,7 @@ EXTERNAL SOURCES:
   SwiftyJSON:
     :path: ../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec
   YandexMobileMetrica:
-    :path: ../../Dependencies/YandexMobileMetrica/Pod-2.9.4.podspec
+    :path: ../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec
 
 SPEC CHECKSUMS:
   Alamofire: fd83be43a3c55be25b534db690ca6e7e25e90654
@@ -301,7 +301,7 @@ SPEC CHECKSUMS:
   Siren: 7fd62bca7b18cd3a4eeda105dd7219fe4b363bda
   SlideMenuControllerSwift: e2c64fa95395c165742b76c18fed19e136872a2c
   SQLCipher: 6cd994af8c601e2c2d4b2ef8607639233a714b11
-  SQLite.swift: f44e990b6628808219851c0017cabbdf2988afa3
+  SQLite.swift: 6fd20b477ae434177a4ca483da74068e949cd2ee
   SwiftCommons: 5da708ea0ecb3adb0980d47bf235178cd215ce32
   SwiftCommonsAbstractions: 2978a49516634b9074b0f94d50adc348b3a349db
   SwiftCommonsConcurrent: 89cb48e0a20023fd4ea332961a511e68765bf813
@@ -313,8 +313,8 @@ SPEC CHECKSUMS:
   SwiftCommonsObjC: f424ad408e38f8939c8e348dd09e3095119275e1
   SwiftReorder: ead334aa0b3dead2b2e284fb1c705359d9d63909
   SwiftyJSON: 84ace45c625c96aabdb546ab62fa6258bb53fac9
-  YandexMobileMetrica: 7b39429b929cdccbcb27f9e167b2b83eba0c3b84
+  YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
 
-PODFILE CHECKSUM: dc0e347ae7a079d02b699162f6af8b3612c83521
+PODFILE CHECKSUM: b81e1d6a956edfbab4ae7281e2dc1242db2cedf6
 
 COCOAPODS: 1.4.0
