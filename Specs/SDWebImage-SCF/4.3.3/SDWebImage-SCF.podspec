@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SDWebImage'
-  s.version = '4.3.2'
+  s.version = '4.3.3'
 
   s.osx.deployment_target = '10.9'
   s.ios.deployment_target = '7.0'
@@ -27,21 +27,28 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |core|
+=begin
     core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
     core.exclude_files = 'SDWebImage/UIImage+WebP.{h,m}', 'SDWebImage/SDWebImageWebPCoder.{h,m}'
     core.tvos.exclude_files = 'SDWebImage/MKAnnotationView+WebCache.*'
+=end
+    core.dependency "#{s.name}-SCF/StaticCocoaFramework"
   end
 
   s.subspec 'MapKit' do |mk|
+=begin
     mk.osx.deployment_target = '10.9'
     mk.ios.deployment_target = '7.0'
     mk.tvos.deployment_target = '9.0'
     mk.source_files = 'SDWebImage/MKAnnotationView+WebCache.*'
     mk.framework = 'MapKit'
     mk.dependency 'SDWebImage/Core'
+=end
+    mk.dependency '//+NotSupported'
   end
 
   s.subspec 'GIF' do |gif|
+=begin
     gif.ios.deployment_target = '7.0'
     gif.source_files = 'SDWebImage/FLAnimatedImage/*.{h,m}'
     gif.dependency 'SDWebImage/Core'
@@ -49,9 +56,12 @@ Pod::Spec.new do |s|
     gif.xcconfig = {
       'USER_HEADER_SEARCH_PATHS' => '$(inherited) $(SRCROOT)/FLAnimatedImage/FLAnimatedImage'
     }
+=end
+    gif.dependency '//+NotSupported'
   end
 
   s.subspec 'WebP' do |webp|
+=begin
     webp.source_files = 'SDWebImage/UIImage+WebP.{h,m}', 'SDWebImage/SDWebImageWebPCoder.{h,m}'
     webp.xcconfig = { 
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SD_WEBP=1',
@@ -63,25 +73,28 @@ Pod::Spec.new do |s|
     }
     webp.dependency 'SDWebImage/Core'
     webp.dependency 'libwebp', '~> 0.5'
+=end
+    webp.dependency '//+NotSupported'
   end
 
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/SDWebImage+Core-4.3.3-SCF.zip',
+    sha256: '39682f3e42f936915bb308fd2eea6de097dc97d49f50fb827a9f67403ff52a4b'
+  }
 
-  cn1 = s.consumer(:ios)
-  s.pod_target_xcconfig = (cn1.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
-  end
-
-  s.subspecs.each do |sc|
-    cn2 = sc.consumer(:ios)
-    sc.source_files = cn2.source_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.source_files.blank?
-    sc.exclude_files = cn2.exclude_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.exclude_files.blank?
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SDWebImage.framework/*'
+    sc.source_files = 'SDWebImage.framework/Headers/*.h'
+    sc.public_header_files = 'SDWebImage.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SDWebImage.framework'
   end
 end

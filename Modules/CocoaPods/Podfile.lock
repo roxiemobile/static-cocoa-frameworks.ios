@@ -58,8 +58,8 @@ DEPENDENCIES:
   - PureLayout (~> 3.0)
   - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
-  - SDWebImage/Core (~> 4.2)
-  - Siren (~> 3.1)
+  - SDWebImage/Core (~> 4.3)
+  - Siren (~> 3.2)
   - SlideMenuControllerSwift (~> 4.0)
   - SQLCipher/standard (~> 3.4)
   - SQLite.swift/SQLCipher (~> 0.11)
@@ -95,6 +95,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
 
-PODFILE CHECKSUM: cd213446465aa73d4060b53fbd25fdf46dc16989
+PODFILE CHECKSUM: 4276937b0e143fe9b76419a15760e231ef3ec893
 
 COCOAPODS: 1.4.0
