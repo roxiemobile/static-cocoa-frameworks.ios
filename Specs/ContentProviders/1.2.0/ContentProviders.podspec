@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProviders'
   s.summary               = 'A collection of useful content providers used for accessing and modifying iOS applications data.'
-  s.version               = '1.1.0'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,12 +25,6 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  # s.default_subspecs = 'FileSystem',
-  #                      'SQLite',
-  #                      'UserDefaults'
-
-  s.default_subspecs = 'SQLite'
-
 # MARK: - Modules
 
   # # A content provider used for accessing and modifying physical files.
@@ -47,4 +41,7 @@ Pod::Spec.new do |s|
   # s.subspec 'UserDefaults' do |sc|
   #   sc.dependency 'ContentProvidersUserDefaults', s.version.to_s
   # end
+
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end

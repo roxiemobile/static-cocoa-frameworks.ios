@@ -2,9 +2,9 @@ name: ContentProviders
 description: A collection of useful content providers used for accessing and modifying iOS applications data.
 
 modules:
-  1.1.0:
+  1.2.0:
     repository: https://github.com/roxiemobile/content-providers.ios.git
-    tag: 1.1.0
+    tag: 1.2.0
 
 profiles:
   init:

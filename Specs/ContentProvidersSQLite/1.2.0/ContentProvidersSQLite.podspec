@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProvidersSQLite'
   s.summary               = 'A content provider used for accessing and modifying data in SQLite database.'
-  s.version               = '1.1.0'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -30,8 +30,7 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SQLITE_HAS_CODEC=1 CONTENTPROVIDERS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER',
-    'SWIFT_VERSION' => '4.0'
+    'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER'
   }
   s.user_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1',
@@ -40,15 +39,11 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.8.0'
-  s.dependency 'SwiftCommons/Concurrent', '~> 1.1.0'
-  s.dependency 'SwiftCommons/Extensions', '~> 1.1.0'
+  s.dependency 'CryptoSwift', '~> 0.8.3'
+  s.dependency 'SwiftCommons/Concurrent', '~> 1.2.5'
+  s.dependency 'SwiftCommons/Extensions', '~> 1.2.5'
   s.dependency 'SQLite.swift/SQLCipher', '~> 0.11.4'
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
