@@ -8,28 +8,18 @@ workspace 'DummyProject/Dummy.xcworkspace'
 target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
 
-  pod 'Alamofire',                '~> 4.6'
+  pod 'Alamofire',                '~> 4.7'
   pod 'Armchair',                 '~> 0.3'
-# pod 'Bolts',                    '~> 1.8'
-  pod 'ContentProviders',         '~> 1.1'  # ContentProvidersSQLite
-# pod 'ContentProvidersSQLite',   '~> 1.1'
+# pod 'Bolts',                    '~> 1.9'
   pod 'CryptoSwift',              '~> 0.8'
 # pod 'Differentiator',           '~> 3.0'
   pod 'Dispatch',                 '~> 2.0'
-  pod 'FBSDKCoreKit',             '~> 4.29' # Bolts
+  pod 'FBSDKCoreKit',             '~> 4.31' # Bolts
   pod 'GoogleAnalytics',          '~> 3.17'
   pod 'GzipSwift',                '~> 4.0'
   pod 'INTULocationManager',      '~> 4.2'
   pod 'KeychainAccess',           '~> 3.1'
   pod 'MBProgressHUD',            '~> 1.1'
-  pod 'ModernDesign',             '~> 1.1'  # ModernDesignExtensions
-# pod 'ModernDesignExtensions',   '~> 1.1'
-  pod 'NetworkingApi',            '~> 1.1'  # NetworkingApiConverters, NetworkingApiHelpers, NetworkingApiHttp, NetworkingApiObjC, NetworkingApiRest
-# pod 'NetworkingApiConverters',  '~> 1.1'
-# pod 'NetworkingApiHelpers',     '~> 1.1'
-# pod 'NetworkingApiHttp',        '~> 1.1'
-# pod 'NetworkingApiObjC',        '~> 1.1'
-# pod 'NetworkingApiRest',        '~> 1.1'
   pod 'PureLayout',               '~> 3.0'
   pod 'R.swift',                  '~> 4.0'  # R.swift.Library
 # pod 'R.swift.Library',          '~> 4.0'
@@ -41,15 +31,6 @@ target 'DummyFramework' do
   pod 'SlideMenuControllerSwift', '~> 4.0'
   pod 'SQLCipher/standard',       '~> 3.4'
   pod 'SQLite.swift/SQLCipher',   '~> 0.11'
-  pod 'SwiftCommons',             '~> 1.2'  # SwiftCommonsAbstractions, SwiftCommonsConcurrent, SwiftCommonsData, SwiftCommonsDiagnostics, SwiftCommonsExtensions, SwiftCommonsLang, SwiftCommonsLogging, SwiftCommonsObjC
-# pod 'SwiftCommonsAbstractions', '~> 1.1'
-# pod 'SwiftCommonsConcurrent',   '~> 1.1'
-# pod 'SwiftCommonsData',         '~> 1.1'
-# pod 'SwiftCommonsDiagnostics',  '~> 1.1'
-# pod 'SwiftCommonsExtensions',   '~> 1.1'
-# pod 'SwiftCommonsLang',         '~> 1.1'
-# pod 'SwiftCommonsLogging',      '~> 1.1'
-# pod 'SwiftCommonsObjC',         '~> 1.1'
   pod 'SwiftReorder',             '~> 3.2'
   pod 'SwiftyJSON',               '~> 4.0'
   pod 'YandexMobileMetrica',      '~> 2.9'

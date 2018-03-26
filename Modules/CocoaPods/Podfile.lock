@@ -7,63 +7,16 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - ContentProviders (1.1.0):
-    - ContentProviders/SQLite (= 1.1.0)
-  - ContentProviders/SQLite (1.1.0):
-    - ContentProvidersSQLite (= 1.1.0)
-  - ContentProvidersSQLite (1.1.0):
-    - CryptoSwift (~> 0.8.0)
-    - SQLite.swift/SQLCipher (~> 0.11.4)
-    - SwiftCommons/Concurrent (~> 1.1.0)
-    - SwiftCommons/Extensions (~> 1.1.0)
   - CryptoSwift (0.8.3)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.31.0):
+  - FBSDKCoreKit (4.31.1):
     - Bolts (~> 1.7)
   - GoogleAnalytics (3.17.0)
   - GzipSwift (4.0.4)
   - INTULocationManager (4.3.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
-  - ModernDesign (1.1.0):
-    - ModernDesign/Extensions (= 1.1.0)
-  - ModernDesign/Extensions (1.1.0):
-    - ModernDesignExtensions (= 1.1.0)
-  - ModernDesignExtensions (1.1.0):
-    - SwiftCommons/Lang (~> 1.1.0)
-  - NetworkingApi (1.1.2):
-    - NetworkingApi/Converters (= 1.1.2)
-    - NetworkingApi/Helpers (= 1.1.2)
-    - NetworkingApi/Http (= 1.1.2)
-    - NetworkingApi/ObjC (= 1.1.2)
-    - NetworkingApi/Rest (= 1.1.2)
-  - NetworkingApi/Converters (1.1.2):
-    - NetworkingApiConverters (= 1.1.2)
-  - NetworkingApi/Helpers (1.1.2):
-    - NetworkingApiHelpers (= 1.1.2)
-  - NetworkingApi/Http (1.1.2):
-    - NetworkingApiHttp (= 1.1.2)
-  - NetworkingApi/ObjC (1.1.2):
-    - NetworkingApiObjC (= 1.1.2)
-  - NetworkingApi/Rest (1.1.2):
-    - NetworkingApiRest (= 1.1.2)
-  - NetworkingApiConverters (1.1.2):
-    - NetworkingApiRest (= 1.1.2)
-    - SwiftCommons/Data (~> 1.1.0)
-  - NetworkingApiHelpers (1.1.2):
-    - Alamofire (~> 4.6.0)
-    - NetworkingApiHttp (= 1.1.2)
-  - NetworkingApiHttp (1.1.2):
-    - SwiftCommons/Diagnostics (~> 1.1.0)
-  - NetworkingApiObjC (1.1.2):
-    - Alamofire (~> 4.6.0)
-  - NetworkingApiRest (1.1.2):
-    - Alamofire (~> 4.6.0)
-    - NetworkingApiHelpers (= 1.1.2)
-    - NetworkingApiObjC (= 1.1.2)
-    - SwiftCommons/Data (~> 1.1.0)
-    - SwiftyJSON (~> 4.0.0)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -75,8 +28,8 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
-  - SDWebImage/Core (4.3.2)
-  - Siren (3.2.0)
+  - SDWebImage/Core (4.3.3)
+  - Siren (3.2.3)
   - SlideMenuControllerSwift (4.0.0)
   - SQLCipher (3.4.2):
     - SQLCipher/standard (= 3.4.2)
@@ -85,49 +38,6 @@ PODS:
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.4):
     - SQLCipher (>= 3.4.0)
-  - SwiftCommons (1.2.5):
-    - SwiftCommons/Abstractions (= 1.2.5)
-    - SwiftCommons/Concurrent (= 1.2.5)
-    - SwiftCommons/Data (= 1.2.5)
-    - SwiftCommons/Diagnostics (= 1.2.5)
-    - SwiftCommons/Extensions (= 1.2.5)
-    - SwiftCommons/Lang (= 1.2.5)
-    - SwiftCommons/Logging (= 1.2.5)
-    - SwiftCommons/ObjC (= 1.2.5)
-  - SwiftCommons/Abstractions (1.2.5):
-    - SwiftCommonsAbstractions (= 1.2.5)
-  - SwiftCommons/Concurrent (1.2.5):
-    - SwiftCommonsConcurrent (= 1.2.5)
-  - SwiftCommons/Data (1.2.5):
-    - SwiftCommonsData (= 1.2.5)
-  - SwiftCommons/Diagnostics (1.2.5):
-    - SwiftCommonsDiagnostics (= 1.2.5)
-  - SwiftCommons/Extensions (1.2.5):
-    - SwiftCommonsExtensions (= 1.2.5)
-  - SwiftCommons/Lang (1.2.5):
-    - SwiftCommonsLang (= 1.2.5)
-  - SwiftCommons/Logging (1.2.5):
-    - SwiftCommonsLogging (= 1.2.5)
-  - SwiftCommons/ObjC (1.2.5):
-    - SwiftCommonsObjC (= 1.2.5)
-  - SwiftCommonsAbstractions (1.2.5)
-  - SwiftCommonsConcurrent (1.2.5):
-    - Dispatch (~> 2.0.4)
-    - SwiftCommonsObjC (= 1.2.5)
-  - SwiftCommonsData (1.2.5):
-    - CryptoSwift (~> 0.8.3)
-    - SwiftCommonsDiagnostics (= 1.2.5)
-  - SwiftCommonsDiagnostics (1.2.5):
-    - SwiftCommonsConcurrent (= 1.2.5)
-    - SwiftCommonsExtensions (= 1.2.5)
-  - SwiftCommonsExtensions (1.2.5):
-    - SwiftCommonsAbstractions (= 1.2.5)
-    - SwiftCommonsLogging (= 1.2.5)
-  - SwiftCommonsLang (1.2.5)
-  - SwiftCommonsLogging (1.2.5):
-    - SwiftCommonsConcurrent (= 1.2.5)
-    - SwiftCommonsLang (= 1.2.5)
-  - SwiftCommonsObjC (1.2.5)
   - SwiftReorder (3.2.0)
   - SwiftyJSON (4.0.0)
   - YandexMobileMetrica (2.9.6):
@@ -137,17 +47,14 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Armchair (~> 0.3)
-  - ContentProviders (~> 1.1)
   - CryptoSwift (~> 0.8)
   - Dispatch (~> 2.0)
-  - FBSDKCoreKit (~> 4.29)
+  - FBSDKCoreKit (~> 4.31)
   - GoogleAnalytics (~> 3.17)
   - GzipSwift (~> 4.0)
   - INTULocationManager (~> 4.2)
   - KeychainAccess (~> 3.1)
   - MBProgressHUD (~> 1.1)
-  - ModernDesign (~> 1.1)
-  - NetworkingApi (~> 1.1)
   - PureLayout (~> 3.0)
   - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -156,7 +63,6 @@ DEPENDENCIES:
   - SlideMenuControllerSwift (~> 4.0)
   - SQLCipher/standard (~> 3.4)
   - SQLite.swift/SQLCipher (~> 0.11)
-  - SwiftCommons (~> 1.2)
   - SwiftReorder (~> 3.2)
   - SwiftyJSON (~> 4.0)
   - YandexMobileMetrica (~> 2.9)
@@ -165,49 +71,30 @@ SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Armchair: 0ab9237bc373e26245c7651acf193d85fb9c033a
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  ContentProviders: e1e81e908569beab8bcc75d5dc8bd32f1aa8e88b
-  ContentProvidersSQLite: fe7b287bf8379f5190b57d00cc056369fdad1b13
   CryptoSwift: 033efc3523865d19cc6ab6612fa17a62613b5dfa
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
-  FBSDKCoreKit: 54db4c581123745d25a9f7c1608020b3aeabd118
+  FBSDKCoreKit: e08ccfcefa7bc1347a07c276dac9bf6c7fe57024
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   INTULocationManager: 0ca5c76eacc029ba15938fc699520bc333ed6435
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  ModernDesign: b2137fa014615871f38227bdb44399ae3868ae92
-  ModernDesignExtensions: 09d55fd1ed45a1381ecbd44e43f9efbe367d3dcb
-  NetworkingApi: 8a29383a34751bd005505fef48446fe3530208fa
-  NetworkingApiConverters: d7219fdc3b83277f008afbec0aec1873181abfda
-  NetworkingApiHelpers: 6c264b1ac69d71c0f7e36d20e0a9782268da70f5
-  NetworkingApiHttp: 0f14e04064dc6a7220020b0b48482a844cf45293
-  NetworkingApiObjC: 193fca4067ba981c48adf8c07ad32020f968c95f
-  NetworkingApiRest: 0fcf239f39ac5591ea19cff04f5cc86b9ee6ee9c
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
-  Siren: 964f57553cf6a39d1bada4e403557523a213b397
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Siren: aeb0151fcc47be5c9302b1e1c98816d8f77c95d9
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
-  SwiftCommons: 6af417167a957a4fd45e49d474f86aa9bb4d7115
-  SwiftCommonsAbstractions: 333a777ce5a1a30aa5e1f9bf4f18b74ad9663f19
-  SwiftCommonsConcurrent: a50c093b0a0cefd9e5e55eda900fd9eb95130dea
-  SwiftCommonsData: b8e35658942f74063949d716dcbe9e36d0533e7b
-  SwiftCommonsDiagnostics: e7f4e12521ed2c6e9c4777912aab242dcc339f92
-  SwiftCommonsExtensions: 87deed3f0b45ac56d801b91606cd4e9dd279119b
-  SwiftCommonsLang: fa1b1587c0c50286918bc52294928d5214914736
-  SwiftCommonsLogging: 3ad05945f71acbb964c792853de9840e50303d04
-  SwiftCommonsObjC: 4598908b2a8f65ea1c5c56c1f0c23334f7c91d11
   SwiftReorder: 27d737099efd6125339d5e8cb090e46c67341143
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
 
-PODFILE CHECKSUM: 804e522efd97236828154bcfef40e5087f6bddda
+PODFILE CHECKSUM: cd213446465aa73d4060b53fbd25fdf46dc16989
 
 COCOAPODS: 1.4.0

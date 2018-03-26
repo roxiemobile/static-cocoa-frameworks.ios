@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FBSDKCoreKit"
-  s.version      = "4.31.0"
+  s.version      = "4.31.1"
   s.summary      = "Official Facebook SDK for iOS to access Facebook Platform's core features"
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.source       = { :git => "https://github.com/facebook/facebook-ios-sdk.git",
-                     :tag => "sdk-version-4.31.0"
+                     :tag => "sdk-version-4.31.1"
                     }
 
   s.ios.weak_frameworks = 'Accounts', 'CoreLocation', 'Social', 'Security', 'QuartzCore', 'CoreGraphics', 'UIKit', 'Foundation', 'AudioToolbox'
@@ -58,21 +58,39 @@ Pod::Spec.new do |s|
   s.requires_arc = ['FBSDKCoreKit/FBSDKCoreKit/*',
                     'FBSDKCoreKit/FBSDKCoreKit/Internal/**/*']
 
+=begin
   s.ios.dependency 'Bolts', '~> 1.7'
+=end
 
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/FBSDKCoreKit-4.31.1-SCF.zip',
+    sha256: '1023b1600741169250cf6122a767cc6c147226a82637f9801637c6c6c3f1d655'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
-  s.ios.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.requires_arc = cn.requires_arc.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.public_header_files = nil
+  s.resources = nil
+  s.exclude_files = nil
+  s.ios.exclude_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'FBSDKCoreKit.framework/*'
+    sc.source_files = 'FBSDKCoreKit.framework/Headers/*.h'
+    sc.public_header_files = 'FBSDKCoreKit.framework/Headers/*.h'
+    sc.vendored_frameworks = 'FBSDKCoreKit.framework'
+    sc.resources = 'FBSDKCoreKit.framework/Resources/FacebookSDKStrings.bundle'
+
+    # Dependencies
+    sc.dependency 'Bolts-SCF', '~> 1.9.0'
+  end
 end
