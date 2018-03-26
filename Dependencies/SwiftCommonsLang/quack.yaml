@@ -2,9 +2,9 @@ name: SwiftCommonsLang
 description: A collection of useful classes and Swift language extensions.
 
 modules:
-  1.1.0:
+  1.2.5:
     repository: https://github.com/roxiemobile/swift-commons.ios.git
-    tag: 1.1.0
+    tag: 1.2.5
 
 profiles:
   init:

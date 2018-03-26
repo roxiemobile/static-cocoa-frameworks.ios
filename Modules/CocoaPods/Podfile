@@ -41,7 +41,7 @@ target 'DummyFramework' do
   pod 'SlideMenuControllerSwift', '~> 4.0'
   pod 'SQLCipher/standard',       '~> 3.4'
   pod 'SQLite.swift/SQLCipher',   '~> 0.11'
-  pod 'SwiftCommons',             '~> 1.1'  # SwiftCommonsAbstractions, SwiftCommonsConcurrent, SwiftCommonsData, SwiftCommonsDiagnostics, SwiftCommonsExtensions, SwiftCommonsLang, SwiftCommonsLogging, SwiftCommonsObjC
+  pod 'SwiftCommons',             '~> 1.2'  # SwiftCommonsAbstractions, SwiftCommonsConcurrent, SwiftCommonsData, SwiftCommonsDiagnostics, SwiftCommonsExtensions, SwiftCommonsLang, SwiftCommonsLogging, SwiftCommonsObjC
 # pod 'SwiftCommonsAbstractions', '~> 1.1'
 # pod 'SwiftCommonsConcurrent',   '~> 1.1'
 # pod 'SwiftCommonsData',         '~> 1.1'

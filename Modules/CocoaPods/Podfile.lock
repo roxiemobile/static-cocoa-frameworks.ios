@@ -85,49 +85,49 @@ PODS:
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.4):
     - SQLCipher (>= 3.4.0)
-  - SwiftCommons (1.1.0):
-    - SwiftCommons/Abstractions (= 1.1.0)
-    - SwiftCommons/Concurrent (= 1.1.0)
-    - SwiftCommons/Data (= 1.1.0)
-    - SwiftCommons/Diagnostics (= 1.1.0)
-    - SwiftCommons/Extensions (= 1.1.0)
-    - SwiftCommons/Lang (= 1.1.0)
-    - SwiftCommons/Logging (= 1.1.0)
-    - SwiftCommons/ObjC (= 1.1.0)
-  - SwiftCommons/Abstractions (1.1.0):
-    - SwiftCommonsAbstractions (= 1.1.0)
-  - SwiftCommons/Concurrent (1.1.0):
-    - SwiftCommonsConcurrent (= 1.1.0)
-  - SwiftCommons/Data (1.1.0):
-    - SwiftCommonsData (= 1.1.0)
-  - SwiftCommons/Diagnostics (1.1.0):
-    - SwiftCommonsDiagnostics (= 1.1.0)
-  - SwiftCommons/Extensions (1.1.0):
-    - SwiftCommonsExtensions (= 1.1.0)
-  - SwiftCommons/Lang (1.1.0):
-    - SwiftCommonsLang (= 1.1.0)
-  - SwiftCommons/Logging (1.1.0):
-    - SwiftCommonsLogging (= 1.1.0)
-  - SwiftCommons/ObjC (1.1.0):
-    - SwiftCommonsObjC (= 1.1.0)
-  - SwiftCommonsAbstractions (1.1.0)
-  - SwiftCommonsConcurrent (1.1.0):
+  - SwiftCommons (1.2.5):
+    - SwiftCommons/Abstractions (= 1.2.5)
+    - SwiftCommons/Concurrent (= 1.2.5)
+    - SwiftCommons/Data (= 1.2.5)
+    - SwiftCommons/Diagnostics (= 1.2.5)
+    - SwiftCommons/Extensions (= 1.2.5)
+    - SwiftCommons/Lang (= 1.2.5)
+    - SwiftCommons/Logging (= 1.2.5)
+    - SwiftCommons/ObjC (= 1.2.5)
+  - SwiftCommons/Abstractions (1.2.5):
+    - SwiftCommonsAbstractions (= 1.2.5)
+  - SwiftCommons/Concurrent (1.2.5):
+    - SwiftCommonsConcurrent (= 1.2.5)
+  - SwiftCommons/Data (1.2.5):
+    - SwiftCommonsData (= 1.2.5)
+  - SwiftCommons/Diagnostics (1.2.5):
+    - SwiftCommonsDiagnostics (= 1.2.5)
+  - SwiftCommons/Extensions (1.2.5):
+    - SwiftCommonsExtensions (= 1.2.5)
+  - SwiftCommons/Lang (1.2.5):
+    - SwiftCommonsLang (= 1.2.5)
+  - SwiftCommons/Logging (1.2.5):
+    - SwiftCommonsLogging (= 1.2.5)
+  - SwiftCommons/ObjC (1.2.5):
+    - SwiftCommonsObjC (= 1.2.5)
+  - SwiftCommonsAbstractions (1.2.5)
+  - SwiftCommonsConcurrent (1.2.5):
     - Dispatch (~> 2.0.4)
-    - SwiftCommonsObjC (= 1.1.0)
-  - SwiftCommonsData (1.1.0):
-    - CryptoSwift (~> 0.8.0)
-    - SwiftCommonsDiagnostics (= 1.1.0)
-  - SwiftCommonsDiagnostics (1.1.0):
-    - SwiftCommonsConcurrent (= 1.1.0)
-    - SwiftCommonsExtensions (= 1.1.0)
-  - SwiftCommonsExtensions (1.1.0):
-    - SwiftCommonsAbstractions (= 1.1.0)
-    - SwiftCommonsLogging (= 1.1.0)
-  - SwiftCommonsLang (1.1.0)
-  - SwiftCommonsLogging (1.1.0):
-    - SwiftCommonsConcurrent (= 1.1.0)
-    - SwiftCommonsLang (= 1.1.0)
-  - SwiftCommonsObjC (1.1.0)
+    - SwiftCommonsObjC (= 1.2.5)
+  - SwiftCommonsData (1.2.5):
+    - CryptoSwift (~> 0.8.3)
+    - SwiftCommonsDiagnostics (= 1.2.5)
+  - SwiftCommonsDiagnostics (1.2.5):
+    - SwiftCommonsConcurrent (= 1.2.5)
+    - SwiftCommonsExtensions (= 1.2.5)
+  - SwiftCommonsExtensions (1.2.5):
+    - SwiftCommonsAbstractions (= 1.2.5)
+    - SwiftCommonsLogging (= 1.2.5)
+  - SwiftCommonsLang (1.2.5)
+  - SwiftCommonsLogging (1.2.5):
+    - SwiftCommonsConcurrent (= 1.2.5)
+    - SwiftCommonsLang (= 1.2.5)
+  - SwiftCommonsObjC (1.2.5)
   - SwiftReorder (3.2.0)
   - SwiftyJSON (4.0.0)
   - YandexMobileMetrica (2.9.6):
@@ -156,7 +156,7 @@ DEPENDENCIES:
   - SlideMenuControllerSwift (~> 4.0)
   - SQLCipher/standard (~> 3.4)
   - SQLite.swift/SQLCipher (~> 0.11)
-  - SwiftCommons (~> 1.1)
+  - SwiftCommons (~> 1.2)
   - SwiftReorder (~> 3.2)
   - SwiftyJSON (~> 4.0)
   - YandexMobileMetrica (~> 2.9)
@@ -195,15 +195,15 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
-  SwiftCommons: f8747043bfe4287bb7916fb23279a82674a29021
-  SwiftCommonsAbstractions: 3eff30086dd8dcaf9768fc7487f72496b86d2187
-  SwiftCommonsConcurrent: 0d430aed762d4c7741450cf2a5ff9b4b45f97db7
-  SwiftCommonsData: 65ce4ea6a8bf254c74b6bd3f51fdda573f2905fc
-  SwiftCommonsDiagnostics: 0f718c7720828d2ce66c2dc835b6948b6a64db8f
-  SwiftCommonsExtensions: 558bdf4fc00ea7b3a48c33b102642f2e6f21b1b3
-  SwiftCommonsLang: e1fe86c0a4c73596aface6af1b88fbf188171a0d
-  SwiftCommonsLogging: 82ef131b56273702d2b4083931a829db0c3d476b
-  SwiftCommonsObjC: 9ce27218606b397036a873e196f9bb489aa515dd
+  SwiftCommons: 6af417167a957a4fd45e49d474f86aa9bb4d7115
+  SwiftCommonsAbstractions: 333a777ce5a1a30aa5e1f9bf4f18b74ad9663f19
+  SwiftCommonsConcurrent: a50c093b0a0cefd9e5e55eda900fd9eb95130dea
+  SwiftCommonsData: b8e35658942f74063949d716dcbe9e36d0533e7b
+  SwiftCommonsDiagnostics: e7f4e12521ed2c6e9c4777912aab242dcc339f92
+  SwiftCommonsExtensions: 87deed3f0b45ac56d801b91606cd4e9dd279119b
+  SwiftCommonsLang: fa1b1587c0c50286918bc52294928d5214914736
+  SwiftCommonsLogging: 3ad05945f71acbb964c792853de9840e50303d04
+  SwiftCommonsObjC: 4598908b2a8f65ea1c5c56c1f0c23334f7c91d11
   SwiftReorder: 27d737099efd6125339d5e8cb090e46c67341143
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe

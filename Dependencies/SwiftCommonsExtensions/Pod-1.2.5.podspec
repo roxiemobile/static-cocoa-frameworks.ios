@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsData'
-  s.summary               = 'A collection of reusable components used to simplify serialization, deserialization and validation operations on data objects.'
-  s.version               = '1.1.0'
+  s.name                  = 'SwiftCommonsExtensions'
+  s.summary               = 'A collection of useful type extensions used for iOS application development.'
+  s.version               = '1.2.5'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,18 +25,17 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Data/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Extensions/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
-    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'SWIFT_VERSION' => '4.0'
+    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.8.0'
-  s.dependency 'SwiftCommonsDiagnostics', s.version.to_s
+  s.dependency 'SwiftCommonsAbstractions', s.version.to_s
+  s.dependency 'SwiftCommonsLogging', s.version.to_s
 
 # MARK: - iOS Static Framework
 

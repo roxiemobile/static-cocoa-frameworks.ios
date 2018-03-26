@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsLang'
-  s.summary               = 'A collection of useful classes and Swift language extensions.'
-  s.version               = '1.1.0'
+  s.name                  = 'SwiftCommonsConcurrent'
+  s.summary               = 'A collection of reusable components used to simplify the work of writing concurrent and asynchronous code.'
+  s.version               = '1.2.5'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,13 +25,17 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Lang/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Concurrent/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
-    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'SWIFT_VERSION' => '4.0'
+    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
+
+# MARK: - Dependencies
+
+  s.dependency 'Dispatch', '~> 2.0.4'
+  s.dependency 'SwiftCommonsObjC', s.version.to_s
 
 # MARK: - iOS Static Framework
 
