@@ -1,5 +1,5 @@
 NAME=NetworkingApiHelpers
 SCHEME=$(NAME)
-VERSION=1.1.2
+VERSION=1.2.0
 
 include Makefile.in

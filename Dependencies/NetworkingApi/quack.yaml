@@ -2,9 +2,9 @@ name: NetworkingApi
 description: A collection of useful utility classes common to different iOS projects.
 
 modules:
-  1.1.2:
+  1.2.0:
     repository: https://github.com/roxiemobile/networking-api.ios.git
-    tag: 1.1.2
+    tag: 1.2.0
 
 profiles:
   init:

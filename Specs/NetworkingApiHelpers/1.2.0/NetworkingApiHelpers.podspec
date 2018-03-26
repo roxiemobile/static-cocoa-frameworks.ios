@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiHttp'
-  s.summary               = 'A collection of useful type extensions and utility classes used for communication over HTTP protocol.'
-  s.version               = '1.1.2'
+  s.name                  = 'NetworkingApiHelpers'
+  s.summary               = 'A collection of utility classes used by other modules of this library.'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,22 +25,18 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Http/'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Helpers/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
-    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'SWIFT_VERSION' => '4.0'
+    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
 
 # MARK: - Dependencies
 
-  s.dependency 'SwiftCommons/Diagnostics', '~> 1.1.0'
+  s.dependency 'Alamofire', '~> 4.7.0'
+  s.dependency 'NetworkingApiHttp', s.version.to_s
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end

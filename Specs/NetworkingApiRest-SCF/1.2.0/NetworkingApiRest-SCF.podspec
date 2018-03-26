@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiRest'
   s.summary               = 'An asynchronous REST API client that makes an access to a RESTful Web Services easier.'
-  s.version               = '1.1.2'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -29,22 +29,43 @@ Pod::Spec.new do |s|
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
-    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'SWIFT_VERSION' => '4.0'
+    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.6.0'
+=begin
+  s.dependency 'Alamofire', '~> 4.7.0'
   s.dependency 'NetworkingApiHelpers', s.version.to_s
   s.dependency 'NetworkingApiObjC', s.version.to_s
-  s.dependency 'SwiftCommons/Data', '~> 1.1.0'
+  s.dependency 'SwiftCommons/Data', '~> 1.2.5'
   s.dependency 'SwiftyJSON', '~> 4.0.0'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/NetworkingApiRest-1.2.0-SCF.zip',
+    sha256: '76c2117da3d5e96ac2bf711dee62d3ffa01f6e90eae4666672620a339bbc7d33'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'NetworkingApiRest.framework/*'
+    sc.source_files = 'NetworkingApiRest.framework/Headers/*.h'
+    sc.public_header_files = 'NetworkingApiRest.framework/Headers/*.h'
+    sc.vendored_frameworks = 'NetworkingApiRest.framework'
+
+    # Dependencies
+    sc.dependency 'Alamofire-SCF', '~> 4.7.0'
+    sc.dependency 'NetworkingApiHelpers-SCF', s.version.to_s
+    sc.dependency 'NetworkingApiObjC-SCF', s.version.to_s
+    sc.dependency 'SwiftCommons-SCF/Data', '~> 1.2.5'
+    sc.dependency 'SwiftyJSON-SCF', '~> 4.0.0'
+  end
 end

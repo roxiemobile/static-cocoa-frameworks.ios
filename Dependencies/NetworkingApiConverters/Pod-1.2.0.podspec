@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiConverters'
   s.summary               = 'A collection of useful converters for the asynchronous REST API client.'
-  s.version               = '1.1.2'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -29,14 +29,13 @@ Pod::Spec.new do |s|
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
-    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'SWIFT_VERSION' => '4.0'
+    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
 
 # MARK: - Dependencies
 
   s.dependency 'NetworkingApiRest', s.version.to_s
-  s.dependency 'SwiftCommons/Data', '~> 1.1.0'
+  s.dependency 'SwiftCommons/Data', '~> 1.2.5'
 
 # MARK: - iOS Static Framework
 

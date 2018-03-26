@@ -31,37 +31,37 @@ PODS:
     - ModernDesignExtensions (= 1.1.0)
   - ModernDesignExtensions (1.1.0):
     - SwiftCommons/Lang (~> 1.1.0)
-  - NetworkingApi (1.1.2):
-    - NetworkingApi/Converters (= 1.1.2)
-    - NetworkingApi/Helpers (= 1.1.2)
-    - NetworkingApi/Http (= 1.1.2)
-    - NetworkingApi/ObjC (= 1.1.2)
-    - NetworkingApi/Rest (= 1.1.2)
-  - NetworkingApi/Converters (1.1.2):
-    - NetworkingApiConverters (= 1.1.2)
-  - NetworkingApi/Helpers (1.1.2):
-    - NetworkingApiHelpers (= 1.1.2)
-  - NetworkingApi/Http (1.1.2):
-    - NetworkingApiHttp (= 1.1.2)
-  - NetworkingApi/ObjC (1.1.2):
-    - NetworkingApiObjC (= 1.1.2)
-  - NetworkingApi/Rest (1.1.2):
-    - NetworkingApiRest (= 1.1.2)
-  - NetworkingApiConverters (1.1.2):
-    - NetworkingApiRest (= 1.1.2)
-    - SwiftCommons/Data (~> 1.1.0)
-  - NetworkingApiHelpers (1.1.2):
-    - Alamofire (~> 4.6.0)
-    - NetworkingApiHttp (= 1.1.2)
-  - NetworkingApiHttp (1.1.2):
-    - SwiftCommons/Diagnostics (~> 1.1.0)
-  - NetworkingApiObjC (1.1.2):
-    - Alamofire (~> 4.6.0)
-  - NetworkingApiRest (1.1.2):
-    - Alamofire (~> 4.6.0)
-    - NetworkingApiHelpers (= 1.1.2)
-    - NetworkingApiObjC (= 1.1.2)
-    - SwiftCommons/Data (~> 1.1.0)
+  - NetworkingApi (1.2.0):
+    - NetworkingApi/Converters (= 1.2.0)
+    - NetworkingApi/Helpers (= 1.2.0)
+    - NetworkingApi/Http (= 1.2.0)
+    - NetworkingApi/ObjC (= 1.2.0)
+    - NetworkingApi/Rest (= 1.2.0)
+  - NetworkingApi/Converters (1.2.0):
+    - NetworkingApiConverters (= 1.2.0)
+  - NetworkingApi/Helpers (1.2.0):
+    - NetworkingApiHelpers (= 1.2.0)
+  - NetworkingApi/Http (1.2.0):
+    - NetworkingApiHttp (= 1.2.0)
+  - NetworkingApi/ObjC (1.2.0):
+    - NetworkingApiObjC (= 1.2.0)
+  - NetworkingApi/Rest (1.2.0):
+    - NetworkingApiRest (= 1.2.0)
+  - NetworkingApiConverters (1.2.0):
+    - NetworkingApiRest (= 1.2.0)
+    - SwiftCommons/Data (~> 1.2.5)
+  - NetworkingApiHelpers (1.2.0):
+    - Alamofire (~> 4.7.0)
+    - NetworkingApiHttp (= 1.2.0)
+  - NetworkingApiHttp (1.2.0):
+    - SwiftCommons/Diagnostics (~> 1.2.5)
+  - NetworkingApiObjC (1.2.0):
+    - Alamofire (~> 4.7.0)
+  - NetworkingApiRest (1.2.0):
+    - Alamofire (~> 4.7.0)
+    - NetworkingApiHelpers (= 1.2.0)
+    - NetworkingApiObjC (= 1.2.0)
+    - SwiftCommons/Data (~> 1.2.5)
     - SwiftyJSON (~> 4.0.0)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
@@ -149,12 +149,12 @@ DEPENDENCIES:
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
   - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.1.0.podspec`)
   - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec`)
-  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.1.2.podspec`)
-  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.1.2.podspec`)
-  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.1.2.podspec`)
-  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.1.2.podspec`)
-  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.1.2.podspec`)
-  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.1.2.podspec`)
+  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.2.0.podspec`)
+  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.2.0.podspec`)
+  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.2.0.podspec`)
+  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.2.0.podspec`)
+  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.2.0.podspec`)
+  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.2.0.podspec`)
   - PureLayout (from `../../Dependencies/PureLayout/Pod-3.0.2.podspec`)
   - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
@@ -211,17 +211,17 @@ EXTERNAL SOURCES:
   ModernDesignExtensions:
     :path: ../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec
   NetworkingApi:
-    :path: ../../Dependencies/NetworkingApi/Pod-1.1.2.podspec
+    :path: ../../Dependencies/NetworkingApi/Pod-1.2.0.podspec
   NetworkingApiConverters:
-    :path: ../../Dependencies/NetworkingApiConverters/Pod-1.1.2.podspec
+    :path: ../../Dependencies/NetworkingApiConverters/Pod-1.2.0.podspec
   NetworkingApiHelpers:
-    :path: ../../Dependencies/NetworkingApiHelpers/Pod-1.1.2.podspec
+    :path: ../../Dependencies/NetworkingApiHelpers/Pod-1.2.0.podspec
   NetworkingApiHttp:
-    :path: ../../Dependencies/NetworkingApiHttp/Pod-1.1.2.podspec
+    :path: ../../Dependencies/NetworkingApiHttp/Pod-1.2.0.podspec
   NetworkingApiObjC:
-    :path: ../../Dependencies/NetworkingApiObjC/Pod-1.1.2.podspec
+    :path: ../../Dependencies/NetworkingApiObjC/Pod-1.2.0.podspec
   NetworkingApiRest:
-    :path: ../../Dependencies/NetworkingApiRest/Pod-1.1.2.podspec
+    :path: ../../Dependencies/NetworkingApiRest/Pod-1.2.0.podspec
   PureLayout:
     :path: ../../Dependencies/PureLayout/Pod-3.0.2.podspec
   R.swift:
@@ -285,12 +285,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: ae4075e4ac8c8d6ab62a6fbc46b6e783f034bd3b
   ModernDesign: f767d966cd6eb8f67284fd100a49c3fa78b6da2e
   ModernDesignExtensions: eb507bf4d245928e3c820385e0d43178a3ab90ea
-  NetworkingApi: f8ea9316753cbf28b83dce82d94b3a7beb74b24c
-  NetworkingApiConverters: 1d5988eef08bfc670b93a6c47273668df2a9768b
-  NetworkingApiHelpers: f85e62b7290b77b4c7b08acbeeb957f36708c6fc
-  NetworkingApiHttp: 11c22141fc736bf8bbeda1ea43d494cf96ac652f
-  NetworkingApiObjC: 8ebb7603d092ecef5361e0e0cc27c9c34377d759
-  NetworkingApiRest: 590449587e4496ef0345f133901f910a568d2384
+  NetworkingApi: 76e234959ee16fe4068c79704eccc8d3066769aa
+  NetworkingApiConverters: 30562693b1e528f296c835fab3e1fea890e2b888
+  NetworkingApiHelpers: f1f1dc039f247889d52f0d4bbabae810fede49c1
+  NetworkingApiHttp: a69e9ebf7072b4a09014f84cd63114d276bf1b06
+  NetworkingApiObjC: fd134cfb2cb70f05f1d47f01fb8eb7d2c9ed8ba5
+  NetworkingApiRest: 787c7ac39be1ce87398d327f83579c3ca9a71e81
   PureLayout: 42faa6dce35db5c265962231a42a1c4240653f69
   R.swift: 7950309ce3d2730925e35714fffa12916e2f3382
   R.swift.Library: ff5ff9ef8dbb65c9c2a89f7a009ce9236512577b
