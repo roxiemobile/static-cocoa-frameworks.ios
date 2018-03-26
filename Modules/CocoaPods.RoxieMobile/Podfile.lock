@@ -25,12 +25,12 @@ PODS:
   - INTULocationManager (4.3.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
-  - ModernDesign (1.1.0):
-    - ModernDesign/Extensions (= 1.1.0)
-  - ModernDesign/Extensions (1.1.0):
-    - ModernDesignExtensions (= 1.1.0)
-  - ModernDesignExtensions (1.1.0):
-    - SwiftCommons/Lang (~> 1.1.0)
+  - ModernDesign (1.2.0):
+    - ModernDesign/Extensions (= 1.2.0)
+  - ModernDesign/Extensions (1.2.0):
+    - ModernDesignExtensions (= 1.2.0)
+  - ModernDesignExtensions (1.2.0):
+    - SwiftCommons/Lang (~> 1.2.5)
   - NetworkingApi (1.2.0):
     - NetworkingApi/Converters (= 1.2.0)
     - NetworkingApi/Helpers (= 1.2.0)
@@ -147,8 +147,8 @@ DEPENDENCIES:
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.0.podspec`)
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
-  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.1.0.podspec`)
-  - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec`)
+  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.2.0.podspec`)
+  - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.2.0.podspec`)
   - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.2.0.podspec`)
   - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.2.0.podspec`)
   - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.2.0.podspec`)
@@ -207,9 +207,9 @@ EXTERNAL SOURCES:
   MBProgressHUD:
     :path: ../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec
   ModernDesign:
-    :path: ../../Dependencies/ModernDesign/Pod-1.1.0.podspec
+    :path: ../../Dependencies/ModernDesign/Pod-1.2.0.podspec
   ModernDesignExtensions:
-    :path: ../../Dependencies/ModernDesignExtensions/Pod-1.1.0.podspec
+    :path: ../../Dependencies/ModernDesignExtensions/Pod-1.2.0.podspec
   NetworkingApi:
     :path: ../../Dependencies/NetworkingApi/Pod-1.2.0.podspec
   NetworkingApiConverters:
@@ -283,8 +283,8 @@ SPEC CHECKSUMS:
   INTULocationManager: dbe890b64da7ac69bb58f84272c0b3a1c0887f43
   KeychainAccess: eafd51a9b6c3cf606e84cc5578a6901b82a65336
   MBProgressHUD: ae4075e4ac8c8d6ab62a6fbc46b6e783f034bd3b
-  ModernDesign: f767d966cd6eb8f67284fd100a49c3fa78b6da2e
-  ModernDesignExtensions: eb507bf4d245928e3c820385e0d43178a3ab90ea
+  ModernDesign: 025423a5a7436f5cf02eb09150da11722d094a7a
+  ModernDesignExtensions: 6541038e1a7f7b9e7243108f64a72c8ef19856b1
   NetworkingApi: 76e234959ee16fe4068c79704eccc8d3066769aa
   NetworkingApiConverters: 30562693b1e528f296c835fab3e1fea890e2b888
   NetworkingApiHelpers: f1f1dc039f247889d52f0d4bbabae810fede49c1

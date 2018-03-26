@@ -2,9 +2,9 @@ name: ModernDesignExtensions
 description: A collection of useful type extensions used for iOS apps development.
 
 modules:
-  1.1.0:
+  1.2.0:
     repository: https://github.com/roxiemobile/modern-design.ios.git
-    tag: 1.1.0
+    tag: 1.2.0
 
 profiles:
   init:

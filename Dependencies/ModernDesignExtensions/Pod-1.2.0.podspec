@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ModernDesignExtensions'
   s.summary               = 'A collection of useful type extensions used for iOS apps development.'
-  s.version               = '1.1.0'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -29,13 +29,12 @@ Pod::Spec.new do |s|
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
-    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) MODERNDESIGN_FRAMEWORK_VERSION=@\\\"#{s.version}\\\"",
-    'SWIFT_VERSION' => '4.0'
+    'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) MODERNDESIGN_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
 
 # MARK: - Dependencies
 
-  s.dependency 'SwiftCommons/Lang', '~> 1.1.0'
+  s.dependency 'SwiftCommons/Lang', '~> 1.2.5'
 
 # MARK: - iOS Static Framework
 

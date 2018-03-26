@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ModernDesign'
   s.summary               = 'A collection of useful UI classes common to different iOS projects.'
-  s.version               = '1.1.0'
+  s.version               = '1.2.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -24,8 +24,6 @@ Pod::Spec.new do |s|
     git: 'https://github.com/roxiemobile/modern-design.ios.git',
     tag: s.version.to_s
   }
-
-  s.default_subspecs = 'Extensions'
 
 # MARK: - Modules
 
