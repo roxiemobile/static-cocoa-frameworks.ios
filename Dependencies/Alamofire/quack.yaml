@@ -2,9 +2,9 @@ name: Alamofire
 description: Elegant HTTP Networking in Swift.
 
 modules:
-  4.6.0:
+  4.7.0:
     repository: https://github.com/Alamofire/Alamofire.git
-    tag: 4.6.0
+    tag: 4.7.0
 
 profiles:
   init:
