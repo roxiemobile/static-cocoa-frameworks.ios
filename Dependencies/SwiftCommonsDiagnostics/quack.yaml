@@ -2,9 +2,9 @@ name: SwiftCommonsDiagnostics
 description: A collection of static classes for debugging and diagnostics of program contracts such as preconditions, postconditions, and invariants.
 
 modules:
-  1.2.5:
+  1.2.6:
     repository: https://github.com/roxiemobile/swift-commons.ios.git
-    tag: 1.2.5
+    tag: 1.2.6
 
 profiles:
   init:

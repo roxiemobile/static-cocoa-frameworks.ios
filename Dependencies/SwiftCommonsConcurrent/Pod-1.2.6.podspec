@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsExtensions'
-  s.summary               = 'A collection of useful type extensions used for iOS application development.'
-  s.version               = '1.2.5'
+  s.name                  = 'SwiftCommonsConcurrent'
+  s.summary               = 'A collection of reusable components used to simplify the work of writing concurrent and asynchronous code.'
+  s.version               = '1.2.6'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Extensions/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Concurrent/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'SwiftCommonsAbstractions', s.version.to_s
-  s.dependency 'SwiftCommonsLogging', s.version.to_s
+  s.dependency 'Dispatch', '~> 2.0.4'
+  s.dependency 'SwiftCommonsObjC', s.version.to_s
 
 # MARK: - iOS Static Framework
 

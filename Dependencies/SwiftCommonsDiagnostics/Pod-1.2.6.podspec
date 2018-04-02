@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsLogging'
-  s.summary               = 'Provides simple abstraction layer over an existing logging frameworks.'
-  s.version               = '1.2.5'
+  s.name                  = 'SwiftCommonsDiagnostics'
+  s.summary               = 'A collection of static classes for debugging and diagnostics of program contracts such as preconditions, postconditions, and invariants.'
+  s.version               = '1.2.6'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Logging/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Diagnostics/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 # MARK: - Dependencies
 
   s.dependency 'SwiftCommonsConcurrent', s.version.to_s
-  s.dependency 'SwiftCommonsLang', s.version.to_s
+  s.dependency 'SwiftCommonsExtensions', s.version.to_s
 
 # MARK: - iOS Static Framework
 

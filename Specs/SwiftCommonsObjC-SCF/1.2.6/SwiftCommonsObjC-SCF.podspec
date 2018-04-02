@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsObjC'
   s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
-  s.version               = '1.2.5'
+  s.version               = '1.2.6'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -46,9 +46,22 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/SwiftCommonsObjC-1.2.6-SCF.zip',
+    sha256: '0eb7365c1adcf8997b76754915ea2f96522bd8e4d5c835679688499badb6dc0f'
+  }
+
+  s.source_files = nil
+  s.public_header_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsObjC.framework/*'
+    sc.source_files = 'SwiftCommonsObjC.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsObjC.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsObjC.framework'
+  end
 end

@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsAbstractions'
   s.summary               = 'The core abstractions and public protocols used for iOS application development.'
-  s.version               = '1.2.5'
+  s.version               = '1.2.6'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,8 +34,21 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/SwiftCommonsAbstractions-1.2.6-SCF.zip',
+    sha256: '013ccb4262e87f80353f03e7b4e86579c20484f4a869672e64779fdd92ac6b34'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsAbstractions.framework/*'
+    sc.source_files = 'SwiftCommonsAbstractions.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsAbstractions.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsAbstractions.framework'
+  end
 end

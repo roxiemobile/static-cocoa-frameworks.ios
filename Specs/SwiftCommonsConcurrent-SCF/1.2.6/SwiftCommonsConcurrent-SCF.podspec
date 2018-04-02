@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsConcurrent'
   s.summary               = 'A collection of reusable components used to simplify the work of writing concurrent and asynchronous code.'
-  s.version               = '1.2.5'
+  s.version               = '1.2.6'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,13 +34,32 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
+=begin
   s.dependency 'Dispatch', '~> 2.0.4'
   s.dependency 'SwiftCommonsObjC', s.version.to_s
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/SwiftCommonsConcurrent-1.2.6-SCF.zip',
+    sha256: 'd592cbdbfa02f0ee8f3f33f20c645cc070dec7f82f59f3105607a5deffa9ba6c'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsConcurrent.framework/*'
+    sc.source_files = 'SwiftCommonsConcurrent.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsConcurrent.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsConcurrent.framework'
+
+    # Dependencies
+    sc.dependency 'Dispatch-SCF', '~> 2.0.4'
+    sc.dependency 'SwiftCommonsObjC-SCF', s.version.to_s
+  end
 end

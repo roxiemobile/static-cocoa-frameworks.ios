@@ -2,9 +2,9 @@ name: SwiftCommonsAbstractions
 description: The core abstractions and public protocols used for iOS application development.
 
 modules:
-  1.2.5:
+  1.2.6:
     repository: https://github.com/roxiemobile/swift-commons.ios.git
-    tag: 1.2.5
+    tag: 1.2.6
 
 profiles:
   init:

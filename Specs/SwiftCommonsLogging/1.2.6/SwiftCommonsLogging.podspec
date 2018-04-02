@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsLang'
-  s.summary               = 'A collection of useful classes and Swift language extensions.'
-  s.version               = '1.2.5'
+  s.name                  = 'SwiftCommonsLogging'
+  s.summary               = 'Provides simple abstraction layer over an existing logging frameworks.'
+  s.version               = '1.2.6'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,17 +25,18 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Lang/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Logging/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
 
-# MARK: - iOS Static Framework
+# MARK: - Dependencies
 
-  s.license = {}
+  s.dependency 'SwiftCommonsConcurrent', s.version.to_s
+  s.dependency 'SwiftCommonsLang', s.version.to_s
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
