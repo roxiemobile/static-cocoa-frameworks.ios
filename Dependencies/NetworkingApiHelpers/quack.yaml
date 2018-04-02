@@ -2,9 +2,9 @@ name: NetworkingApiHelpers
 description: A collection of utility classes used by other modules of this library.
 
 modules:
-  1.2.0:
+  1.2.1:
     repository: https://github.com/roxiemobile/networking-api.ios.git
-    tag: 1.2.0
+    tag: 1.2.1
 
 profiles:
   init:

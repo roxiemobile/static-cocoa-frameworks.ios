@@ -2,9 +2,9 @@ name: NetworkingApiHttp
 description: A collection of useful type extensions and utility classes used for communication over HTTP protocol.
 
 modules:
-  1.2.0:
+  1.2.1:
     repository: https://github.com/roxiemobile/networking-api.ios.git
-    tag: 1.2.0
+    tag: 1.2.1
 
 profiles:
   init:

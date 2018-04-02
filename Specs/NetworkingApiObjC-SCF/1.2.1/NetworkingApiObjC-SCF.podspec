@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiObjC'
   s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
-  s.version               = '1.2.0'
+  s.version               = '1.2.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -38,13 +38,31 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
+=begin
   s.dependency 'Alamofire', '~> 4.7.0'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/NetworkingApiObjC-1.2.1-SCF.zip',
+    sha256: '0eecc363d2dccca8e2837a850b6197bef761cc3e59a4f186efd2905cc6420354'
+  }
+
+  s.source_files = nil
+  s.public_header_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'NetworkingApiObjC.framework/*'
+    sc.source_files = 'NetworkingApiObjC.framework/Headers/*.h'
+    sc.public_header_files = 'NetworkingApiObjC.framework/Headers/*.h'
+    sc.vendored_frameworks = 'NetworkingApiObjC.framework'
+
+    # Dependencies
+    sc.dependency 'Alamofire-SCF', '~> 4.7.0'
+  end
 end

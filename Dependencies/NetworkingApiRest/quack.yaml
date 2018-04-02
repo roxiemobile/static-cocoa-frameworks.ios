@@ -2,9 +2,9 @@ name: NetworkingApiRest
 description: An asynchronous REST API client that makes an access to a RESTful Web Services easier.
 
 modules:
-  1.2.0:
+  1.2.1:
     repository: https://github.com/roxiemobile/networking-api.ios.git
-    tag: 1.2.0
+    tag: 1.2.1
 
 profiles:
   init:
