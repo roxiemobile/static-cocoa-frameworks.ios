@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 # MARK: - Dependencies
 
 =begin
-  s.dependency 'SwiftCommons/Diagnostics', '~> 1.2.5'
+  s.dependency 'SwiftCommons/Diagnostics', '~> 1.2.6'
 =end
 
 # MARK: - iOS Static Framework

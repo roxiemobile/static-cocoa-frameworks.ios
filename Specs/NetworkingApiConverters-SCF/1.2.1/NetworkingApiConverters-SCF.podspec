@@ -60,6 +60,6 @@ Pod::Spec.new do |s|
 
     # Dependencies
     sc.dependency 'NetworkingApiRest-SCF', s.version.to_s
-    sc.dependency 'SwiftCommons-SCF/Data', '~> 1.2.5'
+    sc.dependency 'SwiftCommons-SCF/Data', '~> 1.2.6'
   end
 end
