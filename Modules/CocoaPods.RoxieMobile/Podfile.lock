@@ -7,15 +7,15 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - ContentProviders (1.2.0):
-    - ContentProviders/SQLite (= 1.2.0)
-  - ContentProviders/SQLite (1.2.0):
-    - ContentProvidersSQLite (= 1.2.0)
-  - ContentProvidersSQLite (1.2.0):
+  - ContentProviders (1.2.1):
+    - ContentProviders/SQLite (= 1.2.1)
+  - ContentProviders/SQLite (1.2.1):
+    - ContentProvidersSQLite (= 1.2.1)
+  - ContentProvidersSQLite (1.2.1):
     - CryptoSwift (~> 0.8.3)
     - SQLite.swift/SQLCipher (~> 0.11.4)
-    - SwiftCommons/Concurrent (~> 1.2.5)
-    - SwiftCommons/Extensions (~> 1.2.5)
+    - SwiftCommons/Concurrent (~> 1.2.6)
+    - SwiftCommons/Extensions (~> 1.2.6)
   - CryptoSwift (0.8.3)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
@@ -137,8 +137,8 @@ DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.7.0.podspec`)
   - Armchair (from `../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
-  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.2.0.podspec`)
-  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.2.0.podspec`)
+  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.2.1.podspec`)
+  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec`)
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.3.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
@@ -187,9 +187,9 @@ EXTERNAL SOURCES:
   Bolts:
     :path: ../../Dependencies/Bolts/Pod-1.9.0.podspec
   ContentProviders:
-    :path: ../../Dependencies/ContentProviders/Pod-1.2.0.podspec
+    :path: ../../Dependencies/ContentProviders/Pod-1.2.1.podspec
   ContentProvidersSQLite:
-    :path: ../../Dependencies/ContentProvidersSQLite/Pod-1.2.0.podspec
+    :path: ../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec
   CryptoSwift:
     :path: ../../Dependencies/CryptoSwift/Pod-0.8.3.podspec
   Differentiator:
@@ -273,8 +273,8 @@ SPEC CHECKSUMS:
   Alamofire: c690e03ff2045df13efd30def4d70bc8b5f3544c
   Armchair: c38c5cb5e6cc85b420b7cbb85750d0395bc43628
   Bolts: d974dbd1ae2ed8e597f94fb2b2d153cd41209c72
-  ContentProviders: c575b2f8d98212614db50daa2c4cb157ec9e235b
-  ContentProvidersSQLite: a4327b7615bcfcf88d96e0e15ee5479f58db4cb1
+  ContentProviders: 44ba89135ebf2eaa640b57fe5c51a8392d261c34
+  ContentProvidersSQLite: d1610258d672ab858add9ffed75a3cd44d7e317e
   CryptoSwift: 3a840f288192aa9a6bb2295fcdc8aa035fa987d0
   Differentiator: a4fe87fa78c7e11c09d142dfe3fe547cc0c75098
   Dispatch: 3edc705b34dbe28ab9a5b510f62f51935548af05
@@ -315,6 +315,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
   YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
 
-PODFILE CHECKSUM: 817973b12ae0c4e867abaa7563a62f8f9c4a597f
+PODFILE CHECKSUM: 367e90904482b7c392440e6c568865950d4a0789
 
 COCOAPODS: 1.4.0

@@ -2,9 +2,9 @@ name: ContentProvidersSQLite
 description: A content provider used for accessing and modifying data in SQLite database.
 
 modules:
-  1.2.0:
+  1.2.1:
     repository: https://github.com/roxiemobile/content-providers.ios.git
-    tag: 1.2.0
+    tag: 1.2.1
 
 profiles:
   init:
