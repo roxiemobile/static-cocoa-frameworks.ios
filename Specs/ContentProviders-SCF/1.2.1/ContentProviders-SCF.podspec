@@ -51,8 +51,7 @@ Pod::Spec.new do |s|
   s.name = "#{s.name}-SCF"
 
   s.source = {
-#   http: 'https://dl.bintray.com/roxiemobile/generic/ContentProviders-1.2.1-SCF.zip',
-    http: 'https://github.com/roxiemobile/content-providers.ios/releases/download/1.2.1/ContentProviders-1.2.1-SCF.zip',
+    http: 'https://dl.bintray.com/roxiemobile/generic/ContentProviders-1.2.1-SCF.zip',
     sha256: '851d516f6f344b8888cb2a1c49f324467c84e19c1f8b8d1a204626b0bbdc2868'
   }
 end
