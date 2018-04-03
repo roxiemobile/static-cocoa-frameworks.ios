@@ -53,7 +53,8 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/ContentProvidersSQLite-1.2.1-SCF.zip',
+#   http: 'https://dl.bintray.com/roxiemobile/generic/ContentProvidersSQLite-1.2.1-SCF.zip',
+    http: 'https://github.com/roxiemobile/content-providers.ios/releases/download/1.2.1/ContentProvidersSQLite-1.2.1-SCF.zip',
     sha256: '7d2d517c686dd9ed3a147dbf9fcd29b8d053d29e2a81c6df1bfda9404bed117e'
   }
 
