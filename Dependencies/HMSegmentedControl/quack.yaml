@@ -1,0 +1,19 @@
+name: HMSegmentedControl
+description: A drop-in replacement for UISegmentedControl mimicking the style of the one in Google Currents and various other Google products.
+
+modules:
+  1.5.4:
+    repository: https://github.com/HeshamMegid/HMSegmentedControl.git
+    tag: 1.5.4
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
