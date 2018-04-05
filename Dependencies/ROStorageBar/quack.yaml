@@ -1,0 +1,19 @@
+name: ROStorageBar
+description: Dynamic Storage Bar (a là iTunes Usage Bar) written in Swift
+
+modules:
+  2.1.3:
+    repository: https://github.com/roxiemobile-forks/ROStorageBar.git
+    tag: 2.1.3-patch.1
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
