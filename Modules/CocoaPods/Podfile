@@ -39,5 +39,6 @@ target 'DummyFramework' do
   pod 'SQLite.swift/SQLCipher',   '~> 0.11'
   pod 'SwiftReorder',             '~> 3.2'
   pod 'SwiftyJSON',               '~> 4.0'
+  pod 'Toast',                    '>= 4.0.0'
   pod 'YandexMobileMetrica',      '~> 2.9'
 end

@@ -53,6 +53,7 @@ profiles:
       'quack:Dependencies/SwiftCommonsObjC/quack.yaml:init',
       'quack:Dependencies/SwiftReorder/quack.yaml:init',
       'quack:Dependencies/SwiftyJSON/quack.yaml:init',
+      'quack:Dependencies/Toast/quack.yaml:init',
       'quack:Dependencies/YandexMobileMetrica/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
@@ -107,6 +108,7 @@ profiles:
       'quack:Dependencies/SwiftCommonsObjC/quack.yaml:clean',
       'quack:Dependencies/SwiftReorder/quack.yaml:clean',
       'quack:Dependencies/SwiftyJSON/quack.yaml:clean',
+      'quack:Dependencies/Toast/quack.yaml:clean',
       'quack:Dependencies/YandexMobileMetrica/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]

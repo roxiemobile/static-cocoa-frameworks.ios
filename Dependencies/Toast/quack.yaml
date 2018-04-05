@@ -1,0 +1,19 @@
+name: Toast
+description: A UIView category that adds Android-style toast notifications to iOS.
+
+modules:
+  4.0.0:
+    repository: https://github.com/scalessec/Toast.git
+    tag: 4.0.0
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
