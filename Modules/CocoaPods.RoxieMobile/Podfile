@@ -26,6 +26,7 @@ target 'DummyFramework' do
   pod 'ModernDesignExtensions',   path: '../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec'
   pod 'MXPagerView',              path: '../../Dependencies/MXPagerView/Pod-0.2.1.podspec'
   pod 'MXParallaxHeader',         path: '../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec'
+  pod 'MXSegmentedPager',         path: '../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec'
   pod 'NetworkingApi',            path: '../../Dependencies/NetworkingApi/Pod-1.2.1.podspec'
   pod 'NetworkingApiConverters',  path: '../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec'
   pod 'NetworkingApiHelpers',     path: '../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec'

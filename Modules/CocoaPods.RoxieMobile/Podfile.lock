@@ -34,6 +34,10 @@ PODS:
     - SwiftCommons/Lang (~> 1.2.6)
   - MXPagerView (0.2.1)
   - MXParallaxHeader (0.6.1)
+  - MXSegmentedPager (3.3.0):
+    - HMSegmentedControl (~> 1.5.3)
+    - MXPagerView (~> 0.2.1)
+    - MXParallaxHeader (~> 0.6.1)
   - NetworkingApi (1.2.1):
     - NetworkingApi/Converters (= 1.2.1)
     - NetworkingApi/Helpers (= 1.2.1)
@@ -155,6 +159,7 @@ DEPENDENCIES:
   - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec`)
   - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - MXParallaxHeader (from `../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec`)
+  - MXSegmentedPager (from `../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec`)
   - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.2.1.podspec`)
   - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec`)
   - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec`)
@@ -222,6 +227,8 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/MXPagerView/Pod-0.2.1.podspec
   MXParallaxHeader:
     :path: ../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec
+  MXSegmentedPager:
+    :path: ../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec
   NetworkingApi:
     :path: ../../Dependencies/NetworkingApi/Pod-1.2.1.podspec
   NetworkingApiConverters:
@@ -300,6 +307,7 @@ SPEC CHECKSUMS:
   ModernDesignExtensions: 1d2093f6b7374df21de5dcb1298fb9ee73b24e86
   MXPagerView: c17dc2417821a44ee8144c193bdedb2fe4b4612f
   MXParallaxHeader: 22e92f0641b9639146c7b537b82dfc9a1a248b5d
+  MXSegmentedPager: b1eb5cfc22f9b9ba94acb5aadce780431c48cdb7
   NetworkingApi: 31bbefe44998cdbd1e19b73a780f9c72932f3d48
   NetworkingApiConverters: 849e7f4b195bccd80e1e6cd39637b63aa77c5d9c
   NetworkingApiHelpers: bcf81acbfb79ca9b7d95fcac5cd8db45b7fa74f1
@@ -330,6 +338,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
   YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
 
-PODFILE CHECKSUM: 8b6a05c3510d74842a6a146facb6540c5d1b9d55
+PODFILE CHECKSUM: 8ef7c08928f5500ed1d2588c3305d4bde8bc998b
 
 COCOAPODS: 1.4.0

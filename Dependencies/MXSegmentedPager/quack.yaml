@@ -1,0 +1,19 @@
+name: MXSegmentedPager
+description: Segmented pager view with Parallax header.
+
+modules:
+  3.3.0:
+    repository: https://github.com/maxep/MXSegmentedPager.git
+    tag: 3.3.0
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
