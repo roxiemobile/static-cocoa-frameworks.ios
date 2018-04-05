@@ -1,0 +1,19 @@
+name: MXParallaxHeader
+description: Simple parallax header for UIScrollView.
+
+modules:
+  0.6.1:
+    repository: https://github.com/maxep/MXParallaxHeader.git
+    tag: 0.6.1
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']

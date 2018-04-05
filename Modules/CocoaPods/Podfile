@@ -22,6 +22,7 @@ target 'DummyFramework' do
   pod 'KeychainAccess',           '~> 3.1'
   pod 'MBProgressHUD',            '~> 1.1'
   pod 'MXPagerView',              '~> 0.2'
+  pod 'MXParallaxHeader'
   pod 'PureLayout',               '~> 3.0'
   pod 'R.swift',                  '~> 4.0'  # R.swift.Library
 # pod 'R.swift.Library',          '~> 4.0'
