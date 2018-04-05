@@ -24,6 +24,7 @@ PODS:
     - HMSegmentedControl (= 1.5.3)
     - MXPagerView (= 0.2.1)
     - MXParallaxHeader (= 0.6.1)
+  - PDTSimpleCalendar (0.9.1)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - MXPagerView (~> 0.2)
   - MXParallaxHeader
   - MXSegmentedPager (>= 3.3.0)
+  - PDTSimpleCalendar (>= 0.9.1)
   - PureLayout (~> 3.0)
   - R.swift (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -95,6 +97,7 @@ SPEC CHECKSUMS:
   MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
   MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
+  PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
@@ -110,6 +113,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
 
-PODFILE CHECKSUM: 1b644dd391384cefbc2723a2aa5658260b344f13
+PODFILE CHECKSUM: d310b9ded9f60be0e2decc568c7d3631be5ade95
 
 COCOAPODS: 1.4.0

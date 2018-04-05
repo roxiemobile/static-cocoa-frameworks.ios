@@ -70,6 +70,7 @@ PODS:
     - NetworkingApiObjC (= 1.2.1)
     - SwiftCommons/Data (~> 1.2.6)
     - SwiftyJSON (~> 4.0.0)
+  - PDTSimpleCalendar (0.9.1)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
@@ -166,6 +167,7 @@ DEPENDENCIES:
   - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.2.1.podspec`)
   - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.2.1.podspec`)
   - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.2.1.podspec`)
+  - PDTSimpleCalendar (from `../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec`)
   - PureLayout (from `../../Dependencies/PureLayout/Pod-3.0.2.podspec`)
   - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
@@ -241,6 +243,8 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/NetworkingApiObjC/Pod-1.2.1.podspec
   NetworkingApiRest:
     :path: ../../Dependencies/NetworkingApiRest/Pod-1.2.1.podspec
+  PDTSimpleCalendar:
+    :path: ../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec
   PureLayout:
     :path: ../../Dependencies/PureLayout/Pod-3.0.2.podspec
   R.swift:
@@ -314,6 +318,7 @@ SPEC CHECKSUMS:
   NetworkingApiHttp: 81fd01778e5addb6efe8099b4f533f5d002718c7
   NetworkingApiObjC: 5751e3cff74ddbb42b3c70cdccc0d74398f6b3eb
   NetworkingApiRest: acbc12b6a9afa01c0c8bbf001df86f560bb79552
+  PDTSimpleCalendar: 0e407c5d63437ddb1ae532af677322162e1a4c97
   PureLayout: 42faa6dce35db5c265962231a42a1c4240653f69
   R.swift: 7950309ce3d2730925e35714fffa12916e2f3382
   R.swift.Library: ff5ff9ef8dbb65c9c2a89f7a009ce9236512577b
@@ -338,6 +343,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
   YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
 
-PODFILE CHECKSUM: 8ef7c08928f5500ed1d2588c3305d4bde8bc998b
+PODFILE CHECKSUM: fab4f81cf155b8a25575ad6d5af4174de1a806c8
 
 COCOAPODS: 1.4.0
