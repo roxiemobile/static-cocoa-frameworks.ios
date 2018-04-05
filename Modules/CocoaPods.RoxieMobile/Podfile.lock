@@ -32,6 +32,7 @@ PODS:
     - ModernDesignExtensions (= 1.2.1)
   - ModernDesignExtensions (1.2.1):
     - SwiftCommons/Lang (~> 1.2.6)
+  - MXPagerView (0.2.1)
   - NetworkingApi (1.2.1):
     - NetworkingApi/Converters (= 1.2.1)
     - NetworkingApi/Helpers (= 1.2.1)
@@ -151,6 +152,7 @@ DEPENDENCIES:
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
   - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.2.1.podspec`)
   - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec`)
+  - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.2.1.podspec`)
   - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec`)
   - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec`)
@@ -214,6 +216,8 @@ EXTERNAL SOURCES:
     :path: ../../Dependencies/ModernDesign/Pod-1.2.1.podspec
   ModernDesignExtensions:
     :path: ../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec
+  MXPagerView:
+    :path: ../../Dependencies/MXPagerView/Pod-0.2.1.podspec
   NetworkingApi:
     :path: ../../Dependencies/NetworkingApi/Pod-1.2.1.podspec
   NetworkingApiConverters:
@@ -290,6 +294,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: ae4075e4ac8c8d6ab62a6fbc46b6e783f034bd3b
   ModernDesign: 73181ae9511fcad70f5d03893098f46359611741
   ModernDesignExtensions: 1d2093f6b7374df21de5dcb1298fb9ee73b24e86
+  MXPagerView: c17dc2417821a44ee8144c193bdedb2fe4b4612f
   NetworkingApi: 31bbefe44998cdbd1e19b73a780f9c72932f3d48
   NetworkingApiConverters: 849e7f4b195bccd80e1e6cd39637b63aa77c5d9c
   NetworkingApiHelpers: bcf81acbfb79ca9b7d95fcac5cd8db45b7fa74f1
@@ -320,6 +325,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
   YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
 
-PODFILE CHECKSUM: b6fa185cc4addde19c6c08def92c1f48010c73e2
+PODFILE CHECKSUM: bf24da66533ab64d5cf342ea6fbd6e3e89f1a4c0
 
 COCOAPODS: 1.4.0

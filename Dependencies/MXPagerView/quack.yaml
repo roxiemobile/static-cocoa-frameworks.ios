@@ -1,0 +1,19 @@
+name: MXPagerView
+description: Pager view with reusable page and storyboard support.
+
+modules:
+  0.2.1:
+    repository: https://github.com/maxep/MXPagerView.git
+    tag: 0.2.1
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']

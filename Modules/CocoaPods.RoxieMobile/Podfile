@@ -24,6 +24,7 @@ target 'DummyFramework' do
   pod 'MBProgressHUD',            path: '../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec'
   pod 'ModernDesign',             path: '../../Dependencies/ModernDesign/Pod-1.2.1.podspec'
   pod 'ModernDesignExtensions',   path: '../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec'
+  pod 'MXPagerView',              path: '../../Dependencies/MXPagerView/Pod-0.2.1.podspec'
   pod 'NetworkingApi',            path: '../../Dependencies/NetworkingApi/Pod-1.2.1.podspec'
   pod 'NetworkingApiConverters',  path: '../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec'
   pod 'NetworkingApiHelpers',     path: '../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec'
