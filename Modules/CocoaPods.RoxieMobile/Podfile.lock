@@ -136,7 +136,7 @@ PODS:
     - SwiftCommonsConcurrent (= 1.2.6)
     - SwiftCommonsLang (= 1.2.6)
   - SwiftCommonsObjC (1.2.6)
-  - SwiftReorder (3.2.0)
+  - SwiftReorder (4.0.0)
   - SwiftyJSON (4.0.0)
   - Toast (4.0.0)
   - YandexMobileMetrica (2.9.6):
@@ -191,7 +191,7 @@ DEPENDENCIES:
   - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.2.6.podspec`)
   - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec`)
   - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec`)
-  - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-3.2.0.podspec`)
+  - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-4.0.0.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
   - Toast (from `../../Dependencies/Toast/Pod-4.0.0.podspec`)
   - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec`)
@@ -292,7 +292,7 @@ EXTERNAL SOURCES:
   SwiftCommonsObjC:
     :path: ../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec
   SwiftReorder:
-    :path: ../../Dependencies/SwiftReorder/Pod-3.2.0.podspec
+    :path: ../../Dependencies/SwiftReorder/Pod-4.0.0.podspec
   SwiftyJSON:
     :path: ../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec
   Toast:
@@ -348,11 +348,11 @@ SPEC CHECKSUMS:
   SwiftCommonsLang: 65297e6634a66f298523e50c29cc656473e6a340
   SwiftCommonsLogging: d2bb346b0ac657162005ea4db2cb5da44e95fe41
   SwiftCommonsObjC: 97554002f92b73947d8061d3ebf9d9fa7e5bfd4a
-  SwiftReorder: 0c50a8926f23c9ba7ce581b1be9598e4db7e2444
+  SwiftReorder: fa0faf51d18751fa9e7d563c5da17ba70620a8dc
   SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
   Toast: cef42733129e4bad39f9025072f6d1de8d1c2728
   YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
 
-PODFILE CHECKSUM: 6a5bf65fa3b4ba248e0d9b63e178db57f0a78716
+PODFILE CHECKSUM: 4a6ff2be3d88c64159544b510697baa2e2336ef6
 
 COCOAPODS: 1.4.0
