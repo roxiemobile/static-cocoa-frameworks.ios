@@ -1,3 +1,4 @@
+# coding: utf-8
 Pod::Spec.new do |s|
   s.name          = "GzipSwift"
   s.version       = "4.0.4"
@@ -25,13 +26,23 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/GzipSwift-4.0.4-SCF42.zip',
+    sha256: '66ed215195c9d134d2d5f31dc8e1c21504c5ec02c8742ed4870afb3a598609a8'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Gzip.framework/*'
+    sc.source_files = 'Gzip.framework/Headers/*.h'
+    sc.public_header_files = 'Gzip.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Gzip.framework'
+  end
 end

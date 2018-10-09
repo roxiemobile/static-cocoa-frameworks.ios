@@ -198,107 +198,107 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Alamofire:
-    :path: ../../Dependencies/Alamofire/Pod-4.7.1.podspec
+    :path: "../../Dependencies/Alamofire/Pod-4.7.1.podspec"
   Armchair:
-    :path: ../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec
+    :path: "../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec"
   Bolts:
-    :path: ../../Dependencies/Bolts/Pod-1.9.0.podspec
+    :path: "../../Dependencies/Bolts/Pod-1.9.0.podspec"
   ContentProviders:
-    :path: ../../Dependencies/ContentProviders/Pod-1.2.1.podspec
+    :path: "../../Dependencies/ContentProviders/Pod-1.2.1.podspec"
   ContentProvidersSQLite:
-    :path: ../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec
+    :path: "../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec"
   CryptoSwift:
-    :path: ../../Dependencies/CryptoSwift/Pod-0.8.3.podspec
+    :path: "../../Dependencies/CryptoSwift/Pod-0.8.3.podspec"
   Differentiator:
-    :path: ../../Dependencies/Differentiator/Pod-3.0.2.podspec
+    :path: "../../Dependencies/Differentiator/Pod-3.0.2.podspec"
   Dispatch:
-    :path: ../../Dependencies/Dispatch/Pod-2.0.4.podspec
+    :path: "../../Dependencies/Dispatch/Pod-2.0.4.podspec"
   FBSDKCoreKit:
-    :path: ../../Dependencies/FBSDKCoreKit/Pod-4.31.1.podspec
+    :path: "../../Dependencies/FBSDKCoreKit/Pod-4.31.1.podspec"
   GzipSwift:
-    :path: ../../Dependencies/GzipSwift/Pod-4.0.4.podspec
+    :path: "../../Dependencies/GzipSwift/Pod-4.0.4.podspec"
   HMSegmentedControl:
-    :path: ../../Dependencies/HMSegmentedControl/Pod-1.5.4.podspec
+    :path: "../../Dependencies/HMSegmentedControl/Pod-1.5.4.podspec"
   INTULocationManager:
-    :path: ../../Dependencies/INTULocationManager/Pod-4.3.0.podspec
+    :path: "../../Dependencies/INTULocationManager/Pod-4.3.0.podspec"
   KeychainAccess:
-    :path: ../../Dependencies/KeychainAccess/Pod-3.1.0.podspec
+    :path: "../../Dependencies/KeychainAccess/Pod-3.1.0.podspec"
   MBProgressHUD:
-    :path: ../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec
+    :path: "../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec"
   ModernDesign:
-    :path: ../../Dependencies/ModernDesign/Pod-1.2.1.podspec
+    :path: "../../Dependencies/ModernDesign/Pod-1.2.1.podspec"
   ModernDesignExtensions:
-    :path: ../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec
+    :path: "../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec"
   MXPagerView:
-    :path: ../../Dependencies/MXPagerView/Pod-0.2.1.podspec
+    :path: "../../Dependencies/MXPagerView/Pod-0.2.1.podspec"
   MXParallaxHeader:
-    :path: ../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec
+    :path: "../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec"
   MXSegmentedPager:
-    :path: ../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec
+    :path: "../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec"
   NetworkingApi:
-    :path: ../../Dependencies/NetworkingApi/Pod-1.2.1.podspec
+    :path: "../../Dependencies/NetworkingApi/Pod-1.2.1.podspec"
   NetworkingApiConverters:
-    :path: ../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec
+    :path: "../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec"
   NetworkingApiHelpers:
-    :path: ../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec
+    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec"
   NetworkingApiHttp:
-    :path: ../../Dependencies/NetworkingApiHttp/Pod-1.2.1.podspec
+    :path: "../../Dependencies/NetworkingApiHttp/Pod-1.2.1.podspec"
   NetworkingApiObjC:
-    :path: ../../Dependencies/NetworkingApiObjC/Pod-1.2.1.podspec
+    :path: "../../Dependencies/NetworkingApiObjC/Pod-1.2.1.podspec"
   NetworkingApiRest:
-    :path: ../../Dependencies/NetworkingApiRest/Pod-1.2.1.podspec
+    :path: "../../Dependencies/NetworkingApiRest/Pod-1.2.1.podspec"
   PDTSimpleCalendar:
-    :path: ../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec
+    :path: "../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec"
   PureLayout:
-    :path: ../../Dependencies/PureLayout/Pod-3.0.2.podspec
+    :path: "../../Dependencies/PureLayout/Pod-3.0.2.podspec"
   R.swift:
-    :path: ../../Dependencies/R.swift/Pod-4.0.0.podspec
+    :path: "../../Dependencies/R.swift/Pod-4.0.0.podspec"
   R.swift.Library:
-    :path: ../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec
+    :path: "../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec"
   ROStorageBar:
-    :path: ../../Dependencies/ROStorageBar/Pod-2.1.3-pach.1.podspec
+    :path: "../../Dependencies/ROStorageBar/Pod-2.1.3-pach.1.podspec"
   RxCocoa:
-    :path: ../../Dependencies/RxCocoa/Pod-4.1.2.podspec
+    :path: "../../Dependencies/RxCocoa/Pod-4.1.2.podspec"
   RxDataSources:
-    :path: ../../Dependencies/RxDataSources/Pod-3.0.2.podspec
+    :path: "../../Dependencies/RxDataSources/Pod-3.0.2.podspec"
   RxSwift:
-    :path: ../../Dependencies/RxSwift/Pod-4.1.2.podspec
+    :path: "../../Dependencies/RxSwift/Pod-4.1.2.podspec"
   SDWebImage:
-    :path: ../../Dependencies/SDWebImage/Pod-4.3.3.podspec
+    :path: "../../Dependencies/SDWebImage/Pod-4.3.3.podspec"
   Siren:
-    :path: ../../Dependencies/Siren/Pod-3.2.3.podspec
+    :path: "../../Dependencies/Siren/Pod-3.2.3.podspec"
   SlideMenuControllerSwift:
-    :path: ../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec
+    :path: "../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec"
   SQLCipher:
-    :path: ../../Dependencies/SQLCipher/Pod-3.4.2.podspec
+    :path: "../../Dependencies/SQLCipher/Pod-3.4.2.podspec"
   SQLite.swift:
-    :path: ../../Dependencies/SQLite.swift/Pod-0.11.4.podspec
+    :path: "../../Dependencies/SQLite.swift/Pod-0.11.4.podspec"
   SwiftCommons:
-    :path: ../../Dependencies/SwiftCommons/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommons/Pod-1.2.6.podspec"
   SwiftCommonsAbstractions:
-    :path: ../../Dependencies/SwiftCommonsAbstractions/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsAbstractions/Pod-1.2.6.podspec"
   SwiftCommonsConcurrent:
-    :path: ../../Dependencies/SwiftCommonsConcurrent/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsConcurrent/Pod-1.2.6.podspec"
   SwiftCommonsData:
-    :path: ../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec"
   SwiftCommonsDiagnostics:
-    :path: ../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec"
   SwiftCommonsExtensions:
-    :path: ../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec"
   SwiftCommonsLang:
-    :path: ../../Dependencies/SwiftCommonsLang/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsLang/Pod-1.2.6.podspec"
   SwiftCommonsLogging:
-    :path: ../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec"
   SwiftCommonsObjC:
-    :path: ../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec
+    :path: "../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec"
   SwiftReorder:
-    :path: ../../Dependencies/SwiftReorder/Pod-4.0.0.podspec
+    :path: "../../Dependencies/SwiftReorder/Pod-4.0.0.podspec"
   SwiftyJSON:
-    :path: ../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec
+    :path: "../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec"
   Toast:
-    :path: ../../Dependencies/Toast/Pod-4.0.0.podspec
+    :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
   YandexMobileMetrica:
-    :path: ../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec
+    :path: "../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec"
 
 SPEC CHECKSUMS:
   Alamofire: 06a1500066c04325977ca752e3448aa3833be378
@@ -310,7 +310,7 @@ SPEC CHECKSUMS:
   Differentiator: a4fe87fa78c7e11c09d142dfe3fe547cc0c75098
   Dispatch: 3edc705b34dbe28ab9a5b510f62f51935548af05
   FBSDKCoreKit: ce3dd4ffb90b7b45562eb99c4eafff28fed6a5cf
-  GzipSwift: 2e8deb8095d5cc6e46b4f13e75458085990d7bf5
+  GzipSwift: 262edd7fdfd64c28369d28233eb51ec1ae9e43ef
   HMSegmentedControl: d62e3371e38120a3a48de05a6a1820a447afecaa
   INTULocationManager: dbe890b64da7ac69bb58f84272c0b3a1c0887f43
   KeychainAccess: eafd51a9b6c3cf606e84cc5578a6901b82a65336
@@ -355,4 +355,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4a6ff2be3d88c64159544b510697baa2e2336ef6
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
