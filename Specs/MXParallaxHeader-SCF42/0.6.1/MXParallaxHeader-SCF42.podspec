@@ -11,9 +11,10 @@ Pod::Spec.new do |s|
   s.version          = "0.6.1"
   s.summary          = "Simple parallax header for UIScrollView."
   s.description      = <<-DESC
-                MXParallaxHeader is a simple header class for UIScrolView.
-              In addition, MXScrollView is a UIScrollView subclass with the ability to hook the vertical scroll from its subviews, this can be used to add a parallax header to complex view hierachy.
-              Moreover, MXScrollViewController allows you to add a MXParallaxHeader to any kind of UIViewController.
+  							MXParallaxHeader is a simple header class for UIScrolView.
+
+							In addition, MXScrollView is a UIScrollView subclass with the ability to hook the vertical scroll from its subviews, this can be used to add a parallax header to complex view hierachy.
+							Moreover, MXScrollViewController allows you to add a MXParallaxHeader to any kind of UIViewController.
                        DESC
 
   s.homepage         = "https://github.com/maxep/MXParallaxHeader"
@@ -29,13 +30,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/MXParallaxHeader-0.6.1-SCF42.zip',
+    sha256: '257827b6b632f76bb0c17c30ebca751344d4496ad7273fe81997b6f469aa27ec'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'MXParallaxHeader.framework/*'
+    sc.source_files = 'MXParallaxHeader.framework/Headers/*.h'
+    sc.public_header_files = 'MXParallaxHeader.framework/Headers/*.h'
+    sc.vendored_frameworks = 'MXParallaxHeader.framework'
+  end
 end
