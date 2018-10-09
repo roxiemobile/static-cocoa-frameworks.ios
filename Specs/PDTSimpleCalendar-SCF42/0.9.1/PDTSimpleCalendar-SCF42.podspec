@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
 
   s.description  = <<-DESC
                    Inspired by Square's TimesSquare & Apple Calendar.
+
                    Simple Calendar is a simple Date Picker/Calendar View Controller using UICollectionView and a flowLayout.
                    DESC
 
@@ -19,13 +20,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/PDTSimpleCalendar-0.9.1-SCF42.zip',
+    sha256: '085152c7b62a9e6c5bbdb57503e1fe46de4dce91b676ce90c2af9411af0deb07'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'PDTSimpleCalendar.framework/*'
+    sc.source_files = 'PDTSimpleCalendar.framework/Headers/*.h'
+    sc.public_header_files = 'PDTSimpleCalendar.framework/Headers/*.h'
+    sc.vendored_frameworks = 'PDTSimpleCalendar.framework'
+  end
 end
