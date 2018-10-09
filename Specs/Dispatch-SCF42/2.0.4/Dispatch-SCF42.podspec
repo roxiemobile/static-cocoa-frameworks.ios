@@ -16,13 +16,23 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/Dispatch-2.0.4-SCF42.zip',
+    sha256: 'be9e02af6288f3b4736455fbf9567b9424a2ce9115265f7f5115f44ebde08d3f'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'DispatchFramework.framework/*'
+    sc.source_files = 'DispatchFramework.framework/Headers/*.h'
+    sc.public_header_files = 'DispatchFramework.framework/Headers/*.h'
+    sc.vendored_frameworks = 'DispatchFramework.framework'
+  end
 end
