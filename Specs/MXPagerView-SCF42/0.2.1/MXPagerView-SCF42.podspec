@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         MXPagerView is a pager view with the ability to reuse pages like you would do with a table view and cells. 
                         The MXPagerView also loads pages lazily, depending on the transition style, it will load the current page and neighbors and unload others pages.
+
                         MXPagerViewController allows you to load pages from storyboard using the MXPageSegue.
                        DESC
 
@@ -36,13 +37,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/MXPagerView-0.2.1-SCF42.zip',
+    sha256: '98cfede5cecc8686e808d59c24b093fdaa68266d9ec326d04ff6b6f6a697941c'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'MXPagerView.framework/*'
+    sc.source_files = 'MXPagerView.framework/Headers/*.h'
+    sc.public_header_files = 'MXPagerView.framework/Headers/*.h'
+    sc.vendored_frameworks = 'MXPagerView.framework'
+  end
 end
