@@ -13,13 +13,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/Toast-4.0.0-SCF42.zip',
+    sha256: '564d0247e0a1c70f44ef730caed4ba7731a2c5829e80361c34abad4c5cd7d06f'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Toast.framework/*'
+    sc.source_files = 'Toast.framework/Headers/*.h'
+    sc.public_header_files = 'Toast.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Toast.framework'
+  end
 end
