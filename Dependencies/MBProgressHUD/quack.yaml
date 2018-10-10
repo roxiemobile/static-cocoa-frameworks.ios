@@ -3,7 +3,7 @@ description: An iOS activity indicator view.
 
 modules:
   1.1.0:
-    repository: https://github.com/jdg/MBProgressHUD.git
+    repository: https://github.com/matej/MBProgressHUD.git
     tag: 1.1.0
 
 profiles:
