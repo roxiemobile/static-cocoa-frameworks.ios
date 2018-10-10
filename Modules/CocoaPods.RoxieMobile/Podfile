@@ -58,5 +58,5 @@ target 'DummyFramework' do
   pod 'SwiftReorder',             path: '../../Dependencies/SwiftReorder/Pod-4.0.0.podspec'
   pod 'SwiftyJSON',               path: '../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec'
   pod 'Toast',                    path: '../../Dependencies/Toast/Pod-4.0.0.podspec'
-  pod 'YandexMobileMetrica',      path: '../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec'
+  pod 'YandexMobileMetrica',      path: '../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec'
 end
