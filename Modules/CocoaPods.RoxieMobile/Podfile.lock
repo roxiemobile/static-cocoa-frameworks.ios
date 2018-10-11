@@ -12,11 +12,11 @@ PODS:
   - ContentProviders/SQLite (1.2.1):
     - ContentProvidersSQLite (= 1.2.1)
   - ContentProvidersSQLite (1.2.1):
-    - CryptoSwift (~> 0.8.3)
+    - CryptoSwift (~> 0.12.0)
     - SQLite.swift/SQLCipher (~> 0.11.4)
     - SwiftCommons/Concurrent (~> 1.2.6)
     - SwiftCommons/Extensions (~> 1.2.6)
-  - CryptoSwift (0.8.3)
+  - CryptoSwift (0.12.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
   - FBSDKCoreKit (4.31.1):
@@ -123,7 +123,7 @@ PODS:
     - Dispatch (~> 2.0.4)
     - SwiftCommonsObjC (= 1.2.6)
   - SwiftCommonsData (1.2.6):
-    - CryptoSwift (~> 0.8.3)
+    - CryptoSwift (~> 0.12.0)
     - SwiftCommonsDiagnostics (= 1.2.6)
   - SwiftCommonsDiagnostics (1.2.6):
     - SwiftCommonsConcurrent (= 1.2.6)
@@ -139,9 +139,9 @@ PODS:
   - SwiftReorder (4.0.0)
   - SwiftyJSON (4.0.0)
   - Toast (4.0.0)
-  - YandexMobileMetrica (2.9.6):
-    - YandexMobileMetrica/Static (= 2.9.6)
-  - YandexMobileMetrica/Static (2.9.6)
+  - YandexMobileMetrica (2.9.8):
+    - YandexMobileMetrica/Static (= 2.9.8)
+  - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.7.3.podspec`)
@@ -149,7 +149,7 @@ DEPENDENCIES:
   - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
   - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.2.1.podspec`)
   - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec`)
-  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.3.podspec`)
+  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.12.0.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
   - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.31.1.podspec`)
@@ -194,7 +194,7 @@ DEPENDENCIES:
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-4.0.0.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
   - Toast (from `../../Dependencies/Toast/Pod-4.0.0.podspec`)
-  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec`)
+  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -208,7 +208,7 @@ EXTERNAL SOURCES:
   ContentProvidersSQLite:
     :path: "../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec"
   CryptoSwift:
-    :path: "../../Dependencies/CryptoSwift/Pod-0.8.3.podspec"
+    :path: "../../Dependencies/CryptoSwift/Pod-0.12.0.podspec"
   Differentiator:
     :path: "../../Dependencies/Differentiator/Pod-3.0.2.podspec"
   Dispatch:
@@ -298,61 +298,61 @@ EXTERNAL SOURCES:
   Toast:
     :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
   YandexMobileMetrica:
-    :path: "../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec"
+    :path: "../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec"
 
 SPEC CHECKSUMS:
-  Alamofire: 2532b5555c424ea538e3fbeb682727c4b6365f22
-  Armchair: c38c5cb5e6cc85b420b7cbb85750d0395bc43628
-  Bolts: d974dbd1ae2ed8e597f94fb2b2d153cd41209c72
-  ContentProviders: 44ba89135ebf2eaa640b57fe5c51a8392d261c34
-  ContentProvidersSQLite: d1610258d672ab858add9ffed75a3cd44d7e317e
-  CryptoSwift: 3a840f288192aa9a6bb2295fcdc8aa035fa987d0
-  Differentiator: a4fe87fa78c7e11c09d142dfe3fe547cc0c75098
-  Dispatch: 3edc705b34dbe28ab9a5b510f62f51935548af05
-  FBSDKCoreKit: ce3dd4ffb90b7b45562eb99c4eafff28fed6a5cf
-  GzipSwift: 2e8deb8095d5cc6e46b4f13e75458085990d7bf5
-  HMSegmentedControl: d62e3371e38120a3a48de05a6a1820a447afecaa
-  INTULocationManager: dbe890b64da7ac69bb58f84272c0b3a1c0887f43
-  KeychainAccess: eafd51a9b6c3cf606e84cc5578a6901b82a65336
-  MBProgressHUD: ae4075e4ac8c8d6ab62a6fbc46b6e783f034bd3b
-  ModernDesign: 73181ae9511fcad70f5d03893098f46359611741
-  ModernDesignExtensions: 1d2093f6b7374df21de5dcb1298fb9ee73b24e86
-  MXPagerView: c17dc2417821a44ee8144c193bdedb2fe4b4612f
-  MXParallaxHeader: 22e92f0641b9639146c7b537b82dfc9a1a248b5d
-  MXSegmentedPager: b1eb5cfc22f9b9ba94acb5aadce780431c48cdb7
-  NetworkingApi: 31bbefe44998cdbd1e19b73a780f9c72932f3d48
-  NetworkingApiConverters: 849e7f4b195bccd80e1e6cd39637b63aa77c5d9c
-  NetworkingApiHelpers: bcf81acbfb79ca9b7d95fcac5cd8db45b7fa74f1
-  NetworkingApiHttp: 81fd01778e5addb6efe8099b4f533f5d002718c7
-  NetworkingApiObjC: 5751e3cff74ddbb42b3c70cdccc0d74398f6b3eb
-  NetworkingApiRest: acbc12b6a9afa01c0c8bbf001df86f560bb79552
-  PDTSimpleCalendar: 0e407c5d63437ddb1ae532af677322162e1a4c97
-  PureLayout: 42faa6dce35db5c265962231a42a1c4240653f69
-  R.swift: 7950309ce3d2730925e35714fffa12916e2f3382
-  R.swift.Library: ff5ff9ef8dbb65c9c2a89f7a009ce9236512577b
-  ROStorageBar: d76cc4c669d539fe2fcbd3695517b8f6051d2996
-  RxCocoa: 8922db968aa8c2a16d2a52944f9bd01348ce27c6
-  RxDataSources: 5df54c4b74fca54db8c225f58a8aea7c56872674
-  RxSwift: 40ec76e4679a89d96f0477b88f99c426af80e589
-  SDWebImage: 4ca717c696664787e4bbd2ae20cd7b705bab29e3
-  Siren: ea39f28a7840d4b7ca64d6c5321e1f2b806398cb
-  SlideMenuControllerSwift: 7346c735a2c7dbe056c96fd4b1f518e5cbc7c3cd
-  SQLCipher: 6cd994af8c601e2c2d4b2ef8607639233a714b11
-  SQLite.swift: 6fd20b477ae434177a4ca483da74068e949cd2ee
-  SwiftCommons: 13573f44acf0c5ff34573fc970ee4a6be78d893a
-  SwiftCommonsAbstractions: cfe25d54607a412e2d97ede771258ce3e9ce889e
-  SwiftCommonsConcurrent: 124f243a1ca5f4ed020bf986d8a1fca5c04009fa
-  SwiftCommonsData: dd7e56c14d8793472a0b6cdba04c8867d4eaaf41
-  SwiftCommonsDiagnostics: a4dd6018a98d4953872c23c3135874ba02d239e0
-  SwiftCommonsExtensions: 30ae7db8182a3eaf7ea6fbab0dfc4a4910453a4b
-  SwiftCommonsLang: 65297e6634a66f298523e50c29cc656473e6a340
-  SwiftCommonsLogging: d2bb346b0ac657162005ea4db2cb5da44e95fe41
-  SwiftCommonsObjC: 97554002f92b73947d8061d3ebf9d9fa7e5bfd4a
-  SwiftReorder: fa0faf51d18751fa9e7d563c5da17ba70620a8dc
-  SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
-  Toast: cef42733129e4bad39f9025072f6d1de8d1c2728
-  YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
+  Alamofire: 4b20a24dc67cd3ffef187cb20a24b6fbbb81286d
+  Armchair: 3f53fd7edd89b2329f035ad26e61995b78916485
+  Bolts: 6cbdcb9eb120f3842929113a283c763596d6b8a1
+  ContentProviders: 9877152a905609859a3db1bfa4a35b11cd13fde7
+  ContentProvidersSQLite: 69c95b5585262f8912522518c467df5c91f6e208
+  CryptoSwift: d680e652e3e697e497dec111deabfcb8b72f5e76
+  Differentiator: bd0991bcd45db47dbf61a2dc7a9b6b56324ed57f
+  Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
+  FBSDKCoreKit: d41f319e3951a5659967edf2442d3134d4c8e625
+  GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
+  HMSegmentedControl: 3c14121c890966561c9b3204ab7c2e4335921ade
+  INTULocationManager: 3c64d7eab1691fbf395a11c0731f05e6ba8ab43e
+  KeychainAccess: bdf6e8de44d96c5d0c5c5397cda56c4eca89c151
+  MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
+  ModernDesign: 35d340848b356643e4ea90a5fa6c736a4ce1fd5b
+  ModernDesignExtensions: baae8532d0f049832fba37b9562d0c962192ae9c
+  MXPagerView: 32d1c505c33297049e87ef2a716d7e5b06e21ac7
+  MXParallaxHeader: 5fb629d86a7b402dc1279c945715db7ff72bf43f
+  MXSegmentedPager: 01b210656b661bdcee269dfc55f94095ef5ac30d
+  NetworkingApi: 6392a49126ace094a7b066d1bf25705792f31c7d
+  NetworkingApiConverters: d9bc6bc4da5ae572218d7bfc0067ee79d6af627c
+  NetworkingApiHelpers: c352d91d7406a2794d8333365af27fb6b4c652a9
+  NetworkingApiHttp: 557a0e093e34d2474ffe4cfc0bcc89619c3572f7
+  NetworkingApiObjC: e84688c3861d7740f18389ee177a50ab41841ee3
+  NetworkingApiRest: ced9218f0c05f2ac98f8ca82949edb5ac3a381f0
+  PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
+  PureLayout: d972446f31e5e09bd3038b58bd16ed801a70e3ae
+  R.swift: 32957e4ae5c452aef8ec149ec2235a3d495fe9db
+  R.swift.Library: 820bd47418b9afc6a77efe3ec6a9bc76dc377f6d
+  ROStorageBar: 26cde54cb44e187fcf73c735c2c31161775b5a37
+  RxCocoa: 9bbd0949c9463e1d58593690f95068d68d27560f
+  RxDataSources: aed3585dc1e1055f589e18a733a99fe277088032
+  RxSwift: 2a7609c85c6c38f06d1ce8ecc5645ebf7cd25c10
+  SDWebImage: af9c41bb438149082e18575cd784c5937a8dd39a
+  Siren: ae049537ab7fcc9f97dcead5c6fd2d0c7d78ffad
+  SlideMenuControllerSwift: 7fa8c77d84d8eb9fd4e3e8cae2bda2eef2dd5b89
+  SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
+  SQLite.swift: 0fa00510c7a08c4482608c94ae6c7fc85cca1c87
+  SwiftCommons: a7861d7c0549576f3de197f31f021f990252cc3e
+  SwiftCommonsAbstractions: b6435c64c6fdc5581bdb23a6085d89f372f935b6
+  SwiftCommonsConcurrent: 78eab4e0c2c0fa906ee5a471e9ea64dbd9507610
+  SwiftCommonsData: 10b5467ea60cf3cf465ca8d1e742b8f3ca8ad544
+  SwiftCommonsDiagnostics: 13df2c8e945296633e2558cc5078f15aff00b2c0
+  SwiftCommonsExtensions: e6514f4125a3d0e973071d7c0d577b0932bc9da7
+  SwiftCommonsLang: c2be026e4fdf441ee537c3b08e06af48274d711d
+  SwiftCommonsLogging: 6891b4d916cff712383d1d137ef85e235cba5975
+  SwiftCommonsObjC: 93b868c6bb52f623d23356442d9aa77631ed3428
+  SwiftReorder: 1afd0df17ff18685b022456ca651932afaa2288d
+  SwiftyJSON: 2ff48aaf452bd09a67194c35fc3ab32c2954057d
+  Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
+  YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 2beb6d5adcfbf645c46bfc65b67e74630884bac8
+PODFILE CHECKSUM: fd513de04dc92dff8cfc345a49abaa7b415b7de3
 
 COCOAPODS: 1.5.3

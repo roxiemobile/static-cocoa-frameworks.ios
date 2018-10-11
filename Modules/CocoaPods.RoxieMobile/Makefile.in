@@ -50,7 +50,7 @@ build: clean
 					-sdk iphonesimulator \
 					-configuration Release \
 					-arch i386 -arch x86_64 \
-					IPHONEOS_DEPLOYMENT_TARGET=8.0 \
+					IPHONEOS_DEPLOYMENT_TARGET=9.0 \
 					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_SIMULATOR) \
 					SYMROOT=$(BUILD_PATH) \
 					clean build
@@ -60,7 +60,7 @@ build: clean
 					-sdk iphoneos \
 					-configuration $(CONFIGURATION) \
 					-arch arm64 -arch armv7 -arch armv7s \
-					IPHONEOS_DEPLOYMENT_TARGET=8.0 \
+					IPHONEOS_DEPLOYMENT_TARGET=9.0 \
 					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_IPHONE) \
 					SYMROOT=$(BUILD_PATH) \
 					clean build

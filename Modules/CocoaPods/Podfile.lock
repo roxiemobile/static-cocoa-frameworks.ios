@@ -7,7 +7,7 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - CryptoSwift (0.9.0)
+  - CryptoSwift (0.12.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
   - FBSDKCoreKit (4.31.1):
@@ -50,14 +50,14 @@ PODS:
   - SwiftReorder (4.0.0)
   - SwiftyJSON (4.0.0)
   - Toast (4.0.0)
-  - YandexMobileMetrica (2.9.6):
-    - YandexMobileMetrica/Static (= 2.9.6)
-  - YandexMobileMetrica/Static (2.9.6)
+  - YandexMobileMetrica (2.9.8):
+    - YandexMobileMetrica/Static (= 2.9.8)
+  - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
   - Alamofire (>= 4.7.0)
   - Armchair (>= 0.3.5)
-  - CryptoSwift (>= 0.8.3)
+  - CryptoSwift (>= 0.12.0)
   - Dispatch (>= 2.0.4)
   - FBSDKCoreKit (>= 4.31.1)
   - GoogleAnalytics (>= 3.17.0)
@@ -82,13 +82,49 @@ DEPENDENCIES:
   - SwiftReorder (>= 3.2.0)
   - SwiftyJSON (>= 4.0.0)
   - Toast (>= 4.0.0)
-  - YandexMobileMetrica (>= 2.9.6)
+  - YandexMobileMetrica (< 3.0.0, >= 2.9.8)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Armchair
+    - Bolts
+    - CryptoSwift
+    - Differentiator
+    - Dispatch
+    - FBSDKCoreKit
+    - GoogleAnalytics
+    - GzipSwift
+    - HMSegmentedControl
+    - INTULocationManager
+    - KeychainAccess
+    - MBProgressHUD
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedPager
+    - PDTSimpleCalendar
+    - PureLayout
+    - R.swift
+    - R.swift.Library
+    - ROStorageBar
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SDWebImage
+    - Siren
+    - SlideMenuControllerSwift
+    - SQLCipher
+    - SQLite.swift
+    - SwiftReorder
+    - SwiftyJSON
+    - Toast
+    - YandexMobileMetrica
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   Armchair: 0ab9237bc373e26245c7651acf193d85fb9c033a
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  CryptoSwift: bca8c5b653dcc2d9734409242a070ff53bafac86
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
   FBSDKCoreKit: e08ccfcefa7bc1347a07c276dac9bf6c7fe57024
@@ -117,8 +153,8 @@ SPEC CHECKSUMS:
   SwiftReorder: 5fc44b4f803d15d8b388412542d6fefb64d91816
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
+  YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 1c571a6c4ba6adff775dd831eb2542e07e8b3645
+PODFILE CHECKSUM: 32f28d8ba008ea7cac6d545d580d564936a5102b
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
