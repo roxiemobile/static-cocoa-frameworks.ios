@@ -5,17 +5,17 @@ Pod::Spec.new do |s|
 
   s.name                  = 'YandexMobileMetrica'
   s.summary               = 'This library is designed to be a part of mobile apps and provide app usage stats to Yandex AppMetrica'
-  s.version               = '2.9.6'
+  s.version               = '2.9.8'
 
   s.platform              = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '6.0'
 
   s.authors               = { 'Yandex LLC' => 'appmetrica@yandex-team.com' }
   s.license               = { type: 'PROPRIETARY', file: 'LICENSE.md' }
 
   s.homepage              = 'http://appmetrica.yandex.com/'
 
-  s.source                = { 'http': 'https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/48248/YandexMobileMetrica-2.9.6-ios-79c52048-dc1f-48e1-8a5d-bacb86c7fe6d.zip', 'sha1': 'c123ab4b6ba245e9a384cbd3b25647aff2427556' }
+  s.source                = { 'http': 'https://storage.mds.yandex.net/get-appmetrica-mobile-sdk/117488/YandexMobileMetrica-2.9.8-ios-71d8155b-cd35-4d5b-a382-2e737d3029d4.zip', 'sha1': '3758096d5fad033abdbad75e834ce5924ba0a6e2' }
   s.libraries             = [ 'c++', 'z', 'sqlite3' ]
   s.frameworks            = [ 'UIKit', 'Foundation', 'CoreTelephony', 'CoreLocation', 'CoreGraphics', 'AdSupport' ]
 
@@ -39,11 +39,6 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'dynamic/YandexMobileMetrica.framework'
   end
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.0'
-
-  s.license = {}
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
