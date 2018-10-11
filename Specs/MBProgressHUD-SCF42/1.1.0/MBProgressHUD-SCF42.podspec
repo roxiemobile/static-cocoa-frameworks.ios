@@ -25,12 +25,13 @@ Pod::Spec.new do |s|
   s.name = "#{s.name}-SCF42"
 
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.2'
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/MBProgressHUD-1.1.0-SCF42.zip',
-    sha256: 'ce71cbc3cc2df9ba94077d815f4971353907e7adfd07772c13ce316bf14a50f8'
+    sha256: 'e7d95d60c8d03e5a154d09361ceb438e79d1cc4846a9bbc6c371fbae1e4c9e16'
   }
 
   s.source_files = nil
