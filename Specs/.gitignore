@@ -3,3 +3,4 @@
 
 # Add some items back
 !*.podspec
+!*.sh

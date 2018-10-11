@@ -39,7 +39,7 @@ gitDiff().grep("bug").less          // sequences of swift objects
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
   s.license = {}
   s.static_framework = true
