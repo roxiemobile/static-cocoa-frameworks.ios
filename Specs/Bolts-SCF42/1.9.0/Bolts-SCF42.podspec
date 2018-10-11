@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.subspec 'Tasks' do |ss|
+=begin
     ss.ios.source_files = 'Bolts/Common/*.[hm]'
     ss.ios.public_header_files = 'Bolts/Common/*.h'
 
@@ -31,9 +32,12 @@ Pod::Spec.new do |s|
 
     ss.tvos.source_files = 'Bolts/Common/*.[hm]'
     ss.tvos.public_header_files = 'Bolts/Common/*.h'
+=end
+    ss.dependency "#{s.name}-SCF42/StaticCocoaFramework", s.version.to_s
   end
 
   s.subspec 'AppLinks' do |ss|
+=begin
     ss.ios.deployment_target = '8.0'
     ss.dependency 'Bolts/Tasks'
 
@@ -42,20 +46,29 @@ Pod::Spec.new do |s|
     ss.osx.source_files = ''
     ss.watchos.source_files = ''
     ss.tvos.source_files = ''
+=end
+    ss.dependency "#{s.name}-SCF42/Tasks", s.version.to_s
   end
 
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspecs = 'Tasks', 'AppLinks'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/Bolts-1.9.0-SCF42.zip',
+    sha256: '5f60e99ef569bc383ab9027fd620f065d9619c9fe904402db75455bf0ecb873c'
+  }
 
-  s.subspecs.each do |sc|
-    cn = sc.consumer(:ios)
-    sc.ios.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" } if !cn.source_files.blank?
-    sc.ios.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" } if !cn.public_header_files.blank?
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Bolts.framework/*'
+    sc.source_files = 'Bolts.framework/Headers/*.h'
+    sc.public_header_files = 'Bolts.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Bolts.framework'
   end
 end
