@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SDWebImage'
-  s.version = '4.3.3'
+  s.version = '4.4.2'
 
   s.osx.deployment_target = '10.9'
   s.ios.deployment_target = '7.0'
@@ -65,23 +65,6 @@ Pod::Spec.new do |s|
     webp.dependency 'libwebp', '~> 0.5'
   end
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn1 = s.consumer(:ios)
-  s.pod_target_xcconfig = (cn1.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
-  end
-
-  s.subspecs.each do |sc|
-    cn2 = sc.consumer(:ios)
-    sc.source_files = cn2.source_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.source_files.blank?
-    sc.exclude_files = cn2.exclude_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.exclude_files.blank?
-  end
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
