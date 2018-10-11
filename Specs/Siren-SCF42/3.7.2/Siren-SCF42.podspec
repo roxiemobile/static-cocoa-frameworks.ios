@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/Siren-3.7.2-SCF42.zip',
-    sha256: 'd6608085120b6bebde502ed7cf8f74580a26b688bdcfd97629ee436118c5c39b'
+    sha256: 'ab6664e2f8aa519fb602f29cef18babfbc905a2d4ff500bc188773c067e6c063'
   }
 
   s.source_files = nil
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
     sc.source_files = 'Siren.framework/Headers/*.h'
     sc.public_header_files = 'Siren.framework/Headers/*.h'
     sc.vendored_frameworks = 'Siren.framework'
-    sc.resources = 'Siren.framework/Resources/Siren.bundle'
+    sc.resources = 'Siren.framework/Siren.bundle'
   end
 
 # MARK: - Validation
