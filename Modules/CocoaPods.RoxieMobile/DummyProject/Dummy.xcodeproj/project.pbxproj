@@ -225,7 +225,7 @@
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.5/Localization/vi.lproj",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.5/Localization/zh-Hans.lproj",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.5/Localization/zh-Hant.lproj",
-				"${PODS_ROOT}/../../../Dependencies/FBSDKCoreKit/4.31.1/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/../../../Dependencies/FBSDKCoreKit/4.37.0/FacebookSDKStrings.bundle",
 				"${PODS_ROOT}/../../../Dependencies/Siren/3.2.3/Sources/Siren.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
