@@ -10,7 +10,7 @@ PODS:
   - CryptoSwift (0.12.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.31.1):
+  - FBSDKCoreKit (4.37.0):
     - Bolts (~> 1.7)
   - GoogleAnalytics (3.17.0)
   - GzipSwift (4.0.4)
@@ -59,7 +59,7 @@ DEPENDENCIES:
   - Armchair (>= 0.3.5)
   - CryptoSwift (>= 0.12.0)
   - Dispatch (>= 2.0.4)
-  - FBSDKCoreKit (>= 4.31.1)
+  - FBSDKCoreKit (>= 4.37.0)
   - GoogleAnalytics (>= 3.17.0)
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
@@ -127,7 +127,7 @@ SPEC CHECKSUMS:
   CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
-  FBSDKCoreKit: e08ccfcefa7bc1347a07c276dac9bf6c7fe57024
+  FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 63d44a0215390a112bde4df777de3db0c24dbfe0
+PODFILE CHECKSUM: e135d80b7386c8741a2b7200ef8e4f96dff653d6
 
 COCOAPODS: 1.5.3
