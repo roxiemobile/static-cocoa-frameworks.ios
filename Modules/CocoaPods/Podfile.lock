@@ -48,7 +48,7 @@ PODS:
   - SQLite.swift/SQLCipher (0.11.4):
     - SQLCipher (>= 3.4.0)
   - SwiftReorder (4.0.0)
-  - SwiftyJSON (4.0.0)
+  - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
   - YandexMobileMetrica (2.9.8):
     - YandexMobileMetrica/Static (= 2.9.8)
@@ -80,7 +80,7 @@ DEPENDENCIES:
   - SQLCipher/standard (>= 3.4.2)
   - SQLite.swift/SQLCipher (>= 0.11.4)
   - SwiftReorder (>= 3.2.0)
-  - SwiftyJSON (>= 4.0.0)
+  - SwiftyJSON (>= 4.2.0)
   - Toast (>= 4.0.0)
   - YandexMobileMetrica (< 3.0.0, >= 2.9.8)
 
@@ -151,10 +151,10 @@ SPEC CHECKSUMS:
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
   SwiftReorder: 5fc44b4f803d15d8b388412542d6fefb64d91816
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: e135d80b7386c8741a2b7200ef8e4f96dff653d6
+PODFILE CHECKSUM: e129ef63ccfe48e705d7e00c6d4cfd5250b63d24
 
 COCOAPODS: 1.5.3

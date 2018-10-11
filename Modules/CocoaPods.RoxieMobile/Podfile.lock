@@ -69,7 +69,7 @@ PODS:
     - NetworkingApiHelpers (= 1.2.1)
     - NetworkingApiObjC (= 1.2.1)
     - SwiftCommons/Data (~> 1.2.6)
-    - SwiftyJSON (~> 4.0.0)
+    - SwiftyJSON (~> 4.2.0)
   - PDTSimpleCalendar (0.9.1)
   - PureLayout (3.0.2)
   - R.swift (4.0.0):
@@ -137,7 +137,7 @@ PODS:
     - SwiftCommonsLang (= 1.2.6)
   - SwiftCommonsObjC (1.2.6)
   - SwiftReorder (4.0.0)
-  - SwiftyJSON (4.0.0)
+  - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
   - YandexMobileMetrica (2.9.8):
     - YandexMobileMetrica/Static (= 2.9.8)
@@ -192,7 +192,7 @@ DEPENDENCIES:
   - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec`)
   - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec`)
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-4.0.0.podspec`)
-  - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
+  - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec`)
   - Toast (from `../../Dependencies/Toast/Pod-4.0.0.podspec`)
   - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec`)
 
@@ -294,7 +294,7 @@ EXTERNAL SOURCES:
   SwiftReorder:
     :path: "../../Dependencies/SwiftReorder/Pod-4.0.0.podspec"
   SwiftyJSON:
-    :path: "../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec"
+    :path: "../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec"
   Toast:
     :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
   YandexMobileMetrica:
@@ -325,7 +325,7 @@ SPEC CHECKSUMS:
   NetworkingApiHelpers: c352d91d7406a2794d8333365af27fb6b4c652a9
   NetworkingApiHttp: 557a0e093e34d2474ffe4cfc0bcc89619c3572f7
   NetworkingApiObjC: e84688c3861d7740f18389ee177a50ab41841ee3
-  NetworkingApiRest: ced9218f0c05f2ac98f8ca82949edb5ac3a381f0
+  NetworkingApiRest: 8d970bb76b50f88fadee4c2a7d93e84471553485
   PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
   PureLayout: d972446f31e5e09bd3038b58bd16ed801a70e3ae
   R.swift: 32957e4ae5c452aef8ec149ec2235a3d495fe9db
@@ -349,10 +349,10 @@ SPEC CHECKSUMS:
   SwiftCommonsLogging: 6891b4d916cff712383d1d137ef85e235cba5975
   SwiftCommonsObjC: 93b868c6bb52f623d23356442d9aa77631ed3428
   SwiftReorder: 1afd0df17ff18685b022456ca651932afaa2288d
-  SwiftyJSON: 2ff48aaf452bd09a67194c35fc3ab32c2954057d
+  SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: a1b61f14fe6fb7976069cae0cd52f950823c050a
+PODFILE CHECKSUM: 9abf76d164efb59ee62f8ef2418122bbac76e998
 
 COCOAPODS: 1.5.3
