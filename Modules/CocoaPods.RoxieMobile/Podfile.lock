@@ -310,7 +310,7 @@ SPEC CHECKSUMS:
   Differentiator: bd0991bcd45db47dbf61a2dc7a9b6b56324ed57f
   Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
   FBSDKCoreKit: d41f319e3951a5659967edf2442d3134d4c8e625
-  GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
+  GzipSwift: 262edd7fdfd64c28369d28233eb51ec1ae9e43ef
   HMSegmentedControl: 3c14121c890966561c9b3204ab7c2e4335921ade
   INTULocationManager: 3c64d7eab1691fbf395a11c0731f05e6ba8ab43e
   KeychainAccess: bdf6e8de44d96c5d0c5c5397cda56c4eca89c151
