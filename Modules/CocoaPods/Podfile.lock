@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.3)
   - Armchair (0.3.5)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -55,7 +55,7 @@ PODS:
   - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
-  - Alamofire (>= 4.7.0)
+  - Alamofire (>= 4.7.3)
   - Armchair (>= 0.3.5)
   - CryptoSwift (>= 0.12.0)
   - Dispatch (>= 2.0.4)
@@ -121,7 +121,7 @@ SPEC REPOS:
     - YandexMobileMetrica
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Armchair: 0ab9237bc373e26245c7651acf193d85fb9c033a
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 32f28d8ba008ea7cac6d545d580d564936a5102b
+PODFILE CHECKSUM: 63d44a0215390a112bde4df777de3db0c24dbfe0
 
 COCOAPODS: 1.5.3
