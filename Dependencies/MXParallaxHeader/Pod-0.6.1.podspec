@@ -11,10 +11,11 @@ Pod::Spec.new do |s|
   s.version          = "0.6.1"
   s.summary          = "Simple parallax header for UIScrollView."
   s.description      = <<-DESC
-                MXParallaxHeader is a simple header class for UIScrolView.
-              In addition, MXScrollView is a UIScrollView subclass with the ability to hook the vertical scroll from its subviews, this can be used to add a parallax header to complex view hierachy.
-              Moreover, MXScrollViewController allows you to add a MXParallaxHeader to any kind of UIViewController.
-                       DESC
+                            MXParallaxHeader is a simple header class for UIScrolView.
+
+                            In addition, MXScrollView is a UIScrollView subclass with the ability to hook the vertical scroll from its subviews, this can be used to add a parallax header to complex view hierachy.
+                            Moreover, MXScrollViewController allows you to add a MXParallaxHeader to any kind of UIViewController.
+                        DESC
 
   s.homepage         = "https://github.com/maxep/MXParallaxHeader"
   s.license          = 'MIT'

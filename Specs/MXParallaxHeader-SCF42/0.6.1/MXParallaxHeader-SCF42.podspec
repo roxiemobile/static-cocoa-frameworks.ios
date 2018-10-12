@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/MXParallaxHeader-0.6.1-SCF42.zip',
-    sha256: '257827b6b632f76bb0c17c30ebca751344d4496ad7273fe81997b6f469aa27ec'
+    sha256: '1a45858cee3680b2f03bfde139f686ef3505a1a18e25357a9031cc7fc447163d'
   }
 
   s.source_files = nil
