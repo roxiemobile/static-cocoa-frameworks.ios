@@ -24,7 +24,7 @@ gitDiff().grep("bug").less          // sequences of swift objects
   s.requires_arc          = true
 
   s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.9'
+  s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
 
@@ -43,7 +43,7 @@ gitDiff().grep("bug").less          // sequences of swift objects
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/RxSwift-4.3.1-SCF42.zip',
-    sha256: '6a8e5a8ded266cbede77dea9779e98110118dd0655ba31d8521064f5f2bd8703'
+    sha256: '0b5da7a0f84f26b83c753742e7a393dfab3f594f912fdfc3a33baa6d95768fbf'
   }
 
   s.source_files = nil
