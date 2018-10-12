@@ -43,7 +43,7 @@ gitDiff().grep("bug").less          // sequences of swift objects
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/RxSwift-4.3.1-SCF42.zip',
-    sha256: '6a8e5a8ded266cbede77dea9779e98110118dd0655ba31d8521064f5f2bd8703'
+    sha256: '12c5b2a1e317236162654d680b03c7dc9d855da889b86a5bdc59dea2ea5fa4ce'
   }
 
   s.source_files = nil
