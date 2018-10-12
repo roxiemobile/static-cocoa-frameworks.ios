@@ -2,9 +2,9 @@ name: PureLayout
 description: The ultimate API for iOS & OS X Auto Layout — impressively simple, immensely powerful. Objective-C and Swift compatible.
 
 modules:
-  3.0.2:
+  3.1.2:
     repository: https://github.com/PureLayout/PureLayout.git
-    tag: v3.0.2
+    tag: v3.1.2
 
 profiles:
   init:
