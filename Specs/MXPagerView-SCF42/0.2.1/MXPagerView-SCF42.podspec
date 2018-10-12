@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/MXPagerView-0.2.1-SCF42.zip',
-    sha256: '98cfede5cecc8686e808d59c24b093fdaa68266d9ec326d04ff6b6f6a697941c'
+    sha256: 'a74339f816e02cbed5bee7cd574f81464507f035a219854d9356022476c0bcae'
   }
 
   s.source_files = nil

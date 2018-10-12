@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         MXPagerView is a pager view with the ability to reuse pages like you would do with a table view and cells. 
                         The MXPagerView also loads pages lazily, depending on the transition style, it will load the current page and neighbors and unload others pages.
+
                         MXPagerViewController allows you to load pages from storyboard using the MXPageSegue.
                        DESC
 
