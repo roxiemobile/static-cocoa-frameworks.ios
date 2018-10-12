@@ -1,7 +1,6 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name             = "Differentiator"
-  s.version          = "3.0.2"
+  s.version          = "3.1.0"
   s.summary          = "Diff algorithm for UITableView and UICollectionView."
   s.description      = <<-DESC
   Diff algorithm for UITableView and UICollectionView.
@@ -20,15 +19,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
