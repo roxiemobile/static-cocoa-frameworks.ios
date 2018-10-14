@@ -111,7 +111,7 @@ PODS:
   - SwiftCommons/Diagnostics (1.2.6):
     - SwiftCommonsDiagnostics (= 1.2.6)
   - SwiftCommons/Extensions (1.2.6):
-    - SwiftCommonsExtensions (= 1.2.6)
+    - SwiftCommonsExtensions (~> 1.3.0)
   - SwiftCommons/Lang (1.2.6):
     - SwiftCommonsLang (~> 1.3.0)
   - SwiftCommons/Logging (1.2.6):
@@ -127,10 +127,10 @@ PODS:
     - SwiftCommonsDiagnostics (= 1.2.6)
   - SwiftCommonsDiagnostics (1.2.6):
     - SwiftCommonsConcurrent (~> 1.3.0)
-    - SwiftCommonsExtensions (= 1.2.6)
-  - SwiftCommonsExtensions (1.2.6):
-    - SwiftCommonsAbstractions (~> 1.3.0)
-    - SwiftCommonsLogging (~> 1.3.0)
+    - SwiftCommonsExtensions (~> 1.3.0)
+  - SwiftCommonsExtensions (1.3.0):
+    - SwiftCommonsAbstractions (= 1.3.0)
+    - SwiftCommonsLogging (= 1.3.0)
   - SwiftCommonsLang (1.3.0)
   - SwiftCommonsLogging (1.3.0):
     - SwiftCommonsConcurrent (= 1.3.0)
@@ -187,7 +187,7 @@ DEPENDENCIES:
   - SwiftCommonsConcurrent (from `../../Dependencies/SwiftCommonsConcurrent/Pod-1.3.0.podspec`)
   - SwiftCommonsData (from `../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec`)
   - SwiftCommonsDiagnostics (from `../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec`)
-  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec`)
+  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec`)
   - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.3.0.podspec`)
   - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.3.0.podspec`)
   - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.3.0.podspec`)
@@ -284,7 +284,7 @@ EXTERNAL SOURCES:
   SwiftCommonsDiagnostics:
     :path: "../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec"
   SwiftCommonsExtensions:
-    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec"
   SwiftCommonsLang:
     :path: "../../Dependencies/SwiftCommonsLang/Pod-1.3.0.podspec"
   SwiftCommonsLogging:
@@ -339,12 +339,12 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 7fa8c77d84d8eb9fd4e3e8cae2bda2eef2dd5b89
   SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
   SQLite.swift: 0fa00510c7a08c4482608c94ae6c7fc85cca1c87
-  SwiftCommons: bbd47a61dafb01e52a42278f79a0b02b54426237
+  SwiftCommons: 0c568b24df78f7871fe650fde368d781b3b4f6d6
   SwiftCommonsAbstractions: 3760b7434e4f0c9d3a8efc8607a0d9178b76bedc
   SwiftCommonsConcurrent: e6977aa88a0162aceb34de6c34cf4ab71e8bda09
   SwiftCommonsData: 10b5467ea60cf3cf465ca8d1e742b8f3ca8ad544
-  SwiftCommonsDiagnostics: 03736af5eda40e9f518658755cae183aa8e95206
-  SwiftCommonsExtensions: 122d46ddd63970746302cc3e2610c86f55246786
+  SwiftCommonsDiagnostics: 96bbe8a8fb68edf9b40fc6a8234d0cbba5dd0196
+  SwiftCommonsExtensions: f0174ca975baf395d4c70aedd4472099dd33332e
   SwiftCommonsLang: 023f2c503e6366bb2c0caa17cba27f708b310449
   SwiftCommonsLogging: 446d9ef203f3a755b75685dd1831ecc87cad78bf
   SwiftCommonsObjC: fc1f33084aab5750a5ecb1e89af8703e8dbfb9a2
@@ -353,6 +353,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 58a84a51db5aa33f7e32792e07c94b345b85a8a7
+PODFILE CHECKSUM: d8083a3618e091f92f2258d18c89ae51de871921
 
 COCOAPODS: 1.5.3

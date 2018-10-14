@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsExtensions'
   s.summary               = 'A collection of useful type extensions used for iOS application development.'
-  s.version               = '1.2.6'
+  s.version               = '1.3.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,13 +34,32 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
+=begin
   s.dependency 'SwiftCommonsAbstractions', s.version.to_s
   s.dependency 'SwiftCommonsLogging', s.version.to_s
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommonsExtensions-#{s.version}-SCF42.zip",
+    sha256: '4549f0075228f112c22aa313a9bdb50428dc3efe4f00af99459377bee6c6499c'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsExtensions.framework/*'
+    sc.source_files = 'SwiftCommonsExtensions.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsExtensions.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsExtensions.framework'
+
+    # Dependencies
+    sc.dependency 'SwiftCommonsAbstractions-SCF42', s.version.to_s
+    sc.dependency 'SwiftCommonsLogging-SCF42', s.version.to_s
+  end
 end
