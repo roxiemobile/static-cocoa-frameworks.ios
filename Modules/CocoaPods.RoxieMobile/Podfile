@@ -48,7 +48,7 @@ target 'DummyFramework' do
   pod 'SQLite.swift/SQLCipher',   path: '../../Dependencies/SQLite.swift/Pod-0.11.4.podspec'
   pod 'SwiftCommons',             path: '../../Dependencies/SwiftCommons/Pod-1.2.6.podspec'
   pod 'SwiftCommonsAbstractions', path: '../../Dependencies/SwiftCommonsAbstractions/Pod-1.3.0.podspec'
-  pod 'SwiftCommonsConcurrent',   path: '../../Dependencies/SwiftCommonsConcurrent/Pod-1.2.6.podspec'
+  pod 'SwiftCommonsConcurrent',   path: '../../Dependencies/SwiftCommonsConcurrent/Pod-1.3.0.podspec'
   pod 'SwiftCommonsData',         path: '../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec'
   pod 'SwiftCommonsDiagnostics',  path: '../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec'
   pod 'SwiftCommonsExtensions',   path: '../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec'
