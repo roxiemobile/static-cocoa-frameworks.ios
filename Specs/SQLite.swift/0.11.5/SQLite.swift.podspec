@@ -1,7 +1,6 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name             = "SQLite.swift"
-  s.version          = "0.11.4"
+  s.version          = "0.11.5"
   s.summary          = "A type-safe, Swift-language layer over SQLite3 for iOS and OS X."
 
   s.description      = <<-DESC
@@ -22,7 +21,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.2"
   s.default_subspec  = 'standard'
   s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '4.0',
+    'SWIFT_VERSION' => '4.1',
   }
 
   s.subspec 'standard' do |ss|
@@ -31,10 +30,10 @@ Pod::Spec.new do |s|
     ss.private_header_files = 'Sources/SQLiteObjc/*.h'
     ss.library = 'sqlite3'
 
-    ## ss.test_spec 'tests' do |test_spec|
-    ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
-    ##   test_spec.source_files = 'Tests/SQLiteTests/*.swift'
-    ## end
+    ss.test_spec 'tests' do |test_spec|
+      test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
+      test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+    end
   end
 
   s.subspec 'standalone' do |ss|
@@ -47,10 +46,10 @@ Pod::Spec.new do |s|
     }
     ss.dependency 'sqlite3'
 
-    ## ss.test_spec 'tests' do |test_spec|
-    ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
-    ##   test_spec.source_files = 'Tests/SQLiteTests/*.swift'
-    ## end
+    ss.test_spec 'tests' do |test_spec|
+      test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
+      test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+    end
   end
 
   s.subspec 'SQLCipher' do |ss|
@@ -62,31 +61,12 @@ Pod::Spec.new do |s|
     }
     ss.dependency 'SQLCipher', '>= 3.4.0'
 
-    ## ss.test_spec 'tests' do |test_spec|
-    ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
-    ##   test_spec.source_files = 'Tests/SQLiteTests/*.swift'
-    ## end
+    ss.test_spec 'tests' do |test_spec|
+      test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
+      test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+    end
   end
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn1 = s.consumer(:ios)
-  s.pod_target_xcconfig = (cn1.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
-  end
-
-  attr = Pod::Specification::DSL.attributes[:xcconfig]
-  s.subspecs.each do |sc|
-    cn2 = sc.consumer(:ios)
-    sc.source_files = cn2.source_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.source_files.blank?
-    sc.exclude_files = cn2.exclude_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.exclude_files.blank?
-    sc.private_header_files = cn2.private_header_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.private_header_files.blank?
-  end
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
