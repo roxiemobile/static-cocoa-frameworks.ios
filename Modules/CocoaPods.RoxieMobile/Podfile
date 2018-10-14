@@ -50,7 +50,7 @@ target 'DummyFramework' do
   pod 'SwiftCommonsAbstractions', path: '../../Dependencies/SwiftCommonsAbstractions/Pod-1.3.0.podspec'
   pod 'SwiftCommonsConcurrent',   path: '../../Dependencies/SwiftCommonsConcurrent/Pod-1.3.0.podspec'
   pod 'SwiftCommonsData',         path: '../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec'
-  pod 'SwiftCommonsDiagnostics',  path: '../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec'
+  pod 'SwiftCommonsDiagnostics',  path: '../../Dependencies/SwiftCommonsDiagnostics/Pod-1.3.0.podspec'
   pod 'SwiftCommonsExtensions',   path: '../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec'
   pod 'SwiftCommonsLang',         path: '../../Dependencies/SwiftCommonsLang/Pod-1.3.0.podspec'
   pod 'SwiftCommonsLogging',      path: '../../Dependencies/SwiftCommonsLogging/Pod-1.3.0.podspec'
