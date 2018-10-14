@@ -117,11 +117,11 @@ PODS:
   - SwiftCommons/Logging (1.2.6):
     - SwiftCommonsLogging (= 1.2.6)
   - SwiftCommons/ObjC (1.2.6):
-    - SwiftCommonsObjC (= 1.2.6)
+    - SwiftCommonsObjC (~> 1.3.0)
   - SwiftCommonsAbstractions (1.3.0)
   - SwiftCommonsConcurrent (1.2.6):
     - Dispatch (~> 2.0.4)
-    - SwiftCommonsObjC (= 1.2.6)
+    - SwiftCommonsObjC (~> 1.3.0)
   - SwiftCommonsData (1.2.6):
     - CryptoSwift (~> 0.12.0)
     - SwiftCommonsDiagnostics (= 1.2.6)
@@ -135,7 +135,7 @@ PODS:
   - SwiftCommonsLogging (1.2.6):
     - SwiftCommonsConcurrent (= 1.2.6)
     - SwiftCommonsLang (= 1.2.6)
-  - SwiftCommonsObjC (1.2.6)
+  - SwiftCommonsObjC (1.3.0)
   - SwiftReorder (4.0.0)
   - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
@@ -190,7 +190,7 @@ DEPENDENCIES:
   - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec`)
   - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.2.6.podspec`)
   - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec`)
-  - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec`)
+  - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.3.0.podspec`)
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-4.0.0.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec`)
   - Toast (from `../../Dependencies/Toast/Pod-4.0.0.podspec`)
@@ -290,7 +290,7 @@ EXTERNAL SOURCES:
   SwiftCommonsLogging:
     :path: "../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec"
   SwiftCommonsObjC:
-    :path: "../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsObjC/Pod-1.3.0.podspec"
   SwiftReorder:
     :path: "../../Dependencies/SwiftReorder/Pod-4.0.0.podspec"
   SwiftyJSON:
@@ -339,20 +339,20 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 7fa8c77d84d8eb9fd4e3e8cae2bda2eef2dd5b89
   SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
   SQLite.swift: 0fa00510c7a08c4482608c94ae6c7fc85cca1c87
-  SwiftCommons: 4a82bd2457b43632e39c68cc7997b733df7a97ac
+  SwiftCommons: 73ac71dbb3a0cedf7c310e3b80a8ca2de32434dd
   SwiftCommonsAbstractions: 3760b7434e4f0c9d3a8efc8607a0d9178b76bedc
-  SwiftCommonsConcurrent: 78eab4e0c2c0fa906ee5a471e9ea64dbd9507610
+  SwiftCommonsConcurrent: 675bcf5778eddcb878bb92e836d21c68080c5c03
   SwiftCommonsData: 10b5467ea60cf3cf465ca8d1e742b8f3ca8ad544
   SwiftCommonsDiagnostics: 13df2c8e945296633e2558cc5078f15aff00b2c0
   SwiftCommonsExtensions: b95b03f4a5746a316a7a9003859e93568fce68f4
   SwiftCommonsLang: c2be026e4fdf441ee537c3b08e06af48274d711d
   SwiftCommonsLogging: 6891b4d916cff712383d1d137ef85e235cba5975
-  SwiftCommonsObjC: 93b868c6bb52f623d23356442d9aa77631ed3428
+  SwiftCommonsObjC: fc1f33084aab5750a5ecb1e89af8703e8dbfb9a2
   SwiftReorder: 1afd0df17ff18685b022456ca651932afaa2288d
   SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: d3149a8203d9440109209c3d243af1ec69d8c0ed
+PODFILE CHECKSUM: a746e7c228305f328184f2212be2fb63b57748d1
 
 COCOAPODS: 1.5.3
