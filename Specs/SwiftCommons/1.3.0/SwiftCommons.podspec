@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommons'
   s.summary               = 'A collection of useful utility classes common to different iOS projects.'
-  s.version               = '1.2.6'
+  s.version               = '1.3.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -66,4 +66,7 @@ Pod::Spec.new do |s|
   s.subspec 'ObjC' do |sp|
     sp.dependency 'SwiftCommonsObjC', s.version.to_s
   end
+
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
