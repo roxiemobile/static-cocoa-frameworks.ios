@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProvidersSQLite'
   s.summary               = 'A content provider used for accessing and modifying data in SQLite database.'
-  s.version               = '1.2.1'
+  s.version               = '1.3.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -39,15 +39,11 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.8.3'
-  s.dependency 'SwiftCommons/Concurrent', '~> 1.2.6'
-  s.dependency 'SwiftCommons/Extensions', '~> 1.2.6'
-  s.dependency 'SQLite.swift/SQLCipher', '~> 0.11.4'
+  s.dependency 'CryptoSwift', '~> 0.12.0'
+  s.dependency 'SwiftCommons/Concurrent', '~> 1.3.0'
+  s.dependency 'SwiftCommons/Extensions', '~> 1.3.0'
+  s.dependency 'SQLite.swift/SQLCipher', '~> 0.11.5'
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
