@@ -37,7 +37,7 @@ target 'DummyFramework' do
   pod 'SlideMenuControllerSwift', '>= 4.0.0'
   pod 'SQLCipher/standard',       '>= 3.4.2'
   pod 'SQLite.swift/SQLCipher',   '>= 0.11.5'
-  pod 'SwiftReorder',             '>= 3.2.0'
+  pod 'SwiftReorder',             '>= 6.0.0'
   pod 'SwiftyJSON',               '>= 4.2.0'
   pod 'Toast',                    '>= 4.0.0'
   pod 'YandexMobileMetrica',      '>= 2.9.8', '< 3.0.0'

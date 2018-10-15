@@ -1,5 +1,5 @@
 NAME=SwiftReorder
 SCHEME=$(NAME)
-VERSION=4.0.0
+VERSION=6.0.0
 
 include Makefile.in
