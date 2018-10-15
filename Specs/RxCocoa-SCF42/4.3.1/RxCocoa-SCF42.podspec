@@ -27,18 +27,36 @@ Pod::Spec.new do |s|
   s.watchos.source_files  = 'RxCocoa/iOS/**/*.swift'
   s.tvos.source_files     = 'RxCocoa/iOS/**/*.swift'
 
+=begin
   s.dependency 'RxSwift', '~> 4.0'
+=end
 
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: 'https://dl.bintray.com/roxiemobile/generic/RxCocoa-4.3.1-SCF42.zip',
+    sha256: '644950c4291c06fc893c4ee59161a961091fed479bc3f06e3905596fe4361f1e'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.ios.source_files = nil
+  s.exclude_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'RxCocoa.framework/*'
+    sc.source_files = 'RxCocoa.framework/Headers/*.h'
+    sc.public_header_files = 'RxCocoa.framework/Headers/*.h'
+    sc.vendored_frameworks = 'RxCocoa.framework'
+
+    # Dependencies
+    sc.dependency 'RxSwift-SCF42', '~> 4.3.1'
+  end
 end
