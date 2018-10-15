@@ -1,5 +1,5 @@
 NAME=SwiftCommonsObjC
 SCHEME=$(NAME)
-VERSION=1.2.6
+VERSION=1.3.0
 
 include Makefile.in
