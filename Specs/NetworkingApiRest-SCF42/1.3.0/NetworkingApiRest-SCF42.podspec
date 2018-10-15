@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiRest'
   s.summary               = 'An asynchronous REST API client that makes an access to a RESTful Web Services easier.'
-  s.version               = '1.2.1'
+  s.version               = '1.3.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,16 +34,38 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.7.0'
+=begin
+  s.dependency 'Alamofire', '~> 4.7.3'
   s.dependency 'NetworkingApiHelpers', s.version.to_s
   s.dependency 'NetworkingApiObjC', s.version.to_s
-  s.dependency 'SwiftCommons/Data', '~> 1.2.6'
-  s.dependency 'SwiftyJSON', '~> 4.0.0'
+  s.dependency 'SwiftCommons/Data', '~> 1.3.0'
+  s.dependency 'SwiftyJSON', '~> 4.2.0'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiRest-#{s.version}-SCF42.zip",
+    sha256: '3400a65e8ef75fc99686f915ef9560b5cb2999aec55b3f65393a9eea6bce8f58'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'NetworkingApiRest.framework/*'
+    sc.source_files = 'NetworkingApiRest.framework/Headers/*.h'
+    sc.public_header_files = 'NetworkingApiRest.framework/Headers/*.h'
+    sc.vendored_frameworks = 'NetworkingApiRest.framework'
+
+    # Dependencies
+    sc.dependency 'Alamofire-SCF42', '~> 4.7.3'
+    sc.dependency 'NetworkingApiHelpers-SCF42', s.version.to_s
+    sc.dependency 'NetworkingApiObjC-SCF42', s.version.to_s
+    sc.dependency 'SwiftCommons-SCF42/Data', '~> 1.3.0'
+    sc.dependency 'SwiftyJSON-SCF42', '~> 4.2.0'
+  end
 end
