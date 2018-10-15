@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiHelpers'
   s.summary               = 'A collection of utility classes used by other modules of this library.'
-  s.version               = '1.2.1'
+  s.version               = '1.3.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,13 +34,32 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.7.0'
+=begin
+  s.dependency 'Alamofire', '~> 4.7.3'
   s.dependency 'NetworkingApiHttp', s.version.to_s
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiHelpers-#{s.version}-SCF42.zip",
+    sha256: '5fcab714304fdb8bcbd1e4cba76a98d5691101fc56d1765ba4448b8e24b3249f'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'NetworkingApiHelpers.framework/*'
+    sc.source_files = 'NetworkingApiHelpers.framework/Headers/*.h'
+    sc.public_header_files = 'NetworkingApiHelpers.framework/Headers/*.h'
+    sc.vendored_frameworks = 'NetworkingApiHelpers.framework'
+
+    # Dependencies
+    sc.dependency 'Alamofire-SCF42', '~> 4.7.3'
+    sc.dependency 'NetworkingApiHttp-SCF42', s.version.to_s
+  end
 end
