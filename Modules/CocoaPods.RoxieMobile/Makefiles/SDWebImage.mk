@@ -1,5 +1,5 @@
 NAME=SDWebImage
 SCHEME=$(NAME)
-VERSION=4.3.3
+VERSION=4.4.2
 
 include Makefile.in
