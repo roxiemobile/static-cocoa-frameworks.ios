@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RxCocoa"
-  s.version          = "4.1.2"
+  s.version          = "4.3.1"
   s.summary          = "RxSwift Cocoa extensions"
   s.description      = <<-DESC
 * UI extensions
@@ -41,7 +41,4 @@ Pod::Spec.new do |s|
   cn = s.consumer(:ios)
   s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
   s.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.pod_target_xcconfig = (cn.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
-  end
 end

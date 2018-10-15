@@ -29,7 +29,7 @@ target 'DummyFramework' do
   pod 'R.swift',                  '>= 4.0.0'  # R.swift.Library
 # pod 'R.swift.Library',          '>= 4.0.0'
   pod 'ROStorageBar',             '>= 2.1.3'
-# pod 'RxCocoa',                  '>= 4.1.2'  # RxSwift
+# pod 'RxCocoa',                  '>= 4.3.1'  # RxSwift
   pod 'RxDataSources',            '>= 3.0.2'  # Differentiator, RxCocoa
 # pod 'RxSwift',                  '>= 4.1.2'
   pod 'SDWebImage/Core',          '>= 4.4.2'
