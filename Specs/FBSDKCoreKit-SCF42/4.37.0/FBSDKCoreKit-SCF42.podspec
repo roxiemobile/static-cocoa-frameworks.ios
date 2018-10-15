@@ -88,7 +88,7 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/FBSDKCoreKit-4.37.0-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/FBSDKCoreKit-#{s.version}-SCF42.zip",
     sha256: '7f19caa0c84a326b79d6d9514695bb439ce8ec55c15fea4c2281ababbeacb0de'
   }
 
