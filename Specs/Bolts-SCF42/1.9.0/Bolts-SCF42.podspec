@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
 
   s.default_subspecs = 'Tasks', 'AppLinks'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/Bolts-1.9.0-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/Bolts-#{s.version}-SCF42.zip",
     sha256: '99fd75c9302c78a6b97e365614d7d439e35d1140c4e3663ff5caef3f804bacda'
   }
 
