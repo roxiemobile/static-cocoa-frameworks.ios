@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/CryptoSwift-0.12.0-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/CryptoSwift-#{s.version}-SCF42.zip",
     sha256: '1d7e7a8213672adc422ba31cd990824cb9c6e0a2889188d33a9a8653bcaa5ecf'
   }
 
