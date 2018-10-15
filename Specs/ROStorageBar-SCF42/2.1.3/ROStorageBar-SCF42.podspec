@@ -21,9 +21,10 @@ Pod::Spec.new do |spec|
 
 # MARK: - iOS Static Framework
 
+  patch_version = "#{spec.version}-patch.2"
+
   spec.module_name = spec.name
   spec.name = "#{spec.name}-SCF42"
-  spec.version = "#{spec.version}-patch.2"
 
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
@@ -31,8 +32,8 @@ Pod::Spec.new do |spec|
 
   spec.default_subspec = 'StaticCocoaFramework'
   spec.source = {
-    http: "https://dl.bintray.com/roxiemobile/generic/ROStorageBar-#{spec.version}-SCF42.zip",
-    sha256: '0edf3d2d2ec55f77791cbcf8b0facab5530e87bc1ffc6b57fcd3eab5675ee75e'
+    http: "https://dl.bintray.com/roxiemobile/generic/ROStorageBar-#{patch_version}-SCF42.zip",
+    sha256: '51253763305b74c7cc2fa2d2cf16b1020cb4acb7a0b035c792f0ddbb6489b3c8'
   }
 
   spec.source_files = nil

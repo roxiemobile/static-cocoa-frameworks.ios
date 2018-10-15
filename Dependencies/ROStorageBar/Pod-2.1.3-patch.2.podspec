@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
 # MARK: - iOS Static Framework
 
-  spec.version = "#{spec.version}-patch.2"
+  patch_version = "#{spec.version}-patch.2"
 
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
@@ -32,9 +32,9 @@ Pod::Spec.new do |spec|
 
   spec.source = {
     git: 'https://github.com/roxiemobile-forks/ROStorageBar.git',
-    tag: spec.version.to_s
+    tag: patch_version
   }
 
   cn = spec.consumer(:ios)
-  spec.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  spec.source_files = cn.source_files.map { |pt| "#{patch_version}/#{pt}" }
 end

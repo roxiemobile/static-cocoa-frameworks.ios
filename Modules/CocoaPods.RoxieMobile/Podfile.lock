@@ -75,7 +75,7 @@ PODS:
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
-  - ROStorageBar (2.1.3-patch.2)
+  - ROStorageBar (2.1.3)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxDataSources (3.1.0):
@@ -330,7 +330,7 @@ SPEC CHECKSUMS:
   PureLayout: 1905850befab55b5f33a893bcfed84d45ee7b457
   R.swift: 32957e4ae5c452aef8ec149ec2235a3d495fe9db
   R.swift.Library: 9462780f5ae4634b480f08ef204c0a60ebf46484
-  ROStorageBar: fa58fee89c3cd17d9ab768bb5b99b661c3919035
+  ROStorageBar: 2d96c38451132ce0bbaaa4abd52d0c077fbba24f
   RxCocoa: fb5aea456bb27951f3b52d188a11a438be382e5c
   RxDataSources: 7b1a2bc77370172f39c373f99503dd62a18962a2
   RxSwift: 416f6915a4f99d3470873626cd783e19a6644f85
