@@ -314,7 +314,7 @@ SPEC CHECKSUMS:
   HMSegmentedControl: 3c14121c890966561c9b3204ab7c2e4335921ade
   INTULocationManager: 3c64d7eab1691fbf395a11c0731f05e6ba8ab43e
   KeychainAccess: bdf6e8de44d96c5d0c5c5397cda56c4eca89c151
-  MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
+  MBProgressHUD: 09f85ab4fe15c6932aea83701ebe623b27eef77e
   ModernDesign: a4d3a1b2a4ec5f727268ab45b9d283a9353ff45e
   ModernDesignExtensions: ee065e4c29da9c8be960e20b868cc54b010d35cb
   MXPagerView: 32d1c505c33297049e87ef2a716d7e5b06e21ac7
