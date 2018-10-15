@@ -85,7 +85,7 @@ PODS:
   - RxSwift (4.3.1)
   - SDWebImage/Core (4.4.2)
   - Siren (3.7.2)
-  - SlideMenuControllerSwift (4.0.0)
+  - SlideMenuControllerSwift (4.0.0-patch.2)
   - SQLCipher (3.4.2):
     - SQLCipher/standard (= 3.4.2)
   - SQLCipher/common (3.4.2)
@@ -179,7 +179,7 @@ DEPENDENCIES:
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.3.1.podspec`)
   - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.4.2.podspec`)
   - Siren (from `../../Dependencies/Siren/Pod-3.7.2.podspec`)
-  - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec`)
+  - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.2.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.2.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.5.podspec`)
   - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.3.0.podspec`)
@@ -268,7 +268,7 @@ EXTERNAL SOURCES:
   Siren:
     :path: "../../Dependencies/Siren/Pod-3.7.2.podspec"
   SlideMenuControllerSwift:
-    :path: "../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec"
+    :path: "../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.2.podspec"
   SQLCipher:
     :path: "../../Dependencies/SQLCipher/Pod-3.4.2.podspec"
   SQLite.swift:
@@ -336,7 +336,7 @@ SPEC CHECKSUMS:
   RxSwift: 416f6915a4f99d3470873626cd783e19a6644f85
   SDWebImage: 76450db2e477efff818c6c969e0008712fe6692b
   Siren: 2cde05977cb129b4c1ff0c2d23a7fcee0f0adfd2
-  SlideMenuControllerSwift: 7fa8c77d84d8eb9fd4e3e8cae2bda2eef2dd5b89
+  SlideMenuControllerSwift: 7eb7ffe7f58907877261bdb4ce6e541e45767e02
   SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
   SQLite.swift: 35b5ef564d4cea3b40987e24ee36f2f8adc9a003
   SwiftCommons: 2cfd190e4fcab0c237a4b3a2e0b03bc1837afa31
@@ -353,6 +353,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: cb21b44f2e5cfac58477146d8f655bb8ed965c18
+PODFILE CHECKSUM: e2fcf8cad1c8811d13e09ecfac383c7a21d41492
 
 COCOAPODS: 1.5.3

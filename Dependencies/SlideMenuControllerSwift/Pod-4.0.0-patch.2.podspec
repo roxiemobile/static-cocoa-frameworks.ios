@@ -1,4 +1,3 @@
-# coding: utf-8
 Pod::Spec.new do |s|
   s.name         = "SlideMenuControllerSwift"
   s.version      = "4.0.0"
@@ -15,6 +14,8 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.version = "#{s.version}-patch.2"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
@@ -24,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     git: 'https://github.com/roxiemobile-forks/SlideMenuControllerSwift.git',
-    tag: "#{s.version}-patch.1"
+    tag: s.version.to_s
   }
 
   cn = s.consumer(:ios)

@@ -43,7 +43,7 @@ target 'DummyFramework' do
   pod 'RxSwift',                  path: '../../Dependencies/RxSwift/Pod-4.3.1.podspec'
   pod 'SDWebImage/Core',          path: '../../Dependencies/SDWebImage/Pod-4.4.2.podspec'
   pod 'Siren',                    path: '../../Dependencies/Siren/Pod-3.7.2.podspec'
-  pod 'SlideMenuControllerSwift', path: '../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec'
+  pod 'SlideMenuControllerSwift', path: '../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.2.podspec'
   pod 'SQLCipher/standard',       path: '../../Dependencies/SQLCipher/Pod-3.4.2.podspec'
   pod 'SQLite.swift/SQLCipher',   path: '../../Dependencies/SQLite.swift/Pod-0.11.5.podspec'
   pod 'SwiftCommons',             path: '../../Dependencies/SwiftCommons/Pod-1.3.0.podspec'
