@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/Alamofire-4.7.3-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/Alamofire-#{s.version}-SCF42.zip",
     sha256: '728dd39a0f5c127bdf068b175f6617c33b3d0cf3c4a146faceaea3d9cb72a56c'
   }
 
