@@ -2,9 +2,9 @@ name: ROStorageBar
 description: Dynamic Storage Bar (a là iTunes Usage Bar) written in Swift
 
 modules:
-  2.1.3:
+  2.1.3-patch.2:
     repository: https://github.com/roxiemobile-forks/ROStorageBar.git
-    tag: 2.1.3-patch.1
+    tag: 2.1.3-patch.2
 
 profiles:
   init:
