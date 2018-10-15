@@ -26,10 +26,10 @@ PODS:
   - INTULocationManager (4.3.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
-  - ModernDesign (1.2.1):
-    - ModernDesign/Extensions (= 1.2.1)
-  - ModernDesign/Extensions (1.2.1):
-    - ModernDesignExtensions (~> 1.3.0)
+  - ModernDesign (1.3.0):
+    - ModernDesign/Extensions (= 1.3.0)
+  - ModernDesign/Extensions (1.3.0):
+    - ModernDesignExtensions (= 1.3.0)
   - ModernDesignExtensions (1.3.0):
     - SwiftCommons/Lang (~> 1.3.0)
   - MXPagerView (0.2.1)
@@ -158,7 +158,7 @@ DEPENDENCIES:
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.0.podspec`)
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
-  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.2.1.podspec`)
+  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.3.0.podspec`)
   - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.3.0.podspec`)
   - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - MXParallaxHeader (from `../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec`)
@@ -226,7 +226,7 @@ EXTERNAL SOURCES:
   MBProgressHUD:
     :path: "../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec"
   ModernDesign:
-    :path: "../../Dependencies/ModernDesign/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/ModernDesign/Pod-1.3.0.podspec"
   ModernDesignExtensions:
     :path: "../../Dependencies/ModernDesignExtensions/Pod-1.3.0.podspec"
   MXPagerView:
@@ -315,7 +315,7 @@ SPEC CHECKSUMS:
   INTULocationManager: 3c64d7eab1691fbf395a11c0731f05e6ba8ab43e
   KeychainAccess: bdf6e8de44d96c5d0c5c5397cda56c4eca89c151
   MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
-  ModernDesign: adfb52f38bb5c8435caaf224632a10a066b9e01c
+  ModernDesign: a4d3a1b2a4ec5f727268ab45b9d283a9353ff45e
   ModernDesignExtensions: ee065e4c29da9c8be960e20b868cc54b010d35cb
   MXPagerView: 32d1c505c33297049e87ef2a716d7e5b06e21ac7
   MXParallaxHeader: 5fb629d86a7b402dc1279c945715db7ff72bf43f
@@ -353,6 +353,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: da12d825cae9548b07b690383d0509905f982363
+PODFILE CHECKSUM: 53ce8cfd7d14071bb7f271ee1098873caa37660e
 
 COCOAPODS: 1.5.3
