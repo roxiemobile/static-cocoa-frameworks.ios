@@ -33,7 +33,7 @@ target 'DummyFramework' do
   pod 'RxDataSources',            '>= 3.0.2'  # Differentiator, RxCocoa
 # pod 'RxSwift',                  '>= 4.1.2'
   pod 'SDWebImage/Core',          '>= 4.4.2'
-  pod 'Siren',                    '>= 3.2.3'
+  pod 'Siren',                    '>= 3.7.2'
   pod 'SlideMenuControllerSwift', '>= 4.0.0'
   pod 'SQLCipher/standard',       '>= 3.4.2'
   pod 'SQLite.swift/SQLCipher',   '>= 0.11.5'
