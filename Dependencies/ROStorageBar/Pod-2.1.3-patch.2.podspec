@@ -30,6 +30,11 @@ Pod::Spec.new do |spec|
   spec.license = {}
   spec.static_framework = true
 
+  spec.source = {
+    git: 'https://github.com/roxiemobile-forks/ROStorageBar.git',
+    tag: spec.version.to_s
+  }
+
   cn = spec.consumer(:ios)
   spec.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
 end
