@@ -4,8 +4,11 @@ Pod::Spec.new do |s|
   s.summary          = "RxSwift is a Swift implementation of Reactive Extensions"
   s.description      = <<-DESC
 This is a Swift port of [ReactiveX.io](https://github.com/ReactiveX)
+
 Like the original [Rx](https://github.com/Reactive-extensions/Rx.Net), its intention is to enable easy composition of asynchronous operations and event streams.
+
 It tries to port as many concepts from the original Rx as possible, but some concepts were adapted for more pleasant and performant integration with iOS/macOS/Linux environment.
+
 Probably the best analogy for those who have never heard of Rx would be:
 ```
 git diff | grep bug | less          #  linux pipes - programs communicate by sending
@@ -43,7 +46,7 @@ gitDiff().grep("bug").less          // sequences of swift objects
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: 'https://dl.bintray.com/roxiemobile/generic/RxSwift-4.3.1-SCF42.zip',
-    sha256: '0b5da7a0f84f26b83c753742e7a393dfab3f594f912fdfc3a33baa6d95768fbf'
+    sha256: 'a67138cf1e52f111f362d1ecb0d589103349cb5c442863ec915587b8a1243a8b'
   }
 
   s.source_files = nil
