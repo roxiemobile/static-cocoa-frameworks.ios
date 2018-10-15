@@ -1,5 +1,5 @@
 NAME=RxSwift
 SCHEME=$(NAME)
-VERSION=4.1.2
+VERSION=4.3.1
 
 include Makefile.in

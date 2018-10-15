@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RxSwift"
-  s.version          = "4.1.2"
+  s.version          = "4.3.1"
   s.summary          = "RxSwift is a Swift implementation of Reactive Extensions"
   s.description      = <<-DESC
 This is a Swift port of [ReactiveX.io](https://github.com/ReactiveX)
@@ -13,7 +13,7 @@ Probably the best analogy for those who have never heard of Rx would be:
 
 ```
 git diff | grep bug | less          #  linux pipes - programs communicate by sending
-				    #  sequences of bytes, words, lines, '\0' terminated strings...
+            #  sequences of bytes, words, lines, '\0' terminated strings...
 ```
 would become if written in RxSwift
 ```
@@ -35,16 +35,6 @@ gitDiff().grep("bug").less          // sequences of swift objects
   s.source_files          = 'RxSwift/**/*.swift', 'Platform/**/*.swift'
   s.exclude_files         = 'RxSwift/Platform/**/*.swift'
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
