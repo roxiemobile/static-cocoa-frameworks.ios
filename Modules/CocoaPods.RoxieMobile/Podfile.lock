@@ -85,7 +85,7 @@ PODS:
   - RxSwift (4.3.1)
   - SDWebImage/Core (4.4.2)
   - Siren (3.7.2)
-  - SlideMenuControllerSwift (4.0.0-patch.2)
+  - SlideMenuControllerSwift (4.0.0)
   - SQLCipher (3.4.2):
     - SQLCipher/standard (= 3.4.2)
   - SQLCipher/common (3.4.2)
@@ -336,7 +336,7 @@ SPEC CHECKSUMS:
   RxSwift: 416f6915a4f99d3470873626cd783e19a6644f85
   SDWebImage: 76450db2e477efff818c6c969e0008712fe6692b
   Siren: 2cde05977cb129b4c1ff0c2d23a7fcee0f0adfd2
-  SlideMenuControllerSwift: 7eb7ffe7f58907877261bdb4ce6e541e45767e02
+  SlideMenuControllerSwift: a7056178ea89e46336f352a1bdf8edf23b9aa61c
   SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
   SQLite.swift: 35b5ef564d4cea3b40987e24ee36f2f8adc9a003
   SwiftCommons: 2cfd190e4fcab0c237a4b3a2e0b03bc1837afa31
