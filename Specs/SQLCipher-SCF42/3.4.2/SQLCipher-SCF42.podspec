@@ -108,7 +108,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
 
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/SQLCipher+standard-3.4.2-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/SQLCipher+standard-#{s.version}-SCF42.zip",
     sha256: '4ea2f192d2e3d4fc8e1480d572646fdc3616b8719ee498f57ef2040d3e11aea0'
   }
 
