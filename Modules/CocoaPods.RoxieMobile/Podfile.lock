@@ -22,7 +22,7 @@ PODS:
   - FBSDKCoreKit (4.37.0):
     - Bolts (~> 1.7)
   - GzipSwift (4.0.4)
-  - HMSegmentedControl (1.5.4)
+  - HMSegmentedControl (1.5.5)
   - INTULocationManager (4.3.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
@@ -154,7 +154,7 @@ DEPENDENCIES:
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
   - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.37.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
-  - HMSegmentedControl (from `../../Dependencies/HMSegmentedControl/Pod-1.5.4.podspec`)
+  - HMSegmentedControl (from `../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec`)
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.0.podspec`)
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
@@ -218,7 +218,7 @@ EXTERNAL SOURCES:
   GzipSwift:
     :path: "../../Dependencies/GzipSwift/Pod-4.0.4.podspec"
   HMSegmentedControl:
-    :path: "../../Dependencies/HMSegmentedControl/Pod-1.5.4.podspec"
+    :path: "../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec"
   INTULocationManager:
     :path: "../../Dependencies/INTULocationManager/Pod-4.3.0.podspec"
   KeychainAccess:
@@ -311,7 +311,7 @@ SPEC CHECKSUMS:
   Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
   FBSDKCoreKit: 6c54e9ecb7be4c43d35df3f4c1ec1a2345134920
   GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
-  HMSegmentedControl: 3c14121c890966561c9b3204ab7c2e4335921ade
+  HMSegmentedControl: 26fbc75258467d196a4d366e38f1807d2674a6a0
   INTULocationManager: 3c64d7eab1691fbf395a11c0731f05e6ba8ab43e
   KeychainAccess: bdf6e8de44d96c5d0c5c5397cda56c4eca89c151
   MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
@@ -353,6 +353,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 0a1a7705166063b50b4a4df30d4a4804b049c415
+PODFILE CHECKSUM: c747db6b4a8bd247c9e12b5d7e52f6c1535fdbd8
 
 COCOAPODS: 1.5.3

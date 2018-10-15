@@ -2,9 +2,9 @@ name: HMSegmentedControl
 description: A drop-in replacement for UISegmentedControl mimicking the style of the one in Google Currents and various other Google products.
 
 modules:
-  1.5.4:
+  1.5.5:
     repository: https://github.com/HeshamMegid/HMSegmentedControl.git
-    tag: 1.5.4
+    tag: v1.5.5
 
 profiles:
   init:

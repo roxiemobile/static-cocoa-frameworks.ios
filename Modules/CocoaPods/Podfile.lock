@@ -14,14 +14,14 @@ PODS:
     - Bolts (~> 1.7)
   - GoogleAnalytics (3.17.0)
   - GzipSwift (4.0.4)
-  - HMSegmentedControl (1.5.3)
+  - HMSegmentedControl (1.5.5)
   - INTULocationManager (4.3.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
   - MXPagerView (0.2.1)
   - MXParallaxHeader (0.6.1)
   - MXSegmentedPager (3.3.0):
-    - HMSegmentedControl (= 1.5.3)
+    - HMSegmentedControl (= 1.5.5)
     - MXPagerView (= 0.2.1)
     - MXParallaxHeader (= 0.6.1)
   - PDTSimpleCalendar (0.9.1)
@@ -62,7 +62,7 @@ DEPENDENCIES:
   - FBSDKCoreKit (>= 4.37.0)
   - GoogleAnalytics (>= 3.17.0)
   - GzipSwift (>= 4.0.4)
-  - HMSegmentedControl (>= 1.5.3)
+  - HMSegmentedControl (>= 1.5.5)
   - INTULocationManager (>= 4.3.0)
   - KeychainAccess (>= 3.1.0)
   - MBProgressHUD (>= 1.1.0)
@@ -130,7 +130,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
-  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
   INTULocationManager: 0ca5c76eacc029ba15938fc699520bc333ed6435
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 1216abb0f670ab3a3875649ec3ae0857ec113245
+PODFILE CHECKSUM: 87a1dbc4b75f9b4cee72a6b3a376290da3e5d38a
 
 COCOAPODS: 1.5.3
