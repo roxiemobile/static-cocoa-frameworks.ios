@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiConverters'
   s.summary               = 'A collection of useful converters for the asynchronous REST API client.'
-  s.version               = '1.2.1'
+  s.version               = '1.3.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 # MARK: - Dependencies
 
   s.dependency 'NetworkingApiRest', s.version.to_s
-  s.dependency 'SwiftCommons/Data', '~> 1.2.6'
+  s.dependency 'SwiftCommons/Data', '~> 1.3.0'
 
 # MARK: - iOS Static Framework
 
