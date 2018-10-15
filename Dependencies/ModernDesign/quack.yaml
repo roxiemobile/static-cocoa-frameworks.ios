@@ -2,9 +2,9 @@ name: ModernDesign
 description: A collection of useful UI classes common to different iOS projects.
 
 modules:
-  1.2.1:
+  1.3.0:
     repository: https://github.com/roxiemobile/modern-design.ios.git
-    tag: 1.2.1
+    tag: 1.3.0
 
 profiles:
   init:
