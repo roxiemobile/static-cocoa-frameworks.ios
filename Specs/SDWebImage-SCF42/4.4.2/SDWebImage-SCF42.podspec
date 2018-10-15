@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
 
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/SDWebImage+Core-4.4.2-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/SDWebImage+Core-#{s.version}-SCF42.zip",
     sha256: 'd5494a628ab4f79035629925515fc74bc1e13fcbb2f27457fb70831f80ba5468'
   }
 
