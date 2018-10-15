@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.3)
   - Armchair (0.3.5)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -7,10 +7,10 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - CryptoSwift (0.9.0)
+  - CryptoSwift (0.12.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.31.1):
+  - FBSDKCoreKit (4.37.0):
     - Bolts (~> 1.7)
   - GoogleAnalytics (3.17.0)
   - GzipSwift (4.0.4)
@@ -25,7 +25,7 @@ PODS:
     - MXPagerView (= 0.2.1)
     - MXParallaxHeader (= 0.6.1)
   - PDTSimpleCalendar (0.9.1)
-  - PureLayout (3.0.2)
+  - PureLayout (3.1.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -37,7 +37,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
-  - SDWebImage/Core (4.3.3)
+  - SDWebImage/Core (4.4.2)
   - Siren (3.3.0)
   - SlideMenuControllerSwift (4.0.0)
   - SQLCipher (3.4.2):
@@ -45,21 +45,21 @@ PODS:
   - SQLCipher/common (3.4.2)
   - SQLCipher/standard (3.4.2):
     - SQLCipher/common
-  - SQLite.swift/SQLCipher (0.11.4):
+  - SQLite.swift/SQLCipher (0.11.5):
     - SQLCipher (>= 3.4.0)
   - SwiftReorder (4.0.0)
-  - SwiftyJSON (4.0.0)
+  - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
-  - YandexMobileMetrica (2.9.6):
-    - YandexMobileMetrica/Static (= 2.9.6)
-  - YandexMobileMetrica/Static (2.9.6)
+  - YandexMobileMetrica (2.9.8):
+    - YandexMobileMetrica/Static (= 2.9.8)
+  - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
-  - Alamofire (>= 4.7.0)
+  - Alamofire (>= 4.7.3)
   - Armchair (>= 0.3.5)
-  - CryptoSwift (>= 0.8.3)
+  - CryptoSwift (>= 0.12.0)
   - Dispatch (>= 2.0.4)
-  - FBSDKCoreKit (>= 4.31.1)
+  - FBSDKCoreKit (>= 4.37.0)
   - GoogleAnalytics (>= 3.17.0)
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
@@ -70,28 +70,64 @@ DEPENDENCIES:
   - MXParallaxHeader (>= 0.6.1)
   - MXSegmentedPager (>= 3.3.0)
   - PDTSimpleCalendar (>= 0.9.1)
-  - PureLayout (>= 3.0.2)
+  - PureLayout (>= 3.1.2)
   - R.swift (>= 4.0.0)
   - ROStorageBar (>= 2.1.3)
   - RxDataSources (>= 3.0.2)
-  - SDWebImage/Core (>= 4.3.3)
+  - SDWebImage/Core (>= 4.4.2)
   - Siren (>= 3.2.3)
   - SlideMenuControllerSwift (>= 4.0.0)
   - SQLCipher/standard (>= 3.4.2)
-  - SQLite.swift/SQLCipher (>= 0.11.4)
+  - SQLite.swift/SQLCipher (>= 0.11.5)
   - SwiftReorder (>= 3.2.0)
-  - SwiftyJSON (>= 4.0.0)
+  - SwiftyJSON (>= 4.2.0)
   - Toast (>= 4.0.0)
-  - YandexMobileMetrica (>= 2.9.6)
+  - YandexMobileMetrica (< 3.0.0, >= 2.9.8)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Armchair
+    - Bolts
+    - CryptoSwift
+    - Differentiator
+    - Dispatch
+    - FBSDKCoreKit
+    - GoogleAnalytics
+    - GzipSwift
+    - HMSegmentedControl
+    - INTULocationManager
+    - KeychainAccess
+    - MBProgressHUD
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedPager
+    - PDTSimpleCalendar
+    - PureLayout
+    - R.swift
+    - R.swift.Library
+    - ROStorageBar
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SDWebImage
+    - Siren
+    - SlideMenuControllerSwift
+    - SQLCipher
+    - SQLite.swift
+    - SwiftReorder
+    - SwiftyJSON
+    - Toast
+    - YandexMobileMetrica
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Armchair: 0ab9237bc373e26245c7651acf193d85fb9c033a
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  CryptoSwift: bca8c5b653dcc2d9734409242a070ff53bafac86
+  CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
-  FBSDKCoreKit: e08ccfcefa7bc1347a07c276dac9bf6c7fe57024
+  FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
@@ -102,23 +138,23 @@ SPEC CHECKSUMS:
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
   MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
   PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  PureLayout: 4634d0b61e3b5021166e8ec7c18e9e0ca0720c8b
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   ROStorageBar: 3c1c5a5b023b5b938282701cf5323ea01733c5e2
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: e49536837d9901277638493ea537394d4b55f570
-  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   Siren: e7183967550b986736103f24ca6c74896a475145
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
-  SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftReorder: 5fc44b4f803d15d8b388412542d6fefb64d91816
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
+  YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 1c571a6c4ba6adff775dd831eb2542e07e8b3645
+PODFILE CHECKSUM: 1216abb0f670ab3a3875649ec3ae0857ec113245
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.3)
   - Armchair (0.3.5)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -7,71 +7,71 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - ContentProviders (1.2.1):
-    - ContentProviders/SQLite (= 1.2.1)
-  - ContentProviders/SQLite (1.2.1):
-    - ContentProvidersSQLite (= 1.2.1)
-  - ContentProvidersSQLite (1.2.1):
-    - CryptoSwift (~> 0.8.3)
-    - SQLite.swift/SQLCipher (~> 0.11.4)
-    - SwiftCommons/Concurrent (~> 1.2.6)
-    - SwiftCommons/Extensions (~> 1.2.6)
-  - CryptoSwift (0.8.3)
+  - ContentProviders (1.3.0):
+    - ContentProviders/SQLite (= 1.3.0)
+  - ContentProviders/SQLite (1.3.0):
+    - ContentProvidersSQLite (= 1.3.0)
+  - ContentProvidersSQLite (1.3.0):
+    - CryptoSwift (~> 0.12.0)
+    - SQLite.swift/SQLCipher (~> 0.11.5)
+    - SwiftCommons/Concurrent (~> 1.3.0)
+    - SwiftCommons/Extensions (~> 1.3.0)
+  - CryptoSwift (0.12.0)
   - Differentiator (3.0.2)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.31.1):
+  - FBSDKCoreKit (4.37.0):
     - Bolts (~> 1.7)
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.4)
   - INTULocationManager (4.3.0)
   - KeychainAccess (3.1.0)
   - MBProgressHUD (1.1.0)
-  - ModernDesign (1.2.1):
-    - ModernDesign/Extensions (= 1.2.1)
-  - ModernDesign/Extensions (1.2.1):
-    - ModernDesignExtensions (= 1.2.1)
-  - ModernDesignExtensions (1.2.1):
-    - SwiftCommons/Lang (~> 1.2.6)
+  - ModernDesign (1.3.0):
+    - ModernDesign/Extensions (= 1.3.0)
+  - ModernDesign/Extensions (1.3.0):
+    - ModernDesignExtensions (= 1.3.0)
+  - ModernDesignExtensions (1.3.0):
+    - SwiftCommons/Lang (~> 1.3.0)
   - MXPagerView (0.2.1)
   - MXParallaxHeader (0.6.1)
   - MXSegmentedPager (3.3.0):
     - HMSegmentedControl (~> 1.5.3)
     - MXPagerView (~> 0.2.1)
     - MXParallaxHeader (~> 0.6.1)
-  - NetworkingApi (1.2.1):
-    - NetworkingApi/Converters (= 1.2.1)
-    - NetworkingApi/Helpers (= 1.2.1)
-    - NetworkingApi/Http (= 1.2.1)
-    - NetworkingApi/ObjC (= 1.2.1)
-    - NetworkingApi/Rest (= 1.2.1)
-  - NetworkingApi/Converters (1.2.1):
-    - NetworkingApiConverters (= 1.2.1)
-  - NetworkingApi/Helpers (1.2.1):
-    - NetworkingApiHelpers (= 1.2.1)
-  - NetworkingApi/Http (1.2.1):
-    - NetworkingApiHttp (= 1.2.1)
-  - NetworkingApi/ObjC (1.2.1):
-    - NetworkingApiObjC (= 1.2.1)
-  - NetworkingApi/Rest (1.2.1):
-    - NetworkingApiRest (= 1.2.1)
-  - NetworkingApiConverters (1.2.1):
-    - NetworkingApiRest (= 1.2.1)
-    - SwiftCommons/Data (~> 1.2.6)
-  - NetworkingApiHelpers (1.2.1):
-    - Alamofire (~> 4.7.0)
-    - NetworkingApiHttp (= 1.2.1)
-  - NetworkingApiHttp (1.2.1):
-    - SwiftCommons/Diagnostics (~> 1.2.6)
-  - NetworkingApiObjC (1.2.1):
-    - Alamofire (~> 4.7.0)
-  - NetworkingApiRest (1.2.1):
-    - Alamofire (~> 4.7.0)
-    - NetworkingApiHelpers (= 1.2.1)
-    - NetworkingApiObjC (= 1.2.1)
-    - SwiftCommons/Data (~> 1.2.6)
-    - SwiftyJSON (~> 4.0.0)
+  - NetworkingApi (1.3.0):
+    - NetworkingApi/Converters (= 1.3.0)
+    - NetworkingApi/Helpers (= 1.3.0)
+    - NetworkingApi/Http (= 1.3.0)
+    - NetworkingApi/ObjC (= 1.3.0)
+    - NetworkingApi/Rest (= 1.3.0)
+  - NetworkingApi/Converters (1.3.0):
+    - NetworkingApiConverters (= 1.3.0)
+  - NetworkingApi/Helpers (1.3.0):
+    - NetworkingApiHelpers (= 1.3.0)
+  - NetworkingApi/Http (1.3.0):
+    - NetworkingApiHttp (= 1.3.0)
+  - NetworkingApi/ObjC (1.3.0):
+    - NetworkingApiObjC (= 1.3.0)
+  - NetworkingApi/Rest (1.3.0):
+    - NetworkingApiRest (= 1.3.0)
+  - NetworkingApiConverters (1.3.0):
+    - NetworkingApiRest (= 1.3.0)
+    - SwiftCommons/Data (~> 1.3.0)
+  - NetworkingApiHelpers (1.3.0):
+    - Alamofire (~> 4.7.3)
+    - NetworkingApiHttp (= 1.3.0)
+  - NetworkingApiHttp (1.3.0):
+    - SwiftCommons/Diagnostics (~> 1.3.0)
+  - NetworkingApiObjC (1.3.0):
+    - Alamofire (~> 4.7.3)
+  - NetworkingApiRest (1.3.0):
+    - Alamofire (~> 4.7.3)
+    - NetworkingApiHelpers (= 1.3.0)
+    - NetworkingApiObjC (= 1.3.0)
+    - SwiftCommons/Data (~> 1.3.0)
+    - SwiftyJSON (~> 4.2.0)
   - PDTSimpleCalendar (0.9.1)
-  - PureLayout (3.0.2)
+  - PureLayout (3.1.2)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -83,7 +83,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
-  - SDWebImage/Core (4.3.3)
+  - SDWebImage/Core (4.4.2)
   - Siren (3.2.3)
   - SlideMenuControllerSwift (4.0.0)
   - SQLCipher (3.4.2):
@@ -91,130 +91,130 @@ PODS:
   - SQLCipher/common (3.4.2)
   - SQLCipher/standard (3.4.2):
     - SQLCipher/common
-  - SQLite.swift/SQLCipher (0.11.4):
+  - SQLite.swift/SQLCipher (0.11.5):
     - SQLCipher (>= 3.4.0)
-  - SwiftCommons (1.2.6):
-    - SwiftCommons/Abstractions (= 1.2.6)
-    - SwiftCommons/Concurrent (= 1.2.6)
-    - SwiftCommons/Data (= 1.2.6)
-    - SwiftCommons/Diagnostics (= 1.2.6)
-    - SwiftCommons/Extensions (= 1.2.6)
-    - SwiftCommons/Lang (= 1.2.6)
-    - SwiftCommons/Logging (= 1.2.6)
-    - SwiftCommons/ObjC (= 1.2.6)
-  - SwiftCommons/Abstractions (1.2.6):
-    - SwiftCommonsAbstractions (= 1.2.6)
-  - SwiftCommons/Concurrent (1.2.6):
-    - SwiftCommonsConcurrent (= 1.2.6)
-  - SwiftCommons/Data (1.2.6):
-    - SwiftCommonsData (= 1.2.6)
-  - SwiftCommons/Diagnostics (1.2.6):
-    - SwiftCommonsDiagnostics (= 1.2.6)
-  - SwiftCommons/Extensions (1.2.6):
-    - SwiftCommonsExtensions (= 1.2.6)
-  - SwiftCommons/Lang (1.2.6):
-    - SwiftCommonsLang (= 1.2.6)
-  - SwiftCommons/Logging (1.2.6):
-    - SwiftCommonsLogging (= 1.2.6)
-  - SwiftCommons/ObjC (1.2.6):
-    - SwiftCommonsObjC (= 1.2.6)
-  - SwiftCommonsAbstractions (1.2.6)
-  - SwiftCommonsConcurrent (1.2.6):
+  - SwiftCommons (1.3.0):
+    - SwiftCommons/Abstractions (= 1.3.0)
+    - SwiftCommons/Concurrent (= 1.3.0)
+    - SwiftCommons/Data (= 1.3.0)
+    - SwiftCommons/Diagnostics (= 1.3.0)
+    - SwiftCommons/Extensions (= 1.3.0)
+    - SwiftCommons/Lang (= 1.3.0)
+    - SwiftCommons/Logging (= 1.3.0)
+    - SwiftCommons/ObjC (= 1.3.0)
+  - SwiftCommons/Abstractions (1.3.0):
+    - SwiftCommonsAbstractions (= 1.3.0)
+  - SwiftCommons/Concurrent (1.3.0):
+    - SwiftCommonsConcurrent (= 1.3.0)
+  - SwiftCommons/Data (1.3.0):
+    - SwiftCommonsData (= 1.3.0)
+  - SwiftCommons/Diagnostics (1.3.0):
+    - SwiftCommonsDiagnostics (= 1.3.0)
+  - SwiftCommons/Extensions (1.3.0):
+    - SwiftCommonsExtensions (= 1.3.0)
+  - SwiftCommons/Lang (1.3.0):
+    - SwiftCommonsLang (= 1.3.0)
+  - SwiftCommons/Logging (1.3.0):
+    - SwiftCommonsLogging (= 1.3.0)
+  - SwiftCommons/ObjC (1.3.0):
+    - SwiftCommonsObjC (= 1.3.0)
+  - SwiftCommonsAbstractions (1.3.0)
+  - SwiftCommonsConcurrent (1.3.0):
     - Dispatch (~> 2.0.4)
-    - SwiftCommonsObjC (= 1.2.6)
-  - SwiftCommonsData (1.2.6):
-    - CryptoSwift (~> 0.8.3)
-    - SwiftCommonsDiagnostics (= 1.2.6)
-  - SwiftCommonsDiagnostics (1.2.6):
-    - SwiftCommonsConcurrent (= 1.2.6)
-    - SwiftCommonsExtensions (= 1.2.6)
-  - SwiftCommonsExtensions (1.2.6):
-    - SwiftCommonsAbstractions (= 1.2.6)
-    - SwiftCommonsLogging (= 1.2.6)
-  - SwiftCommonsLang (1.2.6)
-  - SwiftCommonsLogging (1.2.6):
-    - SwiftCommonsConcurrent (= 1.2.6)
-    - SwiftCommonsLang (= 1.2.6)
-  - SwiftCommonsObjC (1.2.6)
+    - SwiftCommonsObjC (= 1.3.0)
+  - SwiftCommonsData (1.3.0):
+    - CryptoSwift (~> 0.12.0)
+    - SwiftCommonsDiagnostics (= 1.3.0)
+  - SwiftCommonsDiagnostics (1.3.0):
+    - SwiftCommonsConcurrent (= 1.3.0)
+    - SwiftCommonsExtensions (= 1.3.0)
+  - SwiftCommonsExtensions (1.3.0):
+    - SwiftCommonsAbstractions (= 1.3.0)
+    - SwiftCommonsLogging (= 1.3.0)
+  - SwiftCommonsLang (1.3.0)
+  - SwiftCommonsLogging (1.3.0):
+    - SwiftCommonsConcurrent (= 1.3.0)
+    - SwiftCommonsLang (= 1.3.0)
+  - SwiftCommonsObjC (1.3.0)
   - SwiftReorder (4.0.0)
-  - SwiftyJSON (4.0.0)
+  - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
-  - YandexMobileMetrica (2.9.6):
-    - YandexMobileMetrica/Static (= 2.9.6)
-  - YandexMobileMetrica/Static (2.9.6)
+  - YandexMobileMetrica (2.9.8):
+    - YandexMobileMetrica/Static (= 2.9.8)
+  - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
-  - Alamofire (from `../../Dependencies/Alamofire/Pod-4.7.1.podspec`)
+  - Alamofire (from `../../Dependencies/Alamofire/Pod-4.7.3.podspec`)
   - Armchair (from `../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
-  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.2.1.podspec`)
-  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec`)
-  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.8.3.podspec`)
+  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.3.0.podspec`)
+  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.3.0.podspec`)
+  - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.12.0.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
-  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.31.1.podspec`)
+  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.37.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
   - HMSegmentedControl (from `../../Dependencies/HMSegmentedControl/Pod-1.5.4.podspec`)
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.0.podspec`)
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.0.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
-  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.2.1.podspec`)
-  - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec`)
+  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.3.0.podspec`)
+  - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.3.0.podspec`)
   - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - MXParallaxHeader (from `../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec`)
   - MXSegmentedPager (from `../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec`)
-  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.2.1.podspec`)
-  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec`)
-  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec`)
-  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.2.1.podspec`)
-  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.2.1.podspec`)
-  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.2.1.podspec`)
+  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.3.0.podspec`)
+  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.3.0.podspec`)
+  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.3.0.podspec`)
+  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.3.0.podspec`)
+  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.3.0.podspec`)
+  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.3.0.podspec`)
   - PDTSimpleCalendar (from `../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec`)
-  - PureLayout (from `../../Dependencies/PureLayout/Pod-3.0.2.podspec`)
+  - PureLayout (from `../../Dependencies/PureLayout/Pod-3.1.2.podspec`)
   - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.1.podspec`)
   - ROStorageBar (from `../../Dependencies/ROStorageBar/Pod-2.1.3-pach.1.podspec`)
   - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.3.1.podspec`)
   - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.0.2.podspec`)
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.1.2.podspec`)
-  - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.3.3.podspec`)
+  - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.4.2.podspec`)
   - Siren (from `../../Dependencies/Siren/Pod-3.2.3.podspec`)
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.1.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.2.podspec`)
-  - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.4.podspec`)
-  - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.2.6.podspec`)
-  - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.2.6.podspec`)
-  - SwiftCommonsConcurrent (from `../../Dependencies/SwiftCommonsConcurrent/Pod-1.2.6.podspec`)
-  - SwiftCommonsData (from `../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec`)
-  - SwiftCommonsDiagnostics (from `../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec`)
-  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec`)
-  - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.2.6.podspec`)
-  - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec`)
-  - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec`)
+  - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.5.podspec`)
+  - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.3.0.podspec`)
+  - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.3.0.podspec`)
+  - SwiftCommonsConcurrent (from `../../Dependencies/SwiftCommonsConcurrent/Pod-1.3.0.podspec`)
+  - SwiftCommonsData (from `../../Dependencies/SwiftCommonsData/Pod-1.3.0.podspec`)
+  - SwiftCommonsDiagnostics (from `../../Dependencies/SwiftCommonsDiagnostics/Pod-1.3.0.podspec`)
+  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec`)
+  - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.3.0.podspec`)
+  - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.3.0.podspec`)
+  - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.3.0.podspec`)
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-4.0.0.podspec`)
-  - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec`)
+  - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec`)
   - Toast (from `../../Dependencies/Toast/Pod-4.0.0.podspec`)
-  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec`)
+  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
-    :path: "../../Dependencies/Alamofire/Pod-4.7.1.podspec"
+    :path: "../../Dependencies/Alamofire/Pod-4.7.3.podspec"
   Armchair:
     :path: "../../Dependencies/Armchair/Pod-0.3.5-patch.1.podspec"
   Bolts:
     :path: "../../Dependencies/Bolts/Pod-1.9.0.podspec"
   ContentProviders:
-    :path: "../../Dependencies/ContentProviders/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/ContentProviders/Pod-1.3.0.podspec"
   ContentProvidersSQLite:
-    :path: "../../Dependencies/ContentProvidersSQLite/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/ContentProvidersSQLite/Pod-1.3.0.podspec"
   CryptoSwift:
-    :path: "../../Dependencies/CryptoSwift/Pod-0.8.3.podspec"
+    :path: "../../Dependencies/CryptoSwift/Pod-0.12.0.podspec"
   Differentiator:
     :path: "../../Dependencies/Differentiator/Pod-3.0.2.podspec"
   Dispatch:
     :path: "../../Dependencies/Dispatch/Pod-2.0.4.podspec"
   FBSDKCoreKit:
-    :path: "../../Dependencies/FBSDKCoreKit/Pod-4.31.1.podspec"
+    :path: "../../Dependencies/FBSDKCoreKit/Pod-4.37.0.podspec"
   GzipSwift:
     :path: "../../Dependencies/GzipSwift/Pod-4.0.4.podspec"
   HMSegmentedControl:
@@ -226,9 +226,9 @@ EXTERNAL SOURCES:
   MBProgressHUD:
     :path: "../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec"
   ModernDesign:
-    :path: "../../Dependencies/ModernDesign/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/ModernDesign/Pod-1.3.0.podspec"
   ModernDesignExtensions:
-    :path: "../../Dependencies/ModernDesignExtensions/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/ModernDesignExtensions/Pod-1.3.0.podspec"
   MXPagerView:
     :path: "../../Dependencies/MXPagerView/Pod-0.2.1.podspec"
   MXParallaxHeader:
@@ -236,21 +236,21 @@ EXTERNAL SOURCES:
   MXSegmentedPager:
     :path: "../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec"
   NetworkingApi:
-    :path: "../../Dependencies/NetworkingApi/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/NetworkingApi/Pod-1.3.0.podspec"
   NetworkingApiConverters:
-    :path: "../../Dependencies/NetworkingApiConverters/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/NetworkingApiConverters/Pod-1.3.0.podspec"
   NetworkingApiHelpers:
-    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.3.0.podspec"
   NetworkingApiHttp:
-    :path: "../../Dependencies/NetworkingApiHttp/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/NetworkingApiHttp/Pod-1.3.0.podspec"
   NetworkingApiObjC:
-    :path: "../../Dependencies/NetworkingApiObjC/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/NetworkingApiObjC/Pod-1.3.0.podspec"
   NetworkingApiRest:
-    :path: "../../Dependencies/NetworkingApiRest/Pod-1.2.1.podspec"
+    :path: "../../Dependencies/NetworkingApiRest/Pod-1.3.0.podspec"
   PDTSimpleCalendar:
     :path: "../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec"
   PureLayout:
-    :path: "../../Dependencies/PureLayout/Pod-3.0.2.podspec"
+    :path: "../../Dependencies/PureLayout/Pod-3.1.2.podspec"
   R.swift:
     :path: "../../Dependencies/R.swift/Pod-4.0.0.podspec"
   R.swift.Library:
@@ -264,7 +264,7 @@ EXTERNAL SOURCES:
   RxSwift:
     :path: "../../Dependencies/RxSwift/Pod-4.1.2.podspec"
   SDWebImage:
-    :path: "../../Dependencies/SDWebImage/Pod-4.3.3.podspec"
+    :path: "../../Dependencies/SDWebImage/Pod-4.4.2.podspec"
   Siren:
     :path: "../../Dependencies/Siren/Pod-3.2.3.podspec"
   SlideMenuControllerSwift:
@@ -272,87 +272,87 @@ EXTERNAL SOURCES:
   SQLCipher:
     :path: "../../Dependencies/SQLCipher/Pod-3.4.2.podspec"
   SQLite.swift:
-    :path: "../../Dependencies/SQLite.swift/Pod-0.11.4.podspec"
+    :path: "../../Dependencies/SQLite.swift/Pod-0.11.5.podspec"
   SwiftCommons:
-    :path: "../../Dependencies/SwiftCommons/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommons/Pod-1.3.0.podspec"
   SwiftCommonsAbstractions:
-    :path: "../../Dependencies/SwiftCommonsAbstractions/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsAbstractions/Pod-1.3.0.podspec"
   SwiftCommonsConcurrent:
-    :path: "../../Dependencies/SwiftCommonsConcurrent/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsConcurrent/Pod-1.3.0.podspec"
   SwiftCommonsData:
-    :path: "../../Dependencies/SwiftCommonsData/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsData/Pod-1.3.0.podspec"
   SwiftCommonsDiagnostics:
-    :path: "../../Dependencies/SwiftCommonsDiagnostics/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsDiagnostics/Pod-1.3.0.podspec"
   SwiftCommonsExtensions:
-    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec"
   SwiftCommonsLang:
-    :path: "../../Dependencies/SwiftCommonsLang/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsLang/Pod-1.3.0.podspec"
   SwiftCommonsLogging:
-    :path: "../../Dependencies/SwiftCommonsLogging/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsLogging/Pod-1.3.0.podspec"
   SwiftCommonsObjC:
-    :path: "../../Dependencies/SwiftCommonsObjC/Pod-1.2.6.podspec"
+    :path: "../../Dependencies/SwiftCommonsObjC/Pod-1.3.0.podspec"
   SwiftReorder:
     :path: "../../Dependencies/SwiftReorder/Pod-4.0.0.podspec"
   SwiftyJSON:
-    :path: "../../Dependencies/SwiftyJSON/Pod-4.0.0.podspec"
+    :path: "../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec"
   Toast:
     :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
   YandexMobileMetrica:
-    :path: "../../Dependencies/YandexMobileMetrica/Pod-2.9.6.podspec"
+    :path: "../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec"
 
 SPEC CHECKSUMS:
-  Alamofire: 06a1500066c04325977ca752e3448aa3833be378
-  Armchair: c38c5cb5e6cc85b420b7cbb85750d0395bc43628
-  Bolts: d974dbd1ae2ed8e597f94fb2b2d153cd41209c72
-  ContentProviders: 44ba89135ebf2eaa640b57fe5c51a8392d261c34
-  ContentProvidersSQLite: d1610258d672ab858add9ffed75a3cd44d7e317e
-  CryptoSwift: 3a840f288192aa9a6bb2295fcdc8aa035fa987d0
-  Differentiator: a4fe87fa78c7e11c09d142dfe3fe547cc0c75098
-  Dispatch: 3edc705b34dbe28ab9a5b510f62f51935548af05
-  FBSDKCoreKit: ce3dd4ffb90b7b45562eb99c4eafff28fed6a5cf
-  GzipSwift: 2e8deb8095d5cc6e46b4f13e75458085990d7bf5
-  HMSegmentedControl: d62e3371e38120a3a48de05a6a1820a447afecaa
-  INTULocationManager: dbe890b64da7ac69bb58f84272c0b3a1c0887f43
-  KeychainAccess: eafd51a9b6c3cf606e84cc5578a6901b82a65336
-  MBProgressHUD: ae4075e4ac8c8d6ab62a6fbc46b6e783f034bd3b
-  ModernDesign: 73181ae9511fcad70f5d03893098f46359611741
-  ModernDesignExtensions: 1d2093f6b7374df21de5dcb1298fb9ee73b24e86
-  MXPagerView: c17dc2417821a44ee8144c193bdedb2fe4b4612f
-  MXParallaxHeader: 22e92f0641b9639146c7b537b82dfc9a1a248b5d
-  MXSegmentedPager: b1eb5cfc22f9b9ba94acb5aadce780431c48cdb7
-  NetworkingApi: 31bbefe44998cdbd1e19b73a780f9c72932f3d48
-  NetworkingApiConverters: 849e7f4b195bccd80e1e6cd39637b63aa77c5d9c
-  NetworkingApiHelpers: bcf81acbfb79ca9b7d95fcac5cd8db45b7fa74f1
-  NetworkingApiHttp: 81fd01778e5addb6efe8099b4f533f5d002718c7
-  NetworkingApiObjC: 5751e3cff74ddbb42b3c70cdccc0d74398f6b3eb
-  NetworkingApiRest: acbc12b6a9afa01c0c8bbf001df86f560bb79552
-  PDTSimpleCalendar: 0e407c5d63437ddb1ae532af677322162e1a4c97
-  PureLayout: 42faa6dce35db5c265962231a42a1c4240653f69
-  R.swift: 7950309ce3d2730925e35714fffa12916e2f3382
-  R.swift.Library: ff5ff9ef8dbb65c9c2a89f7a009ce9236512577b
-  ROStorageBar: d76cc4c669d539fe2fcbd3695517b8f6051d2996
-  RxCocoa: fb5aea456bb27951f3b52d188a11a438be382e5c
-  RxDataSources: 5df54c4b74fca54db8c225f58a8aea7c56872674
-  RxSwift: 40ec76e4679a89d96f0477b88f99c426af80e589
-  SDWebImage: 4ca717c696664787e4bbd2ae20cd7b705bab29e3
-  Siren: ea39f28a7840d4b7ca64d6c5321e1f2b806398cb
-  SlideMenuControllerSwift: 7346c735a2c7dbe056c96fd4b1f518e5cbc7c3cd
-  SQLCipher: 6cd994af8c601e2c2d4b2ef8607639233a714b11
-  SQLite.swift: 6fd20b477ae434177a4ca483da74068e949cd2ee
-  SwiftCommons: 13573f44acf0c5ff34573fc970ee4a6be78d893a
-  SwiftCommonsAbstractions: cfe25d54607a412e2d97ede771258ce3e9ce889e
-  SwiftCommonsConcurrent: 124f243a1ca5f4ed020bf986d8a1fca5c04009fa
-  SwiftCommonsData: dd7e56c14d8793472a0b6cdba04c8867d4eaaf41
-  SwiftCommonsDiagnostics: a4dd6018a98d4953872c23c3135874ba02d239e0
-  SwiftCommonsExtensions: 30ae7db8182a3eaf7ea6fbab0dfc4a4910453a4b
-  SwiftCommonsLang: 65297e6634a66f298523e50c29cc656473e6a340
-  SwiftCommonsLogging: d2bb346b0ac657162005ea4db2cb5da44e95fe41
-  SwiftCommonsObjC: 97554002f92b73947d8061d3ebf9d9fa7e5bfd4a
-  SwiftReorder: fa0faf51d18751fa9e7d563c5da17ba70620a8dc
-  SwiftyJSON: 11f4af78d289e2c50745f5fec4e6318d16c0dfb6
-  Toast: cef42733129e4bad39f9025072f6d1de8d1c2728
-  YandexMobileMetrica: f8e035e00401814bed3f3c97bff6fccdd621b742
+  Alamofire: 2532b5555c424ea538e3fbeb682727c4b6365f22
+  Armchair: 3f53fd7edd89b2329f035ad26e61995b78916485
+  Bolts: 6cbdcb9eb120f3842929113a283c763596d6b8a1
+  ContentProviders: ea01d37fff374e36cd8e4b948aa29aae85db1d7f
+  ContentProvidersSQLite: 8fb82ef26b9a8f69648b2f73db5f1a7ca124db6c
+  CryptoSwift: d680e652e3e697e497dec111deabfcb8b72f5e76
+  Differentiator: bd0991bcd45db47dbf61a2dc7a9b6b56324ed57f
+  Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
+  FBSDKCoreKit: 6c54e9ecb7be4c43d35df3f4c1ec1a2345134920
+  GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
+  HMSegmentedControl: 3c14121c890966561c9b3204ab7c2e4335921ade
+  INTULocationManager: 3c64d7eab1691fbf395a11c0731f05e6ba8ab43e
+  KeychainAccess: bdf6e8de44d96c5d0c5c5397cda56c4eca89c151
+  MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
+  ModernDesign: a4d3a1b2a4ec5f727268ab45b9d283a9353ff45e
+  ModernDesignExtensions: ee065e4c29da9c8be960e20b868cc54b010d35cb
+  MXPagerView: 32d1c505c33297049e87ef2a716d7e5b06e21ac7
+  MXParallaxHeader: 5fb629d86a7b402dc1279c945715db7ff72bf43f
+  MXSegmentedPager: 01b210656b661bdcee269dfc55f94095ef5ac30d
+  NetworkingApi: 9ab5b6cfe9aaa99904f6387ca0322e08affdb29e
+  NetworkingApiConverters: 4c0d5559a21058c3cbc12cbb68164cc8498a12c4
+  NetworkingApiHelpers: 06a73ddfa0298350bcafca5e6483d1e00ed031b5
+  NetworkingApiHttp: 10e6d25909449181742d7b5205b799b0432dfa70
+  NetworkingApiObjC: 6e53d4b267c8ce15d08fcdd0bd3411d8cec3935f
+  NetworkingApiRest: 0fa4d9baccda65f5994dff3ae237a67514684efb
+  PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
+  PureLayout: 1905850befab55b5f33a893bcfed84d45ee7b457
+  R.swift: 32957e4ae5c452aef8ec149ec2235a3d495fe9db
+  R.swift.Library: 820bd47418b9afc6a77efe3ec6a9bc76dc377f6d
+  ROStorageBar: 26cde54cb44e187fcf73c735c2c31161775b5a37
+  RxCocoa: 9bbd0949c9463e1d58593690f95068d68d27560f
+  RxDataSources: aed3585dc1e1055f589e18a733a99fe277088032
+  RxSwift: 2a7609c85c6c38f06d1ce8ecc5645ebf7cd25c10
+  SDWebImage: 76450db2e477efff818c6c969e0008712fe6692b
+  Siren: ae049537ab7fcc9f97dcead5c6fd2d0c7d78ffad
+  SlideMenuControllerSwift: 7fa8c77d84d8eb9fd4e3e8cae2bda2eef2dd5b89
+  SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
+  SQLite.swift: 35b5ef564d4cea3b40987e24ee36f2f8adc9a003
+  SwiftCommons: 2cfd190e4fcab0c237a4b3a2e0b03bc1837afa31
+  SwiftCommonsAbstractions: 3760b7434e4f0c9d3a8efc8607a0d9178b76bedc
+  SwiftCommonsConcurrent: e6977aa88a0162aceb34de6c34cf4ab71e8bda09
+  SwiftCommonsData: 1cbfbaa1b4bf567439e7672b48e1c120130752b3
+  SwiftCommonsDiagnostics: e35fd51e853cae5cf5491535af779bac7be1563e
+  SwiftCommonsExtensions: f0174ca975baf395d4c70aedd4472099dd33332e
+  SwiftCommonsLang: 023f2c503e6366bb2c0caa17cba27f708b310449
+  SwiftCommonsLogging: 446d9ef203f3a755b75685dd1831ecc87cad78bf
+  SwiftCommonsObjC: fc1f33084aab5750a5ecb1e89af8703e8dbfb9a2
+  SwiftReorder: 1afd0df17ff18685b022456ca651932afaa2288d
+  SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
+  Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
+  YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 401dd91a1c9f0afae4f693c11b4572e1ec278c33
+PODFILE CHECKSUM: 0a1a7705166063b50b4a4df30d4a4804b049c415
 
 COCOAPODS: 1.5.3
