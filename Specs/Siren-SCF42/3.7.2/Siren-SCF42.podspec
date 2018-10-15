@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: 'https://dl.bintray.com/roxiemobile/generic/Siren-3.7.2-SCF42.zip',
+    http: "https://dl.bintray.com/roxiemobile/generic/Siren-#{s.version}-SCF42.zip",
     sha256: 'ab6664e2f8aa519fb602f29cef18babfbc905a2d4ff500bc188773c067e6c063'
   }
 
