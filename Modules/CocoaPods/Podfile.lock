@@ -16,7 +16,7 @@ PODS:
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.3)
   - INTULocationManager (4.3.2)
-  - KeychainAccess (3.1.0)
+  - KeychainAccess (3.1.2)
   - MBProgressHUD (1.1.0)
   - MXPagerView (0.2.1)
   - MXParallaxHeader (0.6.1)
@@ -64,7 +64,7 @@ DEPENDENCIES:
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
   - INTULocationManager (>= 4.3.2)
-  - KeychainAccess (>= 3.1.0)
+  - KeychainAccess (>= 3.1.2)
   - MBProgressHUD (>= 1.1.0)
   - MXPagerView (>= 0.2.1)
   - MXParallaxHeader (>= 0.6.1)
@@ -132,7 +132,7 @@ SPEC CHECKSUMS:
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   INTULocationManager: e5dc524611b0cd582f473bc56cc8c389adb2f338
-  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
@@ -155,6 +155,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 088d16b86987e2b378ded671ee75e9018b153159
+PODFILE CHECKSUM: c544d7ab750712807c03f0bac8850077980f1384
 
 COCOAPODS: 1.5.3
