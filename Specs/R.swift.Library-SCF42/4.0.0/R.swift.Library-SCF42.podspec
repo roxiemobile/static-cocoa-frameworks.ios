@@ -1,4 +1,3 @@
-# coding: utf-8
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift.Library"
@@ -27,18 +26,26 @@ Pod::Spec.new do |spec|
 
 # MARK: - iOS Static Framework
 
+  patch_version = "#{spec.version}-patch.2"
+
+  spec.name = "#{spec.name}-SCF42"
+
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.2'
 
-  spec.license = {}
-  spec.static_framework = true
-
+  spec.default_subspec = 'StaticCocoaFramework'
   spec.source = {
-    git: 'https://github.com/roxiemobile-forks/R.swift.Library.git',
-    tag: "v#{spec.version}-patch.1"
+    http: "https://dl.bintray.com/roxiemobile/generic/R.swift.Library-#{patch_version}-SCF42.zip",
+    sha256: 'eba24cdceaacb06404d46c05ec581f3a7629e8817aab19489bdb838549695671'
   }
 
-  cn = spec.consumer(:ios)
-  spec.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  spec.source_files = nil
+
+  spec.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Rswift.framework/*'
+    sc.source_files = 'Rswift.framework/Headers/*.h'
+    sc.public_header_files = 'Rswift.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Rswift.framework'
+  end
 end
