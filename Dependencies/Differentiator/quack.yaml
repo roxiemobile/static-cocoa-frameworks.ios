@@ -2,9 +2,9 @@ name: Differentiator
 description: Diff algorithm for UITableView and UICollectionView.
 
 modules:
-  3.0.2:
+  3.1.0:
     repository: https://github.com/RxSwiftCommunity/RxDataSources.git
-    tag: 3.0.2
+    tag: 3.1.0
 
 profiles:
   init:

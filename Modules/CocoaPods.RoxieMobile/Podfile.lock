@@ -150,7 +150,7 @@ DEPENDENCIES:
   - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.3.0.podspec`)
   - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.3.0.podspec`)
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.12.0.podspec`)
-  - Differentiator (from `../../Dependencies/Differentiator/Pod-3.0.2.podspec`)
+  - Differentiator (from `../../Dependencies/Differentiator/Pod-3.1.0.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
   - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.37.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
@@ -210,7 +210,7 @@ EXTERNAL SOURCES:
   CryptoSwift:
     :path: "../../Dependencies/CryptoSwift/Pod-0.12.0.podspec"
   Differentiator:
-    :path: "../../Dependencies/Differentiator/Pod-3.0.2.podspec"
+    :path: "../../Dependencies/Differentiator/Pod-3.1.0.podspec"
   Dispatch:
     :path: "../../Dependencies/Dispatch/Pod-2.0.4.podspec"
   FBSDKCoreKit:
@@ -353,6 +353,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: c51b4c4377811b685bf99ce8bf2aacb3141e1b67
+PODFILE CHECKSUM: c8cb46dee54d311d0508209d999683451558b881
 
 COCOAPODS: 1.5.3
