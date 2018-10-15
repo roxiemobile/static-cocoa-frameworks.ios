@@ -2,9 +2,9 @@ name: INTULocationManager
 description: Easily get the device's current location on iOS.
 
 modules:
-  4.3.0:
+  4.3.2:
     repository: https://github.com/intuit/LocationManager.git
-    tag: v4.3.0
+    tag: v4.3.2
 
 profiles:
   init:

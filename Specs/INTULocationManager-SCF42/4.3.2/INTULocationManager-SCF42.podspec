@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name                  = "INTULocationManager"
-  s.version               = "4.3.0"
+  s.version               = "4.3.2"
   s.homepage              = "https://github.com/intuit/LocationManager"
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
   s.author                = { "Lucien Dupont" => "lucien_dupont@intuit.com" }
-  s.source                = { :git => "https://github.com/intuit/LocationManager.git", :tag => "v4.3.0" }
+  s.source                = { :git => "https://github.com/intuit/LocationManager.git", :tag => "v4.3.2" }
   s.source_files          = 'LocationManager/INTULocationManager'
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -24,16 +24,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/INTULocationManager-#{s.version}-SCF42.zip",
+    sha256: '3b703b1181a67712771050ce4785ce7c750f630373feea5b9f9f4811300ab3ce'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.pod_target_xcconfig = (cn.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'INTULocationManager.framework/*'
+    sc.source_files = 'INTULocationManager.framework/Headers/*.h'
+    sc.public_header_files = 'INTULocationManager.framework/Headers/*.h'
+    sc.vendored_frameworks = 'INTULocationManager.framework'
   end
 end
