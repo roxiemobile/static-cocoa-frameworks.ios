@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEFA5E9B1CEF9F7AF6C07E9D72DBE908"
-               BuildableName = "libSwiftCommonsAbstractions.a"
+               BlueprintIdentifier = "04A4BC8F96FE29B2DB8ECCADC29165DF"
+               BuildableName = "SwiftCommonsAbstractions.framework"
                BlueprintName = "SwiftCommonsAbstractions"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEFA5E9B1CEF9F7AF6C07E9D72DBE908"
-            BuildableName = "libSwiftCommonsAbstractions.a"
+            BlueprintIdentifier = "04A4BC8F96FE29B2DB8ECCADC29165DF"
+            BuildableName = "SwiftCommonsAbstractions.framework"
             BlueprintName = "SwiftCommonsAbstractions"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

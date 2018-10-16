@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "68039FE7E25F843605AE416057BA9060"
-               BuildableName = "libSwiftCommonsConcurrent.a"
+               BlueprintIdentifier = "D0F3F491ABAA6A1C3DFEAB76F05FF76A"
+               BuildableName = "SwiftCommonsConcurrent.framework"
                BlueprintName = "SwiftCommonsConcurrent"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "68039FE7E25F843605AE416057BA9060"
-            BuildableName = "libSwiftCommonsConcurrent.a"
+            BlueprintIdentifier = "D0F3F491ABAA6A1C3DFEAB76F05FF76A"
+            BuildableName = "SwiftCommonsConcurrent.framework"
             BlueprintName = "SwiftCommonsConcurrent"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2409FB7BF92557AF95E6A0EC91CACF7"
-               BuildableName = "libINTULocationManager.a"
+               BlueprintIdentifier = "3C92F34A664B526FC676F4034F18925D"
+               BuildableName = "INTULocationManager.framework"
                BlueprintName = "INTULocationManager"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2409FB7BF92557AF95E6A0EC91CACF7"
-            BuildableName = "libINTULocationManager.a"
+            BlueprintIdentifier = "3C92F34A664B526FC676F4034F18925D"
+            BuildableName = "INTULocationManager.framework"
             BlueprintName = "INTULocationManager"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

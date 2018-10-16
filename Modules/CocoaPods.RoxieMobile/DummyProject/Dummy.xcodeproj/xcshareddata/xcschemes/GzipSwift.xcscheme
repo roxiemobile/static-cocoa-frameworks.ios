@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0EBAE1AFFDFD9916D38CD497C865719B"
-               BuildableName = "libGzip.a"
+               BlueprintIdentifier = "2D9AAD759BD7AF70FC8497D8DAB0DDDB"
+               BuildableName = "Gzip.framework"
                BlueprintName = "GzipSwift"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0EBAE1AFFDFD9916D38CD497C865719B"
-            BuildableName = "libGzip.a"
+            BlueprintIdentifier = "2D9AAD759BD7AF70FC8497D8DAB0DDDB"
+            BuildableName = "Gzip.framework"
             BlueprintName = "GzipSwift"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

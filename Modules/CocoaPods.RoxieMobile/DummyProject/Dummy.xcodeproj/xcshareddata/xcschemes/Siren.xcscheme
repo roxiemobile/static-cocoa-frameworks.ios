@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EF9F2471CC1960A82FD5C1F6D006B08"
-               BuildableName = "libSiren.a"
+               BlueprintIdentifier = "5B3E9796393C8CAC1C704F9FEACC984E"
+               BuildableName = "Siren.framework"
                BlueprintName = "Siren"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EF9F2471CC1960A82FD5C1F6D006B08"
-            BuildableName = "libSiren.a"
+            BlueprintIdentifier = "5B3E9796393C8CAC1C704F9FEACC984E"
+            BuildableName = "Siren.framework"
             BlueprintName = "Siren"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>
@@ -65,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EF9F2471CC1960A82FD5C1F6D006B08"
-            BuildableName = "libSiren.a"
+            BlueprintIdentifier = "5B3E9796393C8CAC1C704F9FEACC984E"
+            BuildableName = "Siren.framework"
             BlueprintName = "Siren"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

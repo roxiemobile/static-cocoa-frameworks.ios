@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17935FE11A7A309BFE671BB193605572"
-               BuildableName = "libDifferentiator.a"
+               BlueprintIdentifier = "9C670B8DA35C6CCE36245703740439FA"
+               BuildableName = "Differentiator.framework"
                BlueprintName = "Differentiator"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17935FE11A7A309BFE671BB193605572"
-            BuildableName = "libDifferentiator.a"
+            BlueprintIdentifier = "9C670B8DA35C6CCE36245703740439FA"
+            BuildableName = "Differentiator.framework"
             BlueprintName = "Differentiator"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

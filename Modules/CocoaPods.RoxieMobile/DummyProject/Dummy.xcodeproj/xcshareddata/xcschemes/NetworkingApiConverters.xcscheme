@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A370BF1E5C4653F779B93413F86C3AA9"
-               BuildableName = "libNetworkingApiConverters.a"
+               BlueprintIdentifier = "6BD8850E17A016ED1BF7B5E84C004E8B"
+               BuildableName = "NetworkingApiConverters.framework"
                BlueprintName = "NetworkingApiConverters"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A370BF1E5C4653F779B93413F86C3AA9"
-            BuildableName = "libNetworkingApiConverters.a"
+            BlueprintIdentifier = "6BD8850E17A016ED1BF7B5E84C004E8B"
+            BuildableName = "NetworkingApiConverters.framework"
             BlueprintName = "NetworkingApiConverters"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

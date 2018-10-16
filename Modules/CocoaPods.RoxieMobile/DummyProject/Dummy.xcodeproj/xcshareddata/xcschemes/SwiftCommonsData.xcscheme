@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DB07DE7F0D44898BF6EC22574E89BA8"
-               BuildableName = "libSwiftCommonsData.a"
+               BlueprintIdentifier = "0F2A46559B96C87D55C2D58B24AACAAC"
+               BuildableName = "SwiftCommonsData.framework"
                BlueprintName = "SwiftCommonsData"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2DB07DE7F0D44898BF6EC22574E89BA8"
-            BuildableName = "libSwiftCommonsData.a"
+            BlueprintIdentifier = "0F2A46559B96C87D55C2D58B24AACAAC"
+            BuildableName = "SwiftCommonsData.framework"
             BlueprintName = "SwiftCommonsData"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

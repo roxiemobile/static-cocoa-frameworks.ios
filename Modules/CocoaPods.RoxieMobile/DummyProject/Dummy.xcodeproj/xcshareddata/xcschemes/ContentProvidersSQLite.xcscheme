@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "248F061AFA304BD6739D777F71E09244"
-               BuildableName = "libContentProvidersSQLite.a"
+               BlueprintIdentifier = "910F61F93BD6CD4C8E89826A6632BA8F"
+               BuildableName = "ContentProvidersSQLite.framework"
                BlueprintName = "ContentProvidersSQLite"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "248F061AFA304BD6739D777F71E09244"
-            BuildableName = "libContentProvidersSQLite.a"
+            BlueprintIdentifier = "910F61F93BD6CD4C8E89826A6632BA8F"
+            BuildableName = "ContentProvidersSQLite.framework"
             BlueprintName = "ContentProvidersSQLite"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

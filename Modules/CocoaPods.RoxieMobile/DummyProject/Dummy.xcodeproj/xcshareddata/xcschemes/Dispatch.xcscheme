@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35479C3495D644FB88068D3DAA5B77F4"
-               BuildableName = "libDispatchFramework.a"
+               BlueprintIdentifier = "06782B5208821306B8672968B5013BD6"
+               BuildableName = "DispatchFramework.framework"
                BlueprintName = "Dispatch"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35479C3495D644FB88068D3DAA5B77F4"
-            BuildableName = "libDispatchFramework.a"
+            BlueprintIdentifier = "06782B5208821306B8672968B5013BD6"
+            BuildableName = "DispatchFramework.framework"
             BlueprintName = "Dispatch"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

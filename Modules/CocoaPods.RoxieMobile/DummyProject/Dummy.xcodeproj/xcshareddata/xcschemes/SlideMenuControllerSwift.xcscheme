@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D667B485D8602D1DB5BDF437DE04514A"
-               BuildableName = "libSlideMenuControllerSwift.a"
+               BlueprintIdentifier = "FD818603A5ADBA4E5EFF310443723630"
+               BuildableName = "SlideMenuControllerSwift.framework"
                BlueprintName = "SlideMenuControllerSwift"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D667B485D8602D1DB5BDF437DE04514A"
-            BuildableName = "libSlideMenuControllerSwift.a"
+            BlueprintIdentifier = "FD818603A5ADBA4E5EFF310443723630"
+            BuildableName = "SlideMenuControllerSwift.framework"
             BlueprintName = "SlideMenuControllerSwift"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

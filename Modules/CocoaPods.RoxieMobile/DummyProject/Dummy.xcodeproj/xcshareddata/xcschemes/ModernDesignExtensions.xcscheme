@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "10B7292E03084DC678A9A7415CBA59C7"
-               BuildableName = "libModernDesignExtensions.a"
+               BlueprintIdentifier = "8C09596DD093687B4C671ABE865AE0C6"
+               BuildableName = "ModernDesignExtensions.framework"
                BlueprintName = "ModernDesignExtensions"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "10B7292E03084DC678A9A7415CBA59C7"
-            BuildableName = "libModernDesignExtensions.a"
+            BlueprintIdentifier = "8C09596DD093687B4C671ABE865AE0C6"
+            BuildableName = "ModernDesignExtensions.framework"
             BlueprintName = "ModernDesignExtensions"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

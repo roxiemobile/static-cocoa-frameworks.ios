@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D7CFB2660C1ADDD55E29E47E15B0D29"
-               BuildableName = "libSwiftReorder.a"
+               BlueprintIdentifier = "D0A228117BD9B7E5CA8BC08F6ADDF3DA"
+               BuildableName = "SwiftReorder.framework"
                BlueprintName = "SwiftReorder"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D7CFB2660C1ADDD55E29E47E15B0D29"
-            BuildableName = "libSwiftReorder.a"
+            BlueprintIdentifier = "D0A228117BD9B7E5CA8BC08F6ADDF3DA"
+            BuildableName = "SwiftReorder.framework"
             BlueprintName = "SwiftReorder"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

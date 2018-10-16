@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B3F51159AC1E3F7B6AD8B68FCDE5C25"
-               BuildableName = "libSwiftCommonsExtensions.a"
+               BlueprintIdentifier = "3D26A473816ED8BDF16DDE4BE881CB8B"
+               BuildableName = "SwiftCommonsExtensions.framework"
                BlueprintName = "SwiftCommonsExtensions"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B3F51159AC1E3F7B6AD8B68FCDE5C25"
-            BuildableName = "libSwiftCommonsExtensions.a"
+            BlueprintIdentifier = "3D26A473816ED8BDF16DDE4BE881CB8B"
+            BuildableName = "SwiftCommonsExtensions.framework"
             BlueprintName = "SwiftCommonsExtensions"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

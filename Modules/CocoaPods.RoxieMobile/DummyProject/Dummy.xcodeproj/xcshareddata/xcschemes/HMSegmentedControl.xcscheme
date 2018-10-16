@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4E2BB008E61945D61590EBB5ACC87C4"
-               BuildableName = "libHMSegmentedControl.a"
+               BlueprintIdentifier = "60C5D41946161054FD44CFAFAA3B4D14"
+               BuildableName = "HMSegmentedControl.framework"
                BlueprintName = "HMSegmentedControl"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4E2BB008E61945D61590EBB5ACC87C4"
-            BuildableName = "libHMSegmentedControl.a"
+            BlueprintIdentifier = "60C5D41946161054FD44CFAFAA3B4D14"
+            BuildableName = "HMSegmentedControl.framework"
             BlueprintName = "HMSegmentedControl"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

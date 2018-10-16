@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "378413AF059FA60B4A5AA5A8A7805E91"
-               BuildableName = "libNetworkingApiObjC.a"
+               BlueprintIdentifier = "66887E8753BD10810A5410C43B20476F"
+               BuildableName = "NetworkingApiObjC.framework"
                BlueprintName = "NetworkingApiObjC"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "378413AF059FA60B4A5AA5A8A7805E91"
-            BuildableName = "libNetworkingApiObjC.a"
+            BlueprintIdentifier = "66887E8753BD10810A5410C43B20476F"
+            BuildableName = "NetworkingApiObjC.framework"
             BlueprintName = "NetworkingApiObjC"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>

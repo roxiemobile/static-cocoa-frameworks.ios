@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75FD5B56FF673DD6F53E179F200EC534"
-               BuildableName = "libSwiftCommonsLang.a"
+               BlueprintIdentifier = "841D5EB61CE25D4A167B9A67ADD3212C"
+               BuildableName = "SwiftCommonsLang.framework"
                BlueprintName = "SwiftCommonsLang"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
             </BuildableReference>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "75FD5B56FF673DD6F53E179F200EC534"
-            BuildableName = "libSwiftCommonsLang.a"
+            BlueprintIdentifier = "841D5EB61CE25D4A167B9A67ADD3212C"
+            BuildableName = "SwiftCommonsLang.framework"
             BlueprintName = "SwiftCommonsLang"
             ReferencedContainer = "container:../Pods/Pods.xcodeproj">
          </BuildableReference>
