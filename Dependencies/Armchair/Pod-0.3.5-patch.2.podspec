@@ -30,6 +30,23 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.swift_version         = '4.2'
 
-  # NOTE: Protection
-  s.dependency '//+WrongSourceRepository'
+# MARK: - iOS Static Framework
+
+  patch_version = "#{s.version}-patch.2"
+
+  s.platform = :ios
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '4.2'
+
+  s.license = {}
+  s.static_framework = true
+
+  s.source = {
+    git: 'https://github.com/roxiemobile-forks/Armchair.git',
+    tag: patch_version
+  }
+
+  cn = s.consumer(:ios)
+  s.source_files = cn.source_files.map { |pt| "#{patch_version}/#{pt}" }
+  s.resources = cn.resources.map { |pt| "#{patch_version}/#{pt}" }
 end

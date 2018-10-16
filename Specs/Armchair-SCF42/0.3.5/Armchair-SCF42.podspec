@@ -28,17 +28,43 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
   s.requires_arc          = true
+  s.swift_version         = '4.2'
 
 # MARK: - iOS Static Framework
+
+  patch_version = "#{s.version}-patch.2"
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/Armchair-#{patch_version}-SCF42.zip",
+    sha256: '32b02e5aab37003ea861bebb0e7b7273ce84424ac25c798c56ab85e978193a68'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.resources = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Armchair.framework/*'
+    sc.source_files = 'Armchair.framework/Headers/*.h'
+    sc.public_header_files = 'Armchair.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Armchair.framework'
+    sc.resources = 'Armchair.framework/*.lproj'
+  end
+
+# MARK: - Validation
+
+  # Technical Q&A QA1881 v2 - Embedding Content with Swift in Objective-C
+  # @link https://pewpewthespells.com/blog/swift_and_objc.html
+
+  s.user_target_xcconfig = {
+    'SWIFT_STDLIB_PATH' => '${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}',
+    'OTHER_LDFLAGS' => '-L${SWIFT_STDLIB_PATH}'
+  }
 end
