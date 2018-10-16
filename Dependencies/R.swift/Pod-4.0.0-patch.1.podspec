@@ -1,4 +1,3 @@
-# coding: utf-8
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift"
@@ -33,9 +32,17 @@ Pod::Spec.new do |spec|
 
 # MARK: - iOS Static Framework
 
+  patch_version = "#{spec.version}-patch.1"
+
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.2'
 
   spec.license = {}
+  spec.static_framework = true
+
+  spec.source = {
+    git: 'https://github.com/roxiemobile-forks/R.swift.git',
+    tag: patch_version
+  }
 end
