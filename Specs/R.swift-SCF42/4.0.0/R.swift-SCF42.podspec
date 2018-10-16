@@ -34,6 +34,8 @@ Pod::Spec.new do |spec|
 
 # MARK: - iOS Static Framework
 
+  patch_version = "#{spec.version}-patch.1"
+
   spec.name = "#{spec.name}-SCF42"
 
   spec.platform = :ios
@@ -41,6 +43,10 @@ Pod::Spec.new do |spec|
   spec.swift_version = '4.2'
 
   spec.default_subspec = 'StaticCocoaFramework'
+  spec.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/R.swift-#{patch_version}-SCF42.zip",
+    sha256: 'd591d58fb9ca73aadd532e110061648434f81d3e8ea9ca80b63197e84ef3a33b'
+  }
 
   spec.subspec 'StaticCocoaFramework' do |sc|
     # Dependencies
