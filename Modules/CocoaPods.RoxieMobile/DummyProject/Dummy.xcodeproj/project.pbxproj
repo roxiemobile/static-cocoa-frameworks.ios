@@ -225,6 +225,7 @@
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.5-patch.2/Localization/vi.lproj",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.5-patch.2/Localization/zh-Hans.lproj",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.5-patch.2/Localization/zh-Hant.lproj",
+				"${PODS_ROOT}/../../../Dependencies/FBSDKCoreKit/4.37.0/FacebookSDKStrings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -260,6 +261,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vi.lproj",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
