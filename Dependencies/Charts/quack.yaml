@@ -1,0 +1,19 @@
+name: Charts
+description: Charts is a powerful & easy to use chart library for iOS, tvOS and OSX (and Android).
+
+modules:
+  3.2.1:
+    repository: https://github.com/danielgindi/Charts.git
+    tag: v3.2.1
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']

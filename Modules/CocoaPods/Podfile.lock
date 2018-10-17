@@ -7,6 +7,9 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
   - CryptoSwift (0.12.0)
   - Differentiator (3.1.0)
   - Dispatch (2.0.4)
@@ -58,6 +61,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (>= 4.7.3)
   - Armchair (>= 0.3.5)
+  - Charts (>= 3.2.1)
   - CryptoSwift (>= 0.12.0)
   - Dispatch (>= 2.0.4)
   - FBSDKCoreKit (>= 4.37.0)
@@ -91,6 +95,7 @@ SPEC REPOS:
     - Alamofire
     - Armchair
     - Bolts
+    - Charts
     - CryptoSwift
     - Differentiator
     - Dispatch
@@ -127,6 +132,7 @@ SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Armchair: 0ab9237bc373e26245c7651acf193d85fb9c033a
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   CryptoSwift: 1c07ca50843dd48bc54e6ea53d7a4dba3b645716
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
@@ -159,6 +165,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: 2105b59901af3ea27f54a2c087d9a7c18e8af17f
+PODFILE CHECKSUM: 6b83ffc515976633ec6b9567bd04cf946ee1c168
 
 COCOAPODS: 1.5.3
