@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  patch_version = "#{s.version}-patch.2"
+  patch_version = "#{s.version}-patch.3"
 
   s.module_name = s.name
   s.name = "#{s.name}-SCF42"
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: "https://dl.bintray.com/roxiemobile/generic/SlideMenuControllerSwift-#{patch_version}-SCF42.zip",
-    sha256: '2c68e71ef5871901c560377449c4c617066a424221d5c7dd1e3952ed54c641e8'
+    http: "https://dl.bintray.com/roxiemobile/generic/#{s.module_name}-#{patch_version}-SCF42.zip",
+    sha256: '0641540daca221dbbceffafb7341c4a43a9ccf68fc3abf7f176eec9e6e4faf2a'
   }
 
   s.source_files = nil
