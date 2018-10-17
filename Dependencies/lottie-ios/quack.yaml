@@ -1,0 +1,19 @@
+name: lottie-ios
+description: An iOS library to natively render After Effects vector animations.
+
+modules:
+  2.5.2:
+    repository: https://github.com/airbnb/lottie-ios.git
+    tag: 2.5.2
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
