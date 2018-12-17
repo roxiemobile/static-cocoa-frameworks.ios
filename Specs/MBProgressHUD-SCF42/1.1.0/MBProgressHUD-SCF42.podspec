@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/MBProgressHUD-#{s.version}-SCF42.zip",
-    sha256: 'e7d95d60c8d03e5a154d09361ceb438e79d1cc4846a9bbc6c371fbae1e4c9e16'
+    sha256: '0996e8cdbd2d46eb2360a3938f03734e379138a501de14185f001afe05c0f237'
   }
 
   s.source_files = nil
