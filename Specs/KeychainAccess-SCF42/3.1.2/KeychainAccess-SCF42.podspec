@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/KeychainAccess-#{s.version}-SCF42.zip",
-    sha256: 'f216f99c7ecf125c30ec94fc56453e7c6c34262bcc9a3cb01c366f1fd3c77c0c'
+    sha256: '963fc3745d88a1693d05f6fad1cf655b8077da3260d425f2207a8957b357f8c1'
   }
 
   s.source_files = nil
