@@ -20,7 +20,7 @@ PODS:
     - SwiftCommons/Concurrent (~> 1.3.0)
     - SwiftCommons/Extensions (~> 1.3.0)
   - CryptoSwift (0.13.1)
-  - Differentiator (3.0.2)
+  - Differentiator (3.1.0)
   - Dispatch (2.0.4)
   - FBSDKCoreKit (4.37.0):
     - Bolts (~> 1.7)
@@ -318,7 +318,7 @@ SPEC CHECKSUMS:
   ContentProviders: ea01d37fff374e36cd8e4b948aa29aae85db1d7f
   ContentProvidersSQLite: 8fb82ef26b9a8f69648b2f73db5f1a7ca124db6c
   CryptoSwift: b5d2c8b18ca95a5323d587b4a9cb82ea96b2aaa3
-  Differentiator: bd0991bcd45db47dbf61a2dc7a9b6b56324ed57f
+  Differentiator: 59ec55fb876c37e8487a6704ea50af41853a734e
   Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
   FBSDKCoreKit: 6c54e9ecb7be4c43d35df3f4c1ec1a2345134920
   GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
