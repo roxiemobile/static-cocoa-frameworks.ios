@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.7.3)
+  - Alamofire (4.8.0)
   - Armchair (0.3.5)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
