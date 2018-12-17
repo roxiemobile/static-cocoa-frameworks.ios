@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/HMSegmentedControl-#{s.version}-SCF42.zip",
-    sha256: '3c7e7f75712e6b28874ac334509af6bea129251925ce24632576a2177d857f52'
+    sha256: 'c55152f8330f673d8efb9ae2f19b1d05ea3f8cab8703db3138ca3e30d5733f6c'
   }
 
   s.source_files = nil
