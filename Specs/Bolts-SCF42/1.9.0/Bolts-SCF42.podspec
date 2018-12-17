@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'Tasks', 'AppLinks'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/Bolts-#{s.version}-SCF42.zip",
-    sha256: '99fd75c9302c78a6b97e365614d7d439e35d1140c4e3663ff5caef3f804bacda'
+    sha256: '8b4981828145016b6235d1e9d2fa076d7fae73f38157f7b00a8e2fc3e6c83252'
   }
 
   s.subspec 'StaticCocoaFramework' do |sc|
