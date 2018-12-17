@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "Armchair"
-  s.version               = "0.3.5"
+  s.version               = "0.3.6"
   s.summary               = "A simple yet powerful App Review Manager for iOS and OSX in Swift"
   s.description           = <<-DESC
                             A simple yet powerful App Review Manager for iOS and OSX in Swift.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  patch_version = "#{s.version}-patch.2"
+  patch_version = "#{s.version}-patch.1"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'

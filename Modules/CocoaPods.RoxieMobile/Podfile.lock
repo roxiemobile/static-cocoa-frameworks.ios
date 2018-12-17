@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
-  - Armchair (0.3.5)
+  - Armchair (0.3.6)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -149,7 +149,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.8.0.podspec`)
-  - Armchair (from `../../Dependencies/Armchair/Pod-0.3.5-patch.2.podspec`)
+  - Armchair (from `../../Dependencies/Armchair/Pod-0.3.6-patch.1.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
   - Charts (from `../../Dependencies/Charts/Pod-3.2.1.podspec`)
   - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.3.0.podspec`)
@@ -206,7 +206,7 @@ EXTERNAL SOURCES:
   Alamofire:
     :path: "../../Dependencies/Alamofire/Pod-4.8.0.podspec"
   Armchair:
-    :path: "../../Dependencies/Armchair/Pod-0.3.5-patch.2.podspec"
+    :path: "../../Dependencies/Armchair/Pod-0.3.6-patch.1.podspec"
   Bolts:
     :path: "../../Dependencies/Bolts/Pod-1.9.0.podspec"
   Charts:
@@ -312,7 +312,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 965778d10fe0c2627fd31579a9c27bf920981d05
-  Armchair: bbb575b73d47514e6794507a672647ab3c25a370
+  Armchair: 2ffda271017e7ba70ee01f7c568438b9aaa44f3f
   Bolts: 6cbdcb9eb120f3842929113a283c763596d6b8a1
   Charts: 92aefcf0dc59f9ebeea634d51b4ca8f86dc7841f
   ContentProviders: ea01d37fff374e36cd8e4b948aa29aae85db1d7f
@@ -365,6 +365,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 5a42afeab521cd43fb5016489e7632ab862f6747
+PODFILE CHECKSUM: 605c57010b140bc9975e27518a30a78df1afc827
 
 COCOAPODS: 1.5.3
