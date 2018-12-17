@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
   spec.default_subspec = 'StaticCocoaFramework'
   spec.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/ROStorageBar-#{patch_version}-SCF42.zip",
-    sha256: '51253763305b74c7cc2fa2d2cf16b1020cb4acb7a0b035c792f0ddbb6489b3c8'
+    sha256: 'afdd0256f44b12e7b072b1c010bbd5ab16cee355b08dd2c09224721b17b6462c'
   }
 
   spec.source_files = nil
