@@ -17,7 +17,7 @@ target 'DummyFramework' do
   pod 'CryptoSwift',              path: '../../Dependencies/CryptoSwift/Pod-0.13.1.podspec'
   pod 'Differentiator',           path: '../../Dependencies/Differentiator/Pod-3.1.0.podspec'
   pod 'Dispatch',                 path: '../../Dependencies/Dispatch/Pod-2.0.4.podspec'
-  pod 'FBSDKCoreKit',             path: '../../Dependencies/FBSDKCoreKit/Pod-4.37.0.podspec'
+  pod 'FBSDKCoreKit',             path: '../../Dependencies/FBSDKCoreKit/Pod-4.39.0.podspec'
   pod 'GzipSwift',                path: '../../Dependencies/GzipSwift/Pod-4.0.4.podspec'
   pod 'HMSegmentedControl',       path: '../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec'
   pod 'INTULocationManager',      path: '../../Dependencies/INTULocationManager/Pod-4.3.2.podspec'

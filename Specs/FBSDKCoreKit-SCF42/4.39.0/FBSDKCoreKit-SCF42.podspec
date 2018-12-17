@@ -2,9 +2,9 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "FBSDKCoreKit"
-  s.version      = "4.37.0"
-  s.summary      = "Official Facebook SDK for iOS to access Facebook Platform's core features"
+  s.name         = 'FBSDKCoreKit'
+  s.version      = '4.39.0'
+  s.summary      = 'Official Facebook SDK for iOS to access Facebook Platform core features'
 
   s.description  = <<-DESC
                    The Facebook SDK for iOS CoreKit framework provides:
@@ -13,20 +13,28 @@ Pod::Spec.new do |s|
                    * Working with Access Tokens and User Profiles
                    DESC
 
-  s.homepage     = "https://developers.facebook.com/docs/ios/"
-  s.license      = { :type => "Facebook Platform License", :file => "LICENSE" }
+  s.homepage     = 'https://developers.facebook.com/docs/ios/'
+  s.license      = { :type => 'Facebook Platform License', :file => 'LICENSE' }
   s.author       = 'Facebook'
 
   s.platform     = :ios, :tvos
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
 
-  s.source       = { :git => "https://github.com/facebook/facebook-objc-sdk.git",
-                     :tag => "sdk-version-4.37.0"
+  s.source       = { :git => 'https://github.com/facebook/facebook-objc-sdk.git',
+                     :tag => 'sdk-version-4.39.0'
                     }
 
   s.ios.weak_frameworks = 'Accounts', 'CoreLocation', 'Social', 'Security', 'QuartzCore', 'CoreGraphics', 'UIKit', 'Foundation', 'AudioToolbox'
   s.tvos.weak_frameworks = 'CoreLocation', 'Security', 'QuartzCore', 'CoreGraphics', 'UIKit', 'Foundation', 'AudioToolbox'
+
+  # This excludes `FBSDKCoreKit/FBSDKCoreKit/Internal_NoARC/` folder, as that folder includes only `no-arc` files.
+  s.requires_arc = ['FBSDKCoreKit/FBSDKCoreKit/*',
+                    'FBSDKCoreKit/FBSDKCoreKit/Internal/**/*']
+
+=begin
+  s.ios.dependency 'Bolts', '~> 1.9'
+=end
 
   s.public_header_files = 'FBSDKCoreKit/FBSDKCoreKit/*.h'
   s.source_files = 'FBSDKCoreKit/FBSDKCoreKit/**/*.{h,m}'
@@ -53,7 +61,6 @@ Pod::Spec.new do |s|
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/Codeless/*',
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKHybridAppEventsScriptMessageHandler.{h,m}',
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/**/*',
-                          'FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/**/*',
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLinkReturnToRefererView_Internal.h',
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAppLink_Internal.h',
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.{h,m}',
@@ -69,25 +76,35 @@ Pod::Spec.new do |s|
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKMaleSilhouetteIcon.{h,m}',
                           'FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/**/*'
 
-  # This excludes `FBSDKCoreKit/FBSDKCoreKit/Internal_NoARC/` folder, as that folder includes only `no-arc` files.
-  s.requires_arc = ['FBSDKCoreKit/FBSDKCoreKit/*',
-                    'FBSDKCoreKit/FBSDKCoreKit/Internal/**/*']
-
-  s.ios.dependency 'Bolts', '~> 1.7'
-
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/FBSDKCoreKit-#{s.version}-SCF42.zip",
+    sha256: '7bcae4ec82ae0410405b02d3a937d8663611c4a07a31200a0de560d4768d02a4'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
-  s.ios.exclude_files = cn.exclude_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.requires_arc = cn.requires_arc.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.public_header_files = nil
+  s.resources = nil
+  s.exclude_files = nil
+  s.ios.exclude_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'FBSDKCoreKit.framework/*'
+    sc.source_files = 'FBSDKCoreKit.framework/Headers/*.h'
+    sc.public_header_files = 'FBSDKCoreKit.framework/Headers/*.h'
+    sc.vendored_frameworks = 'FBSDKCoreKit.framework'
+    sc.resources = 'FBSDKCoreKit.framework/FacebookSDKStrings.bundle'
+
+    # Dependencies
+    sc.dependency 'Bolts-SCF42', '~> 1.9.0'
+  end
 end
