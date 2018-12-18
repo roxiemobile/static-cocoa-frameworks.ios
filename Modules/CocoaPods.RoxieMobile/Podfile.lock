@@ -51,7 +51,7 @@ PODS:
   - NetworkingApi/Converters (1.3.0):
     - NetworkingApiConverters (= 1.3.0)
   - NetworkingApi/Helpers (1.3.0):
-    - NetworkingApiHelpers (= 1.3.0)
+    - NetworkingApiHelpers (= 1.3.1)
   - NetworkingApi/Http (1.3.0):
     - NetworkingApiHttp (= 1.3.1)
   - NetworkingApi/ObjC (1.3.0):
@@ -61,7 +61,7 @@ PODS:
   - NetworkingApiConverters (1.3.0):
     - NetworkingApiRest (= 1.3.0)
     - SwiftCommons/Data (~> 1.3.0)
-  - NetworkingApiHelpers (1.3.0):
+  - NetworkingApiHelpers (1.3.1):
     - Alamofire (~> 4.8.0)
     - NetworkingApiHttp (= 1.3.1)
   - NetworkingApiHttp (1.3.1):
@@ -70,7 +70,7 @@ PODS:
     - Alamofire (~> 4.8.0)
   - NetworkingApiRest (1.3.0):
     - Alamofire (~> 4.8.0)
-    - NetworkingApiHelpers (= 1.3.0)
+    - NetworkingApiHelpers (= 1.3.1)
     - NetworkingApiObjC (= 1.3.1)
     - SwiftCommons/Data (~> 1.3.1)
     - SwiftyJSON (~> 4.2.0)
@@ -171,7 +171,7 @@ DEPENDENCIES:
   - MXSegmentedPager (from `../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec`)
   - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.3.0.podspec`)
   - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.3.0.podspec`)
-  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.3.0.podspec`)
+  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.3.1.podspec`)
   - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.3.1.podspec`)
   - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.3.1.podspec`)
   - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.3.0.podspec`)
@@ -250,7 +250,7 @@ EXTERNAL SOURCES:
   NetworkingApiConverters:
     :path: "../../Dependencies/NetworkingApiConverters/Pod-1.3.0.podspec"
   NetworkingApiHelpers:
-    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.3.0.podspec"
+    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.3.1.podspec"
   NetworkingApiHttp:
     :path: "../../Dependencies/NetworkingApiHttp/Pod-1.3.1.podspec"
   NetworkingApiObjC:
@@ -334,7 +334,7 @@ SPEC CHECKSUMS:
   MXSegmentedPager: 01b210656b661bdcee269dfc55f94095ef5ac30d
   NetworkingApi: 9ab5b6cfe9aaa99904f6387ca0322e08affdb29e
   NetworkingApiConverters: 4c0d5559a21058c3cbc12cbb68164cc8498a12c4
-  NetworkingApiHelpers: 06a73ddfa0298350bcafca5e6483d1e00ed031b5
+  NetworkingApiHelpers: 2a7527b6ef1f82e686540fe1dcd8d06a3f58184a
   NetworkingApiHttp: 9688b3a336f8151c33d835ace398b305c0c5091b
   NetworkingApiObjC: 29173a0915c9bf8b6c909ad6aa02f8973e5317b0
   NetworkingApiRest: 0fa4d9baccda65f5994dff3ae237a67514684efb
@@ -365,6 +365,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: bdeb1411e68adb1eb4c26e7b42ee87033f97d283
+PODFILE CHECKSUM: 6a1329c0bef7fed092e3cceed1df4f4cfa91c7b8
 
 COCOAPODS: 1.5.3
