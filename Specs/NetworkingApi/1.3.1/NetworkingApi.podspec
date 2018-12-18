@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApi'
   s.summary               = 'Networking API is an HTTP library that makes networking for iOS apps easier.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -51,4 +51,7 @@ Pod::Spec.new do |s|
   s.subspec 'Rest' do |sp|
     sp.dependency 'NetworkingApiRest', s.version.to_s
   end
+
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
