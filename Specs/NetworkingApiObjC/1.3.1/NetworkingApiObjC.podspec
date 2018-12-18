@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiObjC'
   s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -38,13 +38,8 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.7.3'
+  s.dependency 'Alamofire', '~> 4.8.0'
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
