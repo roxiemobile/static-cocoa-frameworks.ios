@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.source                = { git: "#{s.homepage}.git", tag: "v#{s.version}" }
   s.source_files          = "#{s.name}/#{s.name}"
-  s.requires_arc          = true
   s.summary               = 'The ultimate API for iOS & OS X Auto Layout — impressively simple, immensely powerful. Objective-C and Swift compatible.'
   s.description  = <<-DESC
     # PureLayout
@@ -31,7 +30,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/PureLayout-#{s.version}-SCF42.zip",
-    sha256: '3b0628fdcf5f668805f1d37eb784998256786e0feac72d7e36974147a38074f6'
+    sha256: '50e75daf632156c4796a9ba5eeda144804dd4ba13888b93823f1ebb672151f0d'
   }
 
   s.source_files = nil
