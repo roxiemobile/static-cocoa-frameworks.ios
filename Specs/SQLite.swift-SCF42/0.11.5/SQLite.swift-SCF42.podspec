@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/SQLite.swift+SQLCipher-#{s.version}-SCF42.zip",
-    sha256: '2b255a49e493ec8de130db4dfa153edfce197eb4c0c982e9c97c75b8d8a15964'
+    sha256: 'c5d7acd3e87589df15371d83a29dc0138b0ba4813bdd24f57736849f0345b788'
   }
 
   s.subspec 'StaticCocoaFramework' do |sc|
