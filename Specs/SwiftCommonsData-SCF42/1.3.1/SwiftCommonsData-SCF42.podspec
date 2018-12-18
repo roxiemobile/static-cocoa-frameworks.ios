@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsData'
   s.summary               = 'A collection of reusable components used to simplify serialization, deserialization and validation operations on data objects.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,13 +34,32 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.12.0'
+=begin
+  s.dependency 'CryptoSwift', '~> 0.13.1'
   s.dependency 'SwiftCommonsDiagnostics', s.version.to_s
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommonsData-#{s.version}-SCF42.zip",
+    sha256: 'fe872c8903409b6ddbcd500cadbd86d4158bf5ad8631924fc13903caaefeb885'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsData.framework/*'
+    sc.source_files = 'SwiftCommonsData.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsData.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsData.framework'
+
+    # Dependencies
+    sc.dependency 'CryptoSwift-SCF42', '~> 0.12.0'
+    sc.dependency 'SwiftCommonsDiagnostics-SCF42', s.version.to_s
+  end
 end
