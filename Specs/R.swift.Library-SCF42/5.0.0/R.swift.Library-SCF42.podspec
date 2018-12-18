@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift.Library"
-  spec.version      = "4.0.0"
+  spec.version      = "5.0.0"
   spec.license      = "MIT"
 
   spec.summary      = "Companion library for R.swift, featuring types used to type resources"
@@ -18,6 +18,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.source          = { :git => "https://github.com/mac-cain13/R.swift.Library.git", :tag => "v#{spec.version}" }
 
+  spec.pod_target_xcconfig = { 'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
+
   spec.ios.deployment_target     = '8.0'
   spec.tvos.deployment_target    = '9.0'
 
@@ -26,20 +28,24 @@ Pod::Spec.new do |spec|
 
 # MARK: - iOS Static Framework
 
-  patch_version = "#{spec.version}-patch.2"
+  spec.name = "#{spec.name}-SCF42"
 
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '4.2'
 
-  spec.license = {}
-  spec.static_framework = true
-
+  spec.default_subspec = 'StaticCocoaFramework'
   spec.source = {
-    git: 'https://github.com/roxiemobile-forks/R.swift.Library.git',
-    tag: "v#{patch_version}"
+    http: "https://dl.bintray.com/roxiemobile/generic/R.swift.Library-#{spec.version}-SCF42.zip",
+    sha256: 'b3323ccd8f9a0da0e9119a468bde3bfe04b11b5803e71fc0cb7ae000efc25b36'
   }
 
-  cn = spec.consumer(:ios)
-  spec.source_files = cn.source_files.map { |pt| "#{patch_version}/#{pt}" }
+  spec.source_files = nil
+
+  spec.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Rswift.framework/*'
+    sc.source_files = 'Rswift.framework/Headers/*.h'
+    sc.public_header_files = 'Rswift.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Rswift.framework'
+  end
 end
