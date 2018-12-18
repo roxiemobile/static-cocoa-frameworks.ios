@@ -115,7 +115,7 @@ PODS:
   - SwiftCommons/Diagnostics (1.3.0):
     - SwiftCommonsDiagnostics (= 1.3.0)
   - SwiftCommons/Extensions (1.3.0):
-    - SwiftCommonsExtensions (= 1.3.0)
+    - SwiftCommonsExtensions (= 1.3.1)
   - SwiftCommons/Lang (1.3.0):
     - SwiftCommonsLang (= 1.3.1)
   - SwiftCommons/Logging (1.3.0):
@@ -131,8 +131,8 @@ PODS:
     - SwiftCommonsDiagnostics (= 1.3.0)
   - SwiftCommonsDiagnostics (1.3.0):
     - SwiftCommonsConcurrent (= 1.3.1)
-    - SwiftCommonsExtensions (= 1.3.0)
-  - SwiftCommonsExtensions (1.3.0):
+    - SwiftCommonsExtensions (= 1.3.1)
+  - SwiftCommonsExtensions (1.3.1):
     - SwiftCommonsAbstractions (= 1.3.1)
     - SwiftCommonsLogging (= 1.3.1)
   - SwiftCommonsLang (1.3.1)
@@ -193,7 +193,7 @@ DEPENDENCIES:
   - SwiftCommonsConcurrent (from `../../Dependencies/SwiftCommonsConcurrent/Pod-1.3.1.podspec`)
   - SwiftCommonsData (from `../../Dependencies/SwiftCommonsData/Pod-1.3.0.podspec`)
   - SwiftCommonsDiagnostics (from `../../Dependencies/SwiftCommonsDiagnostics/Pod-1.3.0.podspec`)
-  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec`)
+  - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.3.1.podspec`)
   - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.3.1.podspec`)
   - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.3.1.podspec`)
   - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.3.1.podspec`)
@@ -294,7 +294,7 @@ EXTERNAL SOURCES:
   SwiftCommonsDiagnostics:
     :path: "../../Dependencies/SwiftCommonsDiagnostics/Pod-1.3.0.podspec"
   SwiftCommonsExtensions:
-    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.3.0.podspec"
+    :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.3.1.podspec"
   SwiftCommonsLang:
     :path: "../../Dependencies/SwiftCommonsLang/Pod-1.3.1.podspec"
   SwiftCommonsLogging:
@@ -356,7 +356,7 @@ SPEC CHECKSUMS:
   SwiftCommonsConcurrent: b9dafd8c34937854954bbe595957e5f25b56be44
   SwiftCommonsData: 1cbfbaa1b4bf567439e7672b48e1c120130752b3
   SwiftCommonsDiagnostics: e35fd51e853cae5cf5491535af779bac7be1563e
-  SwiftCommonsExtensions: f0174ca975baf395d4c70aedd4472099dd33332e
+  SwiftCommonsExtensions: 03f905781683e2e5b581e0dd442c593c219da128
   SwiftCommonsLang: abc5b623e09ca3a20a9c167813f8b2c778968527
   SwiftCommonsLogging: 48da5f49f00815750f039ed94e98b62af3d3bf1b
   SwiftCommonsObjC: d5e56088f4de8542426fde6bc196532bba1d64c8
@@ -365,6 +365,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: ba2cc7edcfca7db986fbe454b451af4709bcdc3f
+PODFILE CHECKSUM: 651905dd5af823f01f549412a57076c4e84aa617
 
 COCOAPODS: 1.5.3
