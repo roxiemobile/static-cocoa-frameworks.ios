@@ -30,9 +30,9 @@ PODS:
   - KeychainAccess (3.1.2)
   - lottie-ios (2.5.2)
   - MBProgressHUD (1.1.0)
-  - ModernDesign (1.3.0):
-    - ModernDesign/Extensions (= 1.3.0)
-  - ModernDesign/Extensions (1.3.0):
+  - ModernDesign (1.3.1):
+    - ModernDesign/Extensions (= 1.3.1)
+  - ModernDesign/Extensions (1.3.1):
     - ModernDesignExtensions (= 1.3.1)
   - ModernDesignExtensions (1.3.1):
     - SwiftCommons/Lang (~> 1.3.1)
@@ -164,7 +164,7 @@ DEPENDENCIES:
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.2.podspec`)
   - lottie-ios (from `../../Dependencies/lottie-ios/Pod-2.5.2.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
-  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.3.0.podspec`)
+  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.3.1.podspec`)
   - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.3.1.podspec`)
   - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - MXParallaxHeader (from `../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec`)
@@ -236,7 +236,7 @@ EXTERNAL SOURCES:
   MBProgressHUD:
     :path: "../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec"
   ModernDesign:
-    :path: "../../Dependencies/ModernDesign/Pod-1.3.0.podspec"
+    :path: "../../Dependencies/ModernDesign/Pod-1.3.1.podspec"
   ModernDesignExtensions:
     :path: "../../Dependencies/ModernDesignExtensions/Pod-1.3.1.podspec"
   MXPagerView:
@@ -327,7 +327,7 @@ SPEC CHECKSUMS:
   KeychainAccess: 3da98818a757e097a9e6d256bcaedaf0f3692fe9
   lottie-ios: 882e5cf3d0e553528f0f9d569399bdaa38b78019
   MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
-  ModernDesign: a4d3a1b2a4ec5f727268ab45b9d283a9353ff45e
+  ModernDesign: 447d9e8afe63124c7fab74e2d04b9888ee0a0db0
   ModernDesignExtensions: 05af0904287cfa9df056f27eb56ba740b7eee8b3
   MXPagerView: 32d1c505c33297049e87ef2a716d7e5b06e21ac7
   MXParallaxHeader: 5fb629d86a7b402dc1279c945715db7ff72bf43f
@@ -365,6 +365,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 20aa7eaf339318cc5b4096ee2f598ea724528cfe
+PODFILE CHECKSUM: 19072c456bcbf9e768f3b4b696d793012f7895d9
 
 COCOAPODS: 1.5.3

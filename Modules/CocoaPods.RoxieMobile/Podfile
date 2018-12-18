@@ -24,7 +24,7 @@ target 'DummyFramework' do
   pod 'KeychainAccess',           path: '../../Dependencies/KeychainAccess/Pod-3.1.2.podspec'
   pod 'lottie-ios',               path: '../../Dependencies/lottie-ios/Pod-2.5.2.podspec'
   pod 'MBProgressHUD',            path: '../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec'
-  pod 'ModernDesign',             path: '../../Dependencies/ModernDesign/Pod-1.3.0.podspec'
+  pod 'ModernDesign',             path: '../../Dependencies/ModernDesign/Pod-1.3.1.podspec'
   pod 'ModernDesignExtensions',   path: '../../Dependencies/ModernDesignExtensions/Pod-1.3.1.podspec'
   pod 'MXPagerView',              path: '../../Dependencies/MXPagerView/Pod-0.2.1.podspec'
   pod 'MXParallaxHeader',         path: '../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec'
