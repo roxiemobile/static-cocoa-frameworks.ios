@@ -1,0 +1,19 @@
+name: RxAtomic
+description: Atomic primitives for RxSwift.
+
+modules:
+  4.4.0:
+    repository: https://github.com/ReactiveX/RxSwift.git
+    tag: 4.4.0
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
