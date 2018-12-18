@@ -23,13 +23,26 @@ Atomic primitives for RxSwift.
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.mame}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/RxAtomic-#{s.version}-SCF42.zip",
+    sha256: '217a023c73a11c59c9e0df11baead9e4782b183aa8ce3235f0c70d82df6ad767'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.exclude_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'RxAtomic.framework/*'
+    sc.source_files = 'RxAtomic.framework/Headers/*.h'
+    sc.public_header_files = 'RxAtomic.framework/Headers/*.h'
+    sc.vendored_frameworks = 'RxAtomic.framework'
+  end
 end
