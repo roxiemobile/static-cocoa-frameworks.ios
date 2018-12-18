@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'NetworkingApiHttp'
   s.summary               = 'A collection of useful type extensions and utility classes used for communication over HTTP protocol.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,12 +34,30 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'SwiftCommons/Diagnostics', '~> 1.3.0'
+=begin
+  s.dependency 'SwiftCommons/Diagnostics', '~> 1.3.1'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiHttp-#{s.version}-SCF42.zip",
+    sha256: '6cd578c65d27116f8321c2123c808800fa71c128c9670b702ba9db6628990a96'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'NetworkingApiHttp.framework/*'
+    sc.source_files = 'NetworkingApiHttp.framework/Headers/*.h'
+    sc.public_header_files = 'NetworkingApiHttp.framework/Headers/*.h'
+    sc.vendored_frameworks = 'NetworkingApiHttp.framework'
+
+    # Dependencies
+    sc.dependency 'SwiftCommons-SCF42/Diagnostics', '~> 1.3.1'
+  end
 end
