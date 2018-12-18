@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsConcurrent'
-  s.summary               = 'A collection of reusable components used to simplify the work of writing concurrent and asynchronous code.'
-  s.version               = '1.3.0'
+  s.name                  = 'SwiftCommonsObjC'
+  s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,17 +25,24 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Concurrent/'
-  s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/ObjC/'
+  s.source_files = base_dir + '{Sources,Dependencies}/**/*.{h,m,c}'
+
+  s.public_header_files = [
+    # SSZipArchive
+    base_dir + 'Sources/SSZipArchive/SSZipArchive.h',
+    base_dir + 'Sources/SSZipArchive/SSZipArchiveDelegate.h',
+    base_dir + 'Sources/SSZipArchive/minizip/unzip.h',
+    base_dir + 'Sources/SSZipArchive/minizip/ioapi.h',
+    # StreamTypedCoder
+    base_dir + 'Sources/StreamTypedCoder/StreamTypedCoder.h',
+    # TryCatchFinally
+    base_dir + 'Sources/TryCatchFinally/TryCatchFinally.h'
+  ]
 
   s.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
-
-# MARK: - Dependencies
-
-  s.dependency 'Dispatch', '~> 2.0.4'
-  s.dependency 'SwiftCommonsObjC', s.version.to_s
 
 # MARK: - iOS Static Framework
 
@@ -43,4 +50,5 @@ Pod::Spec.new do |s|
 
   cn = s.consumer(:ios)
   s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
 end

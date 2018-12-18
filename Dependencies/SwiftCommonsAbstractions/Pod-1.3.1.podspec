@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsLogging'
-  s.summary               = 'Provides simple abstraction layer over an existing logging frameworks.'
-  s.version               = '1.3.0'
+  s.name                  = 'SwiftCommonsAbstractions'
+  s.summary               = 'The core abstractions and public protocols used for iOS application development.'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -25,17 +25,12 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Logging/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Abstractions/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) SWIFTCOMMONS_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
   }
-
-# MARK: - Dependencies
-
-  s.dependency 'SwiftCommonsConcurrent', s.version.to_s
-  s.dependency 'SwiftCommonsLang', s.version.to_s
 
 # MARK: - iOS Static Framework
 
