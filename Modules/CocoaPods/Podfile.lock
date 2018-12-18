@@ -44,10 +44,10 @@ PODS:
   - SDWebImage/Core (4.4.2)
   - Siren (3.7.2)
   - SlideMenuControllerSwift (4.0.0)
-  - SQLCipher (3.4.2):
-    - SQLCipher/standard (= 3.4.2)
-  - SQLCipher/common (3.4.2)
-  - SQLCipher/standard (3.4.2):
+  - SQLCipher (4.0.0):
+    - SQLCipher/standard (= 4.0.0)
+  - SQLCipher/common (4.0.0)
+  - SQLCipher/standard (4.0.0):
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.5):
     - SQLCipher (>= 3.4.0)
@@ -83,7 +83,7 @@ DEPENDENCIES:
   - SDWebImage/Core (>= 4.4.2)
   - Siren (>= 3.7.2)
   - SlideMenuControllerSwift (>= 4.0.0)
-  - SQLCipher/standard (>= 3.4.2)
+  - SQLCipher/standard (>= 4.0.0)
   - SQLite.swift/SQLCipher (>= 0.11.5)
   - SwiftReorder (>= 6.0.0)
   - SwiftyJSON (>= 4.2.0)
@@ -158,13 +158,13 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   Siren: d3e10df09c07d37a7f13d29ec78d760975c6da0b
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
-  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+  SQLCipher: 37c820e1ada7f2c2782ec6bfb6be9a9660209ff5
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftReorder: 0eefefe5e469c70a98d129e9aa2952862a2b34d2
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: e0ea93e4ee6661e4592101dcd29167683fb1bb13
+PODFILE CHECKSUM: 23ce18d8add002d79e84066b1e78d6f33a6cb497
 
 COCOAPODS: 1.5.3

@@ -2,9 +2,9 @@ name: SQLCipher
 description: SQLCipher is an SQLite extension that provides 256 bit AES encryption of database files.
 
 modules:
-  3.4.2:
+  4.0.0:
     repository: https://github.com/sqlcipher/sqlcipher.git
-    tag: v3.4.2
+    tag: v4.0.0
 
 profiles:
   init:
