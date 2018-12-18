@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommons'
   s.summary               = 'A collection of useful utility classes common to different iOS projects.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -29,41 +29,75 @@ Pod::Spec.new do |s|
 
   # The core abstractions and public protocols used for iOS application development.
   s.subspec 'Abstractions' do |sp|
+=begin
     sp.dependency 'SwiftCommonsAbstractions', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsAbstractions-SCF42', s.version.to_s
   end
 
   # A collection of reusable components used to simplify the work of writing concurrent and asynchronous code.
   s.subspec 'Concurrent' do |sp|
+=begin
     sp.dependency 'SwiftCommonsConcurrent', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsConcurrent-SCF42', s.version.to_s
   end
 
   # A collection of reusable components used to simplify serialization, deserialization and validation operations on data objects.
   s.subspec 'Data' do |sp|
+=begin
     sp.dependency 'SwiftCommonsData', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsData-SCF42', s.version.to_s
   end
 
   # A collection of static classes for debugging and diagnostics of program contracts such as preconditions, postconditions, and invariants.
   s.subspec 'Diagnostics' do |sp|
+=begin
     sp.dependency 'SwiftCommonsDiagnostics', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsDiagnostics-SCF42', s.version.to_s
   end
 
   # A collection of useful type extensions used for iOS application development.
   s.subspec 'Extensions' do |sp|
+=begin
     sp.dependency 'SwiftCommonsExtensions', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsExtensions-SCF42', s.version.to_s
   end
 
   # A collection of useful classes and Swift language extensions.
   s.subspec 'Lang' do |sp|
+=begin
     sp.dependency 'SwiftCommonsLang', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsLang-SCF42', s.version.to_s
   end
 
   # Provides simple abstraction layer over an existing logging frameworks.
   s.subspec 'Logging' do |sp|
+=begin
     sp.dependency 'SwiftCommonsLogging', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsLogging-SCF42', s.version.to_s
   end
 
   # A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.
   s.subspec 'ObjC' do |sp|
+=begin
     sp.dependency 'SwiftCommonsObjC', s.version.to_s
+=end
+    sp.dependency 'SwiftCommonsObjC-SCF42', s.version.to_s
   end
+
+# MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommons-#{s.version}-SCF42.zip",
+    sha256: 'bd9c782dffbf111e010dccae82e1de9ecc828871c7edb910fd862ff2ac73e17b'
+  }
 end
