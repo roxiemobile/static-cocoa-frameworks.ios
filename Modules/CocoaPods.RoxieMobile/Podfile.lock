@@ -80,7 +80,7 @@ PODS:
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - ROStorageBar (2.1.3)
-  - RxCocoa (4.3.1):
+  - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
   - RxDataSources (3.1.0):
     - Differentiator (~> 3.0)
@@ -180,7 +180,7 @@ DEPENDENCIES:
   - R.swift (from `../../Dependencies/R.swift/Pod-4.0.0-patch.1.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-4.0.0-patch.2.podspec`)
   - ROStorageBar (from `../../Dependencies/ROStorageBar/Pod-2.1.3-patch.2.podspec`)
-  - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.3.1.podspec`)
+  - RxCocoa (from `../../Dependencies/RxCocoa/Pod-4.4.0.podspec`)
   - RxDataSources (from `../../Dependencies/RxDataSources/Pod-3.1.0.podspec`)
   - RxSwift (from `../../Dependencies/RxSwift/Pod-4.3.1.podspec`)
   - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.4.2.podspec`)
@@ -268,7 +268,7 @@ EXTERNAL SOURCES:
   ROStorageBar:
     :path: "../../Dependencies/ROStorageBar/Pod-2.1.3-patch.2.podspec"
   RxCocoa:
-    :path: "../../Dependencies/RxCocoa/Pod-4.3.1.podspec"
+    :path: "../../Dependencies/RxCocoa/Pod-4.4.0.podspec"
   RxDataSources:
     :path: "../../Dependencies/RxDataSources/Pod-3.1.0.podspec"
   RxSwift:
@@ -343,7 +343,7 @@ SPEC CHECKSUMS:
   R.swift: e1d84bc92bad9e707df1d8a96ce4d7f4b56681ea
   R.swift.Library: 9462780f5ae4634b480f08ef204c0a60ebf46484
   ROStorageBar: 2d96c38451132ce0bbaaa4abd52d0c077fbba24f
-  RxCocoa: fb5aea456bb27951f3b52d188a11a438be382e5c
+  RxCocoa: 809a68453cd706c657ceabcbd974e7e7f94c0d77
   RxDataSources: 7b1a2bc77370172f39c373f99503dd62a18962a2
   RxSwift: 416f6915a4f99d3470873626cd783e19a6644f85
   SDWebImage: 76450db2e477efff818c6c969e0008712fe6692b
@@ -365,6 +365,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 54cfbdf9c7bcdb0e5fc92f3b21e0085e934fb41a
+PODFILE CHECKSUM: ab8717eb1d12090f41a2771867dff652710e1b0d
 
 COCOAPODS: 1.5.3
