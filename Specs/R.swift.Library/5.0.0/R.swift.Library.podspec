@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift.Library"
-  spec.version      = "4.0.0"
+  spec.version      = "5.0.0"
   spec.license      = "MIT"
 
   spec.summary      = "Companion library for R.swift, featuring types used to type resources"
@@ -18,28 +18,14 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.source          = { :git => "https://github.com/mac-cain13/R.swift.Library.git", :tag => "v#{spec.version}" }
 
+  spec.pod_target_xcconfig = { 'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
+
   spec.ios.deployment_target     = '8.0'
   spec.tvos.deployment_target    = '9.0'
 
   spec.module_name   = "Rswift"
   spec.source_files  = "Library/**/*.swift"
 
-# MARK: - iOS Static Framework
-
-  patch_version = "#{spec.version}-patch.2"
-
-  spec.platform = :ios
-  spec.ios.deployment_target = '9.0'
-  spec.swift_version = '4.2'
-
-  spec.license = {}
-  spec.static_framework = true
-
-  spec.source = {
-    git: 'https://github.com/roxiemobile-forks/R.swift.Library.git',
-    tag: "v#{patch_version}"
-  }
-
-  cn = spec.consumer(:ios)
-  spec.source_files = cn.source_files.map { |pt| "#{patch_version}/#{pt}" }
+  # NOTE: Protection
+  spec.dependency '//+WrongSourceRepository'
 end
