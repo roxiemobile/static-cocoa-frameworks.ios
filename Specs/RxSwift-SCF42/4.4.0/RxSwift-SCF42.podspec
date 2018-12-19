@@ -35,7 +35,9 @@ gitDiff().grep("bug").less          // sequences of swift objects
   s.source_files          = 'RxSwift/**/*.swift', 'Platform/**/*.swift'
   s.exclude_files         = 'RxSwift/Platform/**/*.swift'
 
+=begin
   s.dependency 'RxAtomic', '~> 4.4'
+=end
 
 # MARK: - iOS Static Framework
 
@@ -60,7 +62,7 @@ gitDiff().grep("bug").less          // sequences of swift objects
     sc.source_files = 'RxSwift.framework/Headers/*.h'
     sc.public_header_files = 'RxSwift.framework/Headers/*.h'
     sc.vendored_frameworks = 'RxSwift.framework'
-    sc.dependency 'RxAtomic', '~> 4.4'
+    sc.dependency 'RxAtomic-SCF42', '~> 4.4'
   end
 
 # MARK: - Validation
