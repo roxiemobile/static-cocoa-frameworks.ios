@@ -2,9 +2,9 @@ name: NetworkingApiConverters
 description: A collection of useful converters for the asynchronous REST API client.
 
 modules:
-  1.3.0:
+  1.3.1:
     repository: https://github.com/roxiemobile/networking-api.ios.git
-    tag: 1.3.0
+    tag: 1.3.1
 
 profiles:
   init:
