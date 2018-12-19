@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift"
-  spec.version      = "4.0.0"
+  spec.version      = "5.0.0"
   spec.license      = "MIT"
 
   spec.summary      = "Get strong typed, autocompleted resources like images, fonts and segues in Swift projects"
@@ -26,23 +26,10 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target     = '8.0'
   spec.tvos.deployment_target    = '9.0'
 
-  spec.dependency "R.swift.Library", "~> 4.0.0"
+  spec.dependency "R.swift.Library", "~> 5.0.0"
 
   spec.preserve_paths = "rswift"
 
-# MARK: - iOS Static Framework
-
-  patch_version = "#{spec.version}-patch.1"
-
-  spec.platform = :ios
-  spec.ios.deployment_target = '9.0'
-  spec.swift_version = '4.2'
-
-  spec.license = {}
-  spec.static_framework = true
-
-  spec.source = {
-    git: 'https://github.com/roxiemobile-forks/R.swift.git',
-    tag: patch_version
-  }
+  # NOTE: Protection
+  spec.dependency '//+WrongSourceRepository'
 end
