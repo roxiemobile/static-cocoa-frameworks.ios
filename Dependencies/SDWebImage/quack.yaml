@@ -2,9 +2,9 @@ name: SDWebImage
 description: Asynchronous image downloader with cache support with an UIImageView category.
 
 modules:
-  4.4.2:
-    repository: https://github.com/rs/SDWebImage.git
-    tag: 4.4.2
+  4.4.3:
+    repository: https://github.com/SDWebImage/SDWebImage.git
+    tag: 4.4.3
 
 profiles:
   init:
