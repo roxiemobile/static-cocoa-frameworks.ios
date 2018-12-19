@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SwiftReorder'
-  s.version = '6.0.0'
+  s.version = '6.0.1'
   s.license = 'MIT'
   s.summary = 'Easy drag-and-drop reordering for UITableViews'
   s.homepage = 'https://github.com/adamshin/SwiftReorder'
@@ -12,15 +12,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/adamshin/SwiftReorder.git', :tag => s.version }
   s.source_files = 'Source/*'
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
