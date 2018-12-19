@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
       'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER',
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1'
     }
-    ss.dependency 'SQLCipher', '>= 3.4.0'
+    ss.dependency 'SQLCipher', '>= 4.0.1'
 
     ss.test_spec 'tests' do |test_spec|
       test_spec.resources = 'Tests/SQLiteTests/fixtures/*'

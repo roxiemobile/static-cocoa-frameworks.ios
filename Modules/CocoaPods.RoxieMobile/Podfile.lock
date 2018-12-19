@@ -96,7 +96,7 @@ PODS:
   - SQLCipher/standard (4.0.1):
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.5):
-    - SQLCipher (>= 3.4.0)
+    - SQLCipher (>= 4.0.1)
   - SwiftCommons (1.3.1):
     - SwiftCommons/Abstractions (= 1.3.1)
     - SwiftCommons/Concurrent (= 1.3.1)
@@ -350,7 +350,7 @@ SPEC CHECKSUMS:
   Siren: 2cde05977cb129b4c1ff0c2d23a7fcee0f0adfd2
   SlideMenuControllerSwift: 60fd76481862e1adba062000216944addf2ecb1b
   SQLCipher: a941dd891fb08bf1418acf2f79d6ed407485b048
-  SQLite.swift: 35b5ef564d4cea3b40987e24ee36f2f8adc9a003
+  SQLite.swift: 8fc96e4eb4f0d7d4218f50fd915585be0b36632a
   SwiftCommons: 44a14285a8a964cf32d1feda7a9657bb68548214
   SwiftCommonsAbstractions: 786864d24d440eebbeb7b6584ecfe22dfa667592
   SwiftCommonsConcurrent: b9dafd8c34937854954bbe595957e5f25b56be44
