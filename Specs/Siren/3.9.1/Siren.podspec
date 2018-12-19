@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   # Version
-  s.version       = "3.7.2"
+  s.version       = "3.9.1"
   s.swift_version = '4.2'
 
   # Meta
@@ -20,16 +20,6 @@ Pod::Spec.new do |s|
   s.resources    = 'Sources/Siren.bundle'
   s.requires_arc = true
 
-# MARK: - iOS Static Framework
-
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
