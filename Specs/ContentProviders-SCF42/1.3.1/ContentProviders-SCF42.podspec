@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProviders'
   s.summary               = 'A collection of useful content providers used for accessing and modifying iOS applications data.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,11 +34,24 @@ Pod::Spec.new do |s|
 
   # A content provider used for accessing and modifying data in SQLite database.
   s.subspec 'SQLite' do |sc|
+=begin
     sc.dependency 'ContentProvidersSQLite', s.version.to_s
+=end
+    sc.dependency 'ContentProvidersSQLite-SCF42', s.version.to_s
   end
 
   # # A content provider used for accessing and modifying data in UserDefaults.
   # s.subspec 'UserDefaults' do |sc|
   #   sc.dependency 'ContentProvidersUserDefaults', s.version.to_s
   # end
+
+# MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/ContentProviders-#{s.version}-SCF42.zip",
+    sha256: '79d8599796ca1b3cf259c8f25486c017fdb72b0150f5101eccc65e2b20dc4b3a'
+  }
 end

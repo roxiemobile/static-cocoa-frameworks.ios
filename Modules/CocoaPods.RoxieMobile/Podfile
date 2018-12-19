@@ -12,7 +12,7 @@ target 'DummyFramework' do
   pod 'Armchair',                 path: '../../Dependencies/Armchair/Pod-0.3.6-patch.1.podspec'
   pod 'Bolts',                    path: '../../Dependencies/Bolts/Pod-1.9.0.podspec'
   pod 'Charts',                   path: '../../Dependencies/Charts/Pod-3.2.1.podspec'
-  pod 'ContentProviders',         path: '../../Dependencies/ContentProviders/Pod-1.3.0.podspec'
+  pod 'ContentProviders',         path: '../../Dependencies/ContentProviders/Pod-1.3.1.podspec'
   pod 'ContentProvidersSQLite',   path: '../../Dependencies/ContentProvidersSQLite/Pod-1.3.1.podspec'
   pod 'CryptoSwift',              path: '../../Dependencies/CryptoSwift/Pod-0.13.1.podspec'
   pod 'Differentiator',           path: '../../Dependencies/Differentiator/Pod-3.1.0.podspec'
