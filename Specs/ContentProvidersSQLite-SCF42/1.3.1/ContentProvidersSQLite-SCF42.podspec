@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProvidersSQLite'
   s.summary               = 'A content provider used for accessing and modifying data in SQLite database.'
-  s.version               = '1.3.0'
+  s.version               = '1.3.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -39,15 +39,36 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.12.0'
-  s.dependency 'SwiftCommons/Concurrent', '~> 1.3.0'
-  s.dependency 'SwiftCommons/Extensions', '~> 1.3.0'
+=begin
+  s.dependency 'CryptoSwift', '~> 0.13.1'
+  s.dependency 'SwiftCommons/Concurrent', '~> 1.3.1'
+  s.dependency 'SwiftCommons/Extensions', '~> 1.3.1'
   s.dependency 'SQLite.swift/SQLCipher', '~> 0.11.5'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/ContentProvidersSQLite-#{s.version}-SCF42.zip",
+    sha256: '69d66bb08b45bb48344500823064812c09fcce7f0c16d12e031769264320ef95'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'ContentProvidersSQLite.framework/*'
+    sc.source_files = 'ContentProvidersSQLite.framework/Headers/*.h'
+    sc.public_header_files = 'ContentProvidersSQLite.framework/Headers/*.h'
+    sc.vendored_frameworks = 'ContentProvidersSQLite.framework'
+
+    # Dependencies
+    sc.dependency 'CryptoSwift-SCF42', '~> 0.13.1'
+    sc.dependency 'SwiftCommons-SCF42/Concurrent', '~> 1.3.1'
+    sc.dependency 'SwiftCommons-SCF42/Extensions', '~> 1.3.1'
+    sc.dependency 'SQLite.swift-SCF42/SQLCipher', '~> 0.11.5'
+  end
 end
