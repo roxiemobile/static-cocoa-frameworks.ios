@@ -90,13 +90,13 @@ PODS:
   - SDWebImage/Core (4.4.2)
   - Siren (3.7.2)
   - SlideMenuControllerSwift (4.0.0)
-  - SQLCipher (4.0.1):
-    - SQLCipher/standard (= 4.0.1)
-  - SQLCipher/common (4.0.1)
-  - SQLCipher/standard (4.0.1):
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/standard (3.4.2):
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.5):
-    - SQLCipher (>= 4.0.1)
+    - SQLCipher (< 4.0.0, ~> 3.4.2)
   - SwiftCommons (1.3.1):
     - SwiftCommons/Abstractions (= 1.3.1)
     - SwiftCommons/Concurrent (= 1.3.1)
@@ -186,7 +186,7 @@ DEPENDENCIES:
   - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.4.2.podspec`)
   - Siren (from `../../Dependencies/Siren/Pod-3.7.2.podspec`)
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec`)
-  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-4.0.1.podspec`)
+  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.2.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.5.podspec`)
   - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.3.1.podspec`)
   - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.3.1.podspec`)
@@ -280,7 +280,7 @@ EXTERNAL SOURCES:
   SlideMenuControllerSwift:
     :path: "../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec"
   SQLCipher:
-    :path: "../../Dependencies/SQLCipher/Pod-4.0.1.podspec"
+    :path: "../../Dependencies/SQLCipher/Pod-3.4.2.podspec"
   SQLite.swift:
     :path: "../../Dependencies/SQLite.swift/Pod-0.11.5.podspec"
   SwiftCommons:
@@ -349,8 +349,8 @@ SPEC CHECKSUMS:
   SDWebImage: 76450db2e477efff818c6c969e0008712fe6692b
   Siren: 2cde05977cb129b4c1ff0c2d23a7fcee0f0adfd2
   SlideMenuControllerSwift: 60fd76481862e1adba062000216944addf2ecb1b
-  SQLCipher: a941dd891fb08bf1418acf2f79d6ed407485b048
-  SQLite.swift: 8fc96e4eb4f0d7d4218f50fd915585be0b36632a
+  SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
+  SQLite.swift: 01d461f14cb3b03dbff3bee5b1a36e818d2bbca1
   SwiftCommons: 44a14285a8a964cf32d1feda7a9657bb68548214
   SwiftCommonsAbstractions: 786864d24d440eebbeb7b6584ecfe22dfa667592
   SwiftCommonsConcurrent: b9dafd8c34937854954bbe595957e5f25b56be44
@@ -365,6 +365,6 @@ SPEC CHECKSUMS:
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
   YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 317a65f39573d37864e3dcdbf8ffbbdeee4a56ed
+PODFILE CHECKSUM: e658c4c7e01acbd46e3826033c4681f04189ac4d
 
 COCOAPODS: 1.5.3

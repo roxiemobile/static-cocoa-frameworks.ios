@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
       'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER',
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1'
     }
-    ss.dependency 'SQLCipher', '>= 4.0.1'
+    ss.dependency 'SQLCipher', '>= 3.4.0', '< 4.0.0'
 
     ss.test_spec 'tests' do |test_spec|
       test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/SQLite.swift+SQLCipher-#{s.version}-SCF42.zip",
-    sha256: '3ac7bee4898add6d6e43f353d5d1f51d3e0fab3373a36e5c5ae055c2cb130d0e'
+    sha256: 'de64aa7ef13f681c12511e6592a6feb19a64729260f988b3a610074ef97fba54'
   }
 
   s.subspec 'StaticCocoaFramework' do |sc|
@@ -96,6 +96,6 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'SQLite.framework'
 
     # Dependencies
-    sc.dependency 'SQLCipher-SCF42', '~> 4.0.1'
+    sc.dependency 'SQLCipher-SCF42', '~> 3.4.2'
   end
 end
