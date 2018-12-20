@@ -143,9 +143,6 @@ PODS:
   - SwiftReorder (6.0.1)
   - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
-  - YandexMobileMetrica (2.9.8):
-    - YandexMobileMetrica/Static (= 2.9.8)
-  - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
   - Alamofire (from `../../Dependencies/Alamofire/Pod-4.8.0.podspec`)
@@ -200,7 +197,6 @@ DEPENDENCIES:
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-6.0.1.podspec`)
   - SwiftyJSON (from `../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec`)
   - Toast (from `../../Dependencies/Toast/Pod-4.0.0.podspec`)
-  - YandexMobileMetrica (from `../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec`)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -307,8 +303,6 @@ EXTERNAL SOURCES:
     :path: "../../Dependencies/SwiftyJSON/Pod-4.2.0.podspec"
   Toast:
     :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
-  YandexMobileMetrica:
-    :path: "../../Dependencies/YandexMobileMetrica/Pod-2.9.8.podspec"
 
 SPEC CHECKSUMS:
   Alamofire: 965778d10fe0c2627fd31579a9c27bf920981d05
@@ -363,8 +357,7 @@ SPEC CHECKSUMS:
   SwiftReorder: c7cb6c81cc0023ac113f8a4847bcfa402d7c34f3
   SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
-  YandexMobileMetrica: 24141bba0126ec4db1dadcd20d85ae590273dbaa
 
-PODFILE CHECKSUM: 4cc46b8a278fb58402a4e2af6571ae9bf5198bab
+PODFILE CHECKSUM: d06e8ba5d8047e93edd9f32d1076316edcfb1684
 
 COCOAPODS: 1.5.3

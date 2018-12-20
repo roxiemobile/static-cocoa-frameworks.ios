@@ -54,9 +54,6 @@ PODS:
   - SwiftReorder (6.0.1)
   - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
-  - YandexMobileMetrica (2.9.8):
-    - YandexMobileMetrica/Static (= 2.9.8)
-  - YandexMobileMetrica/Static (2.9.8)
 
 DEPENDENCIES:
   - Alamofire (>= 4.8.0)
@@ -88,7 +85,6 @@ DEPENDENCIES:
   - SwiftReorder (>= 6.0.1)
   - SwiftyJSON (>= 4.2.0)
   - Toast (>= 4.0.0)
-  - YandexMobileMetrica (< 3.0.0, >= 2.9.8)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -126,7 +122,6 @@ SPEC REPOS:
     - SwiftReorder
     - SwiftyJSON
     - Toast
-    - YandexMobileMetrica
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
@@ -163,8 +158,7 @@ SPEC CHECKSUMS:
   SwiftReorder: b59368b978c9826116147672ff1f59a2d4dd9110
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
-  YandexMobileMetrica: 669f55b544557a22305c28663a20087bd8f5ffdd
 
-PODFILE CHECKSUM: b3931ed88bc2e72162a55f78ff41496de7b1b1c1
+PODFILE CHECKSUM: 32e72e956a8275dba98fda2cc1a976c0591ed138
 
 COCOAPODS: 1.5.3

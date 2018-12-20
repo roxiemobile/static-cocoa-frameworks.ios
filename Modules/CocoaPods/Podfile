@@ -42,5 +42,4 @@ target 'DummyFramework' do
   pod 'SwiftReorder',             '>= 6.0.1'
   pod 'SwiftyJSON',               '>= 4.2.0'
   pod 'Toast',                    '>= 4.0.0'
-  pod 'YandexMobileMetrica',      '>= 2.9.8', '< 3.0.0'
 end
