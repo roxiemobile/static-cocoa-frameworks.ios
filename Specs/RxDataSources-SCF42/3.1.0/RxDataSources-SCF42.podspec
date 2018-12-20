@@ -57,7 +57,7 @@ data
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/RxDataSources-#{s.version}-SCF42.zip",
-    sha256: '68f2e62f0930ebaea48c8c8c963db912bd605883f1bb55f20e80cf3d4a6a5255'
+    sha256: '792fe8579d1c3197710a1509613041e8731d56a2ca33b58b5f6ee28e56432206'
   }
 
   s.source_files = nil
@@ -70,6 +70,6 @@ data
 
     # Dependencies
     sc.dependency 'Differentiator-SCF42', '~> 3.1.0'
-    sc.dependency 'RxCocoa-SCF42', '~> 4.3.1'
+    sc.dependency 'RxCocoa-SCF42', '~> 4.4.0'
   end
 end
