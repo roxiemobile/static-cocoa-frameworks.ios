@@ -40,7 +40,7 @@ target 'DummyFramework' do
   pod 'R.swift',                  path: '../../Dependencies/R.swift/Pod-5.0.0.podspec'
   pod 'R.swift.Library',          path: '../../Dependencies/R.swift.Library/Pod-5.0.0.podspec'
   pod 'ROStorageBar',             path: '../../Dependencies/ROStorageBar/Pod-2.1.3-patch.2.podspec'
-  pod 'RxCocoa',                  path: '../../Dependencies/RxCocoa/Pod-4.3.1.podspec'
+  pod 'RxCocoa',                  path: '../../Dependencies/RxCocoa/Pod-4.4.0.podspec'
   pod 'RxDataSources',            path: '../../Dependencies/RxDataSources/Pod-3.1.0.podspec'
   pod 'RxAtomic',                 path: '../../Dependencies/RxAtomic/Pod-4.4.0.podspec'
   pod 'RxSwift',                  path: '../../Dependencies/RxSwift/Pod-4.4.0.podspec'
