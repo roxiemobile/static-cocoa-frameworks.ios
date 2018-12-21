@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'SwiftCommonsData.framework'
 
     # Dependencies
-    sc.dependency 'CryptoSwift-SCF42', '~> 0.12.0'
+    sc.dependency 'CryptoSwift-SCF42', '~> 0.13.1'
     sc.dependency 'SwiftCommonsDiagnostics-SCF42', s.version.to_s
   end
 end
