@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  patch_version = "#{s.version}-patch.1"
+  patch_version = "#{s.version}-patch.2"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'

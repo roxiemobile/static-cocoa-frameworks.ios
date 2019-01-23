@@ -2,9 +2,9 @@ name: Armchair
 description: A simple yet powerful App Review Manager for iOS and OSX in Swift.
 
 modules:
-  0.3.6-patch.1:
+  0.3.6-patch.2:
     repository: https://github.com/roxiemobile-forks/Armchair.git
-    tag: 0.3.6-patch.1
+    tag: 0.3.6-patch.2
 
 profiles:
   init:
