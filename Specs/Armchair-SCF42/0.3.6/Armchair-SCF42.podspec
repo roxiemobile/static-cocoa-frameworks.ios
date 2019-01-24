@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  patch_version = "#{s.version}-patch.2"
+  patch_version = "#{s.version}-patch.3"
 
   s.module_name = s.name
   s.name = "#{s.name}-SCF42"
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/Armchair-#{patch_version}-SCF42.zip",
-    sha256: '5b680b59f79e099cc9cc74fb2cbca1180b9b80b97b10dca4547ef19c997884f3'
+    sha256: 'a2d0d19b1a826cbb987bdd0a170dc2620021310b9b935d0311240839b623d752'
   }
 
   s.source_files = nil
