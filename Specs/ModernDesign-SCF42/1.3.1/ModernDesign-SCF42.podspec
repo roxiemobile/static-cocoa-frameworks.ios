@@ -42,6 +42,6 @@ Pod::Spec.new do |s|
 
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/ModernDesign-#{s.version}-SCF42.zip",
-    sha256: 'a1091bc7b6411dfb68e2e5b216e4cc620e261365764d73c7a9f12896f85091b8'
+    sha256: 'fb250fb035105abc7aebce62a2223317afad047b46b2930a0f21d05f3c089b89'
   }
 end
