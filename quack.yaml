@@ -57,7 +57,6 @@ profiles:
       'quack:Dependencies/SwiftReorder/quack.yaml:init',
       'quack:Dependencies/SwiftyJSON/quack.yaml:init',
       'quack:Dependencies/Toast/quack.yaml:init',
-      'quack:Dependencies/YandexMobileMetrica/quack.yaml:init',
       'cmd:rm -rf ./.quack/',
     ]
   clean:
@@ -115,6 +114,5 @@ profiles:
       'quack:Dependencies/SwiftReorder/quack.yaml:clean',
       'quack:Dependencies/SwiftyJSON/quack.yaml:clean',
       'quack:Dependencies/Toast/quack.yaml:clean',
-      'quack:Dependencies/YandexMobileMetrica/quack.yaml:clean',
       'cmd:rm -rf ./.quack/',
     ]
