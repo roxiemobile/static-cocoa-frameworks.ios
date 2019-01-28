@@ -22,7 +22,7 @@ PODS:
   - CryptoSwift (0.13.1)
   - Differentiator (3.1.0)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.39.0):
+  - FBSDKCoreKit (4.40.0):
     - Bolts (~> 1.9)
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.5)
@@ -156,7 +156,7 @@ DEPENDENCIES:
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.13.1.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.1.0.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
-  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.39.0.podspec`)
+  - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
   - HMSegmentedControl (from `../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec`)
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.2.podspec`)
@@ -221,7 +221,7 @@ EXTERNAL SOURCES:
   Dispatch:
     :path: "../../Dependencies/Dispatch/Pod-2.0.4.podspec"
   FBSDKCoreKit:
-    :path: "../../Dependencies/FBSDKCoreKit/Pod-4.39.0.podspec"
+    :path: "../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec"
   GzipSwift:
     :path: "../../Dependencies/GzipSwift/Pod-4.0.4.podspec"
   HMSegmentedControl:
@@ -319,7 +319,7 @@ SPEC CHECKSUMS:
   CryptoSwift: b5d2c8b18ca95a5323d587b4a9cb82ea96b2aaa3
   Differentiator: 59ec55fb876c37e8487a6704ea50af41853a734e
   Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
-  FBSDKCoreKit: 56527f28839cde9ac4921b204e43b72a4d7e100b
+  FBSDKCoreKit: ce68ff479d162cf60dc5547b6f11c4a2fbbe005d
   GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
   HMSegmentedControl: 26fbc75258467d196a4d366e38f1807d2674a6a0
   INTULocationManager: fbe4318197890a45b3d6ac705cf140e5b51ca155
@@ -364,6 +364,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
 
-PODFILE CHECKSUM: a58bec5037654af2401ff7fb944f2377d6554228
+PODFILE CHECKSUM: 2c670275bc0d17533e237444e30b917262618944
 
 COCOAPODS: 1.5.3

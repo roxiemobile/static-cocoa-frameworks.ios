@@ -13,7 +13,7 @@ PODS:
   - CryptoSwift (0.13.1)
   - Differentiator (3.1.0)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.39.0):
+  - FBSDKCoreKit (4.40.0):
     - Bolts (~> 1.9)
   - GoogleAnalytics (3.17.0)
   - GzipSwift (4.0.4)
@@ -63,7 +63,7 @@ DEPENDENCIES:
   - Charts (>= 3.2.1)
   - CryptoSwift (>= 0.13.1)
   - Dispatch (>= 2.0.4)
-  - FBSDKCoreKit (>= 4.39.0)
+  - FBSDKCoreKit (>= 4.40.0)
   - GoogleAnalytics (>= 3.17.0)
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
@@ -134,7 +134,7 @@ SPEC CHECKSUMS:
   CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
-  FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
+  FBSDKCoreKit: ae214474b25033399c131dc81d258e412582a2ba
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
@@ -163,6 +163,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: eefb22856c7b4439e76922012f20b7b0db7b0740
+PODFILE CHECKSUM: d557cc5b825dde71015b01fc314e33f17d8fedfc
 
 COCOAPODS: 1.5.3

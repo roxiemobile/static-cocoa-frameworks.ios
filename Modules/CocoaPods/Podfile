@@ -15,7 +15,7 @@ target 'DummyFramework' do
   pod 'CryptoSwift',              '>= 0.13.1'
 # pod 'Differentiator',           '>= 3.1.0'
   pod 'Dispatch',                 '>= 2.0.4'
-  pod 'FBSDKCoreKit',             '>= 4.39.0' # Bolts
+  pod 'FBSDKCoreKit',             '>= 4.40.0' # Bolts
   pod 'GoogleAnalytics',          '>= 3.17.0'
   pod 'GzipSwift',                '>= 4.0.4'
   pod 'HMSegmentedControl',       '>= 1.5.3'
