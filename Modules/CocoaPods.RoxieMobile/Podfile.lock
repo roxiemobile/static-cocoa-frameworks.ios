@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.8.0)
+  - Alamofire (4.8.1)
   - Armchair (0.3.6)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -147,7 +147,7 @@ PODS:
   - Toast (4.0.0)
 
 DEPENDENCIES:
-  - Alamofire (from `../../Dependencies/Alamofire/Pod-4.8.0.podspec`)
+  - Alamofire (from `../../Dependencies/Alamofire/Pod-4.8.1.podspec`)
   - Armchair (from `../../Dependencies/Armchair/Pod-0.3.6-patch.3.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
   - Charts (from `../../Dependencies/Charts/Pod-3.2.1.podspec`)
@@ -203,7 +203,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Alamofire:
-    :path: "../../Dependencies/Alamofire/Pod-4.8.0.podspec"
+    :path: "../../Dependencies/Alamofire/Pod-4.8.1.podspec"
   Armchair:
     :path: "../../Dependencies/Armchair/Pod-0.3.6-patch.3.podspec"
   Bolts:
@@ -310,7 +310,7 @@ EXTERNAL SOURCES:
     :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
 
 SPEC CHECKSUMS:
-  Alamofire: 965778d10fe0c2627fd31579a9c27bf920981d05
+  Alamofire: 95007932641b1cc2c46c2cebd5b2b13d77c808ef
   Armchair: 58470ddcf5a961827416bace92be5cc0ff3caf8f
   Bolts: 6cbdcb9eb120f3842929113a283c763596d6b8a1
   Charts: 92aefcf0dc59f9ebeea634d51b4ca8f86dc7841f
@@ -364,6 +364,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
 
-PODFILE CHECKSUM: 2c670275bc0d17533e237444e30b917262618944
+PODFILE CHECKSUM: 4fcd04e4889a2a4beca02bc8da1d3ea2841c510a
 
 COCOAPODS: 1.5.3

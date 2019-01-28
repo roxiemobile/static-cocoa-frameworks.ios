@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.8.0)
+  - Alamofire (4.8.1)
   - Armchair (0.3.6)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -58,7 +58,7 @@ PODS:
   - Toast (4.0.0)
 
 DEPENDENCIES:
-  - Alamofire (>= 4.8.0)
+  - Alamofire (>= 4.8.1)
   - Armchair (>= 0.3.6)
   - Charts (>= 3.2.1)
   - CryptoSwift (>= 0.13.1)
@@ -127,7 +127,7 @@ SPEC REPOS:
     - Toast
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Armchair: 2dd361337cf81937e73e8b9d48f9eda9a21d316c
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
@@ -163,6 +163,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: d557cc5b825dde71015b01fc314e33f17d8fedfc
+PODFILE CHECKSUM: 8424d6e4f3321fc3e29a6ac9feeb252c5013c494
 
 COCOAPODS: 1.5.3
