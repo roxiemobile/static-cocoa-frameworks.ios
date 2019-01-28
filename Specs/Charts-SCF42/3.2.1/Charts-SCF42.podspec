@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/#{s.module_name}-#{s.version}-SCF42.zip",
-    sha256: '3cee500f560d1898e7437425a7186ddd39bf97e26e2a16c0283a37f4904cd5f0'
+    sha256: '95ea7a29da0face496c02e0de2d70972b7bc6635616c4093e18579ee1f921f41'
   }
 
   s.subspec 'StaticCocoaFramework' do |sc|
