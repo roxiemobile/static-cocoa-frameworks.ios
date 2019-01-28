@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/ContentProvidersSQLite-#{s.version}-SCF42.zip",
-    sha256: '69d66bb08b45bb48344500823064812c09fcce7f0c16d12e031769264320ef95'
+    sha256: 'bd582ce1ec91f8c1e67494b0643c98ba23c05564455a720220bd979c6965a3c5'
   }
 
   s.source_files = nil
