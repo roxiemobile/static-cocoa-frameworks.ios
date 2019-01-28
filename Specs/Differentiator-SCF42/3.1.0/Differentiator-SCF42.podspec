@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/Differentiator-#{s.version}-SCF42.zip",
-    sha256: 'd5830753ab53006d55f680862176ba61effe9445683c89f37ba6bf94224beb11'
+    sha256: 'ed90189e7961b8175a38bc531559d408a2e9fea2309202cc222b5c5dad883d8b'
   }
 
   s.source_files = nil
