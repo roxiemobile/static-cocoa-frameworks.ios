@@ -56,7 +56,7 @@ For the first time, designers can create and ship beautiful animations without a
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/lottie-ios-#{s.version}-SCF42.zip",
-    sha256: '49074aa0bfae97b89d50aa7f2938e4671565241215a6a5c7f6cbd16385f444c2'
+    sha256: 'a9aec3f8e134b8dd756d53e10bdc085675c541835a6f50184ae62176d8f45dca'
   }
 
   s.source_files = nil
