@@ -43,7 +43,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
-  - SDWebImage/Core (4.4.3)
+  - SDWebImage/Core (4.4.4)
   - Siren (3.9.1)
   - SlideMenuControllerSwift (4.0.0)
   - SQLCipher (3.4.2):
@@ -79,7 +79,7 @@ DEPENDENCIES:
   - R.swift (>= 5.0.2)
   - ROStorageBar (>= 2.1.3)
   - RxDataSources (>= 3.1.0)
-  - SDWebImage/Core (>= 4.4.3)
+  - SDWebImage/Core (>= 4.4.4)
   - Siren (>= 3.9.1)
   - SlideMenuControllerSwift (>= 4.0.0)
   - SQLCipher/standard (>= 3.4.2)
@@ -154,7 +154,7 @@ SPEC CHECKSUMS:
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
-  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+  SDWebImage: c00ec18ab25d10e5ffac109b0f78d1b4341c9691
   Siren: 22b68056e52c5b6707bcbfac09d2d16874ee098a
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
@@ -163,6 +163,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 1ccecb80820c3872f0a2bc8bf2db8c843dc8cc5e
+PODFILE CHECKSUM: f169f1555a3264b3f38ff5636d8daab7b825f76a
 
 COCOAPODS: 1.5.3
