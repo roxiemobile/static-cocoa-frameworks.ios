@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/Toast-#{s.version}-SCF42.zip",
-    sha256: 'a91809921934a5a34e1e44b4b23a206ba8d8fae3f590614743ca869030df7530'
+    sha256: '5a362748ca2ece3955105dd6053d7be644928bdf8945a191f3c79140f53aa857'
   }
 
   s.source_files = nil
