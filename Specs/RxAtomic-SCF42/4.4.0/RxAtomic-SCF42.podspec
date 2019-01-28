@@ -31,7 +31,7 @@ Atomic primitives for RxSwift.
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/RxAtomic-#{s.version}-SCF42.zip",
-    sha256: '1c1e199d227092005deaac8f62329df30e54a99e6d48b5408a5414ba04408a06'
+    sha256: 'de10e7286e39112ed2ab6f1e569198cc00cdff608be4f47d5f32a7e73589936e'
   }
 
   s.source_files = nil
