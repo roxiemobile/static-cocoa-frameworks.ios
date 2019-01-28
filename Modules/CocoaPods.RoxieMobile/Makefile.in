@@ -55,6 +55,7 @@ build: clean
 					-configuration $(CONFIGURATION) \
 					-arch i386 -arch x86_64 \
 					BITCODE_GENERATION_MODE=bitcode \
+					CLANG_ENABLE_MODULE_DEBUGGING=NO \
 					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_SIMULATOR) \
 					IPHONEOS_DEPLOYMENT_TARGET=$(DEPLOYMENT_TARGET) \
 					OTHER_CFLAGS="-fembed-bitcode" \
@@ -67,6 +68,7 @@ build: clean
 					-configuration $(CONFIGURATION) \
 					-arch arm64 -arch armv7 -arch armv7s \
 					BITCODE_GENERATION_MODE=bitcode \
+					CLANG_ENABLE_MODULE_DEBUGGING=NO \
 					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_IPHONE) \
 					IPHONEOS_DEPLOYMENT_TARGET=$(DEPLOYMENT_TARGET) \
 					OTHER_CFLAGS="-fembed-bitcode" \
