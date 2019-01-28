@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/ModernDesignExtensions-#{s.version}-SCF42.zip",
-    sha256: '104e0d88fc05ce2af7e667a60c0427ef531008e368f3ba389deeca9b613fcfc8'
+    sha256: '6e38a028465626a9d2fa1cc32f9cfa72e3403d7f7b4463ae11f3926a3b034a51'
   }
 
   s.source_files = nil
