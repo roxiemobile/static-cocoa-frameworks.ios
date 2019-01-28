@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/INTULocationManager-#{s.version}-SCF42.zip",
-    sha256: 'c4cc2e35908d61ce41781f9e3bc212569f406a557804291acdb434749c810141'
+    sha256: 'c2e599611586d36d80ee87b675737abbe098ee14e4d9a972d150dfe55639d357'
   }
 
   s.source_files = nil
