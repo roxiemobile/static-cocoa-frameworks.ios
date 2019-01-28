@@ -76,7 +76,7 @@ PODS:
     - SwiftyJSON (~> 4.2.0)
   - PDTSimpleCalendar (0.9.1)
   - PureLayout (3.1.4)
-  - R.swift (5.0.0):
+  - R.swift (5.0.2):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
   - ROStorageBar (2.1.3)
@@ -176,7 +176,7 @@ DEPENDENCIES:
   - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.3.1.podspec`)
   - PDTSimpleCalendar (from `../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec`)
   - PureLayout (from `../../Dependencies/PureLayout/Pod-3.1.4.podspec`)
-  - R.swift (from `../../Dependencies/R.swift/Pod-5.0.0.podspec`)
+  - R.swift (from `../../Dependencies/R.swift/Pod-5.0.2.podspec`)
   - R.swift.Library (from `../../Dependencies/R.swift.Library/Pod-5.0.0.podspec`)
   - ROStorageBar (from `../../Dependencies/ROStorageBar/Pod-2.1.3-patch.2.podspec`)
   - RxAtomic (from `../../Dependencies/RxAtomic/Pod-4.4.0.podspec`)
@@ -261,7 +261,7 @@ EXTERNAL SOURCES:
   PureLayout:
     :path: "../../Dependencies/PureLayout/Pod-3.1.4.podspec"
   R.swift:
-    :path: "../../Dependencies/R.swift/Pod-5.0.0.podspec"
+    :path: "../../Dependencies/R.swift/Pod-5.0.2.podspec"
   R.swift.Library:
     :path: "../../Dependencies/R.swift.Library/Pod-5.0.0.podspec"
   ROStorageBar:
@@ -339,7 +339,7 @@ SPEC CHECKSUMS:
   NetworkingApiRest: 6a741260eacc3ddeeb8f65c304eb6797cc528ad9
   PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
   PureLayout: 3fc2eabdd01c1bec467aa9c960ee7c21b1ce9956
-  R.swift: eb78e71d3d115f9ae77afa4aebc3558f3d600f77
+  R.swift: 0e2f72b8b9ae9f26b743b0f115d6d87c2171e3eb
   R.swift.Library: b0df4cd0d090783fdb0a8b0404e255fb64699595
   ROStorageBar: 2d96c38451132ce0bbaaa4abd52d0c077fbba24f
   RxAtomic: e1247798c3058d028a68e40700933d0d6ba34fc9
@@ -364,6 +364,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
   Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
 
-PODFILE CHECKSUM: 4fcd04e4889a2a4beca02bc8da1d3ea2841c510a
+PODFILE CHECKSUM: b70ec53809de3c0b34fa0587eb364f06fbc232ac
 
 COCOAPODS: 1.5.3
