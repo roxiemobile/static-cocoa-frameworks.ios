@@ -1,5 +1,5 @@
 NAME=Siren
 SCHEME=$(NAME)
-VERSION=3.9.1
+VERSION=4.0.2
 
 include Makefile.in
