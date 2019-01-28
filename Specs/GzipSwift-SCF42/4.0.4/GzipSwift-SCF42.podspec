@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/GzipSwift-#{s.version}-SCF42.zip",
-    sha256: '2415aef285b8494175b41ddbf6fc200033836ea22ae9157f91c3e1b4abd692b1'
+    sha256: 'f83b0d0216ce6617e6f873ee1f265ae663119bc5e9f6d5a188b9a708e901e347'
   }
 
   s.source_files = nil
