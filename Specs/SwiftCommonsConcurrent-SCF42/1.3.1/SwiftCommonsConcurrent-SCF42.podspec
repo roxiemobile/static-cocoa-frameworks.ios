@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommonsConcurrent-#{s.version}-SCF42.zip",
-    sha256: 'dad3aecc687c558dae3a00bfd1c9e23509240fb480daae5745a11b71acde9798'
+    sha256: '169c63595e31648816e818bd087f1f3817a79e65adea3525ac6331a89b622369'
   }
 
   s.source_files = nil
