@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
 # MARK: - Dependencies
 
 =begin
-  s.dependency 'Alamofire', '~> 4.8.0'
+  s.dependency 'Alamofire', '~> 4.8.1'
 =end
 
 # MARK: - iOS Static Framework
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiObjC-#{s.version}-SCF42.zip",
-    sha256: 'c1cd00c314cf1273e8409ed6a69339a17fb7bd197275213625cefef5897cc26c'
+    sha256: '0e4e9ce658361e976ed548016220cc7b47013236caac74b8ada82d73c8107b6c'
   }
 
   s.source_files = nil
@@ -63,6 +63,6 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'NetworkingApiObjC.framework'
 
     # Dependencies
-    sc.dependency 'Alamofire-SCF42', '~> 4.8.0'
+    sc.dependency 'Alamofire-SCF42', '~> 4.8.1'
   end
 end
