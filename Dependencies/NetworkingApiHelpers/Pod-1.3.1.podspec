@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.8.0'
+  s.dependency 'Alamofire', '~> 4.8.1'
   s.dependency 'NetworkingApiHttp', s.version.to_s
 
 # MARK: - iOS Static Framework

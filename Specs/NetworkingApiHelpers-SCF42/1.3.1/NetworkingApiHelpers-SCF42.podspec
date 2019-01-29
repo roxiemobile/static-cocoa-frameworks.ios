@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 # MARK: - Dependencies
 
 =begin
-  s.dependency 'Alamofire', '~> 4.8.0'
+  s.dependency 'Alamofire', '~> 4.8.1'
   s.dependency 'NetworkingApiHttp', s.version.to_s
 =end
 
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiHelpers-#{s.version}-SCF42.zip",
-    sha256: '84061be7554270af28f6837399807336b82b1294bef305ba54141e92a73a87ce'
+    sha256: '85eace9885823c2c0949ea015d55acb7a93aad559d16528228b4be7cf08fc323'
   }
 
   s.source_files = nil
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'NetworkingApiHelpers.framework'
 
     # Dependencies
-    sc.dependency 'Alamofire-SCF42', '~> 4.8.0'
+    sc.dependency 'Alamofire-SCF42', '~> 4.8.1'
     sc.dependency 'NetworkingApiHttp-SCF42', s.version.to_s
   end
 end

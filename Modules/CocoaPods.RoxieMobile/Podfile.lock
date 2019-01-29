@@ -62,7 +62,7 @@ PODS:
     - NetworkingApiRest (= 1.3.1)
     - SwiftCommons/Data (~> 1.3.1)
   - NetworkingApiHelpers (1.3.1):
-    - Alamofire (~> 4.8.0)
+    - Alamofire (~> 4.8.1)
     - NetworkingApiHttp (= 1.3.1)
   - NetworkingApiHttp (1.3.1):
     - SwiftCommons/Diagnostics (~> 1.3.1)
@@ -333,7 +333,7 @@ SPEC CHECKSUMS:
   MXSegmentedPager: 01b210656b661bdcee269dfc55f94095ef5ac30d
   NetworkingApi: 9817f8d837aa4aa0a4703d0e4fcef7abdf03a230
   NetworkingApiConverters: ed79599c78c84d13a2651e00b47b4da1b07f84c8
-  NetworkingApiHelpers: 2a7527b6ef1f82e686540fe1dcd8d06a3f58184a
+  NetworkingApiHelpers: dfebe1cbb56d2fa8ffd13b04d36ca82a53e33b01
   NetworkingApiHttp: 9688b3a336f8151c33d835ace398b305c0c5091b
   NetworkingApiObjC: 111222f1ae10af22abc47c2e0bc88222daaf38d5
   NetworkingApiRest: 6a741260eacc3ddeeb8f65c304eb6797cc528ad9
