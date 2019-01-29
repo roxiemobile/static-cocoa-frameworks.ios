@@ -69,7 +69,7 @@ PODS:
   - NetworkingApiObjC (1.3.1):
     - Alamofire (~> 4.8.1)
   - NetworkingApiRest (1.3.1):
-    - Alamofire (~> 4.8.0)
+    - Alamofire (~> 4.8.1)
     - NetworkingApiHelpers (= 1.3.1)
     - NetworkingApiObjC (= 1.3.1)
     - SwiftCommons/Data (~> 1.3.1)
@@ -336,7 +336,7 @@ SPEC CHECKSUMS:
   NetworkingApiHelpers: dfebe1cbb56d2fa8ffd13b04d36ca82a53e33b01
   NetworkingApiHttp: 9688b3a336f8151c33d835ace398b305c0c5091b
   NetworkingApiObjC: 111222f1ae10af22abc47c2e0bc88222daaf38d5
-  NetworkingApiRest: 6a741260eacc3ddeeb8f65c304eb6797cc528ad9
+  NetworkingApiRest: 47e8acfacdd75f35d5d75c1450b2f464e2ba1765
   PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
   PureLayout: 3fc2eabdd01c1bec467aa9c960ee7c21b1ce9956
   R.swift: 0e2f72b8b9ae9f26b743b0f115d6d87c2171e3eb

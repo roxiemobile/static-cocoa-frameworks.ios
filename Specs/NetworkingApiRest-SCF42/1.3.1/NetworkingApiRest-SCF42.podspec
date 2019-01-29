@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 # MARK: - Dependencies
 
 =begin
-  s.dependency 'Alamofire', '~> 4.8.0'
+  s.dependency 'Alamofire', '~> 4.8.1'
   s.dependency 'NetworkingApiHelpers', s.version.to_s
   s.dependency 'NetworkingApiObjC', s.version.to_s
   s.dependency 'SwiftCommons/Data', '~> 1.3.1'
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiRest-#{s.version}-SCF42.zip",
-    sha256: '0c62abd8cd238f39a57210bcf6a615d4d9507131e66c76d360210ec205b56735'
+    sha256: '09407d5786124209b3d8850ce847ebaba1561dafa27ea636c6fda807107e2a84'
   }
 
   s.source_files = nil
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
     sc.vendored_frameworks = 'NetworkingApiRest.framework'
 
     # Dependencies
-    sc.dependency 'Alamofire-SCF42', '~> 4.8.0'
+    sc.dependency 'Alamofire-SCF42', '~> 4.8.1'
     sc.dependency 'NetworkingApiHelpers-SCF42', s.version.to_s
     sc.dependency 'NetworkingApiObjC-SCF42', s.version.to_s
     sc.dependency 'SwiftCommons-SCF42/Data', '~> 1.3.1'
