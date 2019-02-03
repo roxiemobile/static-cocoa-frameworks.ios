@@ -49,14 +49,23 @@ build: clean
 	# Bitcode is not full enabled
 	# @link https://github.com/Azure/azure-notificationhubs/issues/40#issuecomment-391603392
 
+	# Using SupportKit (2.10.1) with Xcode 7 causes lots and lots of warnings
+	# @link https://github.com/smooch/smooch-ios/issues/53#issuecomment-142632868
+
+	# iOS: How to fix the following warning issues?
+	# @link https://stackoverflow.com/a/33206607
+
+	# 200+ warnings generating dSYM in xcode 7
+	# @link https://raygun.com/forums/thread/27494
+
 	xcodebuild -workspace $(XCWORKSPACE) \
 					-scheme $(SCHEME) \
 					-sdk iphonesimulator \
 					-configuration $(CONFIGURATION) \
 					-arch i386 -arch x86_64 \
 					BITCODE_GENERATION_MODE=bitcode \
-					CLANG_ENABLE_MODULE_DEBUGGING=NO \
 					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_SIMULATOR) \
+					GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
 					IPHONEOS_DEPLOYMENT_TARGET=$(DEPLOYMENT_TARGET) \
 					OTHER_CFLAGS="-fembed-bitcode" \
 					SYMROOT=$(BUILD_PATH) \
@@ -68,8 +77,8 @@ build: clean
 					-configuration $(CONFIGURATION) \
 					-arch arm64 -arch armv7 -arch armv7s \
 					BITCODE_GENERATION_MODE=bitcode \
-					CLANG_ENABLE_MODULE_DEBUGGING=NO \
 					CONFIGURATION_BUILD_DIR=$(BUILD_PATH_IPHONE) \
+					GCC_GENERATE_DEBUGGING_SYMBOLS=NO \
 					IPHONEOS_DEPLOYMENT_TARGET=$(DEPLOYMENT_TARGET) \
 					OTHER_CFLAGS="-fembed-bitcode" \
 					SYMROOT=$(BUILD_PATH) \
