@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsLogging'
   s.summary               = 'Provides simple abstraction layer over an existing logging frameworks.'
-  s.version               = '1.3.1'
+  s.version               = '1.3.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -37,10 +37,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftCommonsConcurrent', s.version.to_s
   s.dependency 'SwiftCommonsLang', s.version.to_s
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
