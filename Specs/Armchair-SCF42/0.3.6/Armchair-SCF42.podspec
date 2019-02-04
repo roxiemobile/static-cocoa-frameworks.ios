@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/Armchair-#{patch_version}-SCF42.zip",
-    sha256: '3a7b09138ad3ba4e218ecf02b89752b40cf7fccd26062180e8229bdf127d515c'
+    sha256: 'e9ebc2f26b254c34cc1cab10f8eaf9e68c96e0dac28594e2a044bf47026f07a2'
   }
 
   s.source_files = nil
