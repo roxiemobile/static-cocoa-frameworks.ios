@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/NetworkingApiConverters-#{s.version}-SCF42.zip",
-    sha256: 'cfeb31a872c5e6003c43e8380fd613a4d1404d56b54df71a932b66331f716b4b'
+    sha256: '68c5a96af2efa41ca9daed0082416d5343d70ad542e8d250d006a146ae4fce84'
   }
 
   s.source_files = nil
