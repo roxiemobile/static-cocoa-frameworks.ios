@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/PDTSimpleCalendar-#{s.version}-SCF42.zip",
-    sha256: 'e708aa3a87f292757898fa2c7b175be60762d01d53f011ca96d9959aa49b5386'
+    sha256: '935e08636985d26500f4c32aa02238c230db36cd24bee771bc6e5df2810b54cd'
   }
 
   s.source_files = nil
