@@ -57,7 +57,7 @@ data
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/RxDataSources-#{s.version}-SCF42.zip",
-    sha256: 'a1a20edc27504b443ed595d530d5dfd8e2c1bece12883d88ee2d4c3f7799abcf'
+    sha256: '60d9e59808d1cc88c88880b3a2bcafc90dae3d566c46a071cf7ae28fd27d0280'
   }
 
   s.source_files = nil
