@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsConcurrent'
   s.summary               = 'A collection of reusable components used to simplify the work of writing concurrent and asynchronous code.'
-  s.version               = '1.3.1'
+  s.version               = '1.3.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -37,10 +37,6 @@ Pod::Spec.new do |s|
   s.dependency 'Dispatch', '~> 2.0.4'
   s.dependency 'SwiftCommonsObjC', s.version.to_s
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
