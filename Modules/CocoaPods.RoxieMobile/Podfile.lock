@@ -119,7 +119,7 @@ PODS:
   - SwiftCommons/Extensions (1.3.1):
     - SwiftCommonsExtensions (= 1.3.1)
   - SwiftCommons/Lang (1.3.1):
-    - SwiftCommonsLang (= 1.3.1)
+    - SwiftCommonsLang (= 1.3.2)
   - SwiftCommons/Logging (1.3.1):
     - SwiftCommonsLogging (= 1.3.1)
   - SwiftCommons/ObjC (1.3.1):
@@ -137,10 +137,10 @@ PODS:
   - SwiftCommonsExtensions (1.3.1):
     - SwiftCommonsAbstractions (= 1.3.2)
     - SwiftCommonsLogging (= 1.3.1)
-  - SwiftCommonsLang (1.3.1)
+  - SwiftCommonsLang (1.3.2)
   - SwiftCommonsLogging (1.3.1):
     - SwiftCommonsConcurrent (= 1.3.2)
-    - SwiftCommonsLang (= 1.3.1)
+    - SwiftCommonsLang (= 1.3.2)
   - SwiftCommonsObjC (1.3.2)
   - SwiftReorder (6.0.1)
   - SwiftyJSON (4.2.0)
@@ -194,7 +194,7 @@ DEPENDENCIES:
   - SwiftCommonsData (from `../../Dependencies/SwiftCommonsData/Pod-1.3.1.podspec`)
   - SwiftCommonsDiagnostics (from `../../Dependencies/SwiftCommonsDiagnostics/Pod-1.3.1.podspec`)
   - SwiftCommonsExtensions (from `../../Dependencies/SwiftCommonsExtensions/Pod-1.3.1.podspec`)
-  - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.3.1.podspec`)
+  - SwiftCommonsLang (from `../../Dependencies/SwiftCommonsLang/Pod-1.3.2.podspec`)
   - SwiftCommonsLogging (from `../../Dependencies/SwiftCommonsLogging/Pod-1.3.1.podspec`)
   - SwiftCommonsObjC (from `../../Dependencies/SwiftCommonsObjC/Pod-1.3.2.podspec`)
   - SwiftReorder (from `../../Dependencies/SwiftReorder/Pod-6.0.1.podspec`)
@@ -297,7 +297,7 @@ EXTERNAL SOURCES:
   SwiftCommonsExtensions:
     :path: "../../Dependencies/SwiftCommonsExtensions/Pod-1.3.1.podspec"
   SwiftCommonsLang:
-    :path: "../../Dependencies/SwiftCommonsLang/Pod-1.3.1.podspec"
+    :path: "../../Dependencies/SwiftCommonsLang/Pod-1.3.2.podspec"
   SwiftCommonsLogging:
     :path: "../../Dependencies/SwiftCommonsLogging/Pod-1.3.1.podspec"
   SwiftCommonsObjC:
@@ -357,7 +357,7 @@ SPEC CHECKSUMS:
   SwiftCommonsData: 3af64bbea7ba3109ce288b4d4ce3e8f0471f950b
   SwiftCommonsDiagnostics: 983d2f52dc1b7d6b544c0f623bc014ac5d13603f
   SwiftCommonsExtensions: 03f905781683e2e5b581e0dd442c593c219da128
-  SwiftCommonsLang: abc5b623e09ca3a20a9c167813f8b2c778968527
+  SwiftCommonsLang: a79dbbdf895b211c4e443cd94e10298b8cb8d82f
   SwiftCommonsLogging: 48da5f49f00815750f039ed94e98b62af3d3bf1b
   SwiftCommonsObjC: 0d17295af30af2b15e2d83c7af08b66de211c7ce
   SwiftReorder: c7cb6c81cc0023ac113f8a4847bcfa402d7c34f3
