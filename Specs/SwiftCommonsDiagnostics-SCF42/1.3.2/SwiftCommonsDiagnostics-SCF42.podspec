@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsDiagnostics'
   s.summary               = 'A collection of static classes for debugging and diagnostics of program contracts such as preconditions, postconditions, and invariants.'
-  s.version               = '1.3.1'
+  s.version               = '1.3.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -34,13 +34,32 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
+=begin
   s.dependency 'SwiftCommonsConcurrent', s.version.to_s
   s.dependency 'SwiftCommonsExtensions', s.version.to_s
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommonsDiagnostics-#{s.version}-SCF42.zip",
+    sha256: '5b6397937e786ccf21cec67bed7515447e004dfc565f06a9711251199c22a43e'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsDiagnostics.framework/*'
+    sc.source_files = 'SwiftCommonsDiagnostics.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsDiagnostics.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsDiagnostics.framework'
+
+    # Dependencies
+    sc.dependency 'SwiftCommonsConcurrent-SCF42', s.version.to_s
+    sc.dependency 'SwiftCommonsExtensions-SCF42', s.version.to_s
+  end
 end
