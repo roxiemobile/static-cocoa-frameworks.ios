@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsExtensions'
   s.summary               = 'A collection of useful type extensions used for iOS application development.'
-  s.version               = '1.3.1'
+  s.version               = '1.3.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -37,10 +37,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftCommonsAbstractions', s.version.to_s
   s.dependency 'SwiftCommonsLogging', s.version.to_s
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
