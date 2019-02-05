@@ -24,6 +24,11 @@ DISTRIBUTION_PATH=$(PWD)/.build
 ZIPBALL_NAME=$(SCHEME)$(SUBSPEC)-$(VERSION)-SCF42.zip
 ZIPBALL_PATH=$(DISTRIBUTION_PATH)/$(ZIPBALL_NAME)
 
+UPLOAD_FOLDER_NAME=BintrayUpload
+TOOLS_PATH=$(PWD)/../../Tools
+
+LICENSE_SEARCH_PATH=$(PWD)/../../Dependencies/$(NAME)/$(VERSION)
+
 ### Colors
 
 RESET=\033[0;39m
@@ -37,6 +42,8 @@ GREEN=\033[0;32m
 default: test
 
 archive: clean test build validate zip
+
+archive-upload: clean test build validate zip upload
 
 test:
 #   xcodebuild -project $(XCWORKSPACE) \
@@ -88,6 +95,9 @@ build: clean
 #	rm -rf $(BUILD_PATH_UNIVERSAL)
 	mkdir -p $(BUILD_PATH_UNIVERSAL)
 
+	@printf "Copy license..." ; echo
+	find $(LICENSE_SEARCH_PATH) -maxdepth 1 -type f -name 'LICENSE*' -exec cp '{}' $(BUILD_PATH_UNIVERSAL) \;
+
 	cp -Rv $(BUILD_PATH_SIMULATOR)/$(FRAMEWORK_FOLDER) $(BUILD_PATH_UNIVERSAL)
 	cp -Rv $(BUILD_PATH_IPHONE)/$(FRAMEWORK_FOLDER) $(BUILD_PATH_UNIVERSAL)
 
@@ -100,9 +110,13 @@ validate.%:
 	@lipo -info $(BUILD_PATH_UNIVERSAL_FRAMEWORK_BINARY) | grep -q '$*' && echo "$(GREEN)Passed$(RESET)" || (echo "$(RED)Failed$(RESET)"; exit 1)
 
 zip:
-	mkdir -p $(DISTRIBUTION_PATH)
-	cd $(BUILD_PATH_UNIVERSAL) && zip -r -FS $(DISTRIBUTION_PATH)/$(ZIPBALL_NAME) $(FRAMEWORK_FOLDER)
+	mkdir -p $(DISTRIBUTION_PATH)/$(UPLOAD_FOLDER_NAME)/$(NAME)/$(VERSION)
+	cd $(BUILD_PATH_UNIVERSAL) && zip -r -FS $(DISTRIBUTION_PATH)/$(UPLOAD_FOLDER_NAME)/$(NAME)/$(VERSION)/$(ZIPBALL_NAME) *
 
+upload:
+	@printf "Uploading to bintray..." ; echo
+	cd $(TOOLS_PATH) ; sh upload_to_bintray.sh $(DISTRIBUTION_PATH)/$(UPLOAD_FOLDER_NAME)/$(NAME)/$(VERSION) $(NAME) $(VERSION)
+	
 clean:
 #	rm -rf $(BUILD_PATH)
 #	rm -rf $(DISTRIBUTION_PATH)
@@ -116,5 +130,6 @@ clean:
 	rm -rf $(BUILD_PATH_IPHONE)/lib$(NAME).a
 
 	rm -rf $(BUILD_PATH_UNIVERSAL_FRAMEWORK_FOLDER)
+	test -d $(BUILD_PATH_UNIVERSAL) && find $(BUILD_PATH_UNIVERSAL) -type f -name 'LICENSE*' -delete || echo "Universal build path doesn't exist. Continue."
 
 	rm -rf $(ZIPBALL_PATH)

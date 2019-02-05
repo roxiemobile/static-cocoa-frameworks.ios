@@ -1,0 +1,32 @@
+
+// How to distribute your own Android library through jCenter and Maven Central from Android Studio
+// @link https://inthecheesefactory.com/blog/how-to-upload-library-to-jcenter-maven-central-as-dependency
+// @link https://github.com/nuuneoi/FBLikeAndroid/blob/master/fb-like/build.gradle
+
+ext {
+    mBintrayRepo = 'generic'
+    //mBintrayName = 'StaticCocoaFrameworks'
+
+    mPackageName = 'generic'
+    mPackageDesc = 'Default repository for generic binaries.'
+
+    //mGroupId     = 'iOS'
+    //mArtifactId  = 'iOS'
+    //mVersionName =  '0.0.1'//android.defaultConfig.versionName
+
+    mCompanyUrl  = 'http://roxiemobile.com'
+    mWebsiteUrl  = 'https://github.com/roxiemobile/static-cocoa-frameworks.ios'
+    mIssuesUrl   = 'https://github.com/roxiemobile/static-cocoa-frameworks.ios/issues'
+    mGitRepoUrl  = 'https://github.com/roxiemobile/static-cocoa-frameworks.ios.git'
+
+    mAuthorId    = 'komarovev'
+    mAuthorName  = 'komarovev'
+    mAuthorEmail = 'komarovev@ekassir.com'
+
+    mLicenseName = 'The Apache Software License, Version 2.0'
+    mLicenseUrl  = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    mAllLicenses = ['Apache-2.0']
+}
+
+// Deploy to Bintray
+apply from: 'bintray.gradle'
