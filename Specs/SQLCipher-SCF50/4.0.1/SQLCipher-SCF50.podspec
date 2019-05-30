@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     http: "https://dl.bintray.com/roxiemobile/generic/SQLCipher+standard-#{s.version}-SCF50.zip",
-    sha256: 'dd4bba178b40fcc56dc2d51a14a76f208f6f28643d3d900978203e6f48c310b3'
+    sha256: 'b481a4e30bb6e102f3ab843c1191796ee02bac1683b1774dc2355fe2e964d152'
   }
 
   s.prepare_command = nil
