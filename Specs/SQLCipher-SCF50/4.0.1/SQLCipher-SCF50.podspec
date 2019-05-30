@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
 # MARK: - Modules
 
   s.subspec 'common' do |sc|
+=begin
     sc.source_files = 'sqlite3.{h,c}'
 
     sc.frameworks = [
@@ -61,13 +62,19 @@ Pod::Spec.new do |s|
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1',
       'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999'
     }
+=end
+    sc.dependency "#{s.name}-SCF50/StaticCocoaFramework", s.version.to_s
   end
 
   s.subspec 'standard' do |sc|
+=begin
     sc.dependency 'SQLCipher/common'
+=end
+    sc.dependency "#{s.name}-SCF50/common"
   end
 
   s.subspec 'fts' do |sc|
+=begin
     sc.compiler_flags = []
 
     sc.xcconfig = {
@@ -75,9 +82,12 @@ Pod::Spec.new do |s|
     }
 
     sc.dependency 'SQLCipher/common'
+=end
+    sc.dependency '//+NotSupported'
   end
 
   s.subspec 'unlock_notify' do |sc|
+=begin
     sc.compiler_flags = []
 
     sc.xcconfig = {
@@ -85,22 +95,30 @@ Pod::Spec.new do |s|
     }
 
     sc.dependency 'SQLCipher/common'
+=end
+    sc.dependency '//+NotSupported'
   end
 
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SQLCipher+standard-#{s.version}-SCF50.zip",
+    sha256: 'dd4bba178b40fcc56dc2d51a14a76f208f6f28643d3d900978203e6f48c310b3'
+  }
 
-  cn1 = s.consumer(:ios)
-  s.prepare_command = "cd #{cn1.version}; #{cn1.prepare_command}; cd .."
+  s.prepare_command = nil
 
-  s.subspecs.each do |sc|
-    cn2 = sc.consumer(:ios)
-    sc.source_files = cn2.source_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.source_files.blank?
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SQLCipher.framework/*'
+    sc.source_files = 'SQLCipher.framework/Headers/*.h'
+    sc.public_header_files = 'SQLCipher.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SQLCipher.framework'
   end
 end
