@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SQLite.swift"
-  s.version          = "0.11.5"
-  s.summary          = "A type-safe, Swift-language layer over SQLite3 for iOS and OS X."
+  s.version          = "0.12.0"
+  s.summary          = "A type-safe, Swift-language layer over SQLite3 for iOS and macOS."
 
   s.description      = <<-DESC
     SQLite.swift provides compile-time confidence in SQL statement syntax and
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.2"
   s.default_subspec  = 'standard'
   s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '4.1',
+    'SWIFT_VERSION' => '5',
   }
 
   s.subspec 'standard' do |ss|
@@ -30,10 +30,10 @@ Pod::Spec.new do |s|
     ss.private_header_files = 'Sources/SQLiteObjc/*.h'
     ss.library = 'sqlite3'
 
-    ## ss.test_spec 'tests' do |test_spec|
-    ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
-    ##   test_spec.source_files = 'Tests/SQLiteTests/*.swift'
-    ## end
+     ss.test_spec 'tests' do |test_spec|
+       test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
+       test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+     end
   end
 
   s.subspec 'standalone' do |ss|
@@ -46,10 +46,10 @@ Pod::Spec.new do |s|
     }
     ss.dependency 'sqlite3'
 
-    ## ss.test_spec 'tests' do |test_spec|
-    ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
-    ##   test_spec.source_files = 'Tests/SQLiteTests/*.swift'
-    ## end
+     ss.test_spec 'tests' do |test_spec|
+       test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
+       test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+     end
   end
 
   s.subspec 'SQLCipher' do |ss|
@@ -59,28 +59,15 @@ Pod::Spec.new do |s|
       'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER',
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1'
     }
-    ss.dependency 'SQLCipher', '>= 3.4.0', '< 4.0.0'
+    ss.dependency 'SQLCipher', '>= 3.4.0'
 
-    ## ss.test_spec 'tests' do |test_spec|
-    ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
-    ##   test_spec.source_files = 'Tests/SQLiteTests/*.swift'
-    ## end
+     ss.test_spec 'tests' do |test_spec|
+       test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
+       test_spec.source_files = 'Tests/SQLiteTests/*.swift'
+     end
   end
 
-# MARK: - iOS Static Framework
 
-  s.platform = :ios
-  s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-
-  s.license = {}
-  s.static_framework = true
-
-  attr = Pod::Specification::DSL.attributes[:xcconfig]
-  s.subspecs.each do |sc|
-    cn1 = sc.consumer(:ios)
-    sc.source_files = cn1.source_files.map { |pt| "#{cn1.version}/#{pt}" } if !cn1.source_files.blank?
-    sc.exclude_files = cn1.exclude_files.map { |pt| "#{cn1.version}/#{pt}" } if !cn1.exclude_files.blank?
-    sc.private_header_files = cn1.private_header_files.map { |pt| "#{cn1.version}/#{pt}" } if !cn1.private_header_files.blank?
-  end
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
