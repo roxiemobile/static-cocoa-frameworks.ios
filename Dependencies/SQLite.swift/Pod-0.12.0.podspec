@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SQLite.swift"
-  s.version          = "0.11.5"
-  s.summary          = "A type-safe, Swift-language layer over SQLite3 for iOS and OS X."
+  s.version          = "0.12.0"
+  s.summary          = "A type-safe, Swift-language layer over SQLite3 for iOS and macOS."
 
   s.description      = <<-DESC
     SQLite.swift provides compile-time confidence in SQL statement syntax and
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.2"
   s.default_subspec  = 'standard'
   s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '4.1',
+    'SWIFT_VERSION' => '5',
   }
 
   s.subspec 'standard' do |ss|
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
       'OTHER_SWIFT_FLAGS' => '$(inherited) -DSQLITE_SWIFT_SQLCIPHER',
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1'
     }
-    ss.dependency 'SQLCipher', '>= 3.4.0', '< 4.0.0'
+    ss.dependency 'SQLCipher', '>= 3.4.0'
 
     ## ss.test_spec 'tests' do |test_spec|
     ##   test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5'
 
   s.license = {}
   s.static_framework = true
