@@ -11,7 +11,7 @@ target 'DummyFramework' do
   pod 'Alamofire',                '>= 4.8.1'
   pod 'Armchair',                 '>= 0.3.6'
 # pod 'Bolts',                    '>= 1.9.0'
-  pod 'Charts',                   '>= 3.2.1'
+  pod 'Charts',                   '>= 3.3.0'
   pod 'CryptoSwift',              '>= 0.13.1'
 # pod 'Differentiator',           '>= 3.1.0'
   pod 'Dispatch',                 '>= 2.0.4'

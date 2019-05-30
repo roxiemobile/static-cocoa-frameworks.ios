@@ -7,9 +7,9 @@ PODS:
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - Charts (3.2.1):
-    - Charts/Core (= 3.2.1)
-  - Charts/Core (3.2.1)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
   - CryptoSwift (0.13.1)
   - Differentiator (3.1.0)
   - Dispatch (2.0.4)
@@ -60,7 +60,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (>= 4.8.1)
   - Armchair (>= 0.3.6)
-  - Charts (>= 3.2.1)
+  - Charts (>= 3.3.0)
   - CryptoSwift (>= 0.13.1)
   - Dispatch (>= 2.0.4)
   - FBSDKCoreKit (>= 4.40.0)
@@ -130,7 +130,7 @@ SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Armchair: 2dd361337cf81937e73e8b9d48f9eda9a21d316c
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  Charts: ec1f57f9340054155691e84d4544a1d239d382c5
   CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
@@ -163,6 +163,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 3b26aec534094b5267203ff575266c4ecfcb736d
+PODFILE CHECKSUM: a0028174b3dcb6bd7c2aca8d3e28257c4bd77e70
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
