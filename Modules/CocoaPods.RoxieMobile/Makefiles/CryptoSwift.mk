@@ -1,5 +1,5 @@
 NAME=CryptoSwift
 SCHEME=$(NAME)
-VERSION=0.13.1
+VERSION=1.0.0
 
 include Makefile.in
