@@ -34,19 +34,37 @@ Pod::Spec.new do |s|
 
   patch_version = "#{s.version}-patch.3"
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
-
+  s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    git: 'https://github.com/roxiemobile-forks/Armchair.git',
-    tag: patch_version
+    http: "https://dl.bintray.com/roxiemobile/generic/Armchair-#{patch_version}-SCF50.zip",
+    sha256: '4e3fcb14a5a7181e6db6b4b35cf13b9956092e64e2ec27c50f8479c23c80a25f'
   }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{patch_version}/#{pt}" }
-  s.resources = cn.resources.map { |pt| "#{patch_version}/#{pt}" }
+  s.source_files = nil
+  s.resources = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'Armchair.framework/*'
+    sc.source_files = 'Armchair.framework/Headers/*.h'
+    sc.public_header_files = 'Armchair.framework/Headers/*.h'
+    sc.vendored_frameworks = 'Armchair.framework'
+    sc.resources = 'Armchair.framework/*.lproj'
+  end
+
+# MARK: - Validation
+
+  # Technical Q&A QA1881 v2 - Embedding Content with Swift in Objective-C
+  # @link https://pewpewthespells.com/blog/swift_and_objc.html
+
+  s.user_target_xcconfig = {
+    'SWIFT_STDLIB_PATH' => '${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}',
+    'OTHER_LDFLAGS' => '-L${SWIFT_STDLIB_PATH}'
+  }
 end
