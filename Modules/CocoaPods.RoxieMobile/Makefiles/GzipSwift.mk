@@ -1,5 +1,5 @@
 NAME=Gzip
 SCHEME=GzipSwift
-VERSION=4.0.4
+VERSION=5.0.0
 
 include Makefile.in

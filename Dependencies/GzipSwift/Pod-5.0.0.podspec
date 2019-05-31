@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
   s.name          = "GzipSwift"
-  s.version       = "4.0.4"
+  s.version       = "5.0.0"
   s.summary       = "Swift framework that enables gzip/gunzip Data using zlib."
 
   s.homepage      = "https://github.com/1024jp/GzipSwift"
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.license = {}
   s.static_framework = true
