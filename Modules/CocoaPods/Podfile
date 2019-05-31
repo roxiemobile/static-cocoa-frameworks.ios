@@ -40,6 +40,6 @@ target 'DummyFramework' do
   pod 'SQLCipher/standard',       '>= 3.4.2'
   pod 'SQLite.swift/SQLCipher',   '>= 0.11.5'
   pod 'SwiftReorder',             '>= 6.0.1'
-  pod 'SwiftyJSON',               '>= 4.2.0'
+  pod 'SwiftyJSON',               '>= 4.3.0'
   pod 'Toast',                    '>= 4.0.0'
 end

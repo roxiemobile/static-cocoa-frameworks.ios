@@ -2,9 +2,9 @@ name: SwiftyJSON
 description: SwiftyJSON makes it easy to deal with JSON data in Swift.
 
 modules:
-  4.2.0:
+  4.3.0:
     repository: https://github.com/SwiftyJSON/SwiftyJSON.git
-    tag: 4.2.0
+    tag: 5.0.0
 
 profiles:
   init:
