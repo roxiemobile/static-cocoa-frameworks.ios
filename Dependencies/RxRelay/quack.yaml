@@ -1,0 +1,19 @@
+name: RxRelay
+description: Relays for RxSwift - PublishRelay and BehaviorRelay.
+
+modules:
+  5.0.1:
+    repository: https://github.com/ReactiveX/RxSwift.git
+    tag: 5.0.1
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
