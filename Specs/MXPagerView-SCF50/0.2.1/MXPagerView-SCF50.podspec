@@ -37,13 +37,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/MXPagerView-#{s.version}-SCF50.zip",
+    sha256: '8e62bbecb976ead57e9caab4ccade54994b97ae29d02adbabe3186b2325eb446'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'MXPagerView.framework/*'
+    sc.source_files = 'MXPagerView.framework/Headers/*.h'
+    sc.public_header_files = 'MXPagerView.framework/Headers/*.h'
+    sc.vendored_frameworks = 'MXPagerView.framework'
+  end
 end
