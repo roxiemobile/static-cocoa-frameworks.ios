@@ -2,9 +2,9 @@ name: R.swift
 description: Get strong typed, autocompleted resources like images, fonts and segues in Swift projects.
 
 modules:
-  5.0.2:
+  5.0.3:
     repository: https://github.com/mac-cain13/R.swift.git
-    tag: v5.0.2
+    tag: v5.0.3
 
 profiles:
   init:

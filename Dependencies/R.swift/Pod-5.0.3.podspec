@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift"
-  spec.version      = "5.0.2"
+  spec.version      = "5.0.3"
   spec.license      = "MIT"
 
   spec.summary      = "Get strong typed, autocompleted resources like images, fonts and segues in Swift projects"
@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
 
   spec.license = {}
   spec.static_framework = true
