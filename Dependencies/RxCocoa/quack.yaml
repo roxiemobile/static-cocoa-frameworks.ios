@@ -2,9 +2,9 @@ name: RxCocoa
 description: RxSwift Cocoa extensions.
 
 modules:
-  4.4.0:
+  5.0.1:
     repository: https://github.com/ReactiveX/RxSwift.git
-    tag: 4.4.0
+    tag: 5.0.1
 
 profiles:
   init:
