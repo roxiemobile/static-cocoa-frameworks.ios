@@ -13,13 +13,27 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/HMSegmentedControl-#{s.version}-SCF50.zip",
+    sha256: 'bef043543f33fca4e105c0d377bcb83a43d356e30aa768020e7e8249aed2e25f'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.ios.source_files = nil
+  s.exclude_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'HMSegmentedControl.framework/*'
+    sc.source_files = 'HMSegmentedControl.framework/Headers/*.h'
+    sc.public_header_files = 'HMSegmentedControl.framework/Headers/*.h'
+    sc.vendored_frameworks = 'HMSegmentedControl.framework'
+  end
 end
