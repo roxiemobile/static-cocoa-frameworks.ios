@@ -1,20 +1,18 @@
 PODS:
   - Alamofire (4.8.1)
   - Armchair (0.3.6)
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
   - CryptoSwift (0.13.1)
   - Differentiator (3.1.0)
   - Dispatch (2.0.4)
-  - FBSDKCoreKit (4.40.0):
-    - Bolts (~> 1.9)
+  - FBSDKCoreKit (5.0.1):
+    - FBSDKCoreKit/Basics (= 5.0.1)
+    - FBSDKCoreKit/Core (= 5.0.1)
+  - FBSDKCoreKit/Basics (5.0.1)
+  - FBSDKCoreKit/Core (5.0.1):
+    - FBSDKCoreKit/Basics
   - GoogleAnalytics (3.17.0)
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.3)
@@ -63,7 +61,7 @@ DEPENDENCIES:
   - Charts (>= 3.2.1)
   - CryptoSwift (>= 0.13.1)
   - Dispatch (>= 2.0.4)
-  - FBSDKCoreKit (>= 4.40.0)
+  - FBSDKCoreKit (>= 5.0.1)
   - GoogleAnalytics (>= 3.17.0)
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
@@ -92,7 +90,6 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Armchair
-    - Bolts
     - Charts
     - CryptoSwift
     - Differentiator
@@ -129,12 +126,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Armchair: 2dd361337cf81937e73e8b9d48f9eda9a21d316c
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   CryptoSwift: ff68c35a53e03177d31aaa2c1e8b3e010aeed6cb
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Dispatch: 7ed89f2845001c4161ad83f43988b584fae8fff4
-  FBSDKCoreKit: ae214474b25033399c131dc81d258e412582a2ba
+  FBSDKCoreKit: 4a19534474ade7c71bd016d800aa5e7722bcdda1
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
@@ -163,6 +159,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 3b26aec534094b5267203ff575266c4ecfcb736d
+PODFILE CHECKSUM: dff0fecf748300b519c55bdee8d5d331aaaa46f1
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

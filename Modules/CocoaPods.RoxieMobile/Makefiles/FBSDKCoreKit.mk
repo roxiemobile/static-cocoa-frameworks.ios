@@ -1,5 +1,5 @@
 NAME=FBSDKCoreKit
 SCHEME=$(NAME)
-VERSION=4.40.0
+VERSION=5.0.1
 
 include Makefile.in
