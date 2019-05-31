@@ -36,15 +36,15 @@ Pod::Spec.new do |s|
 # MARK: - iOS Static Framework
 
   s.module_name = s.name
-  s.name = "#{s.name}-SCF42"
+  s.name = "#{s.name}-SCF50"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.default_subspec = 'StaticCocoaFramework'
   s.source = {
-    http: "https://dl.bintray.com/roxiemobile/generic/KeychainAccess-#{s.version}-SCF42.zip",
+    http: "https://dl.bintray.com/roxiemobile/generic/KeychainAccess-#{s.version}-SCF50.zip",
     sha256: '21c6e588ec6ea7745c16ce476fd209cc48770807c4166746890f29cf7b0c71bd'
   }
 
