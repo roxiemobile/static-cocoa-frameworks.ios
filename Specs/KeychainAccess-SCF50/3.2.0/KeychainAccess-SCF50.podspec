@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KeychainAccess'
-  s.version          = '3.1.2'
+  s.version          = '3.2.0'
   s.summary          = 'KeychainAccess is a simple Swift wrapper for Keychain that works on iOS and OS X.'
   s.description      = <<-DESC
                          KeychainAccess is a simple Swift wrapper for Keychain that works on iOS and OS X.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Lib/KeychainAccess/*.swift'
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
@@ -35,14 +35,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/KeychainAccess-#{s.version}-SCF42.zip",
+    sha256: '21c6e588ec6ea7745c16ce476fd209cc48770807c4166746890f29cf7b0c71bd'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'KeychainAccess.framework/*'
+    sc.source_files = 'KeychainAccess.framework/Headers/*.h'
+    sc.public_header_files = 'KeychainAccess.framework/Headers/*.h'
+    sc.vendored_frameworks = 'KeychainAccess.framework'
+  end
 end

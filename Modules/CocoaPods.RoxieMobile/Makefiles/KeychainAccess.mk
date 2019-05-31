@@ -1,5 +1,5 @@
 NAME=KeychainAccess
 SCHEME=$(NAME)
-VERSION=3.1.2
+VERSION=3.2.0
 
 include Makefile.in
