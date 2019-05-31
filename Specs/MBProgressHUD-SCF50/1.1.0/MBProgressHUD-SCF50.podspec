@@ -21,16 +21,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/MBProgressHUD-#{s.version}-SCF50.zip",
+    sha256: '757d086c178dfca5c401beae654e74a1d68cae81a335c081e5f126c2291f90f3'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.pod_target_xcconfig = (cn.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'MBProgressHUD.framework/*'
+    sc.source_files = 'MBProgressHUD.framework/Headers/*.h'
+    sc.public_header_files = 'MBProgressHUD.framework/Headers/*.h'
+    sc.vendored_frameworks = 'MBProgressHUD.framework'
   end
 end
