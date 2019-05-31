@@ -2,9 +2,9 @@ name: Siren
 description: Notify users that a new version of your iOS app is available, and prompt them with the App Store link.
 
 modules:
-  4.1.1:
+  5.1.0:
     repository: https://github.com/ArtSabintsev/Siren.git
-    tag: 4.1.1
+    tag: 5.1.0
 
 profiles:
   init:
