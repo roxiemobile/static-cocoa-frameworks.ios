@@ -43,7 +43,7 @@ target 'DummyFramework' do
   pod 'RxCocoa',                  path: '../../Dependencies/RxCocoa/Pod-4.4.0.podspec'
   pod 'RxDataSources',            path: '../../Dependencies/RxDataSources/Pod-3.1.0.podspec'
   pod 'RxAtomic',                 path: '../../Dependencies/RxAtomic/Pod-4.4.0.podspec'
-  pod 'RxSwift',                  path: '../../Dependencies/RxSwift/Pod-4.4.0.podspec'
+  pod 'RxSwift',                  path: '../../Dependencies/RxSwift/Pod-5.0.1.podspec'
   pod 'SDWebImage/Core',          path: '../../Dependencies/SDWebImage/Pod-4.4.5.podspec'
   pod 'Siren',                    path: '../../Dependencies/Siren/Pod-4.1.1.podspec'
   pod 'SlideMenuControllerSwift', path: '../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec'
