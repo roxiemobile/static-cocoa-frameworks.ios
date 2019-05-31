@@ -20,13 +20,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/PDTSimpleCalendar-#{s.version}-SCF50.zip",
+    sha256: '391b406632c6a2d9082b3ea2ea3babe1e5da5be87e3280554ba0bec7c5fa52bd'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'PDTSimpleCalendar.framework/*'
+    sc.source_files = 'PDTSimpleCalendar.framework/Headers/*.h'
+    sc.public_header_files = 'PDTSimpleCalendar.framework/Headers/*.h'
+    sc.vendored_frameworks = 'PDTSimpleCalendar.framework'
+  end
 end

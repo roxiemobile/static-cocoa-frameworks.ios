@@ -337,7 +337,7 @@ SPEC CHECKSUMS:
   NetworkingApiHttp: 9688b3a336f8151c33d835ace398b305c0c5091b
   NetworkingApiObjC: 111222f1ae10af22abc47c2e0bc88222daaf38d5
   NetworkingApiRest: 47e8acfacdd75f35d5d75c1450b2f464e2ba1765
-  PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
+  PDTSimpleCalendar: 0b36c7e514c2701f57ac6acae2b46add23cecffa
   PureLayout: 3fc2eabdd01c1bec467aa9c960ee7c21b1ce9956
   R.swift: 0e2f72b8b9ae9f26b743b0f115d6d87c2171e3eb
   R.swift.Library: b0df4cd0d090783fdb0a8b0404e255fb64699595
@@ -366,4 +366,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 5e41517614ae679b986a37fc8e6213926c5b7313
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
