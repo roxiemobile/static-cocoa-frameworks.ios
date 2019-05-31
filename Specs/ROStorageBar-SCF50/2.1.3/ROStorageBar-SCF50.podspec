@@ -23,18 +23,35 @@ Pod::Spec.new do |spec|
 
   patch_version = "#{spec.version}-patch.2"
 
+  spec.module_name = spec.name
+  spec.name = "#{spec.name}-SCF50"
+
   spec.platform = :ios
   spec.ios.deployment_target = '9.0'
   spec.swift_version = '5.0'
 
-  spec.license = {}
-  spec.static_framework = true
-
+  spec.default_subspec = 'StaticCocoaFramework'
   spec.source = {
-    git: 'https://github.com/roxiemobile-forks/ROStorageBar.git',
-    tag: patch_version
+    http: "https://dl.bintray.com/roxiemobile/generic/ROStorageBar-#{patch_version}-SCF50.zip",
+    sha256: '2ec7b8face4fba61eae1521c194508620999223e138e057de3ae1d8b366876f3'
   }
 
-  cn = spec.consumer(:ios)
-  spec.source_files = cn.source_files.map { |pt| "#{patch_version}/#{pt}" }
+  spec.source_files = nil
+
+  spec.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'ROStorageBar.framework/*'
+    sc.source_files = 'ROStorageBar.framework/Headers/*.h'
+    sc.public_header_files = 'ROStorageBar.framework/Headers/*.h'
+    sc.vendored_frameworks = 'ROStorageBar.framework'
+  end
+
+# MARK: - Validation
+
+  # Technical Q&A QA1881 v2 - Embedding Content with Swift in Objective-C
+  # @link https://pewpewthespells.com/blog/swift_and_objc.html
+
+  spec.user_target_xcconfig = {
+    'SWIFT_STDLIB_PATH' => '${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}',
+    'OTHER_LDFLAGS' => '-L${SWIFT_STDLIB_PATH}'
+  }
 end
