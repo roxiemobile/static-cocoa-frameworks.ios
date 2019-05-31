@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "R.swift.Library"
-  spec.version      = "5.0.0"
+  spec.version      = "5.0.1"
   spec.license      = "MIT"
 
   spec.summary      = "Companion library for R.swift, featuring types used to type resources"
@@ -26,15 +26,6 @@ Pod::Spec.new do |spec|
   spec.module_name   = "Rswift"
   spec.source_files  = "Library/**/*.swift"
 
-# MARK: - iOS Static Framework
-
-  spec.platform = :ios
-  spec.ios.deployment_target = '9.0'
-  spec.swift_version = '4.2'
-
-  spec.license = {}
-  spec.static_framework = true
-
-  cn = spec.consumer(:ios)
-  spec.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  spec.dependency '//+WrongSourceRepository'
 end
