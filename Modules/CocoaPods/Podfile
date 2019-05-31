@@ -13,7 +13,7 @@ target 'DummyFramework' do
 # pod 'Bolts',                    '>= 1.9.0'
   pod 'Charts',                   '>= 3.2.1'
   pod 'CryptoSwift',              '>= 0.13.1'
-# pod 'Differentiator',           '>= 3.1.0'
+  pod 'Differentiator',           '>= 4.0.1'
   pod 'Dispatch',                 '>= 2.0.4'
   pod 'FBSDKCoreKit',             '>= 4.40.0' # Bolts
   pod 'GoogleAnalytics',          '>= 3.17.0'
