@@ -27,20 +27,39 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MXSegmentedPager/*.{m,h}'
   s.public_header_files = ["MXSegmentedPager/*.h"]
-  s.dependency 'HMSegmentedControl', '~> 1.5.3'
-  s.dependency 'MXPagerView', '~> 0.2.1'
-  s.dependency 'MXParallaxHeader', '~> 0.6.1'
+=begin
+  s.dependency 'HMSegmentedControl', '1.5.3'
+  s.dependency 'MXPagerView', '0.2.1'
+  s.dependency 'MXParallaxHeader', '0.6.1'
+=end
 
 # MARK: - iOS Static Framework
+
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/MXSegmentedPager-#{s.version}-SCF50.zip",
+    sha256: '14aea36d64e6a95f76a9594d35c19025559475d40295a34830279e502e4e0891'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+  s.public_header_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'MXSegmentedPager.framework/*'
+    sc.source_files = 'MXSegmentedPager.framework/Headers/*.h'
+    sc.public_header_files = 'MXSegmentedPager.framework/Headers/*.h'
+    sc.vendored_frameworks = 'MXSegmentedPager.framework'
+
+    # Dependencies
+    sc.dependency 'HMSegmentedControl-SCF50', '~> 1.5.5'
+    sc.dependency 'MXPagerView-SCF50', '~> 0.2.1'
+    sc.dependency 'MXParallaxHeader-SCF50', '~> 0.6.1'
+  end
 end
