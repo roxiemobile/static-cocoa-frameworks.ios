@@ -24,16 +24,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/INTULocationManager-#{s.version}-SCF50.zip",
+    sha256: '6d495016d02ff8124116f78393f7e67f5b87766803b992555930eefa8c8b362e'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.pod_target_xcconfig = (cn.pod_target_xcconfig || {}).tap do |h|
-    h['SWIFT_OBJC_BRIDGING_HEADER'] = "${PODS_ROOT}/Target Support Files/#{s.name}/#{s.name}-umbrella.h"
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'INTULocationManager.framework/*'
+    sc.source_files = 'INTULocationManager.framework/Headers/*.h'
+    sc.public_header_files = 'INTULocationManager.framework/Headers/*.h'
+    sc.vendored_frameworks = 'INTULocationManager.framework'
   end
 end
