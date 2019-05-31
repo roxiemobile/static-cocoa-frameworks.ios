@@ -53,7 +53,7 @@ PODS:
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.5):
     - SQLCipher (>= 3.4.0)
-  - SwiftReorder (6.0.1)
+  - SwiftReorder (7.0.0)
   - SwiftyJSON (4.2.0)
   - Toast (4.0.0)
 
@@ -84,7 +84,7 @@ DEPENDENCIES:
   - SlideMenuControllerSwift (>= 4.0.0)
   - SQLCipher/standard (>= 3.4.2)
   - SQLite.swift/SQLCipher (>= 0.11.5)
-  - SwiftReorder (>= 6.0.1)
+  - SwiftReorder (>= 7.0.0)
   - SwiftyJSON (>= 4.2.0)
   - Toast (>= 4.0.0)
 
@@ -159,10 +159,10 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
-  SwiftReorder: b59368b978c9826116147672ff1f59a2d4dd9110
+  SwiftReorder: a22513f41722d8ed85ec10abee1bad9640f6042d
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 3b26aec534094b5267203ff575266c4ecfcb736d
+PODFILE CHECKSUM: 142e70a0a2aeade27812eed182a0dc459656c147
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
