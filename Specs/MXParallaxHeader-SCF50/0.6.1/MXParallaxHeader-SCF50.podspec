@@ -30,13 +30,25 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF50"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.license = {}
-  s.static_framework = true
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/MXParallaxHeader-#{s.version}-SCF50.zip",
+    sha256: 'c3abb9757ebd4930cf3b042f217caab125151e8d2d29d80e8639df7ad57ccacb'
+  }
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'MXParallaxHeader.framework/*'
+    sc.source_files = 'MXParallaxHeader.framework/Headers/*.h'
+    sc.public_header_files = 'MXParallaxHeader.framework/Headers/*.h'
+    sc.vendored_frameworks = 'MXParallaxHeader.framework'
+  end
 end
