@@ -1,6 +1,6 @@
 NAME=SDWebImage
 NAME_SUBSPEC=+Core
 SCHEME=$(NAME)
-VERSION=4.4.5
+VERSION=5.0.4
 
 include Makefile.in
