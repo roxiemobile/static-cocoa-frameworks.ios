@@ -192,7 +192,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-DummyFramework/Pods-DummyFramework-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DummyFramework/Pods-DummyFramework-resources.sh",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.6-patch.3/Localization/ar.lproj",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.6-patch.3/Localization/arm.lproj",
 				"${PODS_ROOT}/../../../Dependencies/Armchair/0.3.6-patch.3/Localization/ca.lproj",
@@ -267,7 +267,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-DummyFramework/Pods-DummyFramework-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DummyFramework/Pods-DummyFramework-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

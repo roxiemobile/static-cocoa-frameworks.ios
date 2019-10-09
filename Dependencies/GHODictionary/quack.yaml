@@ -1,0 +1,19 @@
+name: GHODictionary
+description: Ordered dictionary.
+
+modules:
+  1.1.0:
+    repository: https://github.com/gabriel/GHODictionary.git
+    tag: 1.1.0
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']

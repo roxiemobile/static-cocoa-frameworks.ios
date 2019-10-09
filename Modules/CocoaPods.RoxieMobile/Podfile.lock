@@ -24,6 +24,7 @@ PODS:
   - Dispatch (2.0.4)
   - FBSDKCoreKit (4.40.0):
     - Bolts (~> 1.9)
+  - GHODictionary (1.1.0)
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.5)
   - INTULocationManager (4.3.2)
@@ -157,6 +158,7 @@ DEPENDENCIES:
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.1.0.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
   - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec`)
+  - GHODictionary (from `../../Dependencies/GHODictionary/Pod-1.1.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
   - HMSegmentedControl (from `../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec`)
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.2.podspec`)
@@ -222,6 +224,8 @@ EXTERNAL SOURCES:
     :path: "../../Dependencies/Dispatch/Pod-2.0.4.podspec"
   FBSDKCoreKit:
     :path: "../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec"
+  GHODictionary:
+    :path: "../../Dependencies/GHODictionary/Pod-1.1.0.podspec"
   GzipSwift:
     :path: "../../Dependencies/GzipSwift/Pod-4.0.4.podspec"
   HMSegmentedControl:
@@ -310,60 +314,61 @@ EXTERNAL SOURCES:
     :path: "../../Dependencies/Toast/Pod-4.0.0.podspec"
 
 SPEC CHECKSUMS:
-  Alamofire: 95007932641b1cc2c46c2cebd5b2b13d77c808ef
-  Armchair: 58470ddcf5a961827416bace92be5cc0ff3caf8f
-  Bolts: 6cbdcb9eb120f3842929113a283c763596d6b8a1
-  Charts: 92aefcf0dc59f9ebeea634d51b4ca8f86dc7841f
-  ContentProviders: b43b447ab43af5977271df28e1e250b179a8333a
-  ContentProvidersSQLite: e24fe1211d85f8edf2e6d82b89a74293ddcc3577
-  CryptoSwift: b5d2c8b18ca95a5323d587b4a9cb82ea96b2aaa3
-  Differentiator: 59ec55fb876c37e8487a6704ea50af41853a734e
-  Dispatch: 12ed335ad6069186f2f9b31fd30836130136b1b1
-  FBSDKCoreKit: ce68ff479d162cf60dc5547b6f11c4a2fbbe005d
-  GzipSwift: 55fbaf0631125e6c2d155c1c963e342d7ddf7c5e
-  HMSegmentedControl: 26fbc75258467d196a4d366e38f1807d2674a6a0
-  INTULocationManager: fbe4318197890a45b3d6ac705cf140e5b51ca155
-  KeychainAccess: 3da98818a757e097a9e6d256bcaedaf0f3692fe9
-  lottie-ios: 882e5cf3d0e553528f0f9d569399bdaa38b78019
-  MBProgressHUD: e05a07887454610da3b21df27800c706d20fa1a4
-  ModernDesign: 447d9e8afe63124c7fab74e2d04b9888ee0a0db0
-  ModernDesignExtensions: 05af0904287cfa9df056f27eb56ba740b7eee8b3
-  MXPagerView: 32d1c505c33297049e87ef2a716d7e5b06e21ac7
-  MXParallaxHeader: 5fb629d86a7b402dc1279c945715db7ff72bf43f
-  MXSegmentedPager: 01b210656b661bdcee269dfc55f94095ef5ac30d
-  NetworkingApi: 9817f8d837aa4aa0a4703d0e4fcef7abdf03a230
-  NetworkingApiConverters: ed79599c78c84d13a2651e00b47b4da1b07f84c8
-  NetworkingApiHelpers: dfebe1cbb56d2fa8ffd13b04d36ca82a53e33b01
-  NetworkingApiHttp: 9688b3a336f8151c33d835ace398b305c0c5091b
-  NetworkingApiObjC: 111222f1ae10af22abc47c2e0bc88222daaf38d5
-  NetworkingApiRest: 47e8acfacdd75f35d5d75c1450b2f464e2ba1765
-  PDTSimpleCalendar: aa4fb94513044c71c7478f8d423a5b9b6c079134
-  PureLayout: 3fc2eabdd01c1bec467aa9c960ee7c21b1ce9956
-  R.swift: 0e2f72b8b9ae9f26b743b0f115d6d87c2171e3eb
-  R.swift.Library: b0df4cd0d090783fdb0a8b0404e255fb64699595
-  ROStorageBar: 2d96c38451132ce0bbaaa4abd52d0c077fbba24f
-  RxAtomic: e1247798c3058d028a68e40700933d0d6ba34fc9
-  RxCocoa: 809a68453cd706c657ceabcbd974e7e7f94c0d77
-  RxDataSources: 7b1a2bc77370172f39c373f99503dd62a18962a2
-  RxSwift: 36521ef3cdfb37e35b57eef3a6ecf4e429e93127
-  SDWebImage: 118504a18d677bd0765354d13e4fe3e8a1227549
-  Siren: 9039dc81c2df9df3e73f6db244f5076f33fd185e
-  SlideMenuControllerSwift: 60fd76481862e1adba062000216944addf2ecb1b
-  SQLCipher: de1e8ff82e4783efb19bcebe616c6e6e895b68ba
-  SQLite.swift: 7de39d498e011de310dfc40db62f734023a6f56d
-  SwiftCommons: 3027190438a6b589de670bc2baeca8a73970b710
-  SwiftCommonsAbstractions: 704524e488167ba768c36f2912c93ecc1113768b
-  SwiftCommonsConcurrent: 6ed2f195ae990ea32aee991d1662fbe4c687439e
-  SwiftCommonsData: caa0f304f8d088af80d9b8c3110dbbdcf04d69e4
-  SwiftCommonsDiagnostics: 8a57a8eff12995d41a370a1e3f8ae37081cbe7bc
-  SwiftCommonsExtensions: b381c51deb618b0ef3702eb52ea243fcfae47880
-  SwiftCommonsLang: a79dbbdf895b211c4e443cd94e10298b8cb8d82f
-  SwiftCommonsLogging: 30ff3a00efa300fdcc93225b49e6962e77492d96
-  SwiftCommonsObjC: 0d17295af30af2b15e2d83c7af08b66de211c7ce
-  SwiftReorder: c7cb6c81cc0023ac113f8a4847bcfa402d7c34f3
-  SwiftyJSON: 94c9cf74f9f85a1e93f6b63768f4c57562bb4cd4
-  Toast: 1a67606a38381b7d2f0d57101e8b60e1f99ac8ce
+  Alamofire: 34cb1c7a92b0db4ff22e8256c30083309a7784fb
+  Armchair: a5ce4292e80a78f225aee6e0374167a33a479127
+  Bolts: 23a5456e2f891e82eef2d70a3d57bf2ebe095d63
+  Charts: 1b0bc6fd2ca398d3216e8968121292717feefa9c
+  ContentProviders: a6c0744fa3b9421fcb8b5b4530088c4d4faabe49
+  ContentProvidersSQLite: 94b101d97f8b7391d03592b212d0fcc6abed15d0
+  CryptoSwift: 47711b69ad31aba86d68a061d9cc253b8433088b
+  Differentiator: 6457101673ee46d07b847c7f0366193df56b630b
+  Dispatch: 93a0385197025ac130e858d1bf1e164d4da74c47
+  FBSDKCoreKit: 91d225c7fb0d0a90ef834911741eefea1575a5ba
+  GHODictionary: f21748e82ae4f7a9ecf3a5d459aa64823a78126e
+  GzipSwift: f039505303ff7c1e8ccb03909dfe81df1a42bd7b
+  HMSegmentedControl: 6c8a58ad736e4f82bec08afa6cc1eb8d343837bf
+  INTULocationManager: 9c73045c65db616e1102d9e70fbd789ec5e6b178
+  KeychainAccess: f843db9a1b05d34a2d7be2ed00c9c4d95c3d5ccb
+  lottie-ios: 897cda14d36d6b28b0c39ec9dd4e5675cd740b2b
+  MBProgressHUD: bd213db1bf701076fe3c29e8208804197d247185
+  ModernDesign: e873a2f5b92a7d7ea9c036db66acf6175be3efe9
+  ModernDesignExtensions: 5b819383cdd9069a29ee156ba70372d887bcf704
+  MXPagerView: 99134adaf5255cf2832063e9a3df2dd315400e62
+  MXParallaxHeader: 1a5ebbbaf5b2e85ed90a55a084d2df380191109b
+  MXSegmentedPager: 9495ebea2d321371dfe67059a54a368abc89a0da
+  NetworkingApi: 5ce4d63e1c714b8a56342a76d284b890817f10cf
+  NetworkingApiConverters: 23e1ef74b6d3c11a7c3cbfd46c3f5148c5541c63
+  NetworkingApiHelpers: 1accf2cc4595df605ed8f415ae88a6c55f17b9ee
+  NetworkingApiHttp: 6a5a46d1bf5e33d30afca2a37d0516aac4460da0
+  NetworkingApiObjC: 15c6c9b8e2e682c4c89c2d1b1ba4796cba1dc2c7
+  NetworkingApiRest: f8918099e3985eb010790da25468635dbcad0526
+  PDTSimpleCalendar: e11ac67b95e898579b87dbe96a17370943133eba
+  PureLayout: cff5d0e0340a7fe9abebf9529ad39fdeef14e4d5
+  R.swift: 4839d9e7beadb9be5cd35802953d442a5fa779f3
+  R.swift.Library: 475df40fa05fa8bf603b93807b82560c99a4e96b
+  ROStorageBar: 8eb50d659906b7fec530b8efe3d4b35dc5bfdfd7
+  RxAtomic: e731fe1885d2d15aa9babd92f79f8099a789e48a
+  RxCocoa: f905e004fafed329a1048adf83dc66819e6a9afa
+  RxDataSources: 67f7977774c0f46d1e3fd65f4ac5792082b2af66
+  RxSwift: ed6a64ba5a40b1d7235ffcc0f5fb1737d01155f6
+  SDWebImage: afbe50a88d9e3c63041e0cc5c5febb5f9569fd80
+  Siren: d31551131c4ce548c294b8f602b337f3a72423a5
+  SlideMenuControllerSwift: 6c1ef6f85322ac62951d943d473a6b53edf2ea30
+  SQLCipher: 9bc82a0f5edb77db8157c6779f6feb8c7bd0f7d7
+  SQLite.swift: 2e6cd9d9980093c2cdcd73184d35bece0919d602
+  SwiftCommons: 49d0d97009df48acace328d3a234ec6e175d5b7a
+  SwiftCommonsAbstractions: a6a7dfbe61628c6d5e88d0ee75dde91823e14613
+  SwiftCommonsConcurrent: 9eece4bd8ab439d8e28c9416e213a75d1e0e5829
+  SwiftCommonsData: 79c65639bcfcc813ce29ee8c9cbd331dde3c6e02
+  SwiftCommonsDiagnostics: 879a001fde0657fcfe0083dd7126ed262e6f6a75
+  SwiftCommonsExtensions: a080ff794c9874d96b3a8d96d0ca99f358d67434
+  SwiftCommonsLang: 4ac0e9e7813053d41444c5c522330f951fcea030
+  SwiftCommonsLogging: 7bdecd7d05f1011ca77744ff8246dc928cab553d
+  SwiftCommonsObjC: 0b8af61484b79c8bf026126f86a0ae7eb82d3921
+  SwiftReorder: e185e9d09c91ff5a3204ef02cc36acf3d064eb6d
+  SwiftyJSON: f66a6ef8ad5e71041dc690a63853ca80e456d6c1
+  Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: 5e41517614ae679b986a37fc8e6213926c5b7313
+PODFILE CHECKSUM: f9ddd1b6ee72ab86865c708bdb797a4ece9f207b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5
