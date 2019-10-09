@@ -16,7 +16,7 @@ target 'DummyFramework' do
 # pod 'Differentiator',           '>= 3.1.0'
   pod 'Dispatch',                 '>= 2.0.4'
   pod 'FBSDKCoreKit',             '>= 4.40.0' # Bolts
-  pod 'GHODictionary',            '>= 1.1.0'
+# pod 'GHODictionary',            '>= 1.1.0'
   pod 'GoogleAnalytics',          '>= 3.17.0'
   pod 'GzipSwift',                '>= 4.0.4'
   pod 'HMSegmentedControl',       '>= 1.5.3'
@@ -24,6 +24,7 @@ target 'DummyFramework' do
   pod 'KeychainAccess',           '>= 3.1.2'
   pod 'lottie-ios',               '>= 2.5.2'
   pod 'MBProgressHUD',            '>= 1.1.0'
+  pod 'MPMessagePack',            '>= 1.5.1'  # GHODictionary
   pod 'MXPagerView',              '>= 0.2.1'
   pod 'MXParallaxHeader',         '>= 0.6.1'
   pod 'MXSegmentedPager',         '>= 3.3.0'

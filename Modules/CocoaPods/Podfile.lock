@@ -23,6 +23,8 @@ PODS:
   - KeychainAccess (3.1.2)
   - lottie-ios (2.5.2)
   - MBProgressHUD (1.1.0)
+  - MPMessagePack (1.5.1):
+    - GHODictionary
   - MXPagerView (0.2.1)
   - MXParallaxHeader (0.6.1)
   - MXSegmentedPager (3.3.0):
@@ -65,7 +67,6 @@ DEPENDENCIES:
   - CryptoSwift (>= 0.13.1)
   - Dispatch (>= 2.0.4)
   - FBSDKCoreKit (>= 4.40.0)
-  - GHODictionary (>= 1.1.0)
   - GoogleAnalytics (>= 3.17.0)
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
@@ -73,6 +74,7 @@ DEPENDENCIES:
   - KeychainAccess (>= 3.1.2)
   - lottie-ios (>= 2.5.2)
   - MBProgressHUD (>= 1.1.0)
+  - MPMessagePack (>= 1.5.1)
   - MXPagerView (>= 0.2.1)
   - MXParallaxHeader (>= 0.6.1)
   - MXSegmentedPager (>= 3.3.0)
@@ -108,6 +110,7 @@ SPEC REPOS:
     - KeychainAccess
     - lottie-ios
     - MBProgressHUD
+    - MPMessagePack
     - MXPagerView
     - MXParallaxHeader
     - MXSegmentedPager
@@ -146,6 +149,7 @@ SPEC CHECKSUMS:
   KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MPMessagePack: ee6b55fbec4e01a77e2bf631441d01f0b87b3cf5
   MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
   MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
@@ -167,6 +171,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: da1256eea73ce5c3687ad57b06e571b48782d43b
+PODFILE CHECKSUM: dd082b634ae9285716bc9e9223bba14434ae9643
 
 COCOAPODS: 1.7.5

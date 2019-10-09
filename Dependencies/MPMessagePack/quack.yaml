@@ -1,0 +1,19 @@
+name: MPMessagePack
+description: MessagePack implementation for Objective-C.
+
+modules:
+  1.5.1:
+    repository: https://github.com/gabriel/MPMessagePack.git
+    tag: 1.5.1
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']
