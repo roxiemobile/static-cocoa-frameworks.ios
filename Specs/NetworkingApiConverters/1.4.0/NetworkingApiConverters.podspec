@@ -3,15 +3,15 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiHelpers'
-  s.summary               = 'A collection of utility classes used by other modules of this library.'
-  s.version               = '1.3.1'
+  s.name                  = 'NetworkingApiConverters'
+  s.summary               = 'A collection of useful converters for the asynchronous REST API client.'
+  s.version               = '1.4.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version         = '4.2'
 
-  s.cocoapods_version     = '>= 1.4.0'
+  s.cocoapods_version     = '>= 1.7.5'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/networking-api.ios'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Helpers/'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Converters/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,13 +34,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.8.1'
-  s.dependency 'NetworkingApiHttp', s.version.to_s
+  s.dependency 'NetworkingApiRest', s.version.to_s
+  s.dependency 'SwiftCommons/Data', '~> 1.4.0'
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end

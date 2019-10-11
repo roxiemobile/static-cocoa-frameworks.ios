@@ -3,15 +3,15 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiRest'
-  s.summary               = 'An asynchronous REST API client that makes an access to a RESTful Web Services easier.'
-  s.version               = '1.3.1'
+  s.name                  = 'NetworkingApiHttp'
+  s.summary               = 'A collection of useful type extensions and utility classes used for communication over HTTP protocol.'
+  s.version               = '1.4.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version         = '4.2'
 
-  s.cocoapods_version     = '>= 1.4.0'
+  s.cocoapods_version     = '>= 1.7.5'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/networking-api.ios'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Rest/'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Http/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,16 +34,8 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.8.1'
-  s.dependency 'NetworkingApiHelpers', s.version.to_s
-  s.dependency 'NetworkingApiObjC', s.version.to_s
-  s.dependency 'SwiftCommons/Data', '~> 1.3.1'
-  s.dependency 'SwiftyJSON', '~> 4.2.0'
+  s.dependency 'SwiftCommons/Diagnostics', '~> 1.4.0'
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
