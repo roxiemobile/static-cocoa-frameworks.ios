@@ -5,13 +5,13 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ModernDesignExtensions'
   s.summary               = 'A collection of useful type extensions used for iOS apps development.'
-  s.version               = '1.3.1'
+  s.version               = '1.4.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version         = '4.2'
 
-  s.cocoapods_version     = '>= 1.4.0'
+  s.cocoapods_version     = '>= 1.7.5'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/modern-design.ios'
@@ -34,12 +34,30 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'SwiftCommons/Lang', '~> 1.3.1'
+=begin
+  s.dependency 'SwiftCommons/Lang', '~> 1.4.0'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/ModernDesignExtensions-#{s.version}-SCF42.zip",
+    sha256: '3a71480537645f235afd7d95ed473236a7e0f3f6ed7a4147d14cfc6897507b25'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'ModernDesignExtensions.framework/*'
+    sc.source_files = 'ModernDesignExtensions.framework/Headers/*.h'
+    sc.public_header_files = 'ModernDesignExtensions.framework/Headers/*.h'
+    sc.vendored_frameworks = 'ModernDesignExtensions.framework'
+
+    # Dependencies
+    sc.dependency 'SwiftCommons-SCF42/Lang', '~> 1.4.0'
+  end
 end
