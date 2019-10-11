@@ -10,15 +10,16 @@ PODS:
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
-  - ContentProviders (1.3.1):
-    - ContentProviders/SQLite (= 1.3.1)
-  - ContentProviders/SQLite (1.3.1):
-    - ContentProvidersSQLite (= 1.3.1)
-  - ContentProvidersSQLite (1.3.1):
+  - ContentProviders (1.4.0):
+    - ContentProviders/SQLite (= 1.4.0)
+  - ContentProviders/SQLite (1.4.0):
+    - ContentProvidersSQLite (= 1.4.0)
+  - ContentProvidersSQLite (1.4.0):
     - CryptoSwift (~> 0.13.1)
-    - SQLite.swift/SQLCipher (~> 0.11.5)
-    - SwiftCommons/Concurrent (~> 1.3.1)
-    - SwiftCommons/Extensions (~> 1.3.1)
+    - SQLCipher (< 4.0.0, ~> 3.4.2)
+    - SQLite.swift/SQLCipher (< 0.11.6, ~> 0.11.5)
+    - SwiftCommons/Concurrent (~> 1.4.0)
+    - SwiftCommons/Extensions (~> 1.4.0)
   - CryptoSwift (0.13.1)
   - Differentiator (3.1.0)
   - Dispatch (2.0.4)
@@ -155,8 +156,8 @@ DEPENDENCIES:
   - Armchair (from `../../Dependencies/Armchair/Pod-0.3.6-patch.3.podspec`)
   - Bolts (from `../../Dependencies/Bolts/Pod-1.9.0.podspec`)
   - Charts (from `../../Dependencies/Charts/Pod-3.2.1.podspec`)
-  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.3.1.podspec`)
-  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.3.1.podspec`)
+  - ContentProviders (from `../../Dependencies/ContentProviders/Pod-1.4.0.podspec`)
+  - ContentProvidersSQLite (from `../../Dependencies/ContentProvidersSQLite/Pod-1.4.0.podspec`)
   - CryptoSwift (from `../../Dependencies/CryptoSwift/Pod-0.13.1.podspec`)
   - Differentiator (from `../../Dependencies/Differentiator/Pod-3.1.0.podspec`)
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
@@ -217,9 +218,9 @@ EXTERNAL SOURCES:
   Charts:
     :path: "../../Dependencies/Charts/Pod-3.2.1.podspec"
   ContentProviders:
-    :path: "../../Dependencies/ContentProviders/Pod-1.3.1.podspec"
+    :path: "../../Dependencies/ContentProviders/Pod-1.4.0.podspec"
   ContentProvidersSQLite:
-    :path: "../../Dependencies/ContentProvidersSQLite/Pod-1.3.1.podspec"
+    :path: "../../Dependencies/ContentProvidersSQLite/Pod-1.4.0.podspec"
   CryptoSwift:
     :path: "../../Dependencies/CryptoSwift/Pod-0.13.1.podspec"
   Differentiator:
@@ -324,8 +325,8 @@ SPEC CHECKSUMS:
   Armchair: a5ce4292e80a78f225aee6e0374167a33a479127
   Bolts: 23a5456e2f891e82eef2d70a3d57bf2ebe095d63
   Charts: 1b0bc6fd2ca398d3216e8968121292717feefa9c
-  ContentProviders: a6c0744fa3b9421fcb8b5b4530088c4d4faabe49
-  ContentProvidersSQLite: 94b101d97f8b7391d03592b212d0fcc6abed15d0
+  ContentProviders: ec9151100d5ba61fb5fa374a757874177f660f2a
+  ContentProvidersSQLite: 38c836f75dff01f0c31dfbf8ea42a64f62cab387
   CryptoSwift: 47711b69ad31aba86d68a061d9cc253b8433088b
   Differentiator: 6457101673ee46d07b847c7f0366193df56b630b
   Dispatch: 93a0385197025ac130e858d1bf1e164d4da74c47
@@ -376,6 +377,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: f66a6ef8ad5e71041dc690a63853ca80e456d6c1
   Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: e869ab4fa04bf2ebd9223f59e51941c39c53656b
+PODFILE CHECKSUM: 91234b28693c069692baf76ebd5a7507ea6aba9c
 
 COCOAPODS: 1.7.5
