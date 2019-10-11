@@ -5,13 +5,13 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsObjC'
   s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
-  s.version               = '1.3.2'
+  s.version               = '1.4.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
   s.swift_version         = '4.2'
 
-  s.cocoapods_version     = '>= 1.4.0'
+  s.cocoapods_version     = '>= 1.7.5'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/swift-commons.ios'
@@ -34,8 +34,6 @@ Pod::Spec.new do |s|
     base_dir + 'Sources/SSZipArchive/SSZipArchiveDelegate.h',
     base_dir + 'Sources/SSZipArchive/minizip/unzip.h',
     base_dir + 'Sources/SSZipArchive/minizip/ioapi.h',
-    # StreamTypedCoder
-    base_dir + 'Sources/StreamTypedCoder/StreamTypedCoder.h',
     # TryCatchFinally
     base_dir + 'Sources/TryCatchFinally/TryCatchFinally.h'
   ]
@@ -46,9 +44,22 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF42"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommonsObjC-#{s.version}-SCF42.zip",
+    sha256: '26b64e0dad9ba89f46dc18e8b477ab441ee8e7225f8dc37e1bb98c9b007568f8'
+  }
+
+  s.source_files = nil
+  s.public_header_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsObjC.framework/*'
+    sc.source_files = 'SwiftCommonsObjC.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsObjC.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsObjC.framework'
+  end
 end

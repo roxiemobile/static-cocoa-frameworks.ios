@@ -2,9 +2,9 @@ name: SwiftCommonsData
 description: A collection of reusable components used to simplify serialization, deserialization and validation operations on data objects.
 
 modules:
-  1.3.2:
+  1.4.0:
     repository: https://github.com/roxiemobile/swift-commons.ios.git
-    tag: 1.3.2
+    tag: 1.4.0
 
 profiles:
   init:
