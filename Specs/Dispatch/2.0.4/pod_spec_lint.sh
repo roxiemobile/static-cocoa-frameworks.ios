@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pod spec lint Dispatch.podspec
+pod spec lint --sources='https://github.com/CocoaPods/Specs.git' Dispatch.podspec

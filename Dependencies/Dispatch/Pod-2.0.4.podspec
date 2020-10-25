@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.3'
 
   s.license = {}
   s.static_framework = true
