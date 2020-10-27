@@ -3,15 +3,15 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiHttp'
-  s.summary               = 'A collection of useful type extensions and utility classes used for communication over HTTP protocol.'
-  s.version               = '1.4.0'
+  s.name                  = 'NetworkingApiHelpers'
+  s.summary               = 'A collection of utility classes used by other modules of this library.'
+  s.version               = '1.5.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '4.2'
+  s.swift_version         = '5.3'
 
-  s.cocoapods_version     = '>= 1.7.5'
+  s.cocoapods_version     = '>= 1.10.0'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/networking-api.ios'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Http/'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Helpers/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,7 +34,8 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'SwiftCommons/Diagnostics', '~> 1.4.0'
+  s.dependency 'Alamofire', '~> 4.9.1'
+  s.dependency 'NetworkingApiHttp', s.version.to_s
 
 # MARK: - iOS Static Framework
 

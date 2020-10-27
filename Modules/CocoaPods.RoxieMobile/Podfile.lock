@@ -46,38 +46,38 @@ PODS:
     - HMSegmentedControl (~> 1.5.3)
     - MXPagerView (~> 0.2.1)
     - MXParallaxHeader (~> 0.6.1)
-  - NetworkingApi (1.4.0):
-    - NetworkingApi/Converters (= 1.4.0)
-    - NetworkingApi/Helpers (= 1.4.0)
-    - NetworkingApi/Http (= 1.4.0)
-    - NetworkingApi/ObjC (= 1.4.0)
-    - NetworkingApi/Rest (= 1.4.0)
-  - NetworkingApi/Converters (1.4.0):
-    - NetworkingApiConverters (= 1.4.0)
-  - NetworkingApi/Helpers (1.4.0):
-    - NetworkingApiHelpers (= 1.4.0)
-  - NetworkingApi/Http (1.4.0):
-    - NetworkingApiHttp (= 1.4.0)
-  - NetworkingApi/ObjC (1.4.0):
-    - NetworkingApiObjC (= 1.4.0)
-  - NetworkingApi/Rest (1.4.0):
-    - NetworkingApiRest (= 1.4.0)
-  - NetworkingApiConverters (1.4.0):
-    - NetworkingApiRest (= 1.4.0)
-    - SwiftCommons/Data (~> 1.4.0)
-  - NetworkingApiHelpers (1.4.0):
-    - Alamofire (~> 4.8.1)
-    - NetworkingApiHttp (= 1.4.0)
-  - NetworkingApiHttp (1.4.0):
-    - SwiftCommons/Diagnostics (~> 1.4.0)
-  - NetworkingApiObjC (1.4.0):
-    - Alamofire (~> 4.8.1)
-  - NetworkingApiRest (1.4.0):
-    - Alamofire (~> 4.8.1)
-    - NetworkingApiHelpers (= 1.4.0)
-    - NetworkingApiObjC (= 1.4.0)
-    - SwiftCommons/Data (~> 1.4.0)
-    - SwiftyJSON (~> 4.2.0)
+  - NetworkingApi (1.5.0):
+    - NetworkingApi/Converters (= 1.5.0)
+    - NetworkingApi/Helpers (= 1.5.0)
+    - NetworkingApi/Http (= 1.5.0)
+    - NetworkingApi/ObjC (= 1.5.0)
+    - NetworkingApi/Rest (= 1.5.0)
+  - NetworkingApi/Converters (1.5.0):
+    - NetworkingApiConverters (= 1.5.0)
+  - NetworkingApi/Helpers (1.5.0):
+    - NetworkingApiHelpers (= 1.5.0)
+  - NetworkingApi/Http (1.5.0):
+    - NetworkingApiHttp (= 1.5.0)
+  - NetworkingApi/ObjC (1.5.0):
+    - NetworkingApiObjC (= 1.5.0)
+  - NetworkingApi/Rest (1.5.0):
+    - NetworkingApiRest (= 1.5.0)
+  - NetworkingApiConverters (1.5.0):
+    - NetworkingApiRest (= 1.5.0)
+    - SwiftCommons/Data (~> 1.5.0)
+  - NetworkingApiHelpers (1.5.0):
+    - Alamofire (~> 4.9.1)
+    - NetworkingApiHttp (= 1.5.0)
+  - NetworkingApiHttp (1.5.0):
+    - SwiftCommons/Diagnostics (~> 1.5.0)
+  - NetworkingApiObjC (1.5.0):
+    - Alamofire (~> 4.9.1)
+  - NetworkingApiRest (1.5.0):
+    - Alamofire (~> 4.9.1)
+    - NetworkingApiHelpers (= 1.5.0)
+    - NetworkingApiObjC (= 1.5.0)
+    - SwiftCommons/Data (~> 1.5.0)
+    - SwiftyJSON (~> 5.0.0)
   - PDTSimpleCalendar (0.9.1)
   - PureLayout (3.1.4)
   - R.swift (5.0.2):
@@ -175,12 +175,12 @@ DEPENDENCIES:
   - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - MXParallaxHeader (from `../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec`)
   - MXSegmentedPager (from `../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec`)
-  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.4.0.podspec`)
-  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.4.0.podspec`)
-  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.4.0.podspec`)
-  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.4.0.podspec`)
-  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.4.0.podspec`)
-  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.4.0.podspec`)
+  - NetworkingApi (from `../../Dependencies/NetworkingApi/Pod-1.5.0.podspec`)
+  - NetworkingApiConverters (from `../../Dependencies/NetworkingApiConverters/Pod-1.5.0.podspec`)
+  - NetworkingApiHelpers (from `../../Dependencies/NetworkingApiHelpers/Pod-1.5.0.podspec`)
+  - NetworkingApiHttp (from `../../Dependencies/NetworkingApiHttp/Pod-1.5.0.podspec`)
+  - NetworkingApiObjC (from `../../Dependencies/NetworkingApiObjC/Pod-1.5.0.podspec`)
+  - NetworkingApiRest (from `../../Dependencies/NetworkingApiRest/Pod-1.5.0.podspec`)
   - PDTSimpleCalendar (from `../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec`)
   - PureLayout (from `../../Dependencies/PureLayout/Pod-3.1.4.podspec`)
   - R.swift (from `../../Dependencies/R.swift/Pod-5.0.2.podspec`)
@@ -256,17 +256,17 @@ EXTERNAL SOURCES:
   MXSegmentedPager:
     :path: "../../Dependencies/MXSegmentedPager/Pod-3.3.0.podspec"
   NetworkingApi:
-    :path: "../../Dependencies/NetworkingApi/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/NetworkingApi/Pod-1.5.0.podspec"
   NetworkingApiConverters:
-    :path: "../../Dependencies/NetworkingApiConverters/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/NetworkingApiConverters/Pod-1.5.0.podspec"
   NetworkingApiHelpers:
-    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/NetworkingApiHelpers/Pod-1.5.0.podspec"
   NetworkingApiHttp:
-    :path: "../../Dependencies/NetworkingApiHttp/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/NetworkingApiHttp/Pod-1.5.0.podspec"
   NetworkingApiObjC:
-    :path: "../../Dependencies/NetworkingApiObjC/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/NetworkingApiObjC/Pod-1.5.0.podspec"
   NetworkingApiRest:
-    :path: "../../Dependencies/NetworkingApiRest/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/NetworkingApiRest/Pod-1.5.0.podspec"
   PDTSimpleCalendar:
     :path: "../../Dependencies/PDTSimpleCalendar/Pod-0.9.1.podspec"
   PureLayout:
@@ -344,12 +344,12 @@ SPEC CHECKSUMS:
   MXPagerView: 99134adaf5255cf2832063e9a3df2dd315400e62
   MXParallaxHeader: 1a5ebbbaf5b2e85ed90a55a084d2df380191109b
   MXSegmentedPager: 9495ebea2d321371dfe67059a54a368abc89a0da
-  NetworkingApi: 0c8feb7f485851b4795c88f99d0fdfdc683b9bf7
-  NetworkingApiConverters: d12efe5f059d37ff986b784d6c87bda504d41c06
-  NetworkingApiHelpers: 792b3f2bffd909d5715f5ed1772c01b90b2f60fe
-  NetworkingApiHttp: 3f4ad7212f5bc27a8131d2a7d62f1e6a30ef3a2e
-  NetworkingApiObjC: 198ad0ce8b68681b07892f4fd0acaf7887865ab5
-  NetworkingApiRest: 97bb167af5f853c975e209241688ef2dd9be5c4a
+  NetworkingApi: 4959227dead357871c503ff771eb931ff8996c33
+  NetworkingApiConverters: 8a253e44dc2cde85a22d1e74d28b17cbf139fe49
+  NetworkingApiHelpers: faf3c739656c02eb3f63bf632c5e056a436c9f24
+  NetworkingApiHttp: 57d1178aad4c87e03bb46fefcb8f042f2f696d82
+  NetworkingApiObjC: 4e793ec0c485ba1935f1cc74535d84ebb47fc745
+  NetworkingApiRest: f989e3a2cd943b81104e9ae06c81c7d2084871e4
   PDTSimpleCalendar: e11ac67b95e898579b87dbe96a17370943133eba
   PureLayout: cff5d0e0340a7fe9abebf9529ad39fdeef14e4d5
   R.swift: 4839d9e7beadb9be5cd35802953d442a5fa779f3
@@ -377,6 +377,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 589944d7290474e905234a4537b8b7c2c0229d97
   Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: 7e62b01e5a36e49c73a2ee0a3eaebf8577081057
+PODFILE CHECKSUM: cd17c35df55f0415b27d74aaf916486dd92045d6
 
 COCOAPODS: 1.10.0

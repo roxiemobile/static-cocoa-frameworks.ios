@@ -3,15 +3,15 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'NetworkingApiHelpers'
-  s.summary               = 'A collection of utility classes used by other modules of this library.'
-  s.version               = '1.4.0'
+  s.name                  = 'NetworkingApiObjC'
+  s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
+  s.version               = '1.5.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '4.2'
+  s.swift_version         = '5.3'
 
-  s.cocoapods_version     = '>= 1.7.5'
+  s.cocoapods_version     = '>= 1.10.0'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/networking-api.ios'
@@ -25,8 +25,12 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/Helpers/'
-  s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
+  base_dir = 'Modules/RoxieMobile.NetworkingApi/Sources/ObjC/'
+  s.source_files = base_dir + '{Sources,Dependencies}/**/*.{h,m,c}'
+
+  s.public_header_files = [
+    base_dir + 'Sources/DefaultUserAgent.h'
+  ]
 
   s.pod_target_xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => "$(inherited) NETWORKINGAPI_FRAMEWORK_VERSION=@\\\"#{s.version}\\\""
@@ -34,8 +38,7 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'Alamofire', '~> 4.8.1'
-  s.dependency 'NetworkingApiHttp', s.version.to_s
+  s.dependency 'Alamofire', '~> 4.9.1'
 
 # MARK: - iOS Static Framework
 
@@ -43,4 +46,5 @@ Pod::Spec.new do |s|
 
   cn = s.consumer(:ios)
   s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
 end
