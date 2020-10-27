@@ -5,13 +5,13 @@ Pod::Spec.new do |s|
 
   s.name                  = 'SwiftCommonsObjC'
   s.summary               = 'A collection of Objective-C frameworks, utility classes and 3rd party libraries used by other modules of this library.'
-  s.version               = '1.4.0'
+  s.version               = '1.5.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '4.2'
+  s.swift_version         = '5.3'
 
-  s.cocoapods_version     = '>= 1.7.5'
+  s.cocoapods_version     = '~> 1.10.0'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/swift-commons.ios'
@@ -44,9 +44,35 @@ Pod::Spec.new do |s|
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF53"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
-  s.public_header_files = cn.public_header_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SwiftCommonsObjC-#{s.version}-SCF53.zip",
+    sha256: 'bce8a265924432ca5ea110d09b5457f5093911baf6ab78ce6f9d14fbd7358be9'
+  }
+
+  s.source_files = nil
+  s.public_header_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SwiftCommonsObjC.framework/*'
+    sc.source_files = 'SwiftCommonsObjC.framework/Headers/*.h'
+    sc.public_header_files = 'SwiftCommonsObjC.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SwiftCommonsObjC.framework'
+  end
+
+# MARK: - Validation
+
+  # Why linker link static libraries with errors? iOS
+  # @link https://stackoverflow.com/a/57126566
+
+  # Xcode 12, building for iOS Simulator, but linking in object file built for iOS, for architecture arm64
+  # @link https://stackoverflow.com/a/63955114
+
+  s.user_target_xcconfig = {
+    'LIBRARY_SEARCH_PATHS' => '$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  }
 end

@@ -3,15 +3,15 @@ Pod::Spec.new do |s|
 
 # MARK: - Description
 
-  s.name                  = 'SwiftCommonsData'
-  s.summary               = 'A collection of reusable components used to simplify serialization, deserialization and validation operations on data objects.'
-  s.version               = '1.4.0'
+  s.name                  = 'SwiftCommonsDiagnostics'
+  s.summary               = 'A collection of static classes for debugging and diagnostics of program contracts such as preconditions, postconditions, and invariants.'
+  s.version               = '1.5.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '4.2'
+  s.swift_version         = '5.3'
 
-  s.cocoapods_version     = '>= 1.7.5'
+  s.cocoapods_version     = '~> 1.10.0'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/swift-commons.ios'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     tag: s.version.to_s
   }
 
-  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Data/'
+  base_dir = 'Modules/RoxieMobile.SwiftCommons/Sources/Diagnostics/'
   s.source_files = base_dir + '{Sources,Dependencies}/**/*.swift'
 
   s.pod_target_xcconfig = {
@@ -34,14 +34,9 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.13.1'
-  s.dependency 'MPMessagePack', '~> 1.5.1'
-  s.dependency 'SwiftCommonsDiagnostics', s.version.to_s
+  s.dependency 'SwiftCommonsConcurrent', s.version.to_s
+  s.dependency 'SwiftCommonsExtensions', s.version.to_s
 
-# MARK: - iOS Static Framework
-
-  s.license = {}
-
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
