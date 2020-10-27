@@ -5,9 +5,9 @@ modules:
   3.4.2:
     repository: https://github.com/sqlcipher/sqlcipher.git
     tag: v3.4.2
-  4.0.1:
+  4.4.0:
     repository: https://github.com/sqlcipher/sqlcipher.git
-    tag: v4.0.1
+    tag: v4.4.0
 
 profiles:
   init:

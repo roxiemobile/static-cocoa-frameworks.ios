@@ -96,10 +96,10 @@ PODS:
   - SDWebImage/Core (4.4.5)
   - Siren (4.1.1)
   - SlideMenuControllerSwift (4.0.0)
-  - SQLCipher (3.4.2):
-    - SQLCipher/standard (= 3.4.2)
-  - SQLCipher/common (3.4.2)
-  - SQLCipher/standard (3.4.2):
+  - SQLCipher (4.4.0):
+    - SQLCipher/standard (= 4.4.0)
+  - SQLCipher/common (4.4.0)
+  - SQLCipher/standard (4.4.0):
     - SQLCipher/common
   - SQLite.swift/SQLCipher (0.11.5):
     - SQLCipher (< 4.0.0, >= 3.4.0)
@@ -193,7 +193,7 @@ DEPENDENCIES:
   - SDWebImage/Core (from `../../Dependencies/SDWebImage/Pod-4.4.5.podspec`)
   - Siren (from `../../Dependencies/Siren/Pod-4.1.1.podspec`)
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec`)
-  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-3.4.2.podspec`)
+  - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-4.4.0.podspec`)
   - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.5.podspec`)
   - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.5.0.podspec`)
   - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.5.0.podspec`)
@@ -292,7 +292,7 @@ EXTERNAL SOURCES:
   SlideMenuControllerSwift:
     :path: "../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec"
   SQLCipher:
-    :path: "../../Dependencies/SQLCipher/Pod-3.4.2.podspec"
+    :path: "../../Dependencies/SQLCipher/Pod-4.4.0.podspec"
   SQLite.swift:
     :path: "../../Dependencies/SQLite.swift/Pod-0.11.5.podspec"
   SwiftCommons:
@@ -362,7 +362,7 @@ SPEC CHECKSUMS:
   SDWebImage: afbe50a88d9e3c63041e0cc5c5febb5f9569fd80
   Siren: d31551131c4ce548c294b8f602b337f3a72423a5
   SlideMenuControllerSwift: 6c1ef6f85322ac62951d943d473a6b53edf2ea30
-  SQLCipher: 9bc82a0f5edb77db8157c6779f6feb8c7bd0f7d7
+  SQLCipher: 1d422a6c31a01947998c7149ac95311cd2ab9fd0
   SQLite.swift: 2e6cd9d9980093c2cdcd73184d35bece0919d602
   SwiftCommons: da3b9afac1adc788531fea8c682b370230ba6455
   SwiftCommonsAbstractions: a554ecccb51de1b42b3aa0f9a843e9e55fe0a339
@@ -377,6 +377,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 589944d7290474e905234a4537b8b7c2c0229d97
   Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: c8f47a4eacd19d7dcabcfe9d7f61e26d273d3b39
+PODFILE CHECKSUM: 4d0accbe94db67d2fa4b91101085e3102ff0d744
 
 COCOAPODS: 1.10.0

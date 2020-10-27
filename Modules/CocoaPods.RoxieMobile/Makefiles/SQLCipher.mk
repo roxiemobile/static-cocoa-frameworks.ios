@@ -1,6 +1,6 @@
 NAME=SQLCipher
 SCHEME=$(NAME)
 SUBSPEC=+standard
-VERSION=3.4.2
+VERSION=4.4.0
 
 include Makefile.in

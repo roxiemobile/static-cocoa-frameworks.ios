@@ -39,7 +39,7 @@ target 'DummyFramework' do
   pod 'SDWebImage/Core',          '>= 4.4.5'
   pod 'Siren',                    '>= 4.1.1'
   pod 'SlideMenuControllerSwift', '>= 4.0.0'
-  pod 'SQLCipher/standard',       '>= 3.4.2'
+  pod 'SQLCipher/standard',       '>= 4.4.0'
   pod 'SQLite.swift/SQLCipher',   '>= 0.11.5'
   pod 'SwiftReorder',             '>= 6.0.1'
   pod 'SwiftyJSON',               '>= 5.0.0'

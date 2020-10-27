@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.name                  = 'SQLCipher'
   s.summary               = 'Full Database Encryption for SQLite.'
   s.description           = 'SQLCipher is an open source extension to SQLite that provides transparent 256-bit AES encryption of database files.'
-  s.version               = '4.0.1'
+  s.version               = '3.4.2'
 
   s.platform              = :ios
   s.ios.deployment_target = '8.0'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.homepage              = 'https://www.zetetic.net/sqlcipher/'
 
-  s.source                = { git: 'https://github.com/sqlcipher/sqlcipher.git', tag: 'v4.0.1' }
+  s.source                = { git: 'https://github.com/sqlcipher/sqlcipher.git', tag: 'v3.4.2' }
   s.prepare_command       = './configure --enable-tempstore=yes --with-crypto-lib=commoncrypto CFLAGS="-DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999"; make sqlite3.c'
 
   s.requires_arc          = false
@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
 # MARK: - Modules
 
   s.subspec 'common' do |sc|
+=begin
     sc.source_files = 'sqlite3.{h,c}'
 
     sc.frameworks = [
@@ -53,21 +54,26 @@ Pod::Spec.new do |s|
       '-DSQLITE_ENABLE_FTS5',
       '-DSQLCIPHER_CRYPTO_CC',
       '-DHAVE_USLEEP=1',
-      '-DSQLITE_MAX_VARIABLE_NUMBER=99999'
+      '-DSQLITE_MAX_VARIABLE_NUMBER=99999',
     ]
 
     sc.xcconfig = {
-      'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/SQLCipher',
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) SQLITE_HAS_CODEC=1',
       'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2 -DSQLITE_SOUNDEX -DSQLITE_THREADSAFE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STAT3 -DSQLITE_ENABLE_STAT4 -DSQLITE_ENABLE_COLUMN_METADATA -DSQLITE_ENABLE_MEMORY_MANAGEMENT -DSQLITE_ENABLE_LOAD_EXTENSION -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_FTS4_UNICODE61 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_JSON1 -DSQLITE_ENABLE_FTS5 -DSQLCIPHER_CRYPTO_CC -DHAVE_USLEEP=1 -DSQLITE_MAX_VARIABLE_NUMBER=99999'
     }
+=end
+    sc.dependency "#{s.name}-SCF53/StaticCocoaFramework", s.version.to_s
   end
 
   s.subspec 'standard' do |sc|
+=begin
     sc.dependency 'SQLCipher/common'
+=end
+    sc.dependency "#{s.name}-SCF53/common"
   end
 
   s.subspec 'fts' do |sc|
+=begin
     sc.compiler_flags = []
 
     sc.xcconfig = {
@@ -75,9 +81,12 @@ Pod::Spec.new do |s|
     }
 
     sc.dependency 'SQLCipher/common'
+=end
+    sc.dependency '//+NotSupported'
   end
 
   s.subspec 'unlock_notify' do |sc|
+=begin
     sc.compiler_flags = []
 
     sc.xcconfig = {
@@ -85,22 +94,43 @@ Pod::Spec.new do |s|
     }
 
     sc.dependency 'SQLCipher/common'
+=end
+    sc.dependency '//+NotSupported'
   end
 
 # MARK: - iOS Static Framework
 
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF53"
+
   s.platform = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.3'
 
-  s.license = {}
-  s.static_framework = true
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/SQLCipher+standard-#{s.version}-SCF53.zip",
+    sha256: '98ba0c0a3ded2efe3785f4edcec7acec33d8b5b5b9dadd7b45003aeaf2c4eff8'
+  }
 
-  cn1 = s.consumer(:ios)
-  s.prepare_command = "cd #{cn1.version}; #{cn1.prepare_command}; cd .."
+  s.prepare_command = nil
 
-  s.subspecs.each do |sc|
-    cn2 = sc.consumer(:ios)
-    sc.source_files = cn2.source_files.map { |pt| "#{cn2.version}/#{pt}" } if !cn2.source_files.blank?
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'SQLCipher.framework/*'
+    sc.source_files = 'SQLCipher.framework/Headers/*.h'
+    sc.public_header_files = 'SQLCipher.framework/Headers/*.h'
+    sc.vendored_frameworks = 'SQLCipher.framework'
   end
+
+# MARK: - Validation
+
+  # Why linker link static libraries with errors? iOS
+  # @link https://stackoverflow.com/a/57126566
+
+  # Xcode 12, building for iOS Simulator, but linking in object file built for iOS, for architecture arm64
+  # @link https://stackoverflow.com/a/63955114
+
+  s.user_target_xcconfig = {
+    'LIBRARY_SEARCH_PATHS' => '$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  }
 end
