@@ -8,7 +8,7 @@ workspace 'DummyProject/Dummy.xcworkspace'
 target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
 
-  pod 'Alamofire',                path: '../../Dependencies/Alamofire/Pod-4.8.1.podspec'
+  pod 'Alamofire',                path: '../../Dependencies/Alamofire/Pod-4.9.1.podspec'
   pod 'Armchair',                 path: '../../Dependencies/Armchair/Pod-0.3.6-patch.3.podspec'
   pod 'Bolts',                    path: '../../Dependencies/Bolts/Pod-1.9.0.podspec'
   pod 'Charts',                   path: '../../Dependencies/Charts/Pod-3.2.1.podspec'

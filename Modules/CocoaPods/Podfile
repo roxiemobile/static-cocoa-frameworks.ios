@@ -8,7 +8,7 @@ workspace 'DummyProject/Dummy.xcworkspace'
 target 'DummyFramework' do
   project 'DummyProject/Dummy.xcodeproj'
 
-  pod 'Alamofire',                '>= 4.8.1'
+  pod 'Alamofire',                '>= 4.9.1'
   pod 'Armchair',                 '>= 0.3.6'
 # pod 'Bolts',                    '>= 1.9.0'
   pod 'Charts',                   '>= 3.2.1'
