@@ -32,12 +32,12 @@ PODS:
   - KeychainAccess (3.1.2)
   - lottie-ios (2.5.2)
   - MBProgressHUD (1.1.0)
-  - ModernDesign (1.4.0):
-    - ModernDesign/Extensions (= 1.4.0)
-  - ModernDesign/Extensions (1.4.0):
-    - ModernDesignExtensions (= 1.4.0)
-  - ModernDesignExtensions (1.4.0):
-    - SwiftCommons/Lang (~> 1.4.0)
+  - ModernDesign (1.5.0):
+    - ModernDesign/Extensions (= 1.5.0)
+  - ModernDesign/Extensions (1.5.0):
+    - ModernDesignExtensions (= 1.5.0)
+  - ModernDesignExtensions (1.5.0):
+    - SwiftCommons/Lang (~> 1.5.0)
   - MPMessagePack (1.5.1):
     - GHODictionary
   - MXPagerView (0.2.1)
@@ -169,8 +169,8 @@ DEPENDENCIES:
   - KeychainAccess (from `../../Dependencies/KeychainAccess/Pod-3.1.2.podspec`)
   - lottie-ios (from `../../Dependencies/lottie-ios/Pod-2.5.2.podspec`)
   - MBProgressHUD (from `../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec`)
-  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.4.0.podspec`)
-  - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.4.0.podspec`)
+  - ModernDesign (from `../../Dependencies/ModernDesign/Pod-1.5.0.podspec`)
+  - ModernDesignExtensions (from `../../Dependencies/ModernDesignExtensions/Pod-1.5.0.podspec`)
   - MPMessagePack (from `../../Dependencies/MPMessagePack/Pod-1.5.1.podspec`)
   - MXPagerView (from `../../Dependencies/MXPagerView/Pod-0.2.1.podspec`)
   - MXParallaxHeader (from `../../Dependencies/MXParallaxHeader/Pod-0.6.1.podspec`)
@@ -244,9 +244,9 @@ EXTERNAL SOURCES:
   MBProgressHUD:
     :path: "../../Dependencies/MBProgressHUD/Pod-1.1.0.podspec"
   ModernDesign:
-    :path: "../../Dependencies/ModernDesign/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/ModernDesign/Pod-1.5.0.podspec"
   ModernDesignExtensions:
-    :path: "../../Dependencies/ModernDesignExtensions/Pod-1.4.0.podspec"
+    :path: "../../Dependencies/ModernDesignExtensions/Pod-1.5.0.podspec"
   MPMessagePack:
     :path: "../../Dependencies/MPMessagePack/Pod-1.5.1.podspec"
   MXPagerView:
@@ -338,8 +338,8 @@ SPEC CHECKSUMS:
   KeychainAccess: f843db9a1b05d34a2d7be2ed00c9c4d95c3d5ccb
   lottie-ios: 897cda14d36d6b28b0c39ec9dd4e5675cd740b2b
   MBProgressHUD: bd213db1bf701076fe3c29e8208804197d247185
-  ModernDesign: d87cab1a5babace10bdd05b0025f5d49681a20e6
-  ModernDesignExtensions: 05b0c19889aefe4ac9c236c335d47633d74e3041
+  ModernDesign: 461f8fd9942a9d66aaa9b926f025e04670f8c7f4
+  ModernDesignExtensions: 8c14da1752a35eff136a3b4505f2feef2388d94a
   MPMessagePack: b01dfc614a0445fc905b5a6a54721168e6ae2c06
   MXPagerView: 99134adaf5255cf2832063e9a3df2dd315400e62
   MXParallaxHeader: 1a5ebbbaf5b2e85ed90a55a084d2df380191109b
@@ -377,6 +377,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 589944d7290474e905234a4537b8b7c2c0229d97
   Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: 26c50f8c02d8fab5bd36f54c7fb352902252a33d
+PODFILE CHECKSUM: 7e62b01e5a36e49c73a2ee0a3eaebf8577081057
 
 COCOAPODS: 1.10.0
