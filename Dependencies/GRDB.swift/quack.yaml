@@ -1,0 +1,19 @@
+name: GRDB.swift
+description: A toolkit for SQLite databases, with a focus on application development.
+
+modules:
+  4.14.0:
+    repository: https://github.com/groue/GRDB.swift.git
+    tag: v4.14.0
+
+profiles:
+  init:
+    tasks: ['quack:pull', 'quack:rm']
+    dependencies:
+      quack: 'rm'
+  pull:
+    tasks: ['modules']
+  rm:
+    tasks: ['cmd:rm -rf .git/ .quack/ *FrameworkVersion.h']
+  clean:
+    tasks: ['-modules', 'quack:rm']

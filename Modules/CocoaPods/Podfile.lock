@@ -17,6 +17,8 @@ PODS:
     - Bolts (~> 1.9)
   - GHODictionary (1.1.0)
   - GoogleAnalytics (3.17.0)
+  - GRDB.swift/SQLCipher (4.14.0):
+    - SQLCipher (>= 3.4.0)
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.3)
   - INTULocationManager (4.3.2)
@@ -68,6 +70,7 @@ DEPENDENCIES:
   - Dispatch (>= 2.0.4)
   - FBSDKCoreKit (>= 4.40.0)
   - GoogleAnalytics (>= 3.17.0)
+  - GRDB.swift/SQLCipher (< 5.0.0, >= 4.14.0)
   - GzipSwift (>= 4.0.4)
   - HMSegmentedControl (>= 1.5.3)
   - INTULocationManager (>= 4.3.2)
@@ -104,6 +107,7 @@ SPEC REPOS:
     - FBSDKCoreKit
     - GHODictionary
     - GoogleAnalytics
+    - GRDB.swift
     - GzipSwift
     - HMSegmentedControl
     - INTULocationManager
@@ -143,6 +147,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: ae214474b25033399c131dc81d258e412582a2ba
   GHODictionary: 225e042596a4b3d5b66b2b24250086b2f95514af
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GRDB.swift: 8cc3ab7c8b8b4ac1761deb8dca4b51c1c9d429f8
   GzipSwift: 1a5bc5f7827e09846b0635b5079f1224bc3b1c3a
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   INTULocationManager: e5dc524611b0cd582f473bc56cc8c389adb2f338
@@ -171,6 +176,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: b7b73d9d7943d863c4ead9fdb44c117ecfb8c91c
+PODFILE CHECKSUM: 94f57d63f26c4df568e685d0a1f51a36b7d1789d
 
 COCOAPODS: 1.10.0

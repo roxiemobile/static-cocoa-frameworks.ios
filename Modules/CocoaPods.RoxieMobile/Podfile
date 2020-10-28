@@ -19,6 +19,7 @@ target 'DummyFramework' do
   pod 'Dispatch',                 path: '../../Dependencies/Dispatch/Pod-2.0.4.podspec'
   pod 'FBSDKCoreKit',             path: '../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec'
   pod 'GHODictionary',            path: '../../Dependencies/GHODictionary/Pod-1.1.0.podspec'
+  pod 'GRDB.swift/SQLCipher',     path: '../../Dependencies/GRDB.swift/Pod-4.14.0.podspec'
   pod 'GzipSwift',                path: '../../Dependencies/GzipSwift/Pod-4.0.4.podspec'
   pod 'HMSegmentedControl',       path: '../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec'
   pod 'INTULocationManager',      path: '../../Dependencies/INTULocationManager/Pod-4.3.2.podspec'

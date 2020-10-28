@@ -26,6 +26,8 @@ PODS:
   - FBSDKCoreKit (4.40.0):
     - Bolts (~> 1.9)
   - GHODictionary (1.1.0)
+  - GRDB.swift/SQLCipher (4.14.0):
+    - SQLCipher (>= 3.4.0)
   - GzipSwift (4.0.4)
   - HMSegmentedControl (1.5.5)
   - INTULocationManager (4.3.2)
@@ -163,6 +165,7 @@ DEPENDENCIES:
   - Dispatch (from `../../Dependencies/Dispatch/Pod-2.0.4.podspec`)
   - FBSDKCoreKit (from `../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec`)
   - GHODictionary (from `../../Dependencies/GHODictionary/Pod-1.1.0.podspec`)
+  - GRDB.swift/SQLCipher (from `../../Dependencies/GRDB.swift/Pod-4.14.0.podspec`)
   - GzipSwift (from `../../Dependencies/GzipSwift/Pod-4.0.4.podspec`)
   - HMSegmentedControl (from `../../Dependencies/HMSegmentedControl/Pod-1.5.5.podspec`)
   - INTULocationManager (from `../../Dependencies/INTULocationManager/Pod-4.3.2.podspec`)
@@ -231,6 +234,8 @@ EXTERNAL SOURCES:
     :path: "../../Dependencies/FBSDKCoreKit/Pod-4.40.0.podspec"
   GHODictionary:
     :path: "../../Dependencies/GHODictionary/Pod-1.1.0.podspec"
+  GRDB.swift:
+    :path: "../../Dependencies/GRDB.swift/Pod-4.14.0.podspec"
   GzipSwift:
     :path: "../../Dependencies/GzipSwift/Pod-4.0.4.podspec"
   HMSegmentedControl:
@@ -332,6 +337,7 @@ SPEC CHECKSUMS:
   Dispatch: 09ed10effbc2b184b4aa08a959a4ce2ed3aab48c
   FBSDKCoreKit: 91d225c7fb0d0a90ef834911741eefea1575a5ba
   GHODictionary: 22ee5848491d0bb117d24d8f1aa684adcea18467
+  GRDB.swift: fdf067f299153b52ffc72668b62a60a449b5e31d
   GzipSwift: f039505303ff7c1e8ccb03909dfe81df1a42bd7b
   HMSegmentedControl: 6c8a58ad736e4f82bec08afa6cc1eb8d343837bf
   INTULocationManager: 9c73045c65db616e1102d9e70fbd789ec5e6b178
@@ -377,6 +383,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 589944d7290474e905234a4537b8b7c2c0229d97
   Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: 69170eef4dacbf259bd4a18117f6fac97d15313c
+PODFILE CHECKSUM: 197f4f477f2b33f4c1fdf8232642e12920e02150
 
 COCOAPODS: 1.10.0
