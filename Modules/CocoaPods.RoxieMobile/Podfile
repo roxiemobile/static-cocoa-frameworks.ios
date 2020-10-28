@@ -50,7 +50,7 @@ target 'DummyFramework' do
   pod 'Siren',                    path: '../../Dependencies/Siren/Pod-4.1.1.podspec'
   pod 'SlideMenuControllerSwift', path: '../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec'
   pod 'SQLCipher/standard',       path: '../../Dependencies/SQLCipher/Pod-4.4.0.podspec'
-  pod 'SQLite.swift/SQLCipher',   path: '../../Dependencies/SQLite.swift/Pod-0.12.2.podspec'
+  pod 'SQLite.swift/SQLCipher',   path: '../../Dependencies/SQLite.swift/Pod-0.11.6.podspec'
   pod 'SwiftCommons',             path: '../../Dependencies/SwiftCommons/Pod-1.5.0.podspec'
   pod 'SwiftCommonsAbstractions', path: '../../Dependencies/SwiftCommonsAbstractions/Pod-1.5.0.podspec'
   pod 'SwiftCommonsConcurrent',   path: '../../Dependencies/SwiftCommonsConcurrent/Pod-1.5.0.podspec'
