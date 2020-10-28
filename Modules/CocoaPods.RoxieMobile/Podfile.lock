@@ -103,8 +103,8 @@ PODS:
   - SQLCipher/common (4.4.0)
   - SQLCipher/standard (4.4.0):
     - SQLCipher/common
-  - SQLite.swift/SQLCipher (0.12.2):
-    - SQLCipher (>= 3.4.0)
+  - SQLite.swift/SQLCipher (0.11.5):
+    - SQLCipher (< 4.0.0, >= 3.4.0)
   - SwiftCommons (1.5.0):
     - SwiftCommons/Abstractions (= 1.5.0)
     - SwiftCommons/Concurrent (= 1.5.0)
@@ -197,7 +197,7 @@ DEPENDENCIES:
   - Siren (from `../../Dependencies/Siren/Pod-4.1.1.podspec`)
   - SlideMenuControllerSwift (from `../../Dependencies/SlideMenuControllerSwift/Pod-4.0.0-patch.3.podspec`)
   - SQLCipher/standard (from `../../Dependencies/SQLCipher/Pod-4.4.0.podspec`)
-  - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.12.2.podspec`)
+  - SQLite.swift/SQLCipher (from `../../Dependencies/SQLite.swift/Pod-0.11.5.podspec`)
   - SwiftCommons (from `../../Dependencies/SwiftCommons/Pod-1.5.0.podspec`)
   - SwiftCommonsAbstractions (from `../../Dependencies/SwiftCommonsAbstractions/Pod-1.5.0.podspec`)
   - SwiftCommonsConcurrent (from `../../Dependencies/SwiftCommonsConcurrent/Pod-1.5.0.podspec`)
@@ -299,7 +299,7 @@ EXTERNAL SOURCES:
   SQLCipher:
     :path: "../../Dependencies/SQLCipher/Pod-4.4.0.podspec"
   SQLite.swift:
-    :path: "../../Dependencies/SQLite.swift/Pod-0.12.2.podspec"
+    :path: "../../Dependencies/SQLite.swift/Pod-0.11.5.podspec"
   SwiftCommons:
     :path: "../../Dependencies/SwiftCommons/Pod-1.5.0.podspec"
   SwiftCommonsAbstractions:
@@ -369,7 +369,7 @@ SPEC CHECKSUMS:
   Siren: d31551131c4ce548c294b8f602b337f3a72423a5
   SlideMenuControllerSwift: 6c1ef6f85322ac62951d943d473a6b53edf2ea30
   SQLCipher: 1d422a6c31a01947998c7149ac95311cd2ab9fd0
-  SQLite.swift: 7d3eba80704773744f12d54c02e6265bcc979414
+  SQLite.swift: 2e6cd9d9980093c2cdcd73184d35bece0919d602
   SwiftCommons: da3b9afac1adc788531fea8c682b370230ba6455
   SwiftCommonsAbstractions: a554ecccb51de1b42b3aa0f9a843e9e55fe0a339
   SwiftCommonsConcurrent: a7ed69becf011a4168cdf467e919b3e4f3043696
@@ -383,6 +383,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 589944d7290474e905234a4537b8b7c2c0229d97
   Toast: b228841fd8a4bd64d030c37c4e474ee934704e22
 
-PODFILE CHECKSUM: cd17c35df55f0415b27d74aaf916486dd92045d6
+PODFILE CHECKSUM: 4d0accbe94db67d2fa4b91101085e3102ff0d744
 
 COCOAPODS: 1.10.0
