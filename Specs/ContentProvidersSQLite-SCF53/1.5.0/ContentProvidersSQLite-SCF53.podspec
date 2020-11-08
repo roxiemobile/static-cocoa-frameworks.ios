@@ -5,13 +5,13 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProvidersSQLite'
   s.summary               = 'A content provider used for accessing and modifying data in SQLite database.'
-  s.version               = '1.4.0'
+  s.version               = '1.5.0'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
-  s.swift_version         = '4.2'
+  s.swift_version         = '5.3'
 
-  s.cocoapods_version     = '>= 1.7.5'
+  s.cocoapods_version     = '~> 1.10.0'
   s.static_framework      = true
 
   s.homepage              = 'https://github.com/roxiemobile/content-providers.ios'
@@ -39,18 +39,36 @@ Pod::Spec.new do |s|
 
 # MARK: - Dependencies
 
-  s.dependency 'CryptoSwift', '~> 0.13.1'
-  s.dependency 'SwiftCommons/Concurrent', '~> 1.4.0'
-  s.dependency 'SwiftCommons/Extensions', '~> 1.4.0'
-  s.dependency 'SQLite.swift/SQLCipher', '~> 0.11.5', '< 0.11.6'
-
-  # NOTE: Temporal bug fix of integration “SQLite.swift” with “SQLCipher”.
-  s.dependency 'SQLCipher', '~> 3.4.2', '< 4.0.0'
+=begin
+  s.dependency 'CryptoSwift', '~> 1.3.2'
+  s.dependency 'GRDB.swift/SQLCipher', '~> 4.14.0'
+  s.dependency 'SwiftCommons/Concurrent', '~> 1.5.0'
+  s.dependency 'SwiftCommons/Extensions', '~> 1.5.0'
+=end
 
 # MARK: - iOS Static Framework
 
-  s.license = {}
+  s.module_name = s.name
+  s.name = "#{s.name}-SCF53"
 
-  cn = s.consumer(:ios)
-  s.source_files = cn.source_files.map { |pt| "#{cn.version}/#{pt}" }
+  s.default_subspec = 'StaticCocoaFramework'
+  s.source = {
+    http: "https://dl.bintray.com/roxiemobile/generic/ContentProvidersSQLite-#{s.version}-SCF53.zip",
+    sha256: '6347fd0ece0e23ec7da962c24f4a6f921648af16262072b22c3dee6c88b47c04'
+  }
+
+  s.source_files = nil
+
+  s.subspec 'StaticCocoaFramework' do |sc|
+    sc.preserve_paths = 'ContentProvidersSQLite.framework/*'
+    sc.source_files = 'ContentProvidersSQLite.framework/Headers/*.h'
+    sc.public_header_files = 'ContentProvidersSQLite.framework/Headers/*.h'
+    sc.vendored_frameworks = 'ContentProvidersSQLite.framework'
+
+    # Dependencies
+    sc.dependency 'CryptoSwift-SCF53', '~> 1.3.2'
+    sc.dependency 'GRDB.swift-SCF53/SQLCipher', '~> 4.14.0'
+    sc.dependency 'SwiftCommons-SCF53/Concurrent', '~> 1.5.0'
+    sc.dependency 'SwiftCommons-SCF53/Extensions', '~> 1.5.0'
+  end
 end
