@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.name                  = 'ContentProviders'
   s.summary               = 'A collection of useful content providers used for accessing and modifying iOS applications data.'
-  s.version               = '1.5.0'
+  s.version               = '1.5.1'
 
   s.platform              = :ios
   s.ios.deployment_target = '9.0'
@@ -41,4 +41,7 @@ Pod::Spec.new do |s|
   # s.subspec 'UserDefaults' do |sc|
   #   sc.dependency 'ContentProvidersUserDefaults', s.version.to_s
   # end
+
+  # NOTE: Protection
+  s.dependency '//+WrongSourceRepository'
 end
